@@ -6,11 +6,10 @@ const path=require('path');
 const bodyParser=require('body-parser');
 const multer=require('multer');
 const Grid=require('gridfs-stream');
-// const mongoLocalURI="mongodb://localhost/gbu_website";
-const mongoLocalURI="mongodb://gbu:gbu123@ds229078.mlab.com:29078/gbu-website";
+const mongoLocalURI="mongodb://localhost/gbu_website";
 const GridFsStorage=require('multer-gridfs-storage');
-mongoose.connect(mongoLocalURI,{useNewUrlParser: true}).catch(error => handleError(error));
-const conn=mongoose.createConnection(mongoLocalURI);
+mongoose.connect(process.env.DATABASEURL||mongoLocalURI,{useNewUrlParser: true});
+const conn=mongoose.createConnection(process.env.DATABASEURL||mongoLocalURI);
 const School=require('./models/schools.js');
 const Entity=require('./models/entity.js');
 const Faculty=require('./models/faculty.js');
@@ -39,7 +38,7 @@ conn.once('open',()=>{
   //   });
   // }
   const storage = new GridFsStorage({
-  url: mongoLocalURI,
+  url: process.env.DATABASEURL||mongoLocalURI,
   file: (req, file) => {
     return new Promise((resolve, reject) => {
         const filename = file.originalname;
@@ -452,6 +451,6 @@ app.get('/contact',(req,res)=>{
 app.get('/*',function(req,res){
 res.render('404');
 });
-app.listen('3000','127.0.0.1',function(){
+app.listen(process.env.PORT||'3000',process.env.IP||'127.0.0.1',function(){
 console.log('Server is listening!')
 });
