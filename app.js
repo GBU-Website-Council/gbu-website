@@ -50,17 +50,17 @@ app.set('view engine','ejs');
 //     });
 //   }
 // });
-const upload = multer({ storage });
-app.get('/',function(req,res){
-	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
-        if(err){
-        	console.log(err);
-        }
-		else{
-			res.render('index.ejs',{entities})
-		}
-	});
-});
+// const upload = multer({ storage });
+// app.get('/',function(req,res){
+// 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
+//         if(err){
+//         	console.log(err);
+//         }
+// 		else{
+// 			res.render('index.ejs',{entities})
+// 		}
+// 	});
+// });
 // app.get('/image/:filename', (req, res) => {
 //   gfs.files.findOne({ filename: req.params.filename }, (err, file) => {
 //     // Check if file
@@ -128,62 +128,62 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
     else 
     	res.render("404")
 });
-app.post('/ivy99_gbu_adminPage/:name',upload.single('file'),function(req,res){
-	if(req.body.school=="all"){
-       School.find({},function(err,schools){
-       	if(err)
-       		res.redirect('back');
-       	else
-       	{
-       		Entity.create({
-		title:req.body.title,
-	createdAt:req.body.date,
-	filename:req.file.filename,
-	description:req.body.description,
-	type:req.params.name,
-	school:'all'
-	},function(err,entity){
-		if(err){
-			res.redirect('back')
-		}
-		else{
-			schools.forEach(function(school){
-               school.entities.push(entity._id);
-               school.save();
-       		})
-			res.redirect('/');
-		}
-	});
-       	}
-       })
-	}
-	else{
-School.findOne({abbr:req.body.school},function(err,foundSchool){
-if(err){
-	res.redirect('back');
-}
-else{
-	Entity.create({
-		title:req.body.title,
-	createdAt:req.body.date,
-	filename:req.file.filename,
-	description:req.body.description,
-	type:req.params.name,
-	school:foundSchool.abbr
-	},function(err,entities){
-		if(err){
-			res.redirect('back')
-		}
-		else{
-			foundSchool.entities.push(entities._id);
-			foundSchool.save();
-			res.redirect('/');
-		}
-	});
-}
-})
-}
-});
+// app.post('/ivy99_gbu_adminPage/:name',upload.single('file'),function(req,res){
+// 	if(req.body.school=="all"){
+//        School.find({},function(err,schools){
+//        	if(err)
+//        		res.redirect('back');
+//        	else
+//        	{
+//        		Entity.create({
+// 		title:req.body.title,
+// 	createdAt:req.body.date,
+// 	filename:req.file.filename,
+// 	description:req.body.description,
+// 	type:req.params.name,
+// 	school:'all'
+// 	},function(err,entity){
+// 		if(err){
+// 			res.redirect('back')
+// 		}
+// 		else{
+// 			schools.forEach(function(school){
+//                school.entities.push(entity._id);
+//                school.save();
+//        		})
+// 			res.redirect('/');
+// 		}
+// 	});
+//        	}
+//        })
+// 	}
+// 	else{
+// School.findOne({abbr:req.body.school},function(err,foundSchool){
+// if(err){
+// 	res.redirect('back');
+// }
+// else{
+// 	Entity.create({
+// 		title:req.body.title,
+// 	createdAt:req.body.date,
+// 	filename:req.file.filename,
+// 	description:req.body.description,
+// 	type:req.params.name,
+// 	school:foundSchool.abbr
+// 	},function(err,entities){
+// 		if(err){
+// 			res.redirect('back')
+// 		}
+// 		else{
+// 			foundSchool.entities.push(entities._id);
+// 			foundSchool.save();
+// 			res.redirect('/');
+// 		}
+// 	});
+// }
+// })
+// }
+// });
 app.get('/about/home',function(req,res){
 	res.render('home')
 })
