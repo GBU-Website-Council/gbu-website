@@ -9,7 +9,7 @@ const Grid=require('gridfs-stream');
 const mongoLocalURI="mongodb://localhost/gbu_website";
 const GridFsStorage=require('multer-gridfs-storage');
 mongoose.connect(process.env.DATABASEURL||mongoLocalURI,{useNewUrlParser: true});
-const conn=mongoose.createConnection(process.env.DATABASEURL||mongoLocalURI);
+// const conn=mongoose.createConnection(process.env.DATABASEURL||mongoLocalURI);
 const School=require('./models/schools.js');
 const Entity=require('./models/entity.js');
 const Faculty=require('./models/faculty.js');
@@ -17,11 +17,11 @@ app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine','ejs');
 
-var gfs;
-conn.once('open',()=>{
-	gfs=Grid(conn.db,mongoose.mongo);
-	gfs.collection('uploads')
-});
+// var gfs;
+// conn.once('open',()=>{
+// 	gfs=Grid(conn.db,mongoose.mongo);
+// 	gfs.collection('uploads')
+// });
   // file: (req, file) => {
   //   return new Promise((resolve, reject) => {
   //     crypto.randomBytes(16, (err, buf) => {
@@ -37,19 +37,19 @@ conn.once('open',()=>{
   //     });
   //   });
   // }
-  const storage = new GridFsStorage({
-  url: process.env.DATABASEURL||mongoLocalURI,
-  file: (req, file) => {
-    return new Promise((resolve, reject) => {
-        const filename = file.originalname;
-        const fileInfo = {
-          filename: filename,
-          bucketName: 'uploads'
-        };
-        resolve(fileInfo);
-    });
-  }
-});
+//   const storage = new GridFsStorage({
+//   url: process.env.DATABASEURL||mongoLocalURI,
+//   file: (req, file) => {
+//     return new Promise((resolve, reject) => {
+//         const filename = file.originalname;
+//         const fileInfo = {
+//           filename: filename,
+//           bucketName: 'uploads'
+//         };
+//         resolve(fileInfo);
+//     });
+//   }
+// });
 const upload = multer({ storage });
 app.get('/',function(req,res){
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
