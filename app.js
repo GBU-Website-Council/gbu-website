@@ -6,10 +6,11 @@ const path=require('path');
 const bodyParser=require('body-parser');
 const multer=require('multer');
 const Grid=require('gridfs-stream');
-const mongoLocalURI="mongodb://localhost/gbu_website";
+// const mongoLocalURI="mongodb://localhost/gbu_website";
+const mongoLocalURI="mongodb://gbu:gbu123@ds229078.mlab.com:29078/gbu-website";
 const GridFsStorage=require('multer-gridfs-storage');
-mongoose.connect(process.env.DATABASEURL||mongoLocalURI,{useNewUrlParser: true});
-// const conn=mongoose.createConnection(process.env.DATABASEURL||mongoLocalURI);
+mongoose.connect(mongoLocalURI,{useNewUrlParser: true});
+const conn=mongoose.createConnection(mongoLocalURI);
 const School=require('./models/schools.js');
 const Entity=require('./models/entity.js');
 const Faculty=require('./models/faculty.js');
@@ -17,11 +18,11 @@ app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine','ejs');
 
-// var gfs;
-// conn.once('open',()=>{
-// 	gfs=Grid(conn.db,mongoose.mongo);
-// 	gfs.collection('uploads')
-// });
+var gfs;
+conn.once('open',()=>{
+	gfs=Grid(conn.db,mongoose.mongo);
+	gfs.collection('uploads')
+});
   // file: (req, file) => {
   //   return new Promise((resolve, reject) => {
   //     crypto.randomBytes(16, (err, buf) => {
@@ -37,30 +38,30 @@ app.set('view engine','ejs');
   //     });
   //   });
   // }
-//   const storage = new GridFsStorage({
-//   url: process.env.DATABASEURL||mongoLocalURI,
-//   file: (req, file) => {
-//     return new Promise((resolve, reject) => {
-//         const filename = file.originalname;
-//         const fileInfo = {
-//           filename: filename,
-//           bucketName: 'uploads'
-//         };
-//         resolve(fileInfo);
-//     });
-//   }
-// });
-// const upload = multer({ storage });
-// app.get('/',function(req,res){
-// 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
-//         if(err){
-//         	console.log(err);
-//         }
-// 		else{
-// 			res.render('index.ejs',{entities})
-// 		}
-// 	});
-// });
+  const storage = new GridFsStorage({
+  url: mongoLocalURI,
+  file: (req, file) => {
+    return new Promise((resolve, reject) => {
+        const filename = file.originalname;
+        const fileInfo = {
+          filename: filename,
+          bucketName: 'uploads'
+        };
+        resolve(fileInfo);
+    });
+  }
+});
+const upload = multer({ storage });
+app.get('/',function(req,res){
+	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
+        if(err){
+        	console.log(err);
+        }
+		else{
+			res.render('index.ejs',{entities})
+		}
+	});
+});
 // app.get('/image/:filename', (req, res) => {
 //   gfs.files.findOne({ filename: req.params.filename }, (err, file) => {
 //     // Check if file
@@ -128,62 +129,62 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
     else 
     	res.render("404")
 });
-// app.post('/ivy99_gbu_adminPage/:name',upload.single('file'),function(req,res){
-// 	if(req.body.school=="all"){
-//        School.find({},function(err,schools){
-//        	if(err)
-//        		res.redirect('back');
-//        	else
-//        	{
-//        		Entity.create({
-// 		title:req.body.title,
-// 	createdAt:req.body.date,
-// 	filename:req.file.filename,
-// 	description:req.body.description,
-// 	type:req.params.name,
-// 	school:'all'
-// 	},function(err,entity){
-// 		if(err){
-// 			res.redirect('back')
-// 		}
-// 		else{
-// 			schools.forEach(function(school){
-//                school.entities.push(entity._id);
-//                school.save();
-//        		})
-// 			res.redirect('/');
-// 		}
-// 	});
-//        	}
-//        })
-// 	}
-// 	else{
-// School.findOne({abbr:req.body.school},function(err,foundSchool){
-// if(err){
-// 	res.redirect('back');
-// }
-// else{
-// 	Entity.create({
-// 		title:req.body.title,
-// 	createdAt:req.body.date,
-// 	filename:req.file.filename,
-// 	description:req.body.description,
-// 	type:req.params.name,
-// 	school:foundSchool.abbr
-// 	},function(err,entities){
-// 		if(err){
-// 			res.redirect('back')
-// 		}
-// 		else{
-// 			foundSchool.entities.push(entities._id);
-// 			foundSchool.save();
-// 			res.redirect('/');
-// 		}
-// 	});
-// }
-// })
-// }
-// });
+app.post('/ivy99_gbu_adminPage/:name',upload.single('file'),function(req,res){
+	if(req.body.school=="all"){
+       School.find({},function(err,schools){
+       	if(err)
+       		res.redirect('back');
+       	else
+       	{
+       		Entity.create({
+		title:req.body.title,
+	createdAt:req.body.date,
+	filename:req.file.filename,
+	description:req.body.description,
+	type:req.params.name,
+	school:'all'
+	},function(err,entity){
+		if(err){
+			res.redirect('back')
+		}
+		else{
+			schools.forEach(function(school){
+               school.entities.push(entity._id);
+               school.save();
+       		})
+			res.redirect('/');
+		}
+	});
+       	}
+       })
+	}
+	else{
+School.findOne({abbr:req.body.school},function(err,foundSchool){
+if(err){
+	res.redirect('back');
+}
+else{
+	Entity.create({
+		title:req.body.title,
+	createdAt:req.body.date,
+	filename:req.file.filename,
+	description:req.body.description,
+	type:req.params.name,
+	school:foundSchool.abbr
+	},function(err,entities){
+		if(err){
+			res.redirect('back')
+		}
+		else{
+			foundSchool.entities.push(entities._id);
+			foundSchool.save();
+			res.redirect('/');
+		}
+	});
+}
+})
+}
+});
 app.get('/about/home',function(req,res){
 	res.render('home')
 })
