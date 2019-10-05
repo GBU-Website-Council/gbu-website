@@ -38,7 +38,7 @@ conn.once('open',()=>{
   //   });
   // }
   const storage = new GridFsStorage({
-  url: mongoLocalURI,
+  url: process.env.DATABASEURL||mongoLocalURI,
   file: (req, file) => {
     return new Promise((resolve, reject) => {
         const filename = file.originalname;
@@ -91,7 +91,7 @@ app.get('/',function(req,res){
 //      res.redirect('/');
 // });
 app.get('/files/:type/:filename', (req, res) => {
-	if(req.params.type=='news'||req.params.type=='events'||req.params.type=='workshops'){
+	if(req.params.type=='news'||req.params.type=='events'||req.params.type=='notices'){
   gfs.files.findOne({filename: req.params.filename }, (err, file) => {
     // Check if file
     if (!file || file.length === 0) {
