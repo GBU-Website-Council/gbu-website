@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>GBU</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+   <div class="header sticky-top">
+
+      <div class="global-header">
+        
+        <div class="back-to-home justify-content-center">
+          <nav class="navbar shadow py-1" id="top-navigation">
+            <div class="container">
+              <a class="navbar-brand float-left" href="../index.html"><img src="../img/logo_gbu.png" id="gbu-logo" class="logo ">
+                <h5 class="px-2 my-auto" id="gbu-name">Gautam Buddha University</h5>
+              </a>
+              <form class="form-inline my-1 my-lg-0">
+                <div class="container">
+                  <input class="form-control-sm" type="search" placeholder="Search Box" aria-label="Search">
+                  <button class="btn-sm btn-outline-sm btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </div>
+        <nav class="navbar shadow navbar-expand-md navbar-bgcolor">
+
+          <div class="container">
+            <a class="navbar-brand my-auto" href="sob.html">
+              <h5 class="my-auto" id="college-name-1">GBU</h5><div class="vl my-auto"></div><h5 class="my-auto" id="college-name-2"><%=school.name%></h5>
+            </a>
+
+            <button class="navbar-toggler collapsed my-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
+              <span ><i class="fa fa-bars"></i></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="collapsibleNavbar">
+              <ul class="nav ml-auto text-center justify-content-center" id="nav-tabs" role="tablist">
+                <li class="nav-item active"><a href="#home-tab" class="nav-link" data-toggle="tab" role="tab">Home</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="">About Us</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#about-overview-tab" data-toggle="tab" role="tab">Overview</a>                    
+                    <a class="dropdown-item" href="#programs-tab" data-toggle="tab" role="tab">Programs</a>
+                    <a class="dropdown-item" href="/schools/<%=school.abbr%>/about-us/board-of-studies">Board of Studies</a>
+                    <a class="dropdown-item" href="#contactus-tab" data-toggle="tab" role="tab">Contact Us</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Placements</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#placements-overview-tab" data-toggle="tab" role="tab">Overview</a>                    
+                    <a class="dropdown-item" href="#summer-placements-tab" data-toggle="tab" role="tab">Summer Placements</a>
+                    <a class="dropdown-item" href="#final-placements-tab" data-toggle="tab" role="tab">Final Placements</a>
+                    <a class="dropdown-item" href="#training&consultancy-tab" data-toggle="tab" role="tab">Training and Consultancy</a>
+                    <a class="dropdown-item" href="#placement-helpdesk-tab" data-toggle="tab" role="tab">Placement Helpdesk</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a href="/schools/<%=school.abbr%>/faculty" class="nav-link">Faculty</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Research</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" data-toggle="tab" role="tab">Training</a>
+                  </div>
+                </li>
+              </ul>               
+            </div>
+          </div>  
+        </nav>
+      </div>  
+    </div>
+
+    <div class="tab-content" id="nav-tabcontent">
+      <div class="tab-pane active" id="home-tab" role="tabpanel">
+        <div id="section1-background">
+          <div class="container text-center my-auto" id="section1-content"> 
+           <h2 id="school-name"><%=school.name%></h2>
+          </div>
+        </div>
+        <div class="my-5">
+          <div class="container">
+            <div class="jumbotron">
+              <h1 class="text-center"><%="School of "+school.name%></h1>
+              <br>
+              <p class="text-justify"><%=school.description%>
+              </p>
+              <br>
+              <p class="text-justify collapse" id="more-content">
+                <%=school.description%>
+              </p>
+              <a href="#more-content" class="float-right" data-toggle="collapse"><i class="fa fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      
+            
+        <div class="my-5">
+          <div class="container py-5">
+              <h1 class="text-center">Updates</h1>
+          </div>      
+          <div class="row container mx-auto mb-5">
+            <div class="container-fluid col-md-3">
+              <div class="card">
+                <div class="card-header text-center">News</div>
+                <div class="card-body">
+                  <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+                  <%school.entities.forEach(function(entity){%> 
+                  <%if(entity.type=='news'){%>
+                    <a href="/schools/<%=school.abbr%>/news/<%=entity._id%>"><p><%=entity.title%></p></a>
+                     <%}});%>
+                  </marquee>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid col-md-3">
+              <div class="card">
+                <div class="card-header text-center">Events</div>
+                <div class="card-body">
+                  <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3"> 
+                   <%school.entities.forEach(function(entity){%>
+                   <%if(entity.type=='events'){%> 
+                    <a href="/schools/<%=school.abbr%>/events/<%=entity._id%>"><p><%=entity.title%></p></a>
+                     <%}});%>
+                  </marquee>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid col-md-3">
+              <div class="card">
+                <div class="card-header text-center">Workshops and Trainings</div>
+                <div class="card-body">
+                  <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3"> 
+                    
+                  </marquee>
+                </div>
+              </div>
+            </div>                        
+            <div class="container-fluid col-md-3">
+              <div class="card">
+                <div class="card-header text-center">Notices</div>
+                <div class="card-body">
+                  <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3"> 
+             
+                  </marquee>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="jumbotron container">
+            <div class="m-auto row px-5">
+                  <div>
+                  <h1 class="text-center">Our Vision</h1>
+                  <br>
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <i class="fa fa-quote-left fa-2x"></i>
+                    </div>                   
+                    <div class="col-sm-11">
+                      <br>
+                      <p>A globally acclaimed integrated academic and research institution that creates a vibrant community of intellectuals and entrepreneurs endowed with Character, Creativity, Competence and Commitment, who can inspire meaningful transformations to ensure holistic growth and development of the society.  
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+        <header class="py-3 mx-auto">
+          <h1 id="photo-galary-header" class="pt-3">Photo Galary</h1>
+          <p id="photo-galary-header-p" class="px-5 pt-3">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.<br> Nullam id dolor id nibh ultricies vehicula ut elit.</p>
+        </header>
+            <!-- carousel  ------>
+              <div class="container my-3 pb-5">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                        
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                          <div style="height:600px;" class="carousel-inner">
+                          <%flag=1%>
+                          <%school.photos.forEach(function(photo){%>
+                          <%if(flag==1){%>
+                          <div class="carousel-item active">
+                            <a href="<%=photo%>"><img src="<%=photo%>" class="img-fluid" width="100%"></a>
+                          </div>
+                          <%flag=0;}else{%>
+                         <div class="carousel-item">
+                            <a href="<%=photo%>"><img src="<%=photo%>" class="img-fluid" width="100%"></a>
+                          </div> 
+                          <%}%>
+                          <%})%>
+                              </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div> 
+              </div>
+
+            <!--- carousel end --->
+        </div>
+
+      <div class="tab-pane fade" id="about-overview-tab" role="tabpanel">
+        <div class="container my-5">
+            <div class="jumbotron p-5">
+              <h1 class="text-center">Overview</h1>
+              <br>
+              <p>
+              This is the century of “Biotechnology”. As a multidisciplinary applied science, Biotechnology is to utilize tools and techniques of biology for human welfare. The primary aim of modern Biotechnology is to make a living cell perform a specific useful task in predictable and controllable way.
+              </p>
+              <p>Gautam Buddha University has started offering post graduates courses in ‘Genetic Engineering’, in ‘Bioinformatics’ and ‘Food technology’ under the School of Biotechnology. These courses in Biotechnology intends to supply both basic and advanced knowledge of biological systems and the technological competence to allow the graduate to carry out research and development activities in the numerous fields of Biotechnology, especially in medical and pharmaceutical sectors. Genetic engineering and Bioinformatics have a key role to play in the cutting edge of research and development area such as functional genomics, proteomics, protein engineering, metabolic pathway engineering, discoveries of new drugs and vaccines, molecular diagnostic kits etc. Food technology, new emerging area of Biotechnology, holds the promise of providing surplus and healthier food products.
+              </p>
+              <p>Here in School of Biotechnology, GBU, we offer a science and technology oriented course structure aimed to bridge the gap between academics and escalating demand for skilled personnel in the rapidly growing Biotechnology industry. The biotech industry is growing at an accelerated rate by launching number of companies. Thus the entry of corporate sector into Biotechnology makes career prospects in this field bright.
+              </p>
+            </div>
+            <div class="container py-3">
+                  <div class="card">
+                    <div class="row ">
+                      <div class="col-md-4">
+                          <img src="http://placehold.it/560x560" class="w-100">
+                          <h4 class="text-center py-3">Dean's Message</h4>
+                      </div>
+                      <div class="col-md-8 p-4 my-auto">
+                        <div class="card-block px-3">
+                          
+                          <p class="card-text">In the School of Biotechnology, we bring together highly talented, innovative and well groomed faculty with specialization in diverse fields ranging from various basic to advanced aspects of Biotechnology. Our faculty includes skilled personnel with excellent research experience from renowned universities and institutes of India and abroad. These faculty members motivate students to work in collaborative environment. The faculty is imbued with a sense of deep commitment and is capable of imparting state of art education. They work hard to inculcate scientific ethics, morality and inquisitiveness.
+                          </p>
+                          <p class="card-text">The school offers various programmes at different entry levels finally aimed to confer the degree of Master of Technology (M. Tech) in Biotechnology with specializations in the areas of Genetic engineering and Bioinformatics.
+                          </p>
+                          <p class="card-text">We have started our programme with the objective of generating work force that could turn into a substantially trained manpower to meet the existing and future global demands. The school is equipped with state of art laboratories and a curriculum tailored to suit the needs of various sectors of economy. The programme curricula combine a strong theoretical background coupled with practical experience in laboratory with a view to achieve their optimum potential as researcher. The foundation thus laid enables students to enhance their learning capability and adapt themselves to the fast scientific development in the world. We strive to keep our students updated with ongoing progress in frontier areas of Biotechnology. Our vision is to make School of Biotechnology a truly academic and research and development center providing the balanced combination of teaching and research fused with power of innovation.
+                          </p>
+                          <div class="float-left">
+                            <h5 class="card-title">Prof. Shweta Anand</h5>
+                            <p class="card-title">Dean, School of Biotechnology</p>
+                          </div>
+                          <button class="btn btn-outline-primary float-right" type="button">Know more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+
+      <div class="tab-pane fade" id="boardofstudies-tab" role="tabpanel">
+        
+      <div class="tab-pane fade" id="programs-tab" role="tabpanel">
+        <div class="container my-5">
+          <div class="jumbotron">
+            <h1 class="text-center">Programs Offerred</h1>
+            <ul class="jumbotron text-center">
+              <div class="accordion container">
+                <a href="#p1-offered" data-toggle="collapse"><h4>Integrated Dual Degree Programme BA-LLB</h4></a>
+                <div class="collapse" id="p1-offered">
+                  <h6 class="float-left">Course Structure</h6>
+                  <a href="" class="float-right"><i class="fa fa-download"></i><h6 class="Download">Download</h6></a>
+                </div>
+              </div>
+              <div class="accordion container">
+                <a href="#p2-offered" data-toggle="collapse"><h4>LLM (MASTER OF LAWS)</h4></a>
+                <div class="collapse" id="p2-offered">
+                  <h6 class="float-left">Course Structure</h6>
+                  <a href="" class="float-right"><i class="fa fa-download"></i><h6 class="Download">Download</h6></a>
+                </div>
+              </div>
+              <div class="accordion">
+                <a href="#p3-offered" data-toggle="collapse"><h4>Ph.D in LAW</h4></a>
+                <div class="collapse" id="p3-offered">
+                  <h6 class="float-left">Course Structure</h6>
+                  <a href="" class="float-right"><i class="fa fa-download"></i><h6 class="Download">Download</h6></a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="contactus-tab" role="tabpanel">
+        <div class="container my-5">
+            <div class="jumbotron">
+              <h1 class="text-center">Contact Us</h1>
+              <br>
+              
+            </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="newsevents-tab" role="tabpanel">
+        <div class="container my-5">
+            <div class="jumbotron">
+              <h1 class="text-center">Latest news </h1>
+              <br>
+              
+              <h1 class="text-center">Old news </h1>
+            </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

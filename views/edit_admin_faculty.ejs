@@ -1,0 +1,39 @@
+<h1>Manage Faculty</h1>
+<form action="/ivy99_gbu_adminPage/faculty" method="post">
+<label>Title</label>
+<input type="text" name="title" required placeholder="Ex- Dr. / Prof.">
+<label>Name</label>
+<input type="text" name="name"  required placeholder="faculty name">
+<label>Designation</label>
+<input type="text" name="designation" required placeholder="Ex- Assistant Professor">
+<label>Post</label>
+<input type="text" name="post" required placeholder="Ex- Faculty / Dean / HoD">
+<label>Board Member</label>
+<select name="board" onchange="change(this);">
+		<option value="none">None</option>
+  <option value="internal">Internal</option>
+  <option value="external">External</option>
+</select>
+<label>SELECT SCHOOL</label>
+	<select name="school">
+  <option value="soict">SOICT</option>
+  <option value="sob">SOB</option>
+  <option value="sobs">SOBS</option>
+  <option value="soe">SOE</option>
+</select>
+<div id='check' style="display: none;">
+	<label>University</label>
+	<input type="text" name="university" placeholder="university name">
+</div>
+<input type="submit">
+</form>
+<script type="text/javascript">
+	function change(val){
+     if (val.value == "external") {
+     	document.getElementById('check').style.display="block";
+	}
+	else{
+		document.getElementById('check').style.display="none";
+	}
+}
+</script>

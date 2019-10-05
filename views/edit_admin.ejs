@@ -1,0 +1,20 @@
+<h1>Manage <%=name%></h1>
+<form onsubmit="return confirm('Do you really want to submit the form?');" method="post" action="/ivy99_gbu_adminPage/<%=name%>" enctype="multipart/form-data"> 
+	<label>SELECT SCHOOL</label>
+	<select name="school">
+		<option value="all">ALL</option>
+  <option value="soict">SOICT</option>
+  <option value="sob">SOB</option>
+  <option value="sobs">SOBS</option>
+  <option value="soe">SOE</option>
+</select>
+	<label>Title</label>
+	<input type="text" name="title">
+	<label>Description</label>
+	<input type="text" name="description">
+	<label>Date Picker</label>
+	<input type="date" name="date">
+	<input type="file" name="file">
+		<label for="file">Choose File</label>
+		<input type="submit">
+</form>

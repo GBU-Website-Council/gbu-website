@@ -1,0 +1,92 @@
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+<div class="container my-5">
+            <div class="jumbotron">
+              <h1 class="text-center">Board Of Studies</h1>
+              <br>
+              <div class="container ">
+                <div class="container py-3">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-md-4">
+                          <img src="http://placehold.it/560x560" class="w-100">
+                      </div>
+                      <div class="col-md-8 p-4 my-auto">
+                        <div class="card-block px-3">
+                          <%
+                          var dean=school.faculties.filter(function(faculty) {
+                            return faculty.post=='Dean';
+                          })%>
+                          <h4 class="card-title"><%=dean[0].name%></h4>
+                          <p class="card-text"><%=dean[0].post%><br>School of <%=school.name%><br>
+                            <%=dean[0].university%>
+                          
+                        </p>
+                          <button class="btn btn-outline-primary" type="button">Know more</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                <div class="container my-5">
+                  <h3 class="text-center">Internal Members</h3>
+                </div>
+                <div class="card-deck justify-content-center">
+                  <%school.faculties.filter(function(faculty){
+              return faculty.board_member=='internal'&&faculty.post!='dean';
+                          }).forEach(function(faculty){%>
+                  <div class="card my-3">
+                    <img src="http://placehold.it/560x560" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title"><%=faculty.name%></h5>
+
+                      <p class="card-text"><%=faculty.post%><br><%=faculty.designation%><br>School of <%=school.name%><br><%=faculty.university%></p>
+                      <button class="btn btn-outline-primary" type="button">Know more</button> 
+                    </div>
+                  </div>
+                   <%});%>
+                 </div>
+                  <!-- <div class="card my-3">
+                    <img src="http://placehold.it/560x560" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Dr. Rekha Puria</h5>
+                      <p class="card-text">Assistant Professor<br>School of Biotechnology<br>Gautam Buddha University</p>
+                      <button class="btn btn-outline-primary" type="button">Know more</buttton>
+                    </div>
+                  </div> -->
+                <div class="container my-5">
+                  <h3 class="text-center">External Members</h3>
+                </div>
+                <div class="card-deck justify-content-center">
+                    <%school.faculties.filter(function(faculty){
+                            return faculty.board_member=='external';
+                          }).forEach(function(faculty){%>
+                  <div class="card my-3">
+                    <img src="http://placehold.it/560x560" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title"><%=faculty.name%></h5>
+                      <p class="card-text"><%=faculty.designation%><br>School of <%=school.name%><br><%=faculty.university%></p>
+                      <button class="btn btn-outline-primary" type="button">Know more</button>
+                    </div>
+                  </div>
+                  <%})%>
+                 <!--  <div class="card my-3">
+                    <img src="http://placehold.it/560x560" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Prof. P.C. Sharma</h5>
+                      <p class="card-text">Professor<br>School of Biotechnology<br>GGSIP University Dwarka, Delhi</p>
+                      <button class="btn btn-outline-primary" type="button">Know more</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </body>

@@ -1,0 +1,355 @@
+<%include header%>
+      <!--nav bar section end here -->
+      <!-- sliding banner start from here -->
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-12 p-0">
+               <div id="demo" class="carousel slide shadow carousel-fade" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                     <li data-target="#demo" data-slide-to="0" class="active"></li>
+                     <li data-target="#demo" data-slide-to="1"></li>
+                     <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="./img/banner1.png" class="fill" width="100%">
+                        <div class="carousel-caption">
+                           <h1>Title</h1>
+                           <p>This is the place or description</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="./img/banner3.png" class="fill" width="100%">
+                        <div class="carousel-caption">
+                           <h1>Title</h1>
+                           <p>This is the place or description</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="./img/banner5.png" class="fill" width="100%">
+                        <div class="carousel-caption">
+                           <h1>Title</h1>
+                           <p>This is the place or description</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- sliding banner start from here -->
+      <!-- home content section start from here -->
+      <div class="py-5 container m-auto" id="section1">
+         <div class="mx-auto text-center py-3" id="header-section-1">
+            <h1 style="font-weight: 700 ; font-size: 40px;" class="py-2">GBU Today</h1>
+            <h5>The latest from GBU</h5>
+         </div>
+         <div>
+            <div class="row py-3">
+               <div class="col-lg-3 col-10 m-auto p-1">
+                  <div class="card shadow overflow-auto m-auto border-0" id="section1-card">
+                     <div class="card-header text-center p-2" id="section1-card-header1"><i class="fa fa-calendar"></i><br> News</div>
+                     <div class="card-body overflow-auto" id="section1-card-body">
+                        <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="2">
+                            <%entities.forEach(function(entity){%> 
+                      <%if(entity.type=='news'){%>
+                        <a href="/news/<%=entity._id%>"><p><%=entity.title%></p></a>
+                        <% }})%>
+                        </marquee>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-12 my-auto " id="section1-carousel">
+                  <div id="demo" class="carousel slide shadow" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                     </ul>
+                     <!-- The slideshow -->
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="./img/campuslife3.jpg" class="img-fluid" width="100%" height="400">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="./img/campuslife2.jpg" class="img-fluid" width="100%" height="400">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="./img/campuslife4.jpg" class="img-fluid" width="100%" height="400">
+                        </div>
+                     </div>
+                     <!-- Left and right controls -->
+                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                     <span class="carousel-control-prev-icon"></span>
+                     </a>
+                     <a class="carousel-control-next" href="#demo" data-slide="next">
+                     <span class="carousel-control-next-icon"></span>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-10 m-auto p-1">
+                  <div class="card shadow overflow-auto m-auto border-0" id="section1-card">
+                     <div class="card-header text-center p-2" id="section1-card-header2"><i class="fa fa-university"></i><br>Notices</div>
+                     <div class="card-body overflow-auto" id="section1-card-body">
+                        <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+                           <%entities.forEach(function(entity){%> 
+                      <%if(entity.type=='notices'){%>
+                        <a href="/notices/<%=entity._id%>"><p><%=entity.title%></p></a>
+                        <% }})%>
+                        </marquee>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--- end of section 1-->
+      <!--- start of new Section -->
+      <!--- end of new Section -->
+      <!--- start of new section -->
+      <div class="py-3" id="section-events">
+         <div class="container py-3">
+            <div class="mx-auto text-center" id="">
+               <h1 style="font-weight: 600 ; font-size: 40px; color: #fff" class="py-2">Events</h1>
+               <h6 style="color: #fff;" class="py-1">Events happening across campus</h6>
+            </div>
+            <div class="row py-3">
+                        <%entities.forEach(function(entity){%> 
+                      <%if(entity.type=='events'){%>
+                      <div class="col-lg-3 col-md-4 col-12">
+                  <div class="card shadow border-0" id="events-card">
+                     <img src="/files/events/<%=entity.filename%>" class="events-img" width="100%" height="150px">
+                     <h6 class="card-text pl-3 pt-2" id="events-card-title"><%=entity.createdAt.getDate() + "/" + (entity.createdAt.getMonth() + 1) + "/" + entity.createdAt.getFullYear()%></h6>
+                     <div class="card-body pt-0" id="events-card-body">
+                        <h5><%=entity.title%></h5>
+                        <%if(entity.description.split(' ').length>10){%>
+                        <p><%=entity.description.split(" ").splice(0,10).join(" ")%></p>
+                        <%}else{%>
+                        <p><%=entity.description%></p>
+                        <%}%>
+                        <a href="/events/<%=entity._id%>"><button class="btn btn-outline-primary btn-sm">Read More</button></a>
+                     </div>
+                  </div>
+               </div>
+                    <% }})%>
+            </div>
+         </div>
+      </div>
+      <!-- end of new section -->
+      <div id="section2">
+         <!-- section 2 -->
+         <div class="container py-3" >
+            <header class="mx-auto text-center pt-3" id="">
+               <h1 style="font-weight: 700 ; font-size: 40px" class="py-2">Schools</h1>
+               <h6>Lorem Ipsem is here</h6>
+            </header>
+            <div>
+               <div class="row py-3 text-center">
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <div class="card-img-overlay">
+                        <h6 class="card-text">Management</h6>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <div class="card-img-overlay">
+                        <h6 class="card-text">Information & Communication Technology</h6>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <div class="card-img-overlay">
+                        <h6 class="card-text">Engineering</h6>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <div class="card-img-overlay">
+                        <h6 class="card-text">Vocational Studies & Applied Sciences</h6>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <div class="card-img-overlay">
+                        <h6 class="card-text">Biotechnology</h6>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <div class="card-img-overlay">
+                        <h6 class="card-text">Buddhist Studies & Civilization</h6>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <div class="card-img-overlay">
+                        <h6 class="card-text">HumanitiesSocial Sciences</h6>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <div class="card-img-overlay">
+                        <h6 class="card-text">Law, Justice & Governance</h6>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--- end of section 2-->
+      <!-- section 4 -->
+      <section class=" py-5" id="section4">
+         <div class="text-center">
+            <h1 style="font-weight: 700 ; font-size: 40px; color: #010327">Clubs</h1>
+            <h5>Lorem Ipsem is here</h5>
+         </div>
+         <div class="container carousel slide carousel-fade " data-ride="carousel" id="postsCarousel">
+            <div class="container text-right px-5 py-3">
+               <a class="btn btn-outline-secondary prev" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+               <a class="btn btn-outline-secondary next" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+            </div>
+            <div class=" p-t-0 m-t-2 carousel-inner text-center">
+               <div class="carousel-item active m-t-0">
+                  <div class="row">
+                     <div class="col-md-4 col-12">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
+                           </div>
+                           <div class="card-block p-t-2">
+                              <h3 class="medium text-wide p-b-2">Dance Club</h3>
+                              <h5>
+                                 <a href>lorem Ipsum is here</a>
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-12">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="http://i.imgur.com/Hw7sWGU.png" alt="Carousel 2">
+                           </div>
+                           <div class="card-block p-t-2">
+                              <h3 class="medium text-wide p-b-2">Techno Club</h3>
+                              <h5>
+                                 <a href>lorem ipsem is here</a>
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-12">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+                           </div>
+                           <div class="card-block p-t-2">
+                              <h3 class="medium text-wide p-b-2">Literary Club</h3>
+                              <h5>
+                                 <a href>lorem ipsem is here</a>
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-md-4 col-12">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
+                           </div>
+                           <div class="card-block p-t-2">
+                              <h3 class="medium text-wide p-b-2">Music Club</h3>
+                              <h5>
+                                 <a href>lorem Ipsum is here</a>
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-12">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 2">
+                           </div>
+                           <div class="card-block p-t-2">
+                              <h3 class="medium text-wide p-b-2">Social Service Club</h3>
+                              <h5>
+                                 <a href>lorem ipsem is here</a>
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-12">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+                           </div>
+                           <div class="card-block p-t-2">
+                              <h3 class="medium text-wide p-b-2">Dramatics Club</h3>
+                              <h5>
+                                 <a href>lorem ipsem is here</a>
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-md-4 col-12">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
+                           </div>
+                           <div class="card-block p-t-2">
+                              <h3 class="medium text-wide p-b-2">Photography Club</h3>
+                              <h5>
+                                 <a href>lorem Ipsum is here</a>
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-12">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 2">
+                           </div>
+                           <div class="card-block p-t-2">
+                              <h3 class="medium text-wide p-b-2">Debate Club</h3>
+                              <h5>
+                                 <a href>lorem ipsem is here</a>
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-12">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+                           </div>
+                           <div class="card-block p-t-2">
+                              <h3 class="medium text-wide p-b-2">Art/Painting Club</h3>
+                              <h5>
+                                 <a href>lorem ipsem is here</a>
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <%include footer%>

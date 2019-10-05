@@ -1,0 +1,126 @@
+.back-to-home{
+	color: #fff;
+	background: #012454;
+	text-decoration: none;
+	border: none;
+}
+#top-navigation{
+	border: none;
+	background: #012454;
+	color: #fff;
+}
+#gbu-logo{
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+}
+#gbu-name{
+	color: #fff;
+	display: inline-flex;
+	text-decoration: none;
+}
+#college-name-1{
+	font-size: 44px;
+	font-weight: 600;
+	color: #012454;
+	display: inline-flex;
+	letter-spacing: 2px;
+}
+#college-name-2{
+	font-size: 32px;
+	font-weight: 600;
+	color: #012454;
+	display: inline-flex;
+	letter-spacing: 1px;
+}
+.vl {
+  	border: 2px solid orange;
+ 	height: 36px;
+ 	display: inline-flex;
+ 	margin: 10px;
+}
+
+.navbar{
+	color: #012454;
+	align-items: center;
+	background: #fff;
+	border-top: 3px solid orange;
+}
+.nav-link{
+	font-weight: 600;
+	color: #012454;
+	font-size: 16px;
+	text-decoration: none;
+}
+.nav-link:hover{
+	background: #012454;
+	color: #fff;
+}
+#section1-background{
+	background: url(../../img/campuslife3.jpg);
+	background-attachment: fixed;
+	background-size:cover;
+	opacity: .9;
+	width: 100%;
+	padding: 5%;
+	height: 500px;
+	filter: brightness(80%);
+}
+#section1-content{
+	opacity: 1;
+	color: #fff;
+}
+#school-name{
+	color: #fff;
+	font-weight: 700;
+	filter: brightness(200%);
+	font-size: 44px;
+}
+#branches-name-section1{
+	background: orange;
+	color: #fff;
+	opacity: 1;
+	padding: 20px;
+}
+#branches-name-section1:hover{
+	background: yellow;
+	color: #012454;
+}
+
+#photo-galary-header{
+	text-align: center;
+	font-weight: 700;
+	color: #000;
+}
+#photo-galary-header-p{
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+ @media (min-width: 0) {
+	 .card-deck .card {
+		 flex: 0 0 calc(100% - 30px);
+	}
+}
+ @media (min-width: 576px) {
+	 .card-deck .card {
+		 flex: 0 0 calc(50% - 30px);
+	}
+}
+ @media (min-width: 768px) {
+	 .card-deck .card {
+		 flex: 0 0 calc(33.3333333333% - 30px);
+	}
+}
+ @media (min-width: 992px) {
+	 .card-deck .card {
+		 flex: 0 0 calc(25% - 30px);
+	}
+}
+ @media (min-width: 1200px) {
+	 .card-deck .card {
+		 flex: 0 0 calc(25% - 30px);
+	}
+}
+ 
