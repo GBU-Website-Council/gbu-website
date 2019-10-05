@@ -9,7 +9,7 @@ const Grid=require('gridfs-stream');
 const mongoLocalURI="mongodb://localhost/gbu_website";
 const GridFsStorage=require('multer-gridfs-storage');
 mongoose.connect(process.env.DATABASEURL||mongoLocalURI,{useNewUrlParser: true});
-const conn=mongoose.createConnection(mongoLocalURI);
+const conn=mongoose.createConnection(process.env.DATABASEURL||mongoLocalURI);
 const School=require('./models/schools.js');
 const Entity=require('./models/entity.js');
 const Faculty=require('./models/faculty.js');
