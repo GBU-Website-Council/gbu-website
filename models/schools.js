@@ -40,3 +40,11 @@ School.create({
 	abbr:'soe',
 	name:'engineering'
 })
+School.create({
+	abbr:'som',
+	name:'management'
+})
+School.create({
+	abbr:'soljg',
+	name:'law'
+})
