@@ -141,7 +141,8 @@ app.post('/ivy99_gbu_adminPage/:name',upload.single('file'),function(req,res){
 	filename:req.file.filename,
 	description:req.body.description,
 	type:req.params.name,
-	school:'all'
+	school:'all',
+	filetype:req.file.contentType
 	},function(err,entity){
 		if(err){
 			res.redirect('back')
@@ -169,7 +170,8 @@ else{
 	filename:req.file.filename,
 	description:req.body.description,
 	type:req.params.name,
-	school:foundSchool.abbr
+	school:foundSchool.abbr,
+	filetype:req.file.contentType
 	},function(err,entities){
 		if(err){
 			res.redirect('back')

@@ -6,6 +6,7 @@ description:String,
 createdAt:Date,
 filename:String,
 type:String,
-school:String
+school:String,
+filetype:String
 })
 module.exports=mongoose.model('entity',entitySchema);
