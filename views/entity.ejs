@@ -1,5 +1,32 @@
 <%include header%>
-<p><%=entity.title%></p>
-<p><%=entity.description%></p>
-<a href="/files/<%=entity.type%>/<%=entity.filename%>" target="_blank">DOWNLOAD</a>
-<%include footer%>
+    <div class="container py-5">
+      <div class="card border-0">
+        <div class="row">
+          <div class="col-md-4">
+            <%if(entity.filetype!="image/jpeg"&&entity.filetype!="image/png"&&entity.filetype!="image/jpg"&&entity.filetype!="image/gif"){%>
+                     <img src="../img/placeholder-pdf.svg" class="w-25 float-right">
+                     <%}else{%>
+                     <img src="/files/events/<%=entity.filename%>" class="w-75 float-right">
+                     <%}%>
+          </div>
+          <div class="col-md-8 p-4 my-auto">
+            <div class="card-block px-3">
+              <h4><%=entity.title%></h4>
+              <p><%=entity.description%></p>
+              <p class="small"><%=entity.createdAt.getDate() + "/" + (entity.createdAt.getMonth() + 1) + "/" + entity.createdAt.getFullYear()%></p>
+              <p class="card-text">
+              <button class="btn btn-sm btn-outline-success">
+              <a style="color: green" href="/files/<%=entity.type%>/<%=entity.filename%>" target="_blank">Download</a></button>
+            </div>
+          </div>
+        </div>
+    </div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <%include footer%>
+
+   

@@ -129,9 +129,9 @@
                       <div class="col-lg-3 col-md-4 col-12">
                   <div class="card shadow border-0" id="events-card">
                      <%if(entity.filetype!="image/jpeg"&&entity.filetype!="image/png"&&entity.filetype!="image/jpg"&&entity.filetype!="image/gif"){%>
-                     <img src="./img/placeholder.png" class="events-img" width="100%" height="150px">
+                     <img src="./img/placeholder-pdf.svg" class="events-img py-3" width="100%" height="150px">
                      <%}else{%>
-                     <img src="/files/events/<%=entity.filename%>" class="events-img" width="100%" height="150px">
+                     <img src="/files/events/<%=entity.filename%>" class="events-img " width="100%" height="150px">
                      <%}%>
                      <h6 class="card-text pl-3 pt-2" id="events-card-title"><%=entity.createdAt.getDate() + "/" + (entity.createdAt.getMonth() + 1) + "/" + entity.createdAt.getFullYear()%></h6>
                      <div class="card-body pt-0" id="events-card-body">
@@ -141,7 +141,7 @@
                         <%}else{%>
                         <p><%=entity.description%></p>
                         <%}%>
-                        <a href="/events/<%=entity._id%>"><button class="btn btn-outline-primary btn-sm">Read More</button></a>
+                        <a href="/events/<%=entity._id%>"><button class="btn btn-outline-success btn-sm">Read More</button></a>
                      </div>
                   </div>
                </div>
