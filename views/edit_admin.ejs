@@ -1,20 +1,99 @@
-<h1>Manage <%=name%></h1>
-<form onsubmit="return confirm('Do you really want to submit the form?');" method="post" action="/ivy99_gbu_adminPage/<%=name%>" enctype="multipart/form-data"> 
-	<label>SELECT SCHOOL</label>
-	<select name="school">
-		<option value="all">ALL</option>
-  <option value="soict">SOICT</option>
-  <option value="sob">SOB</option>
-  <option value="sobs">SOBS</option>
-  <option value="soe">SOE</option>
-</select>
-	<label>Title</label>
-	<input type="text" name="title">
-	<label>Description</label>
-	<input type="text" name="description">
-	<label>Date Picker</label>
-	<input type="date" name="date">
-	<input type="file" name="file">
-		<label for="file">Choose File</label>
-		<input type="submit">
-</form>
+<!doctype html>
+<html lang="en">
+<head>
+
+  <title>Gautam Buddha University</title>
+  <link rel="icon" type="image/gif/png" href="./img/logo_gbu.png">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar bg-light navbar-expand-lg ">
+        <div class="container">
+          <a href="/" class="navbar-brand">
+            <img src="../img/logo_gbu.png" width="50" class="img-fluid">
+            <h5 class="px-1 my-auto" id="college-name">
+               गौतम बुद्ध विश्वविद्यालय<br>Gautam Buddha University<br>
+            </h5>
+          </a>
+          <button class="navbar-toggler collapsed my-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
+          <span ><i class="fa fa-bars"></i></span>
+          </button>
+          <div class="navbar-collapse collapse justify-content-end" id="collapsibleNavbar">
+            <i class="fa fa-user-circle fa-2x"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Admin Panel</h1>
+      <hr>
+        <div class="container mx-auto">
+					<h4>Manage <%=name%></h4>
+					<form onsubmit="return confirm('Do you really want to submit the form?');" method="post" action="/ivy99_gbu_adminPage/<%=name%>" enctype="multipart/form-data">
+					  <div class="form-group row">
+					    <label type="text" class="col-sm-2 col-form-label">Title</label>
+					    <div class="col-sm-10">
+					      <input class="form-control" placeholder="Title"
+                required>
+					    </div>
+					  </div>
+					  <div class="form-group row">
+					    <label type="text" class="col-sm-2 col-form-label">Description</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" placeholder="Description" required>
+					    </div>
+					  </div>
+					  <div class="form-group row">
+					    <label class="col-sm-2 col-form-label">Select School</label>
+					    <div class="col-sm-10">
+								<select class="form-control" name="school">
+									<option value="all">All</option>
+								  <option value="soict">SOICT</option>
+								  <option value="sob">SOB</option>
+								  <option value="sobs">SOBS</option>
+								  <option value="soe">SOE</option>
+								</select>
+					    </div>
+					  </div>
+					  <div class="form-group row">
+					    <label class="col-sm-2 col-form-label">Date Picker</label>
+					    <div class="col-sm-10">
+					      <input class="form-control" type="date" name="date">
+					    </div>
+					  </div>
+					  <div class="form-group row">
+					    <label class="col-sm-2 col-form-label">Choose File</label>
+					    <div class="col-sm-10">
+					      <input class="form-control" type="file" name="file" required>
+							</div>
+					  </div>
+					  <div class="form-group row">
+					    <div class="col-sm-10">
+					      <button type="submit" class="btn btn-primary">Submit</button>
+					    </div>
+					  </div>
+					</form>
+        </div>
+
+    </div>
+
+   <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
