@@ -3,10 +3,14 @@
       <div class="card border-0">
         <div class="row">
           <div class="col-md-4">
-            <%if(entity.filetype!="image/jpeg"&&entity.filetype!="image/png"&&entity.filetype!="image/jpg"&&entity.filetype!="image/gif"){%>
-                     <img src="../img/placeholder-pdf.svg" class="w-25 float-right">
-                     <%}else{%>
+           <%if(entity.filetype=="image/jpeg"||entity.filetype=="image/png"||entity.filetype=="image/jpg"||entity.filetype=="image/gif"){%>
                      <img src="/files/events/<%=entity.filename%>" class="w-75 float-right">
+                     <%}else if(entity.filetype=="video/mkv"||entity.filetype=="video/x-matroska"||entity.filetype=="video/mp4"||entity.filetype=="video/mp3"){%>
+                     <video class="w-100 float-right" controls>
+                     <source src="/files/events/<%=entity.filename%>" type="<%=entity.filetype%>">
+                     </video>
+                     <%}else{%>
+                     <img src="../img/placeholder-pdf.svg" class="w-25 float-right">
                      <%}%>
           </div>
           <div class="col-md-8 p-4 my-auto">

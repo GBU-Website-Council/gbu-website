@@ -128,14 +128,14 @@
                       <%if(entity.type=='events'){%>
                       <div class="col-lg-3 col-md-4 col-12">
                   <div class="card shadow border-0" id="events-card">
-                     <%if(entity.filetype!="image/jpeg"&&entity.filetype!="image/png"&&entity.filetype!="image/jpg"&&entity.filetype!="image/gif"){%>
-                     <img src="./img/placeholder-pdf.svg" class="events-img py-3" width="100%" height="150px">
-                     <%}else if(entity.filetype=="video/mkv"||entity.filetype=="video/x-matroska"||entity.filetype=="video/mp4"||enity.filetype=="video/mp3"){%>
-                     <video width="320" height="240" controls>
-                     <source src="/files/events/<%=entity.filename%>" type="video/mkv">
+                     <%if(entity.filetype=="image/jpeg"||entity.filetype=="image/png"||entity.filetype=="image/jpg"||entity.filetype=="image/gif"){%>
+                     <img src="/files/events/<%=entity.filename%>" class="events-img" width="100%" height="150px">
+                     <%}else if(entity.filetype=="video/mkv"||entity.filetype=="video/x-matroska"||entity.filetype=="video/mp4"||entity.filetype=="video/mp3"){%>
+                     <video width="100%" height="150px" controls>
+                     <source src="/files/events/<%=entity.filename%>" type="<%=entity.filetype%>">
                      </video>
                      <%}else{%>
-                     <img src="/files/events/<%=entity.filename%>" class="events-img " width="100%" height="150px">
+                     <img src="./img/placeholder-pdf.svg" class="events-img py-3" width="100%" height="150px">
                      <%}%>
                      <h6 class="card-text pl-3 pt-2" id="events-card-title"><%=entity.createdAt.getDate() + "/" + (entity.createdAt.getMonth() + 1) + "/" + entity.createdAt.getFullYear()%></h6>
                      <div class="card-body pt-0" id="events-card-body">
