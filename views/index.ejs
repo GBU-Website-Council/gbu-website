@@ -136,11 +136,7 @@
                      <h6 class="card-text pl-3 pt-2" id="events-card-title"><%=entity.createdAt.getDate() + "/" + (entity.createdAt.getMonth() + 1) + "/" + entity.createdAt.getFullYear()%></h6>
                      <div class="card-body pt-0" id="events-card-body">
                         <h5><%=entity.title%></h5>
-                        <%if(entity.description.split(' ').length>10){%>
-                        <p><%=entity.description.split(" ").splice(0,10).join(" ")%></p>
-                        <%}else{%>
                         <p><%=entity.description%></p>
-                        <%}%>
                         <a href="/events/<%=entity._id%>"><button class="btn btn-outline-success btn-sm">Read More</button></a>
                      </div>
                   </div>
