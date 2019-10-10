@@ -7,18 +7,38 @@ body{
 #top-navigation{
 	background: #fff;
 }
-#college-name{
-	font-size: 18px;
-	font-weight: 600;
-	color: #010327;
-	vertical-align: middle;
-	display: inline-block;
+@media (max-width: 767px){
+		#college-name{
+		font-size: 14px;
+		font-weight: 600;
+		color: #010327;
+		vertical-align: middle;
+		display: inline-block;
+	}
 }
-.college-name-tag{
-	font-size: 08px;
-	color: #000;
-	display: inline-block;
-	text-decoration: none;
+@media (min-width: 768px){
+		#college-name{
+		font-size: 18px;
+		font-weight: 600;
+		color: #010327;
+		vertical-align: middle;
+		display: inline-block;
+	}
+}
+
+@media (max-width: 767px){
+	.college-name-tag{
+		font-size: .41rem;
+		display: inline-block;
+		text-decoration: none;
+	}
+}
+@media (min-width: 768px){
+	.college-name-tag{
+		font-size: 11px;
+		display: inline-block;
+		text-decoration: none;
+	}
 }
 #search {
     display:inline-block;
@@ -345,14 +365,28 @@ font-weight: 600;
 }
 
 /* schools hover  end*/
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
 
-.fill {
-    width: 100%;
-    background-attachment: fixed;
+#fill {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+#fill {
+	min-height: 200px;
+	transform: scale(1.5);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+ }
+    /* phones */
+}
 
 
 #library-section-jumbotron{

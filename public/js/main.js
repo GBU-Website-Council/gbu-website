@@ -13,7 +13,7 @@ $( document ).ready(function() {
       $('.nav-2').css({'font-size':'12px'});
       $('.main-navigation-a').css({'font-size':'14px'});
       $('.main-navigation-a').css({'padding':'8px'});
-      $('.college-name-tag').fadeOut(500);
+      $('.college-name-tag').fadeOut(50);
       
      
       }
@@ -23,12 +23,12 @@ $( document ).ready(function() {
   
     $(window).scroll(function(){
     if($(this).scrollTop()<555.5){
-      $('.logo').css({'width':'80px'});
-      $('#college-name').css({'font-size':'18px'});
+      $('.logo').css({'width':'70px'});
+      $('#college-name').css({'font-size':'14px'});
       $('.nav-2').css({'font-size':'14px'});
       $('.main-navigation-a').css({'font-size':'16px'});
       $('.main-navigation-a').css({'padding':'10px'});
-      $('.college-name-tag').fadeIn(500);     
+      $('.college-name-tag').fadeIn(50);     
       }
     });
       
