@@ -7,6 +7,14 @@ body{
 #top-navigation{
 	background: #fff;
 }
+#sub-main-navigation{
+	font-weight: 450;
+}
+#sub-main-navigation:hover{
+	background: #FF4343;
+	color: #fff;
+	font-weight: 500;
+}
 @media (max-width: 767px){
 		#college-name{
 		font-size: 14px;
@@ -76,11 +84,16 @@ body{
 	font-weight: 500;
 
 }
-font-weight: 600;
+.nav-2{font-weight: 600;
 	color: #010327;
 	font-size: 14px;
 	transform: skewX(-15deg);
 	text-decoration: none;
+}
+
+#nav-2-box{
+	border: 0.1px solid #ecf0f1;
+	transform: skewX(15deg);
 }
 #nav-2-box:hover{
 	transform: skewX(15deg);
@@ -103,7 +116,7 @@ font-weight: 600;
 }
 .main-navigation-a{
   color: #000;
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 0px;
   text-decoration: none;
   display: inline-block;

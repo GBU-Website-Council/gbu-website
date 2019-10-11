@@ -18,8 +18,6 @@ $( document ).ready(function() {
      
       }
     });
-
-    
   
     $(window).scroll(function(){
     if($(this).scrollTop()<555.5){
@@ -58,6 +56,4 @@ $( document ).ready(function() {
         }
     });
 });
-
-
 });

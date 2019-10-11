@@ -1,7 +1,7 @@
 <%include header%>
       <!--nav bar section end here -->
       <!-- sliding banner start from here -->
-      <div class="container-fluid">
+      <div class="container">
          <div class="row">
             <div class="col-12 p-0">
                <div id="demo" class="carousel slide shadow carousel-fade" data-ride="carousel">
@@ -124,9 +124,9 @@
                <h6 style="color: #fff;" class="py-1">Events happening across campus</h6>
             </div>
             <div class="row py-3">
-                        <%entities.forEach(function(entity){%> 
-                      <%if(entity.type=='events'){%>
-                      <div class="col-lg-3 col-md-4 col-12">
+               <%entities.forEach(function(entity){%> 
+               <%if(entity.type=='events'){%>
+               <div class="col-lg-3 col-md-4 col-12">
                   <div class="card shadow border-0" id="events-card">
                      <%if(entity.filetype=="image/jpeg"||entity.filetype=="image/png"||entity.filetype=="image/jpg"||entity.filetype=="image/gif"){%>
                      <img src="/files/events/<%=entity.filename%>" class="events-img" width="100%" height="150px">
@@ -165,7 +165,7 @@
                <div class="row py-3 text-center">
                   <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
                      <a href="/schools/som">
-                  <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                  <img src="./img/schools/management_school.png" class="card-img-top img-fluid shadow" width="100%">
                      <div class="card-img-overlay">
                         <h6 class="card-text">Management</h6>
                      </div>
@@ -173,7 +173,7 @@
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
                      <a href="/schools/soict">
-                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <img src="./img/schools/ict_school.png" class="card-img-top img-fluid shadow" width="100%">
                      <div class="card-img-overlay">
                         <h6 class="card-text">Information & Communication Technology</h6>
                      </div>
@@ -181,7 +181,7 @@
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
                      <a href="/schools/soe">
-                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <img src="./img/schools/engine_school.png" class="card-img-top img-fluid shadow" width="100%">
                      <div class="card-img-overlay">
                         <h6 class="card-text">Engineering</h6>
                      </div>
@@ -189,7 +189,7 @@
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
                      <a href="/schools/sovs">
-                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <img src="./img/schools/vocational_school.jpg" class="card-img-top img-fluid shadow" width="100%">
                      <div class="card-img-overlay">
                         <h6 class="card-text">Vocational Studies & Applied Sciences</h6>
                      </div>
@@ -197,7 +197,7 @@
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
                      <a href="/schools/sob">
-                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <img src="./img/schools/biotech_school.png" class="card-img-top img-fluid shadow" width="100%">
                      <div class="card-img-overlay">
                         <h6 class="card-text">Biotechnology</h6>
                      </div>
@@ -205,7 +205,7 @@
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
                      <a href="/schools/sobs">
-                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <img src="./img/schools/buddhist_school.jpg" class="card-img-top img-fluid shadow" width="100%">
                      <div class="card-img-overlay">
                         <h6 class="card-text">Buddhist Studies & Civilization</h6>
                      </div>
@@ -213,7 +213,7 @@
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
                      <a href="/schools/soh">
-                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <img src="./img/schools/humanities_school.png" class="card-img-top img-fluid shadow" width="100%">
                      <div class="card-img-overlay">
                         <h6 class="card-text">Humanities & Social Sciences</h6>
                      </div>
@@ -221,7 +221,7 @@
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
                      <a href="/schools/soljg">
-                     <img src="./img/soict_img.jpg" class="card-img-top img-fluid shadow" width="100%">
+                     <img src="./img/schools/law_school.png" class="card-img-top img-fluid shadow" width="100%">
                      <div class="card-img-overlay">
                         <h6 class="card-text">Law, Justice & Governance</h6>
                      </div>
@@ -236,52 +236,96 @@
       <section class=" py-5" id="section4">
          <div class="text-center">
             <h1 style="font-weight: 700 ; font-size: 40px; color: #010327">Clubs</h1>
-            <h5>Lorem Ipsem is here</h5>
+            <h5>Over 12 clubs and societies covering a wide variety of interests available</h5>
          </div>
          <div class="container carousel slide carousel-fade " data-ride="carousel" id="postsCarousel">
             <div class="container text-right px-5 py-3">
-               <a class="btn btn-outline-secondary prev" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
-               <a class="btn btn-outline-secondary next" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+               <a class="btn btn-outline-danger text-danger prev" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+               <a class="btn btn-outline-danger text-danger next" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
             </div>
             <div class=" p-t-0 m-t-2 carousel-inner text-center">
                <div class="carousel-item active m-t-0">
                   <div class="row">
-                     <div class="col-md-4 col-12">
+                     <div class="col-md-4 col-12 mb-4">
                         <div class="card border-0">
                            <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
+                              <img class="img-fluid" src="img/club/dance.jpg" alt="Carousel 1">
                            </div>
-                           <div class="card-block p-t-2">
-                              <h3 class="medium text-wide p-b-2">Dance Club</h3>
-                              <h5>
-                                 <a href>lorem Ipsum is here</a>
-                              </h5>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Dance Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none" href="clubs/dance_club.html">Highlight the talent of dance and creativity.</a>
+                              </p>
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-4 col-12">
+                     <div class="col-md-4 col-12 mb-4">
                         <div class="card border-0">
                            <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="http://i.imgur.com/Hw7sWGU.png" alt="Carousel 2">
+                              <img class="img-fluid" src="img/club/techno.jpg" alt="Carousel 2">
                            </div>
-                           <div class="card-block p-t-2">
-                              <h3 class="medium text-wide p-b-2">Techno Club</h3>
-                              <h5>
-                                 <a href>lorem ipsem is here</a>
-                              </h5>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Techno Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none" href="clubs/techno_club.html">Updating the students’ knowledge on technologies.</a>
+                              </p>
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-4 col-12">
+                     <div class="col-md-4 col-12 mb-4">
                         <div class="card border-0">
                            <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+                              <img class="img-fluid" src="img/club/meditation.jpg" alt="Carousel 3">
                            </div>
-                           <div class="card-block p-t-2">
-                              <h3 class="medium text-wide p-b-2">Literary Club</h3>
-                              <h5>
-                                 <a href>lorem ipsem is here</a>
-                              </h5>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Meditation Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none"  href="clubs/meditation_club.html">Make living a more mindful and skillful life</a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+                <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-md-4 col-12 mb-4">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="img/club/nature.jpg" alt="Carousel 1">
+                           </div>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Nature's Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none"  href="clubs/music_club.html">To inculcate love and respect for nature.</a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-12 mb-4">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="img/club/audio.jpg" alt="Carousel 2">
+                           </div>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Vox Pop Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none"  href="clubs/social_service_club.html"> Supports learning by providing innovative education.</a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-12 mb-4">
+                        <div class="card border-0">
+                           <div class="card-img-top card-img-top-250">
+                              <img class="img-fluid" src="img/club/literary.jpg" alt="Carousel 3">
+                           </div>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Literary Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none" href="clubs/dishayan_club.html">Building a responsible student
+      community, sensitive to the culture.</a>
+                              </p>
                            </div>
                         </div>
                      </div>
@@ -289,42 +333,42 @@
                </div>
                <div class="carousel-item">
                   <div class="row">
-                     <div class="col-md-4 col-12">
+                     <div class="col-md-4 col-12 mb-4">
                         <div class="card border-0">
                            <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
+                              <img class="img-fluid" src="img/club/music.jpg" alt="Carousel 10">
                            </div>
-                           <div class="card-block p-t-2">
-                              <h3 class="medium text-wide p-b-2">Music Club</h3>
-                              <h5>
-                                 <a href>lorem Ipsum is here</a>
-                              </h5>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Music Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none" href="clubs/music_club.html">Focused to share and express through different flavors of music.</a>
+                              </p>
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-4 col-12">
+                     <div class="col-md-4 col-12 mb-4">
                         <div class="card border-0">
                            <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 2">
+                              <img class="img-fluid" src="img/club/social.jpg" alt="Carousel 2">
                            </div>
-                           <div class="card-block p-t-2">
-                              <h3 class="medium text-wide p-b-2">Social Service Club</h3>
-                              <h5>
-                                 <a href>lorem ipsem is here</a>
-                              </h5>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Social Service Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none"  href="clubs/social_service_club.html"> Involve in social and spiritual activities for students.</a>
+                              </p>
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-4 col-12">
+                     <div class="col-md-4 col-12 mb-4">
                         <div class="card border-0">
                            <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+                              <img class="img-fluid" src="img/club/drama.jpg" alt="Carousel 3">
                            </div>
-                           <div class="card-block p-t-2">
-                              <h3 class="medium text-wide p-b-2">Dramatics Club</h3>
-                              <h5>
-                                 <a href>lorem ipsem is here</a>
-                              </h5>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Dramatics Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none"  href="clubs/dishayan_club.html">Developing the groups acting skills in a fun & safe environment.</a>
+                              </p>
                            </div>
                         </div>
                      </div>
@@ -332,42 +376,42 @@
                </div>
                <div class="carousel-item">
                   <div class="row">
-                     <div class="col-md-4 col-12">
+                     <div class="col-md-4 col-12 mb-4">
                         <div class="card border-0">
                            <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
+                              <img class="img-fluid" src="img/club/photography.jpg" alt="Carousel 1">
                            </div>
-                           <div class="card-block p-t-2">
-                              <h3 class="medium text-wide p-b-2">Photography Club</h3>
-                              <h5>
-                                 <a href>lorem Ipsum is here</a>
-                              </h5>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Photography Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none" href="clubs/photography_club.html">Provide an environment for students to share their passion of photography.</a>
+                              </p>
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-4 col-12">
+                     <div class="col-md-4 col-12 mb-4">
                         <div class="card border-0">
                            <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 2">
+                              <img class="img-fluid" src="img/club/debate.jpg" alt="Carousel 2">
                            </div>
-                           <div class="card-block p-t-2">
-                              <h3 class="medium text-wide p-b-2">Debate Club</h3>
-                              <h5>
-                                 <a href>lorem ipsem is here</a>
-                              </h5>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Debate Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none" href="clubs/dhritikon.html">Improving personal and professional attributes and skills of students.</a>
+                              </p>
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-4 col-12">
+                     <div class="col-md-4 col-12 mb-4">
                         <div class="card border-0">
                            <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+                              <img class="img-fluid" src="img/club/painting.jpg" alt="Carousel 3">
                            </div>
-                           <div class="card-block p-t-2">
-                              <h3 class="medium text-wide p-b-2">Art/Painting Club</h3>
-                              <h5>
-                                 <a href>lorem ipsem is here</a>
-                              </h5>
+                           <div class="card-block p-3">
+                              <h5 class="medium text-danger p-b-2">Art/Painting Club</h5>
+                              <p class="pt-0">
+                                 <a style="color: #000; text-decoration:none" href="clubs/art_painting_club.html">Dedicated to provide the opportunities for painting.</a>
+                              </p>
                            </div>
                         </div>
                      </div>
