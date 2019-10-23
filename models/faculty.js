@@ -1,26 +1,14 @@
 var mongoose=require('mongoose');
 var School=require('./schools.js');
 var facultySchema=new mongoose.Schema({
-	title:String,
-	name:{
-		type:String,
+	Id:{
+		type:Number,
 		unique:true
 	},
-	designation:String,
-	board_member:{
-		default:'none',
-		type:String
-	},
-	post:{
-		default:'Faculty',
-		type:String
-	},
-	school:String,
-	university:{
-		default:'Gautam Buddha University',
-		type:String
-	}
-})
+	Name:String,
+	Title:String,
+	Email:String
+	})
 
 var Faculty=mongoose.model('faculty',facultySchema);
 

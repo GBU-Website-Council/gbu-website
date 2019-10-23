@@ -1,27 +1,26 @@
    <%include header%>
-    <div class="jumbotron mb-0 clubheader">
-      <div class="container mb-0 ">
-        <h1 class="display-4 mb-0"><strong>CONTACT US</strong></h1>
-        <hr class="mt-0  pt-0 mb-1">
+      <div class="jumbotron mb-0 clubheader" style="background-image:url(img/banner_contact.png);background-size: cover; background-repeat: no-repeat">
+      <div class="container mb-0  ">
+        <h1 class="display-4 mb-0 ml-2 text-white"><strong>CONTACT US</strong></h1>
+        
       </div>
     </div>
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark navbarcolour_contact">
+    <nav class="navbar navbar-expand-md navbar-dark navbarcolour_contact">
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbaraa" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbaraa">
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-nav mx-auto" >
             <li class="nav-item  active">
-              <a href="#address" class="nav-link active ">ADDRESS</a>
+              <a href="#address" class="nav-link active ">Address</a>
             </li>
             <li class="nav-item">
-              <a href="#map" class="nav-link">MAP</a>
+              <a href="#map" class="nav-link active">Map</a>
             </li>
             <li class="nav-item">
-              <a href="#contact-book" class="nav-link">CONTACT BOOK</a>
+              <a href="#contact-book" class="nav-link active">Contact Book</a>
             </li>
-
           </ul>
         </div>
       </div>
@@ -29,138 +28,143 @@
     <br>
     <div class="container">
       <!--Start Address -->
-      <div class="card bordernow  mt-2 mb-2" id="address">
-        <div class="card-body">
-          <div class="container">
-            <h1 class="font-weight-light text-center text-lg-right mt-4 mb-0"><i class="fa fa-university"></i> &nbsp;Address</h1>
-            <hr class="mt-2 mb-5">
-            <h5 class="card-title ">Gautam Buddha University</h5>
-            <p class="card-text ">Near Yamuna Expressway,<br>
-              Greater NOIDA<br>
-              Gautam Budh Nagar<br>
-              Uttar Pradesh (INDIA) - 201312<br>
-              <i class="fa fa-phone"></i>&nbsp;<a href="tel:0120-234 4200"> 0120-234 4200 </a><br>
-              <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:info@gbu.ac.in"> info@gbu.ac.in</a>
-            </p>
-          </div>
+      <div id="address">
+        
+        <div class="container">
+          <h3 class=" text-lg-left mt-4 mb-0">
+          <i class="fa fa-university"></i> &nbsp;Address
+          </h3>
+          <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+          <br>
+          <br>
+          <h5 class="card-title ml-5">Gautam Buddha University</h5>
+          <p class="card-text ml-5">Near Yamuna Expressway,<br>
+            Greater NOIDA<br>
+            Gautam Budh Nagar<br>
+            Uttar Pradesh (INDIA) - 201312<br>
+            <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202344200"> 0120-234 4200 </a><br>
+            <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:info@gbu.ac.in"> info@gbu.ac.in</a>
+          </p>
+          
         </div>
       </div>
       <!--End Address -->
       <!-- Google map -->
-      <div class="card bordernow  mt-2 mb-2" id="map">
-        <div class="card-body">
-          <div class="container">
-            <h1 class="font-weight-light text-center text-lg-right mt-4 mb-0"><i class="fa fa-map-marker"></i> &nbsp;Map</h1>
-            <hr class="mt-2 mb-5">
-
-            <p class="jumbotron text-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14035.88120762492!2d77.52141986407929!3d28.420152964155182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc0f918abee8d%3A0x8c72169fdd7154b0!2sGautam+Buddha+University!5e0!3m2!1sen!2sin!4v1560271081976!5m2!1sen!2sin" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
-            </p>
-          </div>
+      <div id="map">
+        <div class="container">
+          <h3 class=" text-lg-left mt-4 mb-0">
+          <i class="fa fa-map-marker"></i> &nbsp;Map
+          </h3>
+          <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+          <br>
+          <br>
+          <p class="jumbotron text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14035.88120762492!2d77.52141986407929!3d28.420152964155182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc0f918abee8d%3A0x8c72169fdd7154b0!2sGautam+Buddha+University!5e0!3m2!1sen!2sin!4v1560271081976!5m2!1sen!2sin" width="100" height="500" frameborder="0" allowfullscreen></iframe>
+          </p>
         </div>
       </div>
-      <!-- End google map -->
-
-      <!--Start Table for Phone No. -->
-      <div class="card bordernow  mt-2 mb-2" id="contact-book">
-        <div class="card-body">
-          <div class="container">
-            <h1 class="font-weight-light text-center text-lg-right mt-4 mb-0"><i class="fa fa-address-book"></i> &nbsp;Contact Book</h1>
-            <hr class="mt-2 mb-5">
-            <table class="table table-hover">
-              <tbody class="text-center">
-                <tr>
-                  <th><i class="fa fa-user"></i> Designation/Section</th>
-                  <th><i class="fa fa-phone"></i> Phone No.</th>
-                  <!-- <th>Ext. No.</th> -->
-                </tr>
-                <tr>
-                  <td>Reception</td>
-                  <td><a href="tel:0120-234 4200">0120-234 4200</a></td>
-                  <!-- <td>4200</td> -->
-                </tr>
-                <tr>
-                  <td>Staff Officer to Vice Chancellor</td>
-                  <td><a href="tel:0120-234 4202">0120-234 4202</a></td>
-                  <!-- <td>4202</td> -->
-                </tr>
-                <tr>
-                  <td>PS to Vice Chancellor</td>
-                  <td><a href="tel:0120-234 4203">0120-234 4203</a></td>
-                  <!-- <td>4203</td> -->
-                </tr>
-                <tr>
-                  <td>Vice Chancellor Secretariat</td>
-                  <td><a href="tel:0120-234 4204">0120-234 4204</a></td>
-                  <!-- <td>4204</td> -->
-                </tr>
-                <tr>
-                  <td>Registrar Office</td>
-                  <td><a href="tel:0120-234 4213">0120-234 4213</a></td>
-                  <!-- <td>4213</td> -->
-                </tr>
-                <tr>
-                  <td>Deputy Registrar</td>
-                  <td><a href="tel:0120-234 4212">0120-234 4212</a></td>
-                  <!-- <td>4212</td> -->
-                </tr>
-                <tr>
-                  <td>Administrative Section</td>
-                  <td><a href="tel:0120-234 4214">0120-234 4214</a> </td>
-                  <!-- <td>4214</td> -->
-                </tr>
-                <tr>
-                  <td>Dean (Academics)</td>
-                  <td><a href="tel:0120-234 4206">0120-234 4206</a></td>
-                  <!-- <td>4206</td> -->
-                </tr>
-                <tr>
-                  <td>Manager Corporate Relations</td>
-                  <td><a href="tel:0120-234 4209">0120-234 4209</a></td>
-                  <!-- <td>4209</td> -->
-                </tr>
-                <tr>
-                  <td>System Manager</td>
-                  <td><a href="tel:0120-234 4246">0120-234 4246</a></td>
-                  <!-- <td>4246</td> -->
-                </tr>
-                <tr>
-                  <td>Account Officer</td>
-                  <td><a href="tel:0120-234 4232">0120-234 4232</a></td>
-                  <!-- <td>4232</td> -->
-                </tr>
-                <tr>
-                  <td>Assistant Administrative Officer (Stores)</td>
-                  <td><a href="tel:0120-234 4236">0120-234 4236</a></td>
-                  <!-- <td>4236</td> -->
-                </tr>
-                <tr>
-                  <td>Assistant Librarian</td>
-                  <td><a href="tel:0120-234 6262">0120-234 6262</a></td>
-                  <!-- <td>6262</td> -->
-                </tr>
-                <tr>
-                  <td>Sports Officer</td>
-                  <td><a href="tel:0120-234 6561">0120-234 6561</a></td>
-                  <!-- <td>6561</td> -->
-                </tr>
-                <tr>
-                  <td>Admission Cell</td>
-                  <td><a href="tel:0120-234 4234">0120-234 4234</a></td>
-                  <!-- <td>4234</td> -->
-                </tr>
-                <tr>
-                  <td>Examination Cell</td>
-                  <td><a href="tel:0120-234 4241">0120-234 4241</a></td>
-                  <!-- <td>4241</td> -->
-                </tr>
-              </tbody>
-            </table>
-
-          </div>
-        </div>
-      </div>
-      <!--End Table for Phone No. -->
     </div>
-    <br>
+    <!-- End google map -->
+    <!--Start Table for Phone No. -->
+    <div id="contact-book">
+      <div class="card-body">
+        <div class="container">
+          <h3 class=" text-lg-left mt-4 mb-0">
+          <i class="fa fa-address-book"></i> &nbsp;Contact Book
+          </h3>
+          <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+          <br>
+          <br>
+          <table class="table table-hover">
+            <tbody class="text-center">
+              <tr>
+                <th><i class="fa fa-user"></i> Designation/Section</th>
+                <th><i class="fa fa-phone"></i> Phone No.</th>
+                <!-- <th>Ext. No.</th> -->
+              </tr>
+              <tr>
+                <td>Reception</td>
+                <td><a href="tel:01202344200">0120-234 4200</a></td>
+                <!-- <td>4200</td> -->
+              </tr>
+              <tr>
+                <td>Staff Officer to Vice Chancellor</td>
+                <td><a href="tel:01202344202">0120-234 4202</a></td>
+                <!-- <td>4202</td> -->
+              </tr>
+              <tr>
+                <td>PS to Vice Chancellor</td>
+                <td><a href="tel:01202344203">0120-234 4203</a></td>
+                <!-- <td>4203</td> -->
+              </tr>
+              <tr>
+                <td>Vice Chancellor Secretariat</td>
+                <td><a href="tel:01202344204">0120-234 4204</a></td>
+                <!-- <td>4204</td> -->
+              </tr>
+              <tr>
+                <td>Registrar Office</td>
+                <td><a href="tel:01202344213">0120-234 4213</a></td>
+                <!-- <td>4213</td> -->
+              </tr>
+              <tr>
+                <td>Deputy Registrar</td>
+                <td><a href="tel:01202344212">0120-234 4212</a></td>
+                <!-- <td>4212</td> -->
+              </tr>
+              <tr>
+                <td>Administrative Section</td>
+                <td><a href="tel:01202344214">0120-234 4214</a> </td>
+                <!-- <td>4214</td> -->
+              </tr>
+              <tr>
+                <td>Dean (Academics)</td>
+                <td><a href="tel:01202344206">0120-234 4206</a></td>
+                <!-- <td>4206</td> -->
+              </tr>
+              <tr>
+                <td>Manager Corporate Relations</td>
+                <td><a href="tel:01202344209">0120-234 4209</a></td>
+                <!-- <td>4209</td> -->
+              </tr>
+              <tr>
+                <td>System Manager</td>
+                <td><a href="tel:01202344246">0120-234 4246</a></td>
+                <!-- <td>4246</td> -->
+              </tr>
+              <tr>
+                <td>Account Officer</td>
+                <td><a href="tel:01202344232">0120-234 4232</a></td>
+                <!-- <td>4232</td> -->
+              </tr>
+              <tr>
+                <td>Assistant Administrative Officer (Stores)</td>
+                <td><a href="tel:01202344236">0120-234 4236</a></td>
+                <!-- <td>4236</td> -->
+              </tr>
+              <tr>
+                <td>Assistant Librarian</td>
+                <td><a href="tel:01202346262">0120-234 6262</a></td>
+                <!-- <td>6262</td> -->
+              </tr>
+              <tr>
+                <td>Sports Officer</td>
+                <td><a href="tel:01202346561">0120-234 6561</a></td>
+                <!-- <td>6561</td> -->
+              </tr>
+              <tr>
+                <td>Admission Cell</td>
+                <td><a href="tel:01202344234">0120-234 4234</a></td>
+                <!-- <td>4234</td> -->
+              </tr>
+              <tr>
+                <td>Examination Cell</td>
+                <td><a href="tel:01202344241">0120-234 4241</a></td>
+                <!-- <td>4241</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
     <%include footer%>

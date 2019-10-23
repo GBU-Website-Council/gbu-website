@@ -22,7 +22,7 @@ $( document ).ready(function() {
     $(window).scroll(function(){
     if($(this).scrollTop()<555.5){
       $('.logo').css({'width':'70px'});
-      $('#college-name').css({'font-size':'14px'});
+      $('#college-name').css({'font-size':'16px'});
       $('.nav-2').css({'font-size':'14px'});
       $('.main-navigation-a').css({'font-size':'16px'});
       $('.main-navigation-a').css({'padding':'10px'});

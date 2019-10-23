@@ -247,7 +247,7 @@ body{
 	color: #010327;
 }
 #section1-card{
-	max-height: 330px;
+	height: 350px;
 }
 #section1-card-body-link{
 	color: #000;
@@ -263,7 +263,7 @@ body{
 }
 #section1-carousel{
 	position: relative;
-	max-height: 350px;
+	height: 350px;
 
 }
 #section1-card-header1{
@@ -295,6 +295,9 @@ body{
 #p-figure{
 	font-size: 22px;
 }
+#events-card{
+	height: 350px;
+}
 #section-events{
 	background: #FF4343;
 }
@@ -305,6 +308,9 @@ body{
 
 	color: #010327;
 
+}
+#clubs-cards{
+	height: 300px;
 }
 #section-media{
 	color: #010327;
@@ -382,6 +388,7 @@ body{
     /* tablets and desktop */
 
 #fill {
+	height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

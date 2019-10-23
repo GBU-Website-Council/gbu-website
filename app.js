@@ -186,6 +186,12 @@ else{
 })
 }
 });
+app.get('/clubs/dance',(req,res)=>{
+	res.render('dance')
+})
+app.get('/clubs/nature',(req,res)=>{
+	res.render('nature')
+})
 app.get('/about/home',function(req,res){
 	res.render('home')
 })

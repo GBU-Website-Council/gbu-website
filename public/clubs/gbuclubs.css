@@ -1,0 +1,180 @@
+.navbarcolour{
+	background-color: #012454;
+	color: white;
+
+}
+
+.clubheader{
+	background-color: #FB8C00;
+	border-radius: 0;
+	border: none;
+}
+
+.card-title{
+	font-weight: bold;
+
+}clubheader
+.heightnow{
+	height: 450px;
+}
+.navbarcolour{
+	background-color: #012454;
+	color: white;
+	border: none;
+	border-radius: 0;
+}
+
+.newsletter{
+
+	height: 70px;
+	background-color: #FB8C07;
+	color:white;
+	border: none;
+	 border-radius: 0;
+
+}
+.subscriber{
+	
+	width: 480px;
+}
+.designevent{
+	color: #012454;
+}
+
+.designeventnew{
+	color: #012454;
+	font-size: 12px;
+}
+.eventlister{
+	color:#FB8C07;
+}
+.pagelinker{
+	color: #FB8C07;
+
+}
+.horizontalwidthfooter{
+	height: 10px;
+	background-color:  #FB8C00;
+	color: white;
+
+
+}
+.mainlogo{
+	border-color:white ;
+	color: white; 
+	border-width: 3px;
+	
+
+}
+.mainlogo:hover{
+	background-color: #FB8C07;
+	border-color:#FB8C07;
+}
+.footernow{
+
+	max-height: 230px;
+	background-color: #012454;
+	color: white;
+	border: none;
+}
+@media (min-width: 768px) {
+.carousel-multi-item-2 .col-md-3 {
+float: left;
+width: 25%;
+max-width: 100%; } }
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; }
+
+.news{
+	height: 100%;
+max-height: 625px;
+max-width: 1100px;
+	
+}
+
+.bannerclub{
+        background-image:url(img/gbuclubbanner.png);
+        background-size: cover; 
+        background-repeat: no-repeat;
+      }
+.banneradventureclub{
+        background-image:url(img/adventure/banner1.png);
+        background-size: cover; 
+        background-repeat: no-repeat;
+      }
+      @media only screen and (max-width: 800px ){
+          .banneradventureclub{
+            background-image:url(img/adventure/banner2.png);
+
+          }
+          }
+.bannerartclub{
+        background-image:url(img/art/banner1.png);
+        background-size: cover; 
+        background-repeat: no-repeat;
+      }
+      @media only screen and (max-width: 800px ){
+          .bannerartclub{
+            background-image:url(img/art/banner2.png);
+
+          }
+          }
+.bannermusicclub{
+        background-image:url(img/music/banner1.png);
+        background-size: cover; 
+        background-repeat: no-repeat;
+      }
+      @media only screen and (max-width: 800px ){
+          .bannermusicclub{
+            background-image:url(img/music/banner2.png);
+
+          }
+          }
+
+ .bannernatureclub{
+        background-image:url(img/nature/banner1.png);
+        background-size: cover; 
+        background-repeat: no-repeat;
+      }
+      @media only screen and (max-width: 800px ){
+          .bannernatureclub{
+            background-image:url(img/nature/banner2.png);
+
+          }
+          }
+ .bannerdramaclub{
+        background-image:url(img/drama/banner1.png);
+        background-size: cover; 
+        background-repeat: no-repeat;
+      }
+      @media only screen and (max-width: 800px ){
+          .bannerdramaclub{
+            background-image:url(img/drama/banner2.png);
+
+          }
+          }
+  .bannermeditationclub{
+        background-image:url(img/meditation/banner1.png);
+        background-size: cover; 
+        background-repeat: no-repeat;
+      }
+      @media only screen and (max-width: 800px ){
+          .bannermeditationclub{
+            background-image:url(img/meditation/banner2.png);
+
+          }
+          }
+.bannertechnoclub{
+        background-image:url(img/techno/banner1.png);
+        background-size: cover; 
+        background-repeat: no-repeat;
+      }
+      @media only screen and (max-width: 800px ){
+          .bannertechnoclub{
+            background-image:url(img/techno/banner2.png);
+
+          }
+          }
+
+        
