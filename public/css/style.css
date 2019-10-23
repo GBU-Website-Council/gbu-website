@@ -359,13 +359,14 @@ body{
 	overflow: hidden;
 }
 .img-hover-zoom img{
-	filter: blur(2.5px);
+	filter: blur(2px);
+	opacity: .9;
     transition: transform .5s ease;
 }
 .img-hover-zoom h6{
 	filter: blur(0px);
 	background: transparent;
-	border: 1px solid white;
+	border: 2px solid white;
 	padding: 15px;
 	position: absolute;
 	color: #fff;
