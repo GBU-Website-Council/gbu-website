@@ -248,6 +248,8 @@ body{
 }
 #section1-card{
 	height: 350px;
+	text-decoration: none;
+	color: #000;
 }
 #section1-card-body-link{
 	color: #000;
