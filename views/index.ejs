@@ -1,68 +1,67 @@
 <%include header%>
-      <!--nav bar section end here -->
       <!-- sliding banner start from here -->
-      <div class="container">
+      <div class="container-fluid">
          <div class="row">
             <div class="col-12 p-0">
                <div id="demo" class="carousel slide shadow carousel-fade" data-ride="carousel">
                   <!-- Indicators -->
-                  <!-- <ul class="carousel-indicators">
+                  <ul class="carousel-indicators">
                      <li data-target="#demo" data-slide-to="0" class="active"></li>
                      <li data-target="#demo" data-slide-to="1"></li>
                      <li data-target="#demo" data-slide-to="2"></li>
-                     <li data-target="#demo" data-slide-to="3"></li>
-                     <li data-target="#demo" data-slide-to="4"></li>
-                     <li data-target="#demo" data-slide-to="5"></li>
-                  </ul> -->
+                  </ul>
                   <!-- The slideshow -->
                   <div class="carousel-inner">
                      <div class="carousel-item active">
-                        <img src="./img/yogiingbu.jpg" id="fill" width="100%">
-                        
-                     </div>
-                     <div class="carousel-item ">
-                        <img src="./img/gautambuddhauniversity123.jpg" id="fill" width="100%">
+                        <img src="./img/banner1.png" class="fill" width="100%">
+                        <div class="carousel-caption ">
                      
+                           <p style="font-size:25px;">A 511 acres lush green campus in Greater Noida and <br>one of the most iconic infrastructures in the World</p>
+                        </div>
                      </div>
-                     <div class="carousel-item ">
-                        <img src="./img/yogiingbu2.jpg" id="fill" width="100%">
+                     <div class="carousel-item">
+                        <img src="./img/banner-bms.jpg" class="fill" width="100%">
+                        <div class="carousel-caption">
+                          <div class="text-center" style="padding: 10px 0px;background-color: #ffffffb0">
+                              <div class="heading2">
+                                 <h2 style="color: black;">Jyoti rao phule meditation centre to provide a peaceful environment for meditation <br>
+                            Shanti sarovar with ever inspiring Tathagats statue</h2>
+                              </div>
+                              
+                              </div>
+                           </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="./img/yogiingbu.jpg" class="fill" width="100%">
                         
-                     </div>
-                     <div class="carousel-item ">
-                        <img src="./img/wall1.png" id="fill" width="100%">
-                       <!--  <div class="carousel-caption">
-                           <h1>Title</h1>
-                           <p>This is the place or description</p>
-                        </div> -->
+                        <div class="carousel-caption">
+                          <div class="text-center" style="padding: 10px 0px;background-color: #ffffffb0">
+                              <div class="heading2">
+                                 <h2 style="color: black;">Explore and seek answers to your curiosity at GBU</h2>
+                              </div>
+                              
+                              </div>
+                           </div>
                      </div>
                      <div class="carousel-item">
-                        <img src="./img/banner1.png" id="fill" width="100%">
+                        <img src="./img/sport 1.JPG" class="fill" width="100%">
                         <div class="carousel-caption">
-                           <h1>Title</h1>
-                           <p>This is the place or description</p>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <img src="./img/banner3.png" id="fill" width="100%">
-                        <div class="carousel-caption">
-                           <h1>Title</h1>
-                           <p>This is the place or description</p>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <img src="./img/banner5.png" id="fill" width="100%">
-                        <div class="carousel-caption">
-                           <h1>Title</h1>
-                           <p>This is the place or description</p>
+                          <div class="text-center" style="padding: 10px 0px;background-color: #ffffffb0">
+                              <div class="heading2">
+                                 <h2 style="color: black;">Regular sports activities at its own majestic indoor and outdoor stadium</h2>
+                              </div>
+                              
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
                   <!-- Left and right controls -->
                   <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
+                     <span class="carousel-control-prev-icon"></span>
                   </a>
                   <a class="carousel-control-next" href="#demo" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
+                     <span class="carousel-control-next-icon"></span>
                   </a>
                </div>
             </div>
@@ -70,375 +69,1713 @@
       </div>
       <!-- sliding banner start from here -->
       <!-- home content section start from here -->
-      <div class="py-5 container m-auto" id="section1">
-         <div class="mx-auto text-center py-3" id="header-section-1">
-            <h1 style="font-weight: 700 ; font-size: 40px;" class="py-2">Latest from GBU</h1>
-         </div>
-         <div>
-            <div class="row py-3">
-               <div class="col-lg-3 col-10 m-auto p-1">
-                  <div class="card shadow overflow-auto m-auto border-0" id="section1-card">
-                     <div class="card-header text-center p-2" id="section1-card-header1"><i class="fa fa-calendar"></i><br> News</div>
-                     <div class="card-body overflow-auto" id="section1-card-body">
-                        <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="2">
-                            <%entities.forEach(function(entity){%> 
-                      <%if(entity.type=='news'){%>
-                        <a href="/news/<%=entity._id%>"><p><%=entity.title%></p></a>
-                        <% }})%>
-                        </marquee>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-12 m-auto " id="section1-carousel">
-                  <div id="demo" class="carousel slide shadow" data-ride="carousel">
-                     <!-- Indicators -->
-                     <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
-                     </ul>
-                     <!-- The slideshow -->
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <img src="./img/campuslife3.jpg" class="img-fluid" width="100%" height="350">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="./img/campuslife2.jpg" class="img-fluid" width="100%" height="350">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="./img/campuslife4.jpg" class="img-fluid" width="100%" height="350">
-                        </div>
-                     </div>
-                     <!-- Left and right controls -->
-                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                     <span class="carousel-control-prev-icon"></span>
-                     </a>
-                     <a class="carousel-control-next" href="#demo" data-slide="next">
-                     <span class="carousel-control-next-icon"></span>
-                     </a>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-10 m-auto p-1">
-                  <div class="card shadow overflow-auto m-auto border-0" id="section1-card">
-                     <div class="card-header text-center p-2" id="section1-card-header2"><i class="fa fa-university"></i><br>Notices</div>
-                     <div class="card-body overflow-auto" id="section1-card-body">
-                        <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
-                           <%entities.forEach(function(entity){%> 
-                      <%if(entity.type=='notices'){%>
-                        <a href="/notices/<%=entity._id%>"><p><%=entity.title%></p></a>
-                        <% }})%>
-                        </marquee>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--- end of section 1-->
-      <!--- start of new Section -->
-      <!--- end of new Section -->
-      <!--- start of new section -->
-      <div class="py-3" id="section-events">
-         <div class="container py-3">
-            <div class="mx-auto text-center" id="">
-               <h1 style="font-weight: 600 ; font-size: 40px; color: #fff" class="py-2">Events</h1>
-               <h6 style="color: #fff;" class="py-1">Events happening across campus</h6>
-            </div>
-            <div class="row py-3">
-               <%entities.forEach(function(entity){%> 
-               <%if(entity.type=='events'){%>
-               <div class="col-lg-3 col-md-4 col-12">
-                  <div class="card shadow border-0" id="events-card">
-                     <%if(entity.filetype=="image/jpeg"||entity.filetype=="image/png"||entity.filetype=="image/jpg"||entity.filetype=="image/gif"){%>
-                     <img src="/files/events/<%=entity.filename%>" class="events-img" width="100%" height="150px">
-                     <%}else if(entity.filetype=="video/mkv"||entity.filetype=="video/x-matroska"||entity.filetype=="video/mp4"||entity.filetype=="video/mp3"){%>
-                     <video width="100%" height="150px" controls>
-                     <source src="/files/events/<%=entity.filename%>" type="<%=entity.filetype%>">
-                     </video>
-                     <%}else{%>
-                     <img src="./img/placeholder-pdf.svg" class="events-img py-3" width="100%" height="150px">
-                     <%}%>
-                     <h6 class="card-text pl-3 pt-2" id="events-card-title"><%=entity.createdAt.getDate() + "/" + (entity.createdAt.getMonth() + 1) + "/" + entity.createdAt.getFullYear()%></h6>
-                     <div class="card-body pt-0" id="events-card-body">
-                        <h5><%=entity.title%></h5>
-                        <%if(entity.description.split(" ").length>10){%>
-                        <p><%=entity.description.split(" ").splice(0,10).join(" ")%></p>
-                        <%}else{%>
-                        <p><%=entity.description%></p>
-                        <%}%>
-                        <a href="/events/<%=entity._id%>"><button class="btn btn-outline-success btn-sm">Read More</button></a>
-                     </div>
-                  </div>
-               </div>
-                    <% }})%>
-            </div>
-         </div>
-      </div>
-      <!-- end of new section -->
-      <div id="section2">
-         <!-- section 2 -->
-         <div class="container py-3" >
-            <header class="mx-auto text-center pt-3" id="">
-               <h1 style="font-weight: 700 ; font-size: 40px" class="py-2">Schools</h1>
-               <h6>Lorem Ipsem is here</h6>
-            </header>
-            <div>
-               <div class="row py-3 text-center">
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
-                     <a href="/schools/som">
-                  <img src="./img/schools/management_school.jpg" class="card-img-top img-fluid shadow" width="100%">
-                     <div class="card-img-overlay">
-                        <h6 class="card-text">Management</h6>
-                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
-                     <a href="/schools/soict">
-                     <img src="./img/schools/ict_school.jpg" class="card-img-top img-fluid shadow" width="100%">
-                     <div class="card-img-overlay">
-                        <h6 class="card-text">Information & Communication Technology</h6>
-                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
-                     <a href="/schools/soe">
-                     <img src="./img/schools/engine_school.jpg" class="card-img-top img-fluid shadow" width="100%">
-                     <div class="card-img-overlay">
-                        <h6 class="card-text">Engineering</h6>
-                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
-                     <a href="/schools/sovs">
-                     <img src="./img/schools/vocational_school.jpg" class="card-img-top img-fluid shadow" width="100%">
-                     <div class="card-img-overlay">
-                        <h6 class="card-text">Vocational Studies & Applied Sciences</h6>
-                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
-                     <a href="/schools/sob">
-                     <img src="./img/schools/biotech_school.jpg" class="card-img-top img-fluid shadow" width="100%">
-                     <div class="card-img-overlay">
-                        <h6 class="card-text">Biotechnology</h6>
-                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
-                     <a href="/schools/sobs">
-                     <img src="./img/schools/buddhist_school.jpg" class="card-img-top img-fluid shadow" width="100%">
-                     <div class="card-img-overlay">
-                        <h6 class="card-text">Buddhist Studies & Civilization</h6>
-                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
-                     <a href="/schools/soh">
-                     <img src="./img/schools/humanities_school.jpg" class="card-img-top img-fluid shadow" width="100%">
-                     <div class="card-img-overlay">
-                        <h6 class="card-text">Humanities & Social Sciences</h6>
-                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
-                     <a href="/schools/soljg">
-                     <img src="./img/schools/law_school.jpg" class="card-img-top img-fluid shadow" width="100%">
-                     <div class="card-img-overlay">
-                        <h6 class="card-text">Law, Justice & Governance</h6>
-                     </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--- end of section 2-->
-      <!-- section 4 -->
-      <section class=" py-5" id="section4">
-         <div class="text-center">
-            <h1 style="font-weight: 700 ; font-size: 40px; color: #010327">Clubs</h1>
-            <h5>Over 12 clubs and societies covering a wide variety of interests available</h5>
-         </div>
-         <div class="container carousel slide carousel-fade " data-ride="carousel" id="postsCarousel">
-            <div class="container text-right px-5 py-3">
-               <a class="btn btn-outline-danger text-danger prev" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
-               <a class="btn btn-outline-danger text-danger next" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
-            </div>
-            <div class=" p-t-0 m-t-2 carousel-inner text-center">
-               <div class="carousel-item active m-t-0">
+      <div id="news" class=" " style="background-color: #2f415f; padding: 10px 0px 80px 0px;">
+         <div class="news-header">
+            <div class="m-4" style="background-color: transparent;">
+               <div class="container pt-2">
                   <div class="row">
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/dance.jpg" alt="Carousel 1">
+                     <div class="col-2">
+                        <h2 class="display-5 text-white">
+                        <font style="vertical-align: inherit; font-weight: 400; font-size:35px">News</font>
+                        </h2>
+                     </div>
+                     <div class="col-10 text-right ">
+                        <div class="p-3 position-absolute " style="right: 0">
+                           <div class="drop">
+                              <div class="drop-news " style="border-bottom: 5px red;background-color: #a9a9a9;">
+                                 <button id="newsMenu" onclick="showCollapsNewsmenu()">highlights</button>
+                              </div>
+                              <ul id="myTab" class="nav nav-tabs display-5 text-white text-left">
+                                 <li class="">
+                                    <a href="#highlights" data-toggle="tab" onclick="active(this.textContent,this,0)">
+                                       <span>highlights</span> </a>
+                                    </li>
+                                    <li>
+                                       <a href="#academics" data-toggle="tab" onclick="active(this.textContent,this, 1)">
+                                          <span id="1">academics</span></a>
+                                       </li>
+                                       <li>
+                                          <a href="#technology " data-toggle="tab" onclick="active(this.textContent, this, 2)">
+                                             <span id="2">technology</span></a>
+                                          </li>
+                                          <li>
+                                             <a href="#sports" data-toggle="tab" onclick="active(this.textContent, this, 3)"> <span
+                                             id="3">sports</span></a>
+                                          </li>
+                                          <li>
+                                             <a href="#cultural" data-toggle="tab" onclick="active(this.textContent, this, 4)">
+                                                <span id="4">cultural</span></a>
+                                             </li>
+                                             <li>
+                                                <a href="#lorals" data-toggle="tab" onclick="active(this.textContent, this, 5)"> <span
+                                                id="5">lorals</span></a>
+                                             </li>
+                                             <li>
+                                                <a href="#gbu-in-media" data-toggle="tab" onclick="active(this.textContent, this, 6)">
+                                                   <span id="6">media</span></a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Dance Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none" href="clubs/dance_club.html">Highlight the talent of dance and creativity.</a>
-                              </p>
+                        </div>
+                        <!-- <div class="tab-content"> -->
+                        <div class="tab-content">
+                           <div id="highlights" class="news-content tab-pane pt-5 active">
+                              <div class=" mt-0" style="background-color: transparent;">
+                                 <div class="container text-center">
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/01/Phd.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Notification for Research Scholars declared eligible for the award of Ph.D
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://dynamicecology.files.wordpress.com/2018/08/undergrads2.png"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Mentor Mentee List for Academic Session 2019-20 Phase I
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.cit.edu.in/wp-content/uploads/2018/08/ugc.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                University Grant Commission(UGC)
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://images-platform.99static.com/JToQFrBrqHTZ4rbNBgtd4KWt3HY=/500x500/top/smart/99designs-contests-attachments/56/56105/attachment_56105788"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Regarding rates and distribution policy of guest accommodation in guest house.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://mk0digitallearn7ttjx.kinstacdn.com/wp-content/uploads/2018/01/nsdc-logo-ss.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Mou between GBU and NSDC for introducing skill development programmes in university.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://thumbnails.trvl-media.com/3jyOXLJqo8sByMzmNqg-Q6-NhC0=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/4000000/3010000/3007200/3007191/9e886ec7_z.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                The 10 Best Short Moral Stories With Valuable LessonsAvatarBy Dan Western The
+                                                10 Best Short Moral Stories
+                                                SHARETWEET
+                                                
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://cdn.dnt.org/prod/sherpa/fotoweb/8411cc55-4e49-48ee-bf43-27b92b659a95.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Das kann jedoch nicht darüber hinweg täuschen, dass es derzeit in NRW ein Regendefizit von 284 Litern je Quadratmeter gibt
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.amzungo.com/upload/images/amzu/large_kategorier/large%20kategori%20natur.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                
+                                                Stories that have morals and messages behind them are always powerful. In fact, it’s
+                                                crazy just how powerful a 200 word story can be.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="view-more text-lg-right pt-2 container">
+                                 <a href="#" class="btn btn-outline-secondary">Show More</a>
+                              </div>
+                           </div>
+                           <div id="academics" class="news-content tab-pane pt-5">
+                              <div class=" mt-0" style="background-color: transparent;">
+                                 <div class="container text-center">
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                academics
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                MOTIVATIONThe 10 Best Short Moral Stories With Valuable LessonsAvatarBy Dan Western The
+                                                10 Best Short Moral Stories
+                                                SHARETWEET
+                                                Stories that have morals and messages behind them are always powerful. In fact, it’s
+                                                crazy just how powerful a 200 word story can be.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                MOTIVATIONThe 10 Best Short Moral Stories With Valuable LessonsAvatarBy Dan Western The
+                                                10 Best Short Moral Stories
+                                                SHARETWEET
+                                                Stories that have morals and messages behind them are always powerful. In fact, it’s
+                                                crazy just how powerful a 200 word story can be.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                MOTIVATIONThe 10 Best Short Moral Stories With Valuable LessonsAvatarBy Dan Western The
+                                                10 Best Short Moral Stories
+                                                SHARETWEET
+                                                Stories that have morals and messages behind them are always powerful. In fact, it’s
+                                                crazy just how powerful a 200 word story can be.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                MOTIVATIONThe 10 Best Short Moral Stories With Valuable LessonsAvatarBy Dan Western The
+                                                10 Best Short Moral Stories
+                                                SHARETWEET
+                                                Stories that have morals and messages behind them are always powerful. In fact, it’s
+                                                crazy just how powerful a 200 word story can be.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                MOTIVATIONThe 10 Best Short Moral Stories With Valuable LessonsAvatarBy Dan Western The
+                                                10 Best Short Moral Stories
+                                                SHARETWEET
+                                                Stories that have morals and messages behind them are always powerful. In fact, it’s
+                                                crazy just how powerful a 200 word story can be.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                MOTIVATIONThe 10 Best Short Moral Stories With Valuable LessonsAvatarBy Dan Western The
+                                                10 Best Short Moral Stories
+                                                SHARETWEET
+                                                Stories that have morals and messages behind them are always powerful. In fact, it’s
+                                                crazy just how powerful a 200 word story can be.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="view-more text-lg-right pt-2 container">
+                                 <a href="#" class="btn btn-outline-secondary">Show More</a>
+                              </div>
+                           </div>
+                           <div id="technology" class="news-content tab-pane pt-5">
+                              <div class=" mt-0" style="background-color: transparent;">
+                                 <div class="container text-center">
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                technology
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                MOTIVATIONThe 10 Best Short Moral Stories With Valuable LessonsAvatarBy Dan Western The
+                                                10 Best Short Moral Stories
+                                                SHARETWEET
+                                                Stories that have morals and messages behind them are always powerful. In fact, it’s
+                                                crazy just how powerful a 200 word story can be.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                MOTIVATIONThe 10 Best Short Moral Stories With Valuable LessonsAvatarBy Dan Western The
+                                                10 Best Short Moral Stories
+                                                SHARETWEET
+                                                Stories that have morals and messages behind them are always powerful. In fact, it’s
+                                                crazy just how powerful a 200 word story can be.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="view-more text-lg-right pt-2 container">
+                                 <a href="#" class="btn btn-outline-secondary">Show More</a>
+                              </div>
+                           </div>
+                           <div id="sports" class="news-content tab-pane pt-5">
+                              <div class=" mt-0" style="background-color: transparent;">
+                                 <div class="container text-center">
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                sports
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Our last article of short stories became so popular, that we decided to create another
+                                                list, in which every story has a simple moral behind it.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1 style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Our last article of short stories became so popular, that we decided to create another
+                                                list, in which every story has a simple moral behind it.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Our last article of short stories became so popular, that we decided to create another
+                                                list, in which every story has a simple moral behind it.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Our last article of short stories became so popular, that we decided to create another
+                                                list, in which every story has a simple moral behind it.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Our last article of short stories became so popular, that we decided to create another
+                                                list, in which every story has a simple moral behind it.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="view-more text-lg-right pt-2 container">
+                                 <a href="#" class="btn btn-outline-secondary">Show More</a>
+                              </div>
+                           </div>
+                           <div id="cultural" class="news-content tab-pane pt-5">
+                              <div class=" mt-0" style="background-color: transparent;">
+                                 <div class="container text-center">
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Cultural
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="view-more text-lg-right pt-2 container">
+                                 <a href="#" class="btn btn-outline-secondary">Show More</a>
+                              </div>
+                           </div>
+                           <div id="lorals" class="news-content tab-pane pt-5">
+                              <div class=" mt-0" style="background-color: transparent;">
+                                 <div class="container text-center">
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Lorals
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="view-more text-lg-right pt-2 container">
+                                 <a href="#" class="btn btn-outline-secondary">Show More</a>
+                              </div>
+                           </div>
+                           <div id="gbu-in-media" class="news-content tab-pane pt-5">
+                              <div class=" mt-0" style="background-color: transparent;">
+                                 <div class="container text-center">
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                ut one day, when he turned eighty years old, an incredible thing happened. Instantly
+                                                everyone started hearing the rumour:
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-3 ">
+                                          <a href="#" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="https://www.larutadelsorigens.cat/wallpic/full/228-2280559_beautiful-girl-with-flower.jpg"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                Beautiful Girl Hd Beautiful Girl Beautiful Wallpapers Flower Flower Iphone Anime Girl.
+                                                </h5>
+                                             </div>
+                                             <br>
+                                             <div class="date-time text-left">
+                                                <h1
+                                                style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
+                                                3 Days ago</h1>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="view-more text-lg-right pt-2 container">
+                                 <a href="#" class="btn btn-outline-secondary">Show More</a>
+                              </div>
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/techno.jpg" alt="Carousel 2">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Techno Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none" href="clubs/techno_club.html">Updating the students’ knowledge on technologies.</a>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/meditation.jpg" alt="Carousel 3">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Meditation Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none"  href="clubs/meditation_club.html">Make living a more mindful and skillful life</a>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-                <div class="carousel-item">
-                  <div class="row">
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/nature.jpg" alt="Carousel 1">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Nature's Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none"  href="clubs/music_club.html">To inculcate love and respect for nature.</a>
-                              </p>
+                     
+                     <!--- end of section 1-->
+                     <!--- start of new Section -->
+                     <div class="">
+                        <div class="banner-holder "
+                           style="background-image: url(img/lifebg.jpg); padding: 8rem 0rem; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;">
+                           <div class="strip p-5" style="background-color: #ffffffb3;">
+                              <div class="container">
+                                 <div class="tagline text-center">
+                                    <h2> <span>We’re a family. <br> A team. A community.</span> </h2>
+                                 </div>
+                                 <div class="text-center p-2 ">​
+                                    <h3 style="font-size: 20px; color: #24445f8c">We stick together. We help each other get to where we
+                                    want to go.</h3>
+                                 </div>
+                                 <br>
+                                 <div class="container text-center " style=" width: 100%;">
+                                    <a class="btn campus-life-btn-div text-center text-white mt-2" href="campuslife" style="display: inline-block; width: 30vh;">
+                                       
+                                             <span>Campus life</span>
+
+                                    </a>
+                                    <a class="btn campus-life-btn-div mt-2 text-white" href="citylife" style="display: inline-block; width: 30vh;">
+                                     
+                                             <span>City life</span>
+                                      
+                                    </a>
+                                    <a class="btn campus-life-btn-div mt-2 text-white" href="gallery/gallery" style="display: inline-block;width: 30vh;">
+                                             <span>Visit</span>
+                                    </a>
+                                    <br>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/audio.jpg" alt="Carousel 2">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Vox Pop Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none"  href="clubs/social_service_club.html"> Supports learning by providing innovative education.</a>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/literary.jpg" alt="Carousel 3">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Literary Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none" href="clubs/dishayan_club.html">Building a responsible student
-      community, sensitive to the culture.</a>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="row">
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/music.jpg" alt="Carousel 10">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Music Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none" href="clubs/music_club.html">Focused to share and express through different flavors of music.</a>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/social.jpg" alt="Carousel 2">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Social Service Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none"  href="clubs/social_service_club.html"> Involve in social and spiritual activities for students.</a>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/drama.jpg" alt="Carousel 3">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Dramatics Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none"  href="clubs/dishayan_club.html">Developing the groups acting skills in a fun & safe environment.</a>
-                              </p>
+                     <!--- end of new Section -->
+                     <!-- new section start  -->
+                     <div class="">
+                        <div class="outer-tag" style="overflow-x: hidden;">
+                           <div class="row">
+                              <div class="col-md-6 p-2 " style="background-color: rgb(0, 140, 149); ">
+                                 <div
+                                    style=" height: 100px;background-image: url(img/lifecapbg.png);background-size: contain;background-repeat: no-repeat; background-image:  url(img/lifecapbg.png);">
+                                 </div>
+                                 <div class=" container  mt-3 pb-0">
+                                    <div class=" text-white text-center ml-4 mr-4">
+                                       <h2 class="display-4">Who we are</h2>
+                                       <p class="m-5 font-weight-light" style="font-size: 20px;">Gautam Buddha University, dreamers become thinkers, doers,
+                                          solvers, travelers, influencers. We help you become more of who you are, and more of who you
+                                       want to be.</p>
+                                    </div>
+                                 </div>
+                                 <div style="height: 100px;width: 100%; background-size: contain;background-repeat: no-repeat;background-image:  url(img/lifecapbg.png);background-position-x: right;">
+                                 </div>
+                              </div>
+                              <div class="col-md-6 text-center row align-middle" style="padding: 100px 0px;">
+                                 <div class="col-2 ">
+                                    <div class="float-right">
+                                        <svg class="tcb-icon " viewBox="0 0 30 32"
+                                          data-name="quote-left">
+                                          <path
+                                             d="M13.714 17.143v6.857c0 1.893-1.536 3.429-3.429 3.429h-6.857c-1.893 0-3.429-1.536-3.429-3.429v-12.571c0-5.036 4.107-9.143 9.143-9.143h1.143c0.625 0 1.143 0.518 1.143 1.143v2.286c0 0.625-0.518 1.143-1.143 1.143h-1.143c-2.518 0-4.571 2.054-4.571 4.571v0.571c0 0.946 0.768 1.714 1.714 1.714h4c1.893 0 3.429 1.536 3.429 3.429zM29.714 17.143v6.857c0 1.893-1.536 3.429-3.429 3.429h-6.857c-1.893 0-3.429-1.536-3.429-3.429v-12.571c0-5.036 4.107-9.143 9.143-9.143h1.143c0.625 0 1.143 0.518 1.143 1.143v2.286c0 0.625-0.518 1.143-1.143 1.143h-1.143c-2.518 0-4.571 2.054-4.571 4.571v0.571c0 0.946 0.768 1.714 1.714 1.714h4c1.893 0 3.429 1.536 3.429 3.429z">
+                                          </path>
+                                       </svg>
+                                    </div>
+
+                                 </div>
+                                 <div class="col-8 text-center">
+                                       <div class="text-center" style=" font-size: 20px;color: rgba(167, 168, 170, 1);">
+                                       One best book is equal to a hundred good friends, but one good
+                                       friend is equal to a library.
+                                       </div>
+                                       <div><br><br>
+                                          <div class="text-right container">
+                                             <p>:-<i> Dr. APJ Abdul Kalam </i></p>
+                                          </div>
+                                       </div>
+                                 </div>
+                                 <div class="col-2 ">
+                                    <div class="float-left">
+                                    <svg class="tcb-icon" viewBox="0 0 26 28"
+                                          data-name="quote-right">
+                                          <path
+                                             d="M12 5v11c0 4.406-3.594 8-8 8h-1c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h1c2.203 0 4-1.797 4-4v-0.5c0-0.828-0.672-1.5-1.5-1.5h-3.5c-1.656 0-3-1.344-3-3v-6c0-1.656 1.344-3 3-3h6c1.656 0 3 1.344 3 3zM26 5v11c0 4.406-3.594 8-8 8h-1c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h1c2.203 0 4-1.797 4-4v-0.5c0-0.828-0.672-1.5-1.5-1.5h-3.5c-1.656 0-3-1.344-3-3v-6c0-1.656 1.344-3 3-3h6c1.656 0 3 1.344 3 3z">
+                                          </path>
+                                       </svg>
+                                    </div>
+                                 </div>
+                                 
+                              </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="row">
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/photography.jpg" alt="Carousel 1">
+                    </div>
+                        <!-- end New section -->
+                        <!--- start of new section -->
+                       <!--  <div class="py-3" id="section-events">
+                           <div class="container py-3">
+                              <div class="mx-auto text-center" id="">
+                                 <h1 style="font-weight: 600 ; font-size: 40px; color: #fff" class="py-2">Events</h1>
+                                 <h6 style="color: #fff;" class="py-1">Events happening across campus</h6>
+                              </div>
+                              <div class="row py-3">
+                                 <div class="col-lg-3 col-md-4 col-12">
+                                    <div class="card shadow border-0" id="events-card">
+                                       <img src="img/gautambuddha2.jpg" class="events-img" width="100%">
+                                       <h6 class="card-text pl-3 pt-2" id="events-card-title">Date and time</h6>
+                                       <div class="card-body pt-0" id="events-card-body">
+                                          <h5>Demo heading</h5>
+                                          <p>asdasdhaksjd as ths is bacically nothing. you should do something interesting.</p>
+                                          <button class="btn btn-outline-primary btn-sm">Read More</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-4 col-12">
+                                    <div class="card shadow border-0" id="events-card">
+                                       <img src="img/gautambuddha2.jpg" class="events-img" width="100%">
+                                       <h6 class="card-text pl-3 pt-2" id="events-card-title">Date and time</h6>
+                                       <div class="card-body pt-0" id="events-card-body">
+                                          <h5>Title Heading</h5>
+                                          <p>asdasdhaksjd as ths is bacically nothing. you should do sdasdasdas g sf gdf dfgf gd fg dfg d
+                                          fg df gd fgsomething interesting.</p>
+                                          <button class="btn btn-outline-primary btn-sm">Read More</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-4 col-12">
+                                    <div class="card shadow border-0" id="events-card">
+                                       <img src="img/gautambuddha2.jpg" class="events-img" width="100%">
+                                       <h6 class="card-text pl-3 pt-2" id="events-card-title">Date and time</h6>
+                                       <div class="card-body pt-0" id="events-card-body">
+                                          <h5>Title Heading</h5>
+                                          <p>asdasdhaksjd as ths is bacically nothing. asdas sdf sdfs dfgdfgd f you should do something
+                                          interesting.</p>
+                                          <button class="btn btn-outline-primary btn-sm">Read More</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-4 col-12">
+                                    <div class="card shadow border-0" id="events-card">
+                                       <img src="img/gautambuddha2.jpg" class="events-img" width="100%">
+                                       <h6 class="card-text pl-3 pt-2" id="events-card-title">Date and time</h6>
+                                       <div class="card-body pt-0" id="events-card-body">
+                                          <h5>Title Heading</h5>
+                                          <p>asdasdhaksjd as ths is bacically nothing. you should do something interesting.</p>
+                                          <button class="btn btn-outline-primary btn-sm">Read More</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Photography Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none" href="clubs/photography_club.html">Provide an environment for students to share their passion of photography.</a>
-                              </p>
+                        </div> -->
+                        <!-- end of new section -->
+                        <div id="section2">
+                           <!-- section 2 -->
+                           <div class="container py-3">
+                              <header class="mx-auto text-center pt-3" id="">
+                                 <h1 style="font-weight: 700 ; font-size: 40px" class="py-2">University Schools</h1>
+                                 <!-- <h6>Lorem Ipsem is here</h6> -->
+                              </header>
+                              <div>
+                                 <div class="row py-3 text-center">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                                       <a href="/schools/som">
+                                          <img src="img/schools/management_school.jpg" class="card-img-top img-fluid shadow" width="100%">
+                                          <div class="card-img-overlay">
+                                             <h6 class="card-text">Management</h6>
+                                          </div>
+                                       </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                                       <a href="/schools/soict">
+                                          <img src="img/schools/ict_school.jpg" class="card-img-top img-fluid shadow" width="100%">
+                                          <div class="card-img-overlay">
+                                             <h6 class="card-text">Information & Communication Technology</h6>
+                                          </div>
+                                       </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                                       <a href="/schools/soe">
+                                          <img src="img/schools/engine_school.jpg" class="card-img-top img-fluid shadow" width="100%">
+                                          <div class="card-img-overlay">
+                                             <h6 class="card-text">Engineering</h6>
+                                          </div>
+                                       </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                                       <a href="/schools/sovs">
+                                          <img src="img/schools/vocational_school.jpg" class="card-img-top img-fluid shadow" width="100%">
+                                          <div class="card-img-overlay">
+                                             <h6 class="card-text">Vocational Studies & Applied Sciences</h6>
+                                          </div>
+                                       </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                                       <a href="/schools/sob">
+                                          <img src="img/schools/biotech_school.jpg" class="card-img-top img-fluid shadow" width="100%">
+                                          <div class="card-img-overlay">
+                                             <h6 class="card-text">Biotechnology</h6>
+                                          </div>
+                                       </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                                       <a href="/schools/sobs">
+                                          <img src="img/schools/buddhist_school.jpg" class="card-img-top img-fluid shadow" width="100%">
+                                          <div class="card-img-overlay">
+                                             <h6 class="card-text">Buddhist Studies & Civilization</h6>
+                                          </div>
+                                       </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                                       <a href="/schools/soh">
+                                          <img src="img/schools/humanities_school.jpg" class="card-img-top img-fluid shadow" width="100%">
+                                          <div class="card-img-overlay">
+                                             <h6 class="card-text">Humanities & Social Sciences</h6>
+                                          </div>
+                                       </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3 img-hover-zoom">
+                                       <a href="/schools/soljg">
+                                          <img src="img/schools/law_school.jpg" class="card-img-top img-fluid shadow" width="100%">
+                                          <div class="card-img-overlay">
+                                             <h6 class="card-text">Law, Justice & Governance</h6>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/debate.jpg" alt="Carousel 2">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Debate Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none" href="clubs/dhritikon.html">Improving personal and professional attributes and skills of students.</a>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-12 mb-4">
-                        <div class="card border-0" id="clubs-cards">
-                           <div class="card-img-top card-img-top-250">
-                              <img class="img-fluid" src="img/club/painting.jpg" alt="Carousel 3">
-                           </div>
-                           <div class="card-block p-3">
-                              <h5 class="medium text-danger p-b-2">Art/Painting Club</h5>
-                              <p class="pt-0">
-                                 <a style="color: #000; text-decoration:none" href="clubs/art_painting_club.html">Dedicated to provide the opportunities for painting.</a>
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <%include footer%>
+
+<%include footer%>

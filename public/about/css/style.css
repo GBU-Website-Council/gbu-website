@@ -1,6 +1,10 @@
 body{
 	zoom: 100%;
 }
+#search-icon{
+	padding-left: 10px;
+	transform: skew(-15deg);
+}
 #first-nav{
 	background: #78335D !important;
 }
@@ -377,8 +381,6 @@ body{
 }
 .bgimage_library {
 	background-image: url('../img/library_banner.png');
-			background-repeat: no-repeat;
-background-size: cover;
 }
 .navbarcolour{
   background-color: #010327;
@@ -424,40 +426,42 @@ background-size: cover;
 .bgimage_about_gb_mukul {
 	background-image: url('../img/banner_about2.png');
 	width: 100%;
-	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
 }
 .bgimage_about_home_mukul {
 	background-image: url('../img/banner_about1.png');
 	width: 100%;
-	height: 350px;
-		background-repeat: no-repeat;
-background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
 }
 .bgimage_about_mission_mukul {
 	background-image: url('../img/banner_mission.png');
 	width: 100%;
-	height: 350px;
 	background-repeat: no-repeat;
-background-size: cover;
+	background-size: cover;
+	height: 250px;
 }
 .bgimage_about_Committee_mukul {
 	background-image: url('../img/banner_about4.png');
 	width: 100%;
-	height: 350px;
-			background-repeat: no-repeat;
-background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
 }
 .bgimage_about_organisation_mukul {
-	background-image: url('../img/banner_organisation.png');
+	background-image: url('../img/bestarchitect.jpg');
 	width: 100%;
-	height: 360px;
-			background-repeat: no-repeat;
-background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
 }
 .bgimage_about_report_mukul {
 	background-image: url('../img/banner_report.png');
 	width: 100%;
-	height: 360px;
-			background-repeat: no-repeat;
-background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
 }

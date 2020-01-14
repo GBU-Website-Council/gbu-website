@@ -1,5 +1,12 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.jumbotron{
+	background-color: transparent;
+}
 .clubheader{
-	background-color: #FB8C00;
+	background-color: transparent;
 	border-radius: 0;
 	border: none;
 	height: 250px;
@@ -33,7 +40,7 @@
 
 .xcdx-btn{
 	text-align: center;
-	width: 30%;
+	width: 300px;
 	padding: 2% 1.7%;  
 	background-color: #012454;
 	transition: 0.5s ease-in-out;
@@ -55,3 +62,4 @@ a:link {
 .socl{
 background-color: #78335d;
 }
+

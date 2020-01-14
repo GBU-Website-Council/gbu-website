@@ -129,6 +129,7 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
     	res.render("404")
 });
 app.post('/ivy99_gbu_adminPage/:name',upload.single('file'),function(req,res){
+	console.log(req.body)
 	if(req.body.school=="all"){
        School.find({},function(err,schools){
        	if(err)
@@ -186,6 +187,9 @@ else{
 })
 }
 });
+app.get('/clubs',(req,res)=>{
+	res.render('clubs');
+})
 app.get('/clubs/dance',(req,res)=>{
 	res.render('dance')
 })

@@ -5,6 +5,9 @@ var facultySchema=new mongoose.Schema({
 		type:Number,
 		unique:true
 	},
+	Biography:String,
+	Academic:String,
+	Experience:String,
 	Name:String,
 	Title:String,
 	Email:String

@@ -1,0 +1,94 @@
+.navbarcolour_rohit{
+	background-color: #012454;
+	color: white;
+
+}
+
+.clubheader_rohit{
+	background-color: #FB8C00;
+	border-radius: 0;
+	border: none;
+}
+
+.card-title_rohit{
+	font-weight: bold;
+
+}
+.heightnow_rohit{
+	height: 450px;
+}
+.navbarcolour_rohit{
+	background-color: #012454;
+	color: white;
+	border: none;
+	border-radius: 0;
+}
+
+.newsletter_rohit{
+
+	height: 70px;
+	background-color: #FB8C07;
+	color:white;
+	border: none;
+	 border-radius: 0;
+
+}
+.subscriber_rohit{
+
+	width: 480px;
+}
+.designevent_rohit{
+	color: #012454;
+}
+
+.designevent_rohitnew{
+	color: #012454;
+	font-size: 12px;
+}
+.eventlister_rohit{
+	color:#FB8C07;
+}
+.pagelinker_rohit{
+	color: #FB8C07;
+
+}
+.horizontalwidthfooter{
+	height: 10px;
+	background-color:  #FB8C00;
+	color: white;
+
+
+}
+.mainlogo{
+	border-color:white ;
+	color: white;
+	border-width: 3px;
+
+
+}
+.mainlogo:hover{
+	background-color: #FB8C07;
+	border-color:#FB8C07;
+}
+.footernow{
+
+	max-height: 230px;
+	background-color: #012454;
+	color: white;
+	border: none;
+}
+@media (min-width: 768px) {
+.carousel-multi-item-2 .col-md-3 {
+float: left;
+width: 25%;
+max-width: 100%; } }
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; }
+
+.news{
+	height: 100%;
+max-height: 625px;
+max-width: 1100px;
+
+}
