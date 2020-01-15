@@ -1,0 +1,36 @@
+.jumbotron {
+     background-color: #fefeff00!important; 
+  }
+.banner-bg{
+    
+    /*add IMG inline*/
+    
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .banner-over{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Formate
+     <div class="jumbotron mb-0 clubheader banner-bg" style="background-image: url(assets/img/banner7.png);">
+      <div class="banner-over">
+        <div class="jumbotron">
+          <div class="container mb-0 ">
+          <h1 class="display-4 mb-0 text-left" style="color: #ffffff">
+          <strong>
+          ANTI RAGGING
+          </strong>
+          </h1>
+          <hr class="mt-0  pt-0 mb-1">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    */

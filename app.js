@@ -274,20 +274,69 @@ app.get('/students',function(req,res){
 app.get('/alumni',function(req,res){
 	res.render('alumni')
 })
-app.get('/library',(req,res)=>{
-	res.render('library')
+app.get('/admissions',(req,res)=>{
+	res.render('admissions')
 })
-app.get('/library/services',(req,res)=>{
-	res.render('library_services')
+app.get('/library/home',(req,res)=>{
+	res.render('library_home')
 })
-app.get('/library/e-services',(req,res)=>{
-	res.render('library_eservices')
+app.get('/library/about',(req,res)=>{
+	res.render('library_about')
 })
-app.get('/library/open-access-e-resources',(req,res)=>{
+app.get('/library/online-catalogue',(req,res)=>{
+	res.render('library_online')
+})
+app.get('/library/e-resources',(req,res)=>{
 	res.render('library_resources')
 })
-app.get('/library/rules-regulations',(req,res)=>{
-	res.render('library_rules')
+app.get('/library/downloads-&-forums',(req,res)=>{
+	res.render('library_downloads')
+})
+app.get('/library/contact-us',(req,res)=>{
+	res.render('library_contact')
+})
+app.get('/tender',(req,res)=>{
+	res.render('tender');
+})
+app.get('/city-life',(req,res)=>{
+	res.render('city');
+});
+app.get('/results',(req,res)=>{
+	res.render('results');
+})
+app.get('/iprcell/home',(req,res)=>{
+ 	res.render('iprcell_home')
+});
+app.get('/iprcell/contact-us',(req,res)=>{
+ 	res.render('iprcell_contact')
+});
+app.get('/iprcell/courses',(req,res)=>{
+ 	res.render('iprcell_courses')
+});
+app.get('/iprcell/people',(req,res)=>{
+ 	res.render('iprcell_people')
+});
+app.get('/iprcell/links',(req,res)=>{
+ 	res.render('iprcell_links')
+});
+app.get('/iprcell/policy',(req,res)=>{
+ 	res.render('iprcell_policy')
+});
+app.get('/iprcell/iprs',(req,res)=>{
+ 	res.render('iprs')
+});
+app.get('/ccc',(req,res)=>{
+	res.render('ccc');
+})
+app.get('/crc',(req,res)=>{
+	res.render('crc');
+})
+
+app.get('/e-tender',(req,res)=>{
+	res.render('etender');
+})
+app.get('/faqs',(req,res)=>{
+	res.render('faqs')
 })
 app.get('/schools/soict',(req,res)=>{
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
@@ -456,10 +505,24 @@ app.get('/placements',(req,res)=>{
 app.get('/recruitment',(req,res)=>{
 	res.render('recruitment')
 })
+app.get('/naac',(req,res)=>{
+	res.render('naac');
+})
+app.get('/gallery',(req,res)=>{
+	res.render('gallery')
+})
+app.get('/media',(req,res)=>{
+	res.render('media')
+})
 app.get('/contact',(req,res)=>{
 	res.render('contact')
 })
-
+app.get('/leave-form',(req,res)=>{
+	res.render('leave')
+})
+app.get('/payment',(req,res)=>{
+	res.render('payment')
+})
 app.get('/*',function(req,res){
 res.render('404');
 });

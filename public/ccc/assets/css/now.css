@@ -1,0 +1,84 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.jumbotron{
+	background-color: transparent;
+}
+.clubheader{
+	background-color: transparent;
+	border-radius: 0;
+	border: none;
+	height: 250px;
+}
+.navbarcolour{
+	background-color: #012454;
+	color: white;
+
+}
+.bordernow {
+	border: none;
+}
+.buttoncolour{
+	border-color: #012454;
+	color: #012454;
+}
+.buttoncolour:hover{
+	background-color: #FB8C00;
+
+}
+
+.btn-outline-primary{
+	color: #000000;
+}
+.btn-outline-primary:hover {
+    color: #ffffff;
+    background-color: #FB8C00; 
+    border-color: #007bff;
+    transition: 0.5s;
+}
+
+.xcdx-btn{
+	text-align: center;
+	width: 300px;
+	padding: 2% 1.7%;  
+	background-color: #012454;
+	transition: 0.5s ease-in-out;
+	text-decoration: none;
+	border-radius: 50px;
+}
+.xcdx-btn:hover{
+	background-color: #FB8C00;
+	 transition: 0.5s;
+	 border-radius: 10px;
+}
+.xcdx-btn a{
+	color: #ffffff;
+}
+
+a:link {
+  text-decoration: none;
+}
+.socl{
+background-color: #78335d;
+}
+
+/* banner*/
+.jumbotron {
+     background-color: #fefeff00!important; 
+  }
+.banner-bg{
+    
+    /*add IMG inline*/
+    
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .banner-over{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
