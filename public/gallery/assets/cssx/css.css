@@ -1,0 +1,396 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    line-height: 1.7;
+    color: #4d4d4d;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.el-c-m{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    /*bottom: 50%;*/
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nevigation-a{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none !important;
+}
+.icon h4{
+    font-size: 20px;
+}
+
+.icon img{
+	width: 75px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.navbarcolour{
+	background: transparent;
+}
+.navbar{
+	height:100%;
+	width: 100%;
+}
+.site-cover{
+	min-height: 600px;
+    height: calc(30vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.etxhero {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(40deg,#ff473c,#ff9068eb,transparent);
+    z-index: 1;
+}
+
+.site-block-profile-pic {
+    margin-top: -90px;
+    position: relative;
+    z-index: -1;
+    text-align: center;
+}
+.site-block-half {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.site-block-half .text h3{
+	font-size: 20px;
+    color: #000000;
+}
+.site-block-half .text{
+	padding: 30px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.p-t{
+    margin-top: -51px;
+    padding: 20px;
+    display: none;
+    width: 100px;
+}
+.site-block-half .image{
+	background-size:cover; 
+	width: 50%;
+}
+
+.site-block-half .image, .site-block-half .text {
+    width: 50%;
+}
+.site-estimonial{
+	min-height: 600px;
+    height: calc(30vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.site-estimonial .etx{
+	height: 100%;
+	width: 100%;
+	top:0;
+	background-image: linear-gradient(45deg, rgb(4, 0, 66),rgba(0, 2, 60, 0.89),rgba(11, 10, 105, 0.76), transparent);
+}
+
+.site-estimonial-1{
+    min-height: 600px;
+    height: calc(30vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.site-estimonial-1 .etxx {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(154deg, transparent,rgba(95, 4, 79, 0.88), rgb(68, 0, 56));
+    z-index: 1;
+}
+
+
+.img-gal{
+	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.sc-img{
+	width: 100%;
+	height: 300px;
+	transition: 0.8s;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.sc-img:hover{
+	transform: scale(1.04);
+	background-position: center;
+	transition: 0.8s ease-in-out;
+}
+
+/*-----360 banner------*/
+
+.banner-360{
+    height: 25vh;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.banner-360-box{
+    box-shadow: -1px 4px 19px -10px #0000008a;
+    transition: 0.5s ;
+}
+
+.banner-360-box:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.04);
+}
+
+
+/*+=======================*/
+@media (min-width: 1000px){
+   
+}
+@media (max-width: 1199.98px){
+.site-block-half .image {
+    height: 300px;
+}
+.icon h4{
+font-size: 16px;
+}
+.nevigation-a{
+    letter-spacing: 0.1em;
+    font-size: 15px;
+}
+
+.icon img{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 1199.98px){
+.site-block-half .image, .site-block-half .text {
+    width: 100%;
+}
+}
+@media (max-width: 1199.98px){
+.site-block-half .image {
+    height: 300px;
+}
+}
+@media (max-width: 1199.98px){
+.site-block-half .image, .site-block-half .text {
+    width: 100%;
+}
+}
+
+
+/*================*/
+@media (max-width: 800px){
+.site-block-half .image {
+    height: 300px;
+}
+.icon h4{
+font-size: 16px;
+}
+
+.icon img{
+        height: 100px;
+        width: 100px;
+    }
+}
+@media (max-width: 400px){
+.site-block-half .image {
+    height: 300px;
+}
+.icon h4{
+font-size: 15px;
+}
+
+.icon img{
+        height: 65px;
+        width: 65px;
+    }
+}
+
+.st-2{
+    height: 100vh;
+}
+/*----------------360 galary--------------------*/
+@media only screen and (max-width: 768px ){
+    .st-2{
+        height: 300vh;
+    }
+    .st-3{
+        height: 390vh!important;
+    }
+    site-estimonial {
+    min-height: 400px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    .st-2{
+        height: 200vh;
+    }
+    .st-3{
+        height: 200vh!important;
+    }
+}
+
+/*----------gguktgutkguy-----------------*/
+
+.grid .col-md-4{
+    max-height: 200px;
+}
+
+/** {
+  box-sizing: border-box;
+}*/
+
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*============= full screen over lay css =====================*/
+.vr-frame{
+    margin-top: -120px;
+width: 100%;
+height: 86vh;
+border: none;
+overflow: hidden;
+z-index: 999999;
+}
+.overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-image: linear-gradient(to right top, #24141d, #2c191d, #311f1d, #35261e, #372d21, #453a25, #524928, #5b592d, #7a732e, #9d8d2c, #c4a728, #eec022);
+overflow-x: hidden;
+transition: 0.5s;
+}
+.overlay-content {
+position: relative;
+top: 5%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+.overlay a {
+padding: 2px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+color: #f1f1f1;
+}
+.overlay .closebtn {
+position: absolute;
+right: 40px;
+font-size: 50px;
+}
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
+}
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .st-2 {
+    height: 650vh;
+}
+.st-3 {
+    height: 600vh!important;
+}
+}
+@media only screen and (max-width: 400px){
+    .st-2 {
+    height: 350vh;
+}
+.st-3 {
+    height: 450vh!important;
+}
+}

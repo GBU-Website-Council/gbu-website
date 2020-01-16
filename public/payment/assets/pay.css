@@ -1,0 +1,115 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.bg-bl{
+	background-color: rgb(58,221,172);
+}
+.text-pri{
+	color: #528ff0;
+}
+
+.payu{
+	background-image: url(bg-img.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.tab{
+	padding: 30px;
+	background-color: transparent;
+	transition: 0.3s;
+	
+}
+.tab:hover{
+	 
+	background-color: #b2dbe142;
+	transition: 0.3s ease-in-out;
+	box-shadow: -1px 1px 30px 0px #7da4aa;
+}
+.img{
+
+}
+.new-r-fee-div a{
+	border-radius: 30px;
+	padding: 4% 10%;
+	color: #ffffff;
+	background-color: #012454;
+	text-decoration: none;
+	outline: none;
+	-webkit-outline: none;
+	transition: 0.5s ;
+}
+.new-r-fee-div a:hover{
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: #FB8C00;
+	transition: 0.5s ease-in-out;
+}
+
+.new-pay{
+	background-color: rgb(244,248,255);
+}
+/*===========================================================================*/
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+	.payu{
+	background-image: url(bg-img1.png);
+	}
+	.pre{
+		font-weight:  500;
+		font-size: 30px;
+   		line-height: 35px;
+		letter-spacing: px;
+	}
+
+.hd{
+		display: none
+	}
+
+
+
+}
+@media only screen and (max-width: 900px){
+
+	.payu{
+	background-image: url(bg-img1.png);
+	}
+	.pre{
+		font-weight: 400;
+  	  	font-size: 20px;
+  	 	line-height: 30px;
+	}
+	.hd{
+		display: none
+	}
+	.bg-bl{
+		background-image:url(pay.png); 
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.online-tab{
+		background-color: #a2b9bd5c;
+	}
+	.bnk-tab{
+		background-color: #3addbddb;
+	}
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 300px){
+	.pre{
+		font-weight:  200;
+		font-size: 18px;
+   		line-height: 25px;
+		letter-spacing: 0px;
+	}
+
+
+
+
+}
+
