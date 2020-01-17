@@ -1,9 +1,13 @@
 body {
   zoom: 100%;
+
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #first-nav {
-  background: #78335D !important;
+  background: #78335D ;
 }
 
 #top-navigation {
@@ -11,37 +15,47 @@ body {
 }
 
 #college-name {
-  font-size: 2.4vh;
+  font-size: 2.3vh;
   font-weight: 600;
   color: #010327;
   vertical-align: middle;
   display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 .college-name-tag {
   font-size: 11px;
   color: #000;
+  font-weight: 300;
   display: inline-block;
   text-decoration: none;
 }
 
 #search {
+  width: 100%;
   display: inline-block;
   border: 1px solid #ecf0f1;
   padding: 3px;
   transform: skewX(15deg);
+
 }
 
 #search input {
   border: 0;
   box-shadow: none;
+  width: 100%;
+  margin-left: 5px;
   transform: skewX(-15deg);
+  padding-left: 30px;
+  background: url(../img/search_logo.png);
+  background-position: 2%;
+  background-size: 2.5vh;
+  background-repeat: no-repeat;
+
 }
 
-#form-search-btn {
-
-  transform: skewX(15deg);
-}
 
 .navbar-toggler {
   color: #012454;
@@ -62,9 +76,8 @@ body {
 }
 
 .nav-1:hover {
-  font-size: 14px;
   color: #C0C0C0 !important;
-  font-weight: 500;
+  font-size: 13px;
 
 }
 
@@ -110,6 +123,7 @@ body {
   display: inline-block;
   padding: 8px;
   width: 100%;
+  font-weight: 600;
   text-align: center;
   font-weight: 500;
   cursor: pointer;
@@ -521,7 +535,7 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 }
 
 .bgimage_iprcell_home_mukul {
-  background-image: url('../../../iprcell/img/ipr_cell_banner.png');
+  background-image: url('../iprcell/img/ipr_cell_banner.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -857,26 +871,114 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 }
 }
 @media screen and (max-width: 767px){
-.news-img img {
-    width: 400px;
-    height: 200px;
-}
-}
-/*college name                  */
-@media screen and (max-width: 544px){
-  #college-name{
-    font-size: 2.3vh;
-  }
-  .college-name-tag{
-    font-size: 1vh;
-  }
-  .logo{
-    max-width: 70px;
-  }
-  
-  .nav-t-x{
-    padding: .25rem 0rem!important;
+  .news-img img {
+      width: 400px;
+      height: 200px;
   }
 }
-
 /*=====================footer ======================*/
+#carousel-capton-text{
+  background-color: rgba(0, 0, 0, 0.36);
+    color: #fff;
+    box-shadow: 0px 0px 20px 0px #00000075;
+}
+ /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+      #carousel-capton-text h2{
+      font-size: 1.8vh;
+      }
+      #college-name{
+        font-size: 1.9vh;
+      }
+      .college-name-tag{
+        font-size: 0.8vh;
+      }
+      .logo{
+        max-width: 6.8vh;
+      }
+      
+      .nav-t-x{
+        padding: .25rem 0rem!important;
+      }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+      #carousel-capton-text h2{
+      font-size: 2.2vh;
+      }
+      #college-name{
+        font-size: 2vh;
+      }
+      .college-name-tag{
+        font-size: 1vh;
+      }
+      .logo{
+        max-width: 7vh;
+      }
+      
+      .nav-t-x{
+        padding: .25rem 0rem!important;
+      }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      #carousel-capton-text h2{
+      font-size: 2.5vh;
+      }
+      #college-name{
+        font-size: 2vh;
+      }
+      .college-name-tag{
+        font-size: 1vh;
+      }
+      .logo{
+        max-width: 7.7vh;
+      }
+      
+      .nav-t-x{
+        padding: .25rem 0rem!important;
+      }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      #carousel-capton-text h2{
+      font-size: 3.2vh;
+      }
+      #college-name{
+        font-size: 2.2vh;
+      }
+      .college-name-tag{
+        font-size: 1.2vh;
+      }
+      .logo{
+        max-width: 9vh;
+      }
+      
+      .nav-t-x{
+        padding: .25rem 0rem!important;
+      }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      #carousel-capton-text h2{
+      font-size: 3.8vh;
+      }
+      #college-name{
+        font-size: 2.4vh;
+      }
+      .college-name-tag{
+        font-size: 1.5vh;
+      }
+      .logo{
+        max-width: 10vh;
+      }
+      
+      .nav-t-x{
+        padding: .25rem 0rem!important;
+      }
+    }
+
