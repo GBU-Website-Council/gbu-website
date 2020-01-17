@@ -190,11 +190,50 @@ else{
 app.get('/clubs',(req,res)=>{
 	res.render('clubs');
 })
+app.get('/clubs/website-council',(req,res)=>{
+	res.render('club_website')
+})
+app.get('/clubs/drama',(req,res)=>{
+	res.render('club_drama')
+})
 app.get('/clubs/dance',(req,res)=>{
-	res.render('dance')
+	res.render('club_dance')
+})
+app.get('/clubs/dhristikon',(req,res)=>{
+	res.render('club_dhristikon')
+})
+app.get('/clubs/literary',(req,res)=>{
+	res.render('club_literary')
+})
+app.get('/clubs/techno',(req,res)=>{
+	res.render('club_techno')
+})
+app.get('/clubs/art-painting',(req,res)=>{
+	res.render('club_art')
+})
+app.get('/clubs/creativity',(req,res)=>{
+	res.render('club_creativity')
+})
+app.get('/clubs/photography',(req,res)=>{
+	res.render('club_photography')
+})
+app.get('/clubs/music',(req,res)=>{
+	res.render('club_music')
+})
+app.get('/clubs/adventure',(req,res)=>{
+	res.render('club_adventure')
+})
+app.get('/clubs/social-service',(req,res)=>{
+	res.render('club_social')
+})
+app.get('/clubs/audio-visual-education',(req,res)=>{
+	res.render('club_audio')
+})
+app.get('/clubs/bodhi-mindfulness',(req,res)=>{
+	res.render('club_bodhi')
 })
 app.get('/clubs/nature',(req,res)=>{
-	res.render('nature')
+	res.render('club_nature')
 })
 app.get('/about/home',function(req,res){
 	res.render('home')
@@ -502,6 +541,9 @@ app.get('/schools/:name/:type/:id',function(req,res){
 app.get('/placements',(req,res)=>{
 	res.render('placements')
 })
+app.get('/examinations',(req,res)=>{
+	res.render('examinations')
+})
 app.get('/recruitment',(req,res)=>{
 	res.render('recruitment')
 })
@@ -522,6 +564,12 @@ app.get('/leave-form',(req,res)=>{
 })
 app.get('/payment',(req,res)=>{
 	res.render('payment')
+})
+app.get('/sitemap',(req,res)=>{
+	res.render('sitemap')
+})
+app.get('/contact-us',(req,res)=>{
+	res.render('contact')
 })
 app.get('/*',function(req,res){
 res.render('404');
