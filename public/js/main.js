@@ -5,29 +5,108 @@ $( document ).ready(function() {
       $('.flex-nav ul').toggleClass('open');
     });
   });
-  
+    
+
    $(window).scroll(function(){
-    if($(this).scrollTop()>555.5){
-      $('.logo').css({'width':'8vh'});
-      $('#college-name').css({'font-size':'2.4vh'});
+    if($(this).scrollTop()>555.5 && $(window).width() > 480){
+      $('.logo').css({'width':'7.2vh  '});
+      $('#college-name').css({'font-size':'2vh'});
       $('.nav-2').css({'font-size':'12px'});
+      $('.college-name-tag').css({'font-size':'1vh'});
+      $('.main-navigation-a').css({'font-size':'14px'});
+      $('.main-navigation-a').css({'padding':'7.5px'});
+      $('.college-name-tag').fadeOut(300);
+      }
+    });
+
+   $(window).scroll(function(){
+    if($(this).scrollTop()>555.5  && $(window).width() > 768){
+      $('.logo').css({'width':'7.7vh'});
+      $('#college-name').css({'font-size':'2.1vh'});
+      $('.nav-2').css({'font-size':'14px'});
+      $('.college-name-tag').css({'font-size':'1vh'});
       $('.main-navigation-a').css({'font-size':'14px'});
       $('.main-navigation-a').css({'padding':'8px'});
-      $('.college-name-tag').fadeOut(10);
-     
+      $('.college-name-tag').fadeOut(300);     
       }
     });
-  
-    $(window).scroll(function(){
-    if($(this).scrollTop()<350.5){
-      $('.logo').css({'width':'10vh'});
-      $('#college-name').css({'font-size':'2.3vh'});
+
+   $(window).scroll(function(){
+    if($(this).scrollTop()>555.5  && $(window).width() > 992){
+      $('.logo').css({'width':'9vh'});
+      $('#college-name').css({'font-size':'2.1vh'});
+      $('.college-name-tag').css({'font-size':'1.2vh'});
       $('.nav-2').css({'font-size':'14px'});
-      $('.main-navigation-a').css({'font-size':'16px'});
-      $('.main-navigation-a').css({'padding':'10px'});
-      $('.college-name-tag').fadeIn(500);     
+      $('.main-navigation-a').css({'font-size':'14px'});
+      $('.main-navigation-a').css({'padding':'8px'});
+      $('.college-name-tag').fadeOut(300);     
       }
     });
+
+   $(window).scroll(function(){
+    if($(this).scrollTop()>555.5  && $(window).width() > 1200){
+      $('.logo').css({'width':'10vh'});
+      $('#college-name').css({'font-size':'2.4vh'});
+      $('.nav-2').css({'font-size':'14px'});
+      $('.college-name-tag').css({'font-size':'1.5vh'});
+      $('.main-navigation-a').css({'font-size':'14px'});
+      $('.main-navigation-a').css({'padding':'9px'});
+      $('.college-name-tag').fadeOut(300);     
+      }
+    });
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()<350.5  && $(window).width() > 480){
+          $('.logo').css({'width':'7.2vh'});
+          $('#college-name').css({'font-size':'2vh'});
+          $('.college-name-tag').css({'font-size':'1vh'});
+          $('.nav-2').css({'font-size':'14px'});
+          $('.main-navigation-a').css({'font-size':'16px'});
+          $('.main-navigation-a').css({'padding':'10px'});
+          $('.college-name-tag').fadeIn(500);     
+          }
+        });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()<350.5  && $(window).width() > 768){
+          $('.logo').css({'width':'7.7vh'});
+          $('#college-name').css({'font-size':'2.1vh'});
+          $('.nav-2').css({'font-size':'14px'});
+          $('.college-name-tag').css({'font-size':'1vh'});
+          $('.main-navigation-a').css({'font-size':'16px'});
+          $('.main-navigation-a').css({'padding':'10px'});
+          $('.college-name-tag').fadeIn(500);     
+          }
+        });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()<350.5  && $(window).width() > 992){
+          $('.logo').css({'width':'9vh'});
+          $('#college-name').css({'font-size':'2.2vh'});
+          $('.college-name-tag').css({'font-size':'1.2vh'});
+          $('.nav-2').css({'font-size':'14px'});
+          $('.main-navigation-a').css({'font-size':'16px'});
+          $('.main-navigation-a').css({'padding':'10px'});
+          $('.college-name-tag').fadeIn(500);     
+          }
+        });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()<350.5  && $(window).width() > 1200){
+          $('.logo').css({'width':'10vh'});
+          $('#college-name').css({'font-size':'2.4vh'});
+          $('.nav-2').css({'font-size':'14px'});
+          $('.college-name-tag').css({'font-size':'1.5vh'});
+          $('.main-navigation-a').css({'font-size':'16px'});
+          $('.main-navigation-a').css({'padding':'10px'});
+          $('.college-name-tag').fadeIn(500);     
+          }
+        });
+
+    
 
     $(".dropdown").hover(function () {
         $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
