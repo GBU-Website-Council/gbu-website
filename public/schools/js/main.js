@@ -18,8 +18,11 @@ $( document ).ready(function() {
     function () {
         $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
         $(this).removeClass('open');
-    });  
+    }); 
 
+    $("dropdown-item").on('click',function(){
+        $(.dropdown-item).removeClass('open');
+    }); 
     
 
 });

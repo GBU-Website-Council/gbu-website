@@ -430,14 +430,6 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 
 /* schools hover  end*/
 
-.fill {
-  width: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 
 #library-section-jumbotron {
   background: #DDA0DD;
@@ -816,12 +808,11 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
     letter-spacing: 2px;
 }
 .campus-life-btn-div {
-  background-color: gray;
   margin-left: 10px;
   padding: 15px;
-  background-color: #b39b00 !important;
+  background-color: #FF4343 !important;
   transition: 0.5s;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .campus-life-btn-div a{
   padding: 10px;
@@ -830,8 +821,10 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 }
 .campus-life-btn-div:hover{
   transition: .5s ease-in-out;
-  border-radius: 4px;
-  background-color: #b39b00b8!important;
+  border-radius: 30px solid #FF4343;
+
+  color: #fff;
+  background-color: #FF4343 !important;
 }
 
 @media (min-width: 576px){
@@ -896,12 +889,20 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
       .logo{
         max-width: 6.8vh;
       }
-      
       .nav-t-x{
         padding: .25rem 0rem!important;
       }
-    }
+      #fill {
+        width: 180%;
+        margin-left: -40%;
+        margin-right: -40%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
 
+    }
+      
     /* Extra Small Devices, Phones */ 
     @media only screen and (min-width : 480px) {
       #carousel-capton-text h2{
@@ -919,6 +920,14 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
       
       .nav-t-x{
         padding: .25rem 0rem!important;
+      }
+      #fill {
+        width: 180%;
+        margin-left: -40%;
+        margin-right: -40%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
       }
     }
 
@@ -940,6 +949,15 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
       .nav-t-x{
         padding: .25rem 0rem!important;
       }
+      #fill {
+        width: 160%;
+        background-size: cover;
+        background-position: center;
+        margin-left: -30%;
+        margin-right: -30%;
+        background-repeat: no-repeat;
+      }
+
     }
 
     /* Medium Devices, Desktops */
@@ -960,6 +978,13 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
       .nav-t-x{
         padding: .25rem 0rem!important;
       }
+      #fill {
+        width: 100%;
+        background-size: cover;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
 
     /* Large Devices, Wide Screens */
@@ -979,6 +1004,13 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
       
       .nav-t-x{
         padding: .25rem 0rem!important;
+      }
+      #fill {
+        width: 100%;
+        background-size: cover;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
       }
     }
 
