@@ -538,6 +538,11 @@ app.get('/schools/:name/:type/:id',function(req,res){
 		else
 			res.render('404')
 		});
+app.get('/faculty',(req,res)=>{
+	Faculty.find({},(err,faculties)=>{
+		res.render('faculty',{faculties})
+	})
+})
 app.get('/placements',(req,res)=>{
 	res.render('placements')
 })

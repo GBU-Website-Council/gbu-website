@@ -1,4 +1,176 @@
-<h1>Faculty Page</h1>
-<%school.faculties.forEach(function(faculty){%>
-<h2><%=faculty.name%></h2>
-<%})%>
+<%include header%>
+    <div id="main" class="clearfix">
+      <div id="primary">
+        <section id="content" role="main">
+          <div id="content-wrap">
+            <!-- line added by ankit -->
+            <div class="region region-help">
+              <div id="block-system-main" class="block block-system">
+                <div class="content">
+                  <span property="dc:title" content="Faculty" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+                  <div class="content">
+                    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                    <script type="text/javascript">
+                    $(document).ready(function(){
+                    Array.prototype.diff = function(a) {
+                    return this.filter(function(i) {return a.indexOf(i) < 0;});
+                    };
+                    $.showAllFaculty = function(){
+                    $("div.facultycard").css("display","");
+                    $("div.facultycard").filter("[type='visiting']").css("display","none");
+                    $("div.select-item").filter("[dept='all']").addClass("select-item-active");
+                    $("div.select-item").not("[dept='all']").removeClass("select-item-active");
+                    }
+                    all_list= ['1','2','3','4','5','6','7','8'];
+                    $.filterFaculty = function(school){
+                    $("div.select-item").filter("[dept=school]").addClass("select-item-active");
+                    $("div.select-item").not("[dept=school]").removeClass("select-item-active");
+                    if(school=='SOE'){
+                    filter_school = ['1'];
+                    }
+                    else if(school=='SOV'){
+                    filter_school = ['2'];
+                    }
+                    else if(school == 'SOBT'){
+                    filter_school = ['3'];
+                    }
+                    else if(school == 'SOM'){
+                    filter_school = ['4']
+                    }
+                    else if(school == 'SOHSS'){
+                    filter_school = ['5']
+                    }
+                    else if(school == 'SOBSC'){
+                    filter_school = ['6']
+                    }
+                    else if(school == 'SOICT'){
+                    filter_school = ['7']
+                    }
+                    else if(school == 'SOLJG'){
+                    filter_school = ['8']
+                    }
+                    for (var i = filter_school.length - 1; i >= 0; i--) {
+                    $("div.facultycard").filter("[dept='" + filter_school[i] + "']").css("display","");
+                    $("div.select-item").filter("[dept='" + filter_school[i] + "']").addClass("select-item-active");
+                    
+                    };
+                    var sub_list = all_list.diff(filter_school);
+                    for(var i = sub_list.length - 1; i>=0; i--){
+                    $("div.facultycard").filter("[dept='" + sub_list[i] + "']").css("display","none");
+                    $("div.select-item").filter("[dept='" + sub_list[i] + "']").removeClass("select-item-active");
+                    }
+                    };
+                    $.showAllFaculty();
+                    });
+                    </script>
+                    <script type="text/javascript" src="https://www.iiitd.ac.in/misc/jquery.js?v=1.4.4"></script>
+                    <style type="text/css">
+                    .select
+                    {
+                    display:block;
+                    text-align:center;
+                    }
+                    .select-item
+                    {
+                    display:inline-block;
+                    color:#fff;
+                    background-color:#78335d;
+                    border-radius:2px;
+                    border:1px solid #78335d;
+                    cursor:pointer;
+                    padding:4px 10px;
+                    margin:5px;
+                    transition:0.4s;
+                    }
+                    .rteleft {
+                    text-align: left
+                    }
+                    .select-item:hover,.select-item.select-item-active
+                    {
+                    background-color:#fff;
+                    color:#3fada8;
+                    }
+                    #cards-container
+                    {
+                    display:block;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container .card
+                    {
+                    width:350px;
+                    height:300px;
+                    vertical-align:top;
+                    border-radius:4px;
+                    border:1px solid #ddd;
+                    background:#fafafa;
+                    padding:20px;
+                    display:inline-block;
+                    margin:10px;
+                    overflow:hidden;
+                    }
+                    #cards-container .card img
+                    {
+                    /*height:130px!important;
+                    width:110px!important;*/
+                    width:auto;
+                    padding:3px!important;
+                    background:#fff;
+                    margin:0!important;
+                    margin-right:20px!important;
+                    margin-bottom:20px!important;
+                    }
+                    #cards-container .card hr
+                    {
+                    margin:0;
+                    margin-top:20px;
+                    margin-bottom:10px;
+                    background:-webkit-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    background:-moz-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    background:-ms-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    background:-o-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    background:linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    clear:both;
+                    }
+                    @media screen and (max-width:500px)
+                    {
+                    #cards-container .card
+                    {
+                    width:80%;
+                    }
+                    }
+                    </style>
+                    <div class="container">
+                      <h3 class=" text-lg-left mt-3 mb-0">Faculty</h3>
+                      <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 10%; background-color:#FB8C00 ">
+                      </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container">
+                      <p>The Institute is organized as research groups and education programs, and has not maintained strong department boundaries. However, faculty can be broadly grouped according to their disciplines which are given below. Apart from those listed below, the institute also has a number of Guest, Adjunct and Visiting faculty members in various disciplines</p>
+                    </div>
+                    <div class="select">
+                      <div class="select-item select-item-active" onclick="$.showAllFaculty()" dept="all">All</div>
+                      <div class="select-item" onclick="$.filterFaculty(this.getAttribute('dept'))" dept="SOICT">SOICT</div>
+                      <div class="select-item" onclick="$.filterFaculty(this.getAttribute('dept'))" dept="SOE">SOE</div>
+                      <div class="select-item" onclick="$.filterFaculty(this.getAttribute('dept'))" dept="SOV">SOV</div>
+                      <div class="select-item" onclick="$.filterFaculty(this.getAttribute('dept'))" dept="SOBT">SOBT</div>
+                      <div class="select-item" onclick="$.filterFaculty(this.getAttribute('dept'))" dept="SOM">SOM</div>
+                      <div class="select-item" onclick="$.filterFaculty(this.getAttribute('dept'))" dept="SOHSS">SOHSS</div>
+                      <div class="select-item" onclick="$.filterFaculty(this.getAttribute('dept'))" dept="SOBSC">SOBSC</div>
+                      <div class="select-item" onclick="$.filterFaculty(this.getAttribute('dept'))" dept="SOLJG">SOLJG</div>
+                    </div>
+                    <div id="cards-container">
+                      <!--   faculty 1 -->
+                      <%faculties.forEach(function(faculty){%>
+                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/aman"><%=faculty.Name%></a></strong>
+                        <p><strong><%=faculty.Post%></strong></p>
+                        <p><%=faculty.Education%></p>
+                        <p><%=faculty.Description%></p>
+                      </div>
+                      <%})%>
+                    </div>
+                  </div>
+                 <%include footer%>
