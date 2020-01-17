@@ -149,3 +149,43 @@ body{
  	background: #cc3636;
  	color: #fff;
  }
+@media only screen and (min-width : 320px) {
+		#college-name-1{
+	      	font-size: 16px;
+	    }
+		#college-name-2{
+			font-size: 20px;
+	    }
+    }
+@media only screen and (min-width : 480px) {
+  		#college-name-1{
+      	    font-size: 18px;
+        }
+        #college-name-2{
+      	    font-size: 22px;
+        }
+    }
+@media only screen and (min-width : 768px) {
+  		#college-name-1{
+    	  	font-size: 20px;
+        }
+        #college-name-2{
+      	    font-size: 24px;
+        }
+    }
+@media only screen and (min-width : 992px) {
+  		#college-name-1{
+    	  	font-size: 20px;
+        }
+      	#college-name-2{
+      		font-size: 26px;
+        }
+    }
+@media only screen and (min-width : 1200px) {
+  		#college-name-1{
+    	  	font-size: 22px;
+      	}
+        #college-name-2{
+      	    font-size: 28px;
+        }
+    }
