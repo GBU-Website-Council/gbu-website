@@ -38,4 +38,40 @@ Faculty.create({
 	else
 		console.log(faculty)
 })
+Faculty.create({ 
+ Sno:3,
+ School:"SOM",
+ Name:"Prof. Shweta Anand",
+ Post:"Professor and Dean",
+ Education:"PhD (Wealth Management), MCom, PGDM (Finance), ICWA, Net Qualified and multiple NCFM certifications",
+ Description:"Financial Services,Derivatives, Wealth"},(err,faculty)=>{
+	if(err)
+		console.log(err);
+	else
+		console.log(faculty)
+})
+Faculty.create({ 
+ Sno:4,
+ School:"SOB",
+ Name:"Dr. Vikrant Nain",
+ Post:"Assitant Professor",
+ Education:"Genetic Engineering, Molecular biology and plant Biotechnology",
+ Description:""},(err,faculty)=>{
+	if(err)
+		console.log(err);
+	else
+		console.log(faculty)
+})
+Faculty.create({ 
+ Sno:5,
+ School:"SOVS",
+ Name:"Dr. Amit Kumar Awasthi",
+ Post:"Assitant Professor",
+ Education:"Ph.D. Mathematics(Dr BR Ambedkar University);M. Sc., MJP Rohilkhand University, 1999.",
+ Description:"Ordinary & Partial Differential Equations, Numerical Methods, Engineering Mathematics, Complex Analysis, Cryptology."},(err,faculty)=>{
+	if(err)
+		console.log(err);
+	else
+		console.log(faculty)
+})
 module.exports=Faculty;
