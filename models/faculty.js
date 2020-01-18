@@ -5,6 +5,7 @@ var facultySchema=new mongoose.Schema({
 		type:Number,
 		unique:true
 	},
+	School:String,
 	Name:String,
 	Post:String,
 	Education:String,
@@ -14,6 +15,7 @@ var facultySchema=new mongoose.Schema({
 var Faculty=mongoose.model('faculty',facultySchema);
 Faculty.create({ 
  Sno:1,
+ School:"SOICT",
  Name:"Dr. Pradeep Tomar",
  Post:"Assitant Professor",
  Education:"Doctorate in Philosophy (Ph.D.) in Computer Science;Master of Computer Applications (M.C.A.)",
@@ -26,6 +28,7 @@ Faculty.create({
 
 Faculty.create({ 
  Sno:2,
+ School:"SOICT",
  Name:"Dr. Rajesh Mishra",
  Post:"Assitant Professor",
  Education:"Ph.D. & M.Tech.(IIT Kharagpur); B.E.(Electronics Engineering) SRTMU Nanded.",
