@@ -1,4 +1,6 @@
 body{
+
+  font-family: 'Lato', sans-serif;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -156,6 +158,14 @@ body{
 		#college-name-2{
 			font-size: 20px;
 	    }
+	    #fill-image {
+        width: 180%;
+        margin-left: -40%;
+        margin-right: -40%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
 @media only screen and (min-width : 480px) {
   		#college-name-1{
@@ -164,6 +174,14 @@ body{
         #college-name-2{
       	    font-size: 22px;
         }
+        #fill-image {
+        width: 180%;
+        margin-left: -40%;
+        margin-right: -40%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
 @media only screen and (min-width : 768px) {
   		#college-name-1{
@@ -172,6 +190,14 @@ body{
         #college-name-2{
       	    font-size: 24px;
         }
+        #fill-image {
+        width: 160%;
+        background-size: cover;
+        background-position: center;
+        margin-left: -30%;
+        margin-right: -30%;
+        background-repeat: no-repeat;
+      }
     }
 @media only screen and (min-width : 992px) {
   		#college-name-1{
@@ -180,6 +206,14 @@ body{
       	#college-name-2{
       		font-size: 26px;
         }
+
+      #fill-image {
+        width: 100%;
+        background-size: cover;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
 @media only screen and (min-width : 1200px) {
   		#college-name-1{
@@ -188,4 +222,14 @@ body{
         #college-name-2{
       	    font-size: 28px;
         }
+
+      #fill-image {
+        width: 100%;
+        background-size: cover;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
+
+
