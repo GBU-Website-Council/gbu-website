@@ -87,7 +87,7 @@ body {
 }
 
 .nav-2 {
-  font-weight: 600;
+  font-weight: 400;
   color: #010327;
   font-size: 14px;
   transform: skewX(-15deg);
@@ -182,6 +182,7 @@ body {
 }
 .dropdown-item:hover{
   background-color: #FF4343;
+  color: #fff;
   transition: .3s ease-in-out;
 }
 

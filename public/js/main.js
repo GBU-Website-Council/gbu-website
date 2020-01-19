@@ -14,7 +14,7 @@ $( document ).ready(function() {
       $('.nav-2').css({'font-size':'12px'});
       $('.college-name-tag').css({'font-size':'1vh'});
       $('.main-navigation-a').css({'font-size':'14px'});
-      $('.main-navigation-a').css({'padding':'7.5px'});
+      $('.main-navigation-a').css({'padding':'7.0px'});
       $('.college-name-tag').fadeOut(300);
       }
     });
@@ -26,7 +26,7 @@ $( document ).ready(function() {
       $('.nav-2').css({'font-size':'14px'});
       $('.college-name-tag').css({'font-size':'1vh'});
       $('.main-navigation-a').css({'font-size':'14px'});
-      $('.main-navigation-a').css({'padding':'8px'});
+      $('.main-navigation-a').css({'padding':'7.6px'});
       $('.college-name-tag').fadeOut(300);     
       }
     });
@@ -38,7 +38,7 @@ $( document ).ready(function() {
       $('.college-name-tag').css({'font-size':'1.2vh'});
       $('.nav-2').css({'font-size':'14px'});
       $('.main-navigation-a').css({'font-size':'14px'});
-      $('.main-navigation-a').css({'padding':'8px'});
+      $('.main-navigation-a').css({'padding':'7.8px'});
       $('.college-name-tag').fadeOut(300);     
       }
     });
@@ -50,7 +50,7 @@ $( document ).ready(function() {
       $('.nav-2').css({'font-size':'14px'});
       $('.college-name-tag').css({'font-size':'1.5vh'});
       $('.main-navigation-a').css({'font-size':'14px'});
-      $('.main-navigation-a').css({'padding':'9px'});
+      $('.main-navigation-a').css({'padding':'8px'});
       $('.college-name-tag').fadeOut(300);     
       }
     });
