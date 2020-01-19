@@ -11,6 +11,7 @@
                   <div class="content">
                     <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
                     <script type="text/javascript">
+
                     $(document).ready(function(){
                     $.showAllFaculty=function()
                     {
@@ -366,7 +367,17 @@
                       <div class="select-item-soh" onclick="$.showSOHFaculty()">SOHSS</div>
                       <div class="select-item-sobs" onclick="$.showSOBSFaculty()">SOBSC</div>
                       <div class="select-item-soljg" onclick="$.showSOLJGFaculty()">SOLJG</div>
+                      <form style="justify-content: center;padding:20px" action="/faculty" method="GET" class="form-inline">
+                      	<div  class="form-group">
+                      		<input type="text" name="search" class="form-control" placeholder="Faculty Search" style="margin-right: 10px">
+                      		<input type="submit" class="btn btn-success"  value="Search">
+                      		
+                      	</div>
+                      </form>
                     <div id="cards-container">
+                    	<%if(noMatch !==undefined){%>
+                    	<h3><%=noMatch%></h3>
+                    	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
                         <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
@@ -377,6 +388,9 @@
                       <%})%>
                     </div>
                     <div id="cards-container-soict">
+                    	<%if(noMatch !==undefined){%>
+                    	<h3><%=noMatch%></h3>
+                    	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       	<%if(faculty.School=="SOICT"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
@@ -389,6 +403,9 @@
                       <%})%>
                     </div>
                     <div id="cards-container-sob">
+                    	<%if(noMatch !==undefined){%>
+                    	<h3><%=noMatch%></h3>
+                    	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       	<%if(faculty.School=="SOB"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
@@ -401,6 +418,9 @@
                       <%})%>
                     </div>
                     <div id="cards-container-sobs">
+                    	<%if(noMatch !==undefined){%>
+                    	<h3><%=noMatch%></h3>
+                    	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       	<%if(faculty.School=="SOBS"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
@@ -413,6 +433,9 @@
                       <%})%>
                     </div>
                     <div id="cards-container-soe">
+                    	<%if(noMatch !==undefined){%>
+                    	<h3><%=noMatch%></h3>
+                    	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       	<%if(faculty.School=="SOE"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
@@ -425,6 +448,9 @@
                       <%})%>
                     </div>
                     <div id="cards-container-soh">
+                    	<%if(noMatch !==undefined){%>
+                    	<h3><%=noMatch%></h3>
+                    	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       	<%if(faculty.School=="SOH"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
@@ -437,6 +463,9 @@
                       <%})%>
                     </div>
                     <div id="cards-container-soljg">
+                    	<%if(noMatch !==undefined){%>
+                    	<h3><%=noMatch%></h3>
+                    	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       	<%if(faculty.School=="SOLJG"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
@@ -449,6 +478,9 @@
                       <%})%>
                     </div>
                     <div id="cards-container-som">
+                    	<%if(noMatch !==undefined){%>
+                    	<h3><%=noMatch%></h3>
+                    	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       	<%if(faculty.School=="SOM"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
@@ -461,6 +493,9 @@
                       <%})%>
                     </div>
                     <div id="cards-container-sovs">
+                    	<%if(noMatch !==undefined){%>
+                    	<h3><%=noMatch%></h3>
+                    	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       	<%if(faculty.School=="SOVS"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">

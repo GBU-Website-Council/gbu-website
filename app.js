@@ -538,10 +538,28 @@ app.get('/schools/:name/:type/:id',function(req,res){
 		else
 			res.render('404')
 		});
+function escapeRegex(text) {
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+};
 app.get('/faculty',(req,res)=>{
-	Faculty.find({},(err,faculties)=>{
-		res.render('faculty',{faculties})
+	var noMatch="";
+	if(req.query.search){
+		 const regex = new RegExp(escapeRegex(req.query.search), 'gi');
+		Faculty.find({Name:regex},(err,faculties)=>{
+			var noMatch;
+			if(faculties.length<1){
+				noMatch="No Results Found!";
+			}
+		res.render('faculty',{faculties,noMatch})
 	})
+	}
+	else
+{
+
+	Faculty.find({},(err,faculties)=>{
+		res.render('faculty',{faculties,noMatch})
+	})
+}
 })
 app.get('/placements',(req,res)=>{
 	res.render('placements')

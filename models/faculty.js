@@ -25,7 +25,6 @@ Faculty.create({
 	else
 		console.log(faculty)
 })
-
 Faculty.create({ 
  Sno:2,
  School:"SOICT",
