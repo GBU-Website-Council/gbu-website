@@ -266,43 +266,43 @@ res.render('act')
 res.render('rti')
 });
 app.get('/academics/academic-programmes',function(req,res){
-	res.render('programmes')
+	res.render('academics_programmes')
 });
 app.get('/academics/international-collaboration',function(req,res){
-	res.render('collaboration')
+	res.render('academics_collaboration')
 });
 app.get('/academics/international-student-affairs',function(req,res){
-	res.render('affairs')
+	res.render('academics_affairs')
 });
 app.get('/academics/training-consultations',function(req,res){
-	res.render('training')
+	res.render('academics_training')
 });
 app.get('/academics/hostel-allotment',function(req,res){
-	res.render('hostel')
+	res.render('academics_hostel')
 });
 app.get('/academics/students-placements',function(req,res){
-	res.render('students_placements')
+	res.render('academics_students_placements')
 });
 app.get('/academics/research-publication',function(req,res){
-	res.render('research_publication')
+	res.render('academics_research_publication')
 });
 app.get('/academics/ieee-gbu-student-branch',function(req,res){
-	res.render('ieee')
+	res.render('academics_ieee')
 });
 app.get('/academics/national-service-scheme',function(req,res){
-	res.render('national')
+	res.render('academics_national')
 });
 app.get('/academics/anti-ragging',function(req,res){
-	res.render('ragging')
+	res.render('academics_ragging')
 });
 app.get('/academics/nirf-report',function(req,res){
-	res.render('nirf')
+	res.render('academics_nirf')
 });
 app.get('/academics/student-satisfaction-survey',function(req,res){
-	res.render('survey')
+	res.render('academics_survey')
 });
 app.get('/academics/national-academic-depository',function(req,res){
-	res.render('depository')
+	res.render('academics_depository')
 });
 app.get('/campus-life',function(req,res){
 	res.render('campus')
@@ -369,6 +369,12 @@ app.get('/ccc',(req,res)=>{
 })
 app.get('/crc',(req,res)=>{
 	res.render('crc');
+})
+app.get('/crc/placements',(req,res)=>{
+	res.render('crc_placement');
+})
+app.get('/examinations/phd-news',(req,res)=>{
+	res.render('examinations_phd_news')
 })
 
 app.get('/e-tender',(req,res)=>{
@@ -566,7 +572,7 @@ app.get('/placements',(req,res)=>{
 })
 app.get('/examinations',(req,res)=>{
 	res.render('examinations')
-})
+});
 app.get('/recruitment',(req,res)=>{
 	res.render('recruitment')
 })

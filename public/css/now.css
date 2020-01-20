@@ -464,4 +464,25 @@ body{
       height: 100%;
     }
 
-  
+   .clubheader1{
+      background-color: #FB8C00;
+      border-radius: 0;
+      border: none;
+      }
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+      .clubheader1{
+      height: 142px;
+      }}
+      @media only screen and (min-width: 768px) {
+      .clubheader1{
+      height: 150px;
+      }}
+      @media only screen and (min-width: 992px) {
+      .clubheader1{
+      height: 168px;
+      }}
+      @media only screen and (min-width: 1200px) {
+      .clubheader1{
+      height: 155px;
+      }}
