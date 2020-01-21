@@ -1,0 +1,28 @@
+<%include header%>
+<div class="container text-center">
+
+                                    <div class="row">
+                                    	<%entities.forEach(function(entity){%>
+                                       <div class="col-md-3 ">
+                                          <a href="/<%=entity.type%>/<%=entity._id%>" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="/files/events/<%=entity.filename%>"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                <%=entity.description%>
+                                                </h5>
+                                             </div>
+                                             <br>
+                                            
+                                          </a>
+                                       </div>
+                                       <%})%>
+                                    </div>
+                                 </div>
+<%include footer%>

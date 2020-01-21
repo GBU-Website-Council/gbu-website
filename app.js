@@ -123,7 +123,7 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
 	// 	res.render('edit_admin_photos');
 	// else if(name='faculty')
 	// 	res.render('edit_admin_faculty');
-	if (name=='news' || name=='events' || name=='notices')
+	if (name=='news' || name=='events' || name=='notices'||name=='workshops'||name=='technology'||name=='cultural')
          res.render('edit_admin',{name});
     else 
     	res.render("404")
@@ -520,7 +520,16 @@ app.get('/schools/soljg',(req,res)=>{
 // 		}
 // })
 // });
-
+app.get('/:type',function(req,res){
+	Entity.find({type:req.params.type},function(err,entities){
+    	// console.log(entity)
+    	if(err||!entities)
+    		res.render('404');
+    	
+    	else
+          res.render('display',{entities});
+    });
+})
 app.get('/:type/:id',function(req,res){
     Entity.findOne({$and: [{_id:req.params.id},{type:req.params.type}]},function(err,entity){
     	// console.log(entity)
@@ -603,6 +612,6 @@ app.get('/contact-us',(req,res)=>{
 app.get('/*',function(req,res){
 res.render('404');
 });
-app.listen(process.env.PORT||'3000',process.env.IP,function(){
+app.listen(3000,function(){
 console.log('Server is listening!')
 });
