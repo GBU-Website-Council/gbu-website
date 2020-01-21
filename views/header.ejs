@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
    <head>
+    <script async src="https://cse.google.com/cse.js?cx=014142162027795520387:rpatngdrvw9"></script>
      <title>Gautam Buddha University</title>
       <link rel="icon" type="image/gif/png" href="../../../img/logo_gbu.png">
       <!-- Required meta tags -->
@@ -44,6 +45,20 @@
     crossorigin="anonymous">
     </script>
      <script type="text/javascript" src="../admission/assets/js/on-scroll-fadeUp.js">
+
+    </script>
+    <script type="text/javascript">
+      function executeQuery() {
+    var input = document.getElementById('form-search-input');
+    console.log(input)
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
     </script>
     <!-- e slide -->
     
@@ -91,9 +106,11 @@
                         <li class="nav-item" id="nav-2-box"><a href="/faculty" class="nav-link nav-2 px-3">Faculty</a></li>
                         <li class="nav-item" id="nav-2-box"><a href="/campus-life" class="nav-link nav-2 px-3">Campus Life</a>
                      </li>
-                     <form class="form-inline my-1 my-lg-0" id="form-search-box">
-                        <div class="container">
-                           <label id="search"><input class="form-control form-control-sm" id="form-search-input"
+                     
+
+                     <form class="form-inline my-1 my-lg-0" id="form-search-box" onsubmit="return executeQuery();">
+                        <div class="container" >
+                           <label id="search"><input autocomplete="off" class="form-control form-control-sm" id="form-search-input"
                            type="search" placeholder="Search" aria-label="Search" /></label>
                         </div>
                      </form>
@@ -168,6 +185,7 @@
             </nav>
          </div>
       </div>
+      <div class="gcse-searchresults-only"></div>
       <!--nav bar section end here -->
       <style>
       .xxx-l {
