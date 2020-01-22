@@ -91,8 +91,8 @@ app.get('/',function(req,res){
 //      res.redirect('/');
 // });
 app.get('/files/:type/:filename', (req, res) => {
-	if(req.params.type=='news'||req.params.type=='events'||req.params.type=='notices'){
-  gfs.files.findOne({filename: req.params.filename }, (err, file) => {
+	if(req.params.type=='news'||req.params.type=='events'||req.params.type=='notices'||req.params.type=='workshops'||req.params.type=='technology'||req.params.type=='cultural'){
+  gfs.files.findOne({filename: req.params.filename}, (err, file) => {
     // Check if file
     if (!file || file.length === 0) {
       return res.status(404).json({
@@ -128,24 +128,29 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
     else 
     	res.render("404")
 });
-app.post('/ivy99_gbu_adminPage/:name',upload.single('file'),function(req,res){
-	console.log(req.body)
+app.post('/ivy99_gbu_adminPage/:name',upload.fields([{
+           name: 'photo', maxCount: 1
+         }, {
+           name: 'pdf', maxCount: 1
+         }]),function(req,res){
 	if(req.body.school=="all"){
        School.find({},function(err,schools){
        	if(err)
        		res.redirect('back');
        	else
        	{
+
        		Entity.create({
 		title:req.body.title,
 	createdAt:req.body.date,
-	filename:req.file.filename,
+	photo:req.files['photo'][0].filename,
 	description:req.body.description,
 	type:req.params.name,
 	school:'all',
-	filetype:req.file.contentType
+	pdf:req.files['pdf'][0].filename
 	},function(err,entity){
 		if(err){
+			console.log(err)
 			res.redirect('back')
 		}
 		else{
@@ -168,11 +173,11 @@ else{
 	Entity.create({
 		title:req.body.title,
 	createdAt:req.body.date,
-	filename:req.file.filename,
+	photo:req.files['photo'][0].filename,
 	description:req.body.description,
 	type:req.params.name,
 	school:foundSchool.abbr,
-	filetype:req.file.contentType
+	pdf:req.files['pdf'][0].filename
 	},function(err,entities){
 		if(err){
 			res.redirect('back')
@@ -567,6 +572,9 @@ app.get('/schools/:name/:type/:id',function(req,res){
 function escapeRegex(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
 };
+app.get('/ishanvarshney',(req,res)=>{
+	res.redirect('https://github.com/ishvar99')
+})
 app.get('/placements',(req,res)=>{
 	res.render('placements')
 })
@@ -603,6 +611,7 @@ app.get('/sitemap',(req,res)=>{
 app.get('/contact-us',(req,res)=>{
 	res.render('contact')
 })
+
 app.get('/:type',function(req,res){
 	var name=req.params.type;
 	if (name=='news' || name=='events' || name=='notices'||name=='workshops'||name=='technology'||name=='cultural'){

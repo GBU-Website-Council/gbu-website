@@ -4,9 +4,9 @@ var entitySchema=new mongoose.Schema({
 title:String,
 description:String,
 createdAt:Date,
-filename:String,
+photo:String,
 type:String,
 school:String,
-filetype:String
+pdf:String
 })
 module.exports=mongoose.model('entity',entitySchema);
