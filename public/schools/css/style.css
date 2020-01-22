@@ -235,6 +235,12 @@ body{
 
 #card-image{
 	height: 200px;
-	margin: auto;
+	margin: 0px auto;
 	max-width: 200px;
+	align-items: center;
+	}
+
+#carousel-item-img{
+	padding-left: 20% ;
+	width: 80%;
 }
