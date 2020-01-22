@@ -1015,3 +1015,10 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
     }
 
 
+
+#card-image{
+  height: 280px;
+  margin: 0px auto;
+  max-width: 250px;
+  align-items: center;
+  }
