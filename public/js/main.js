@@ -156,7 +156,7 @@ function showCollapsNewsmenu() {
     x.style.display = 'none';
     }
   }
-  function (y, x, z) {
+  function active(y, x, z) {
     document.getElementById("newsMenu").innerHTML = y;
     // var xx = x.getElementsByTagName("span")[0];
     // xx.classList.add("news-active");

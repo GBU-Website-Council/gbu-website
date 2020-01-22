@@ -451,7 +451,7 @@ body{
 	background-size: cover;
 	height: 250px;
 }
-.bgimage_about_organisation_mukul {
+#bgimage_about_organisation_mukul {
 	background-image: url('../img/bestarchitect.jpg');
 	width: 100%;
 	background-repeat: no-repeat;

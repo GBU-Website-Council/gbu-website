@@ -431,6 +431,26 @@ app.get('/schools/soljg',(req,res)=>{
 	res.render('soljg',{entities})
 	});
 });
+app.get('/faculty',(req,res)=>{
+	var noMatch="";
+	if(req.query.search){
+		 const regex = new RegExp(escapeRegex(req.query.search), 'gi');
+		Faculty.find({Name:regex},(err,faculties)=>{
+			var noMatch;
+			if(faculties.length<1){
+				noMatch="No Results Found!";
+			}
+		res.render('faculty',{faculties,noMatch})
+	})
+	}
+	else
+{
+
+	Faculty.find({},(err,faculties)=>{
+		res.render('faculty',{faculties,noMatch})
+	})
+}
+})
 // app.get('/schools/:name',function(req,res){
 // 	School.findOne({abbr:req.params.name}).populate({path:'entities',options:{ sort: { 'createdAt': -1 }}}).exec(function(err,school){
 // 		if(err) 
@@ -520,16 +540,7 @@ app.get('/schools/soljg',(req,res)=>{
 // 		}
 // })
 // });
-app.get('/:type',function(req,res){
-	Entity.find({type:req.params.type},function(err,entities){
-    	// console.log(entity)
-    	if(err||!entities)
-    		res.render('404');
-    	
-    	else
-          res.render('display',{entities});
-    });
-})
+
 app.get('/:type/:id',function(req,res){
     Entity.findOne({$and: [{_id:req.params.id},{type:req.params.type}]},function(err,entity){
     	// console.log(entity)
@@ -556,32 +567,15 @@ app.get('/schools/:name/:type/:id',function(req,res){
 function escapeRegex(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
 };
-app.get('/faculty',(req,res)=>{
-	var noMatch="";
-	if(req.query.search){
-		 const regex = new RegExp(escapeRegex(req.query.search), 'gi');
-		Faculty.find({Name:regex},(err,faculties)=>{
-			var noMatch;
-			if(faculties.length<1){
-				noMatch="No Results Found!";
-			}
-		res.render('faculty',{faculties,noMatch})
-	})
-	}
-	else
-{
-
-	Faculty.find({},(err,faculties)=>{
-		res.render('faculty',{faculties,noMatch})
-	})
-}
-})
 app.get('/placements',(req,res)=>{
 	res.render('placements')
 })
 app.get('/examinations',(req,res)=>{
 	res.render('examinations')
 });
+app.get('/meditation-center',(req,res)=>{
+	res.render('meditation')
+})
 app.get('/recruitment',(req,res)=>{
 	res.render('recruitment')
 })
@@ -608,6 +602,21 @@ app.get('/sitemap',(req,res)=>{
 })
 app.get('/contact-us',(req,res)=>{
 	res.render('contact')
+})
+app.get('/:type',function(req,res){
+	var name=req.params.type;
+	if (name=='news' || name=='events' || name=='notices'||name=='workshops'||name=='technology'||name=='cultural'){
+		Entity.find({type:req.params.type},function(err,entities){
+    	// console.log(entity)
+    	if(entities)
+          res.render('display',{entities});
+      	else
+      		res.render('404')
+    });
+	}
+	else
+		res.render('404');
+	
 })
 app.get('/*',function(req,res){
 res.render('404');
