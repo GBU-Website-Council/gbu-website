@@ -55,15 +55,15 @@
       <div id="news" style="background-color: #2f415f; padding: 10px 0px 80px 0px;">
          <div class="news-header">
             <div class="m-4" style="background-color: transparent;">
-               <div class="container pt-2">
+               <div class="container pt-0">
                   <div class="row">
                      <div class="col-2">
-                        <h2 class="display-5 text-white">
-                        <font style="vertical-align: inherit; font-weight: 400; font-size:35px">Highlights</font>
-                        </h2>
+                        <h4 class=" text-white">
+                        <font style="vertical-align: inherit; text-transform: uppercase; letter-spacing: .2rem">Highlights</font>
+                        </h4>
                      </div>
                      <div class="col-10 text-right ">
-                        <div class="p-3 position-absolute " style="right: 0">
+                        <div class="px-3 py-1 position-absolute " style="right: 0">
                            <div class="drop">
                               <div class="drop-news " style="border-bottom: 5px red;background-color: #a9a9a9;">
                                  <button id="newsMenu" onclick="showCollapsNewsmenu()">News</button>
@@ -104,7 +104,7 @@
                         </div>
                         <!-- <div class="tab-content"> -->
                         <div class="tab-content">
-                           <div id="news" class="news-content tab-pane pt-5 active">
+                           <div id="news" class="news-content tab-pane pt-1 active">
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                     <%var count=0%>
@@ -128,7 +128,6 @@
                                                 <%-entity.description%>
                                                 </h5>
                                              </div>
-                                             <br>
                                              <div class="date-time text-left">
                                                 <h1
                                                 style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
@@ -141,11 +140,11 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-lg-right pt-2 container">
-                                 <a href="/news" class="btn btn-outline-secondary">Show More</a>
+                              <div class="view-more text-md-right container">
+                                 <a href="/news" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
-                           <div id="events" class="news-content tab-pane pt-5">
+                           <div id="events" class="news-content tab-pane pt-1">
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                    <%var count=0%>
@@ -169,7 +168,6 @@
                                                 <%-entity.description%>
                                                 </h5>
                                              </div>
-                                             <br>
                                              <div class="date-time text-left">
                                                 <h1
                                                 style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
@@ -182,11 +180,11 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-lg-right pt-2 container">
-                                 <a href="/events" class="btn btn-outline-secondary">Show More</a>
+                              <div class="view-more text-md-right pt-2 container">
+                                 <a href="/events" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
-                           <div id="workshops" class="news-content tab-pane pt-5">
+                           <div id="workshops" class="news-content tab-pane pt-1">
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                    <%var count=0%>
@@ -210,7 +208,6 @@
                                                 <%-entity.description%>
                                                 </h5>
                                              </div>
-                                             <br>
                                              <div class="date-time text-left">
                                                 <h1
                                                 style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
@@ -223,11 +220,11 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-lg-right pt-2 container">
-                                 <a href="/workshops" class="btn btn-outline-secondary">Show More</a>
+                              <div class="view-more text-md-right pt-2 container">
+                                 <a href="/workshops" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
-                           <div id="notices" class="news-content tab-pane pt-5">
+                           <div id="notices" class="news-content tab-pane pt-1">
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                     <%var count=0%>
@@ -251,7 +248,6 @@
                                                 <%-entity.description%>
                                                 </h5>
                                              </div>
-                                             <br>
                                              <div class="date-time text-left">
                                                 <h1
                                                 style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
@@ -264,11 +260,11 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-lg-right pt-2 container">
-                                 <a href="/notices" class="btn btn-outline-secondary">Show More</a>
+                              <div class="view-more text-md-right pt-2 container">
+                                 <a href="/notices" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
-                           <div id="technology" class="news-content tab-pane pt-5">
+                           <div id="technology" class="news-content tab-pane pt-1">
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                     <%var count=0%>
@@ -292,7 +288,6 @@
                                                 <%-entity.description%>
                                                 </h5>
                                              </div>
-                                             <br>
                                              <div class="date-time text-left">
                                                 <h1
                                                 style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
@@ -305,11 +300,11 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-lg-right pt-2 container">
-                                 <a href="/technology" class="btn btn-outline-secondary">Show More</a>
+                              <div class="view-more text-md-right pt-2 container">
+                                 <a href="/technology" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
-                           <div id="cultural" class="news-content tab-pane pt-5">
+                           <div id="cultural" class="news-content tab-pane pt-1">
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                     <%var count=0%>
@@ -333,7 +328,6 @@
                                                 <%-entity.description%>
                                                 </h5>
                                              </div>
-                                             <br>
                                              <div class="date-time text-left">
                                                 <h1
                                                 style="text-transform: uppercase; font-size: 12px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
@@ -346,8 +340,8 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-lg-right pt-2 container">
-                                 <a href="/cultural" class="btn btn-outline-secondary">Show More</a>
+                              <div class="view-more text-md-right pt-2 container">
+                                 <a href="/cultural" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
                            
@@ -393,7 +387,7 @@
                      <!-- new section start  -->
                      <div class="">
                         <div class="outer-tag" style="overflow-x: hidden;">
-                           <div class="row">
+                           <div class="row ">
                               <div class="col-md-6 p-2 " style="background-color: rgb(0, 140, 149); ">
                                  <div
                                     style=" height: 100px;background-image: url(img/lifecapbg.png);background-size: contain;background-repeat: no-repeat; background-image:  url(img/lifecapbg.png);">
@@ -422,7 +416,7 @@
 
                                  </div>
                                  <div class="col-8 text-center">
-                                       <div class="text-center" style=" font-size: 20px;color: rgba(167, 168, 170, 1);">
+                                       <div class="text-center " style=" font-size: 20px;color: rgba(167, 168, 170, 1);">
                                        One best book is equal to a hundred good friends, but one good
                                        friend is equal to a library.
                                        </div>

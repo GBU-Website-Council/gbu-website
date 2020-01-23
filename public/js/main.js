@@ -157,9 +157,18 @@ function showCollapsNewsmenu() {
     }
   }
   function active(y, x, z) {
-    document.getElementById("newsMenu").innerHTML = y;
+    //document.getElementById("newsMenu").innerHTML = y;
+    //document.getElementById("myTab").style.display = 'none';
     // var xx = x.getElementsByTagName("span")[0];
     // xx.classList.add("news-active");
+    //if (window.matchMedia("(max-width: 992px)")) {
+      document.getElementById("newsMenu").innerHTML = y;
+      //document.getElementById("myTab").style.display = 'none';
+    // }
+    // if (window.matchMedia("(min-width: 992px)")) {
+    //   document.getElementById("newsMenu").innerHTML = y;
+    //   document.getElementById("myTab").style.display = 'none';
+    // }
   }
   function myFunction(x) {
     if (x.matches) { // If media query matches
