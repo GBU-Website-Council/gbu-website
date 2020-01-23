@@ -11,8 +11,10 @@
               <p><%-entity.description%></p>
               <p class="small"><%=entity.createdAt.getDate() + "/" + (entity.createdAt.getMonth() + 1) + "/" + entity.createdAt.getFullYear()%></p>
               <p class="card-text">
+                <%entity.pdf.forEach(function(x){%>
               <button class="btn btn-sm btn-outline-success">
-              <a style="color: green" href="/files/<%=entity.type%>/<%=entity.pdf%>" target="_blank">Download</a></button>
+              <a style="color: green" href="/files/<%=entity.type%>/<%=x.filename%>" target="_blank">Download</a></button>
+                <%})%>
             </div>
           </div>
         </div>

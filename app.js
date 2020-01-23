@@ -131,7 +131,7 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
 app.post('/ivy99_gbu_adminPage/:name',upload.fields([{
            name: 'photo', maxCount: 1
          }, {
-           name: 'pdf', maxCount: 1
+           name: 'pdf', maxCount: 8
          }]),function(req,res){
 	if(req.body.school=="all"){
        School.find({},function(err,schools){
@@ -147,7 +147,7 @@ app.post('/ivy99_gbu_adminPage/:name',upload.fields([{
 	description:req.body.description,
 	type:req.params.name,
 	school:'all',
-	pdf:req.files['pdf'][0].filename
+	pdf:req.files['pdf']
 	},function(err,entity){
 		if(err){
 			console.log(err)
@@ -177,7 +177,7 @@ else{
 	description:req.body.description,
 	type:req.params.name,
 	school:foundSchool.abbr,
-	pdf:req.files['pdf'][0].filename
+	pdf:req.files['pdf']
 	},function(err,entities){
 		if(err){
 			res.redirect('back')

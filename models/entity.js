@@ -7,6 +7,6 @@ createdAt:Date,
 photo:String,
 type:String,
 school:String,
-pdf:String
+pdf:Array
 })
 module.exports=mongoose.model('entity',entitySchema);
