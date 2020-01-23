@@ -618,7 +618,7 @@ app.get('/:type',function(req,res){
 		Entity.find({type:req.params.type},function(err,entities){
     	// console.log(entity)
     	if(entities)
-          res.render('display',{entities});
+          res.render('display',{entities,name});
       	else
       		res.render('404')
     });
