@@ -13,12 +13,10 @@
               <h6>View Links:</h6>
               <p class="card-text">
                 <%entity.pdf.forEach(function(x){%>
-              <button class="btn btn-sm btn-outline-success">
-              <a style="color: green" href="/files/<%=entity.type%>/<%=x.filename%>" target="_blank"><%=x.filename%></a></button>
-              <br>
-              <li>
-              <a style="color: green" href="/files/<%=entity.type%>/<%=x.filename%>" target="_blank"><%=x.filename%></a>
-              </li>
+
+              </p>
+              <a style="color: green" href="/files/<%=entity.type%>/<%=x.filename%>" target="_blank"><%=x.filename%></a></p>
+            </li>
                 <%})%>
             </div>
           </div>
