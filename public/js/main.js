@@ -144,39 +144,42 @@ $(document).ready(function() {
 $('.mdb-select').materialSelect();
 })
 
-
 //=================== News Button JS-================
 
+//  Function for Menu collaps---------------------
 function showCollapsNewsmenu() {
-    var x = document.getElementById("myTab");
-    var d = x.style.display;
-    if (d == "none") {
-    x.style.display = 'block';
+    var myTab = document.getElementById("myTab");
+    var menuDisplay = myTab.style.display;
+    if (menuDisplay == "none") {
+    myTab.style.display = 'block';
     } else {
-    x.style.display = 'none';
+    myTab.style.display = 'none';
     }
   }
+
+// function for active Button ---------------------
   function active(y, x, z) {
-    //document.getElementById("newsMenu").innerHTML = y;
-    //document.getElementById("myTab").style.display = 'none';
-    // var xx = x.getElementsByTagName("span")[0];
-    // xx.classList.add("news-active");
-    //if (window.matchMedia("(max-width: 992px)")) {
-      document.getElementById("newsMenu").innerHTML = y;
-      //document.getElementById("myTab").style.display = 'none';
-    // }
-    // if (window.matchMedia("(min-width: 992px)")) {
-    //   document.getElementById("newsMenu").innerHTML = y;
-    //   document.getElementById("myTab").style.display = 'none';
-    // }
+    document.getElementById("newsMenu").innerHTML = y;
+    var myTab = document.getElementById("myTab");
+
+    if (sw.matches) { // If media query matches
+      myTab.style.display = 'none';
+    }
   }
-  function myFunction(x) {
-    if (x.matches) { // If media query matches
+
+//  function for Windows width, (Menu hide or show) --
+  function myFunction(sw) {
+    if (sw.matches) { // If media query matches
     document.getElementById("myTab").style.display = 'none';
     } else {
     document.getElementById("myTab").style.display = 'block';
     }
   }
-  var x = window.matchMedia("(max-width: 992px)");
-  myFunction(x); // Call listener function at run time
-  x.addListener(myFunction);
+ 
+  //  Getting value of screen width --------------------
+  var sw = window.matchMedia("(max-width: 992px)");
+  myFunction(sw); // Call listener function at run time
+  sw.addListener(myFunction);
+
+//===================End  News Button JS-================
+

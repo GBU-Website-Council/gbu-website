@@ -28,30 +28,30 @@ body{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 #col-college-name-1{
-	padding-right: 20px;
+	padding-right: 18px;
 	font-family: font-family: 'Poppins', sans-serif;
 	font-family: 'Lato', sans-serif;
 	border-right: 7px solid #cc3636; 
 }
 #college-name-1{
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 600;
 	color: #010327;
 	text-align: right;
 	letter-spacing: 0;
 }
 #college-name-2{
-	font-size: 26px;
-	font-weight: 550;
+	font-size: 20px ;
 	color: #010327;
+	font-weight: 500;
 	font-family: 'Lato', sans-serif;
-	display: inline-flex;
 }
 .vl {
   	border: 2px solid #cc3636;
  	height: 36px;
  	display: inline-flex;
- 	margin: 10px;
+ 	margin-left: 10px;
+ 	margin-right: 10px; 
 }
 
 .navbar{
@@ -156,7 +156,7 @@ body{
 	      	font-size: 16px;
 	    }
 		#college-name-2{
-			font-size: 20px;
+			font-size: 17px;
 	    }
 	    #fill-image {
         width: 180%;
@@ -169,10 +169,10 @@ body{
     }
 @media only screen and (min-width : 480px) {
   		#college-name-1{
-      	    font-size: 18px;
+      	    font-size: 17px;
         }
         #college-name-2{
-      	    font-size: 22px;
+      	    font-size: 18px;
         }
         #fill-image {
         width: 180%;
@@ -185,10 +185,10 @@ body{
     }
 @media only screen and (min-width : 768px) {
   		#college-name-1{
-    	  	font-size: 20px;
+    	  	font-size: 28px;
         }
         #college-name-2{
-      	    font-size: 24px;
+      	    font-size: 18px;
         }
         #fill-image {
         width: 160%;
@@ -204,7 +204,7 @@ body{
     	  	font-size: 20px;
         }
       	#college-name-2{
-      		font-size: 26px;
+      		font-size: 20px;
         }
 
       #fill-image {
@@ -220,7 +220,7 @@ body{
     	  	font-size: 22px;
       	}
         #college-name-2{
-      	    font-size: 28px;
+      	    font-size: 20px;
         }
 
       #fill-image {
