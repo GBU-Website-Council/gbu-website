@@ -48,7 +48,7 @@ body {
   width: 100%;
   margin-left: 5px;
   transform: skewX(-15deg);
-  padding-left: 30px;
+  padding-left: 35px;
   background: url(../img/search_logo.png);
   background-position: 2%;
   background-size: 2.5vh;
@@ -957,7 +957,6 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
         margin-right: -30%;
         background-repeat: no-repeat;
       }
-
     }
 
     /* Medium Devices, Desktops */
@@ -1031,3 +1030,48 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
 }
+
+
+/*pop up css
+*/
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#26262c;
+  display:none;
+}  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:850px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  border-radius: 5px;
+  text-align: center;
+}
+#boxes #dialog {
+  width:50%; 
+  height:50%;
+  padding: 10px 10px 10px 10px;
+  background-color:#ffffff;
+  font-size: 15pt;
+}
+
+.agree:hover{
+  background-color: #D1D1D1;
+}
+.popupoption:hover{
+ background-color:#D1D1D1;
+ color: green;
+}
+.popupoption2:hover{
+ color: red;
+}
+
+/*popup css ends here*/

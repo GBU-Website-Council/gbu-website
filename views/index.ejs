@@ -1,7 +1,20 @@
 <%include header%>
 
+      <div id="boxes">
+         <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window"> 
+            <div id="san" class="" style="background: url('');">
+            <a href="#" class="close agree"><i class="fa fa-close float-right text-white"  style="float:right; margin-right: -30px; margin-top: -30px;" ></i></a>
+            <div class="py-3">
+               <img class="pt-3" src="./img/gbu_logo.png" width="100vw" >
+               <h4 class="py-3 text-center">Welcome<br>to<br>Gautam Buddha University</h4>
+            </div>
+            </div>
+         </div>
+         <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"> 
+         </div>
+      </div>
       <!-- sliding banner start from here -->
-      <div class="container-fluid">
+      <div class="container-fluid" style="background-color: orange">
          <div class="row">
             <div class="col-12 p-0">
                <div id="demo" class="carousel slide shadow carousel-fade" data-ride="carousel">
@@ -51,6 +64,13 @@
          </div>
       </div>
       <!-- sliding banner start from here -->
+      <div class="" style="background-color: orange" >
+         <div class="container text-center pt-2 pb-0" style="vertical-align:middle;">
+            <marquee align="center" onmouseout="start();" onmouseover="stop();" scrollamount="4" >
+            <p style="color: #fff; font-size: 16px;"> Registration open for Admission in Advance Certificate Course in Big Data Analytics </p>
+            </marquee> 
+         </div>
+      </div>
       <!-- home content section start from here -->
       <div id="highlights" style="background-color: #2f415f; padding: 10px 0px 40px 0px;">
          <div class="news-header">
@@ -79,7 +99,7 @@
                                  </li>
                                  <li>
                                     <a href="#workshops" data-toggle="tab" onclick="active(this.textContent, this, 3)">
-                                    <span id="2">Workshops / Conferences</span></a>
+                                    <span id="2">Workshops</span></a>
                                  </li>
                                  <li>
                                     <a href="#notices" data-toggle="tab" onclick="active(this.textContent, this, 4)"> <span
@@ -87,7 +107,7 @@
                                  </li>
                                  <li>
                                     <a href="#technology" data-toggle="tab" onclick="active(this.textContent, this, 5)">
-                                       <span id="4">Technology</span></a>
+                                       <span id="4">Conferences</span></a>
                                  </li>
                                  <li>
                                     <a href="#cultural" data-toggle="tab" onclick="active(this. textContent, this, 6)"> <span
@@ -108,7 +128,7 @@
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                     <%var count=0%>
-                                    <div class="row">
+                                    <div class="row mx-auto">
                                        
                                        <%entities.forEach(function(entity){%>
                                        <%if(entity.type=="news" &&count<=7){%>
@@ -182,7 +202,7 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-md-right pt-2 container">
+                              <div class="view-more text-md-right pt-1 container">
                                  <a href="/events" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
@@ -223,7 +243,7 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-md-right pt-2 container">
+                              <div class="view-more text-md-right pt-1 container">
                                  <a href="/workshops" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
@@ -231,7 +251,7 @@
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                     <%var count=0%>
-                                    <div class="row">
+                                    <div class="row mx-auto">
                                        
                                        <%entities.forEach(function(entity){%>
                                        <%if(entity.type=="notices" &&count<=7){%>
@@ -264,7 +284,7 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-md-right pt-2 container">
+                              <div class="view-more text-md-right pt-1 container">
                                  <a href="/notices" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
@@ -272,7 +292,7 @@
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                     <%var count=0%>
-                                    <div class="row">
+                                    <div class="row mx-auto">
                                        
                                        <%entities.forEach(function(entity){%>
                                        <%if(entity.type=="technology" &&count<=7){%>
@@ -305,7 +325,7 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-md-right pt-2 container">
+                              <div class="view-more text-md-right pt-1 container">
                                  <a href="/technology" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
@@ -313,7 +333,7 @@
                               <div class=" mt-0" style="background-color: transparent;">
                                  <div class="container text-center">
                                     <%var count=0%>
-                                    <div class="row">
+                                    <div class="row mx-auto">
                                        
                                        <%entities.forEach(function(entity){%>
                                        <%if(entity.type=="cultural" &&count<=7){%>
@@ -346,7 +366,7 @@
                                     
                                  </div>
                               </div>
-                              <div class="view-more text-md-right pt-2 container">
+                              <div class="view-more text-md-right pt-1 container">
                                  <a href="/cultural" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
@@ -358,7 +378,7 @@
                      <!--- start of new Section -->
                      <div class="">
                         <div class="banner-holder "
-                           style="background-image: url(img/lifebg.jpg); padding: 8rem 0rem; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;">
+                           style="background-image: url(img/indexpageimg.jpg); padding: 8rem 0rem; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;">
                            <div class="strip p-5" style="background-color: #ffffffb3;">
                               <div class="container">
                                  <div class="tagline text-center">
