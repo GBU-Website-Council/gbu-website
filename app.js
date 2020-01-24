@@ -12,6 +12,7 @@ mongoose.connect(process.env.DATABASEURL||mongoLocalURI,{useNewUrlParser: true})
 const conn=mongoose.createConnection(process.env.DATABASEURL||mongoLocalURI);
 const School=require('./models/schools.js');
 const Entity=require('./models/entity.js');
+const Tender=require('./models/tender.js');
 const Faculty=require('./models/faculty.js');
 app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.urlencoded({extended:true}));
@@ -117,6 +118,9 @@ else
 app.get('/ivy99_gbu_adminPage',function(req,res){
 res.render('admin');
 });
+app.get('/ivy99_gbu_adminPage/tender',function(req,res){
+	res.render('edit_tender');
+})
 app.get('/ivy99_gbu_adminPage/:name',function(req,res){
 	var name=req.params.name;
 	// if(name=="photos")
@@ -128,6 +132,15 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
     else 
     	res.render("404")
 });
+app.post('/ivy99_gbu_adminPage/tender',upload.array('file',10),function(req,res){
+	Tender.create({
+		title:req.body.title,
+		createdAt:req.body.createdAt,
+		file:req.files
+	},function(err,tender){
+
+	})
+})
 app.post('/ivy99_gbu_adminPage/:name',upload.fields([{
            name: 'photo', maxCount: 1
          }, {
@@ -618,7 +631,7 @@ app.get('/:type',function(req,res){
 		Entity.find({type:req.params.type},function(err,entities){
     	// console.log(entity)
     	if(entities)
-          res.render('display',{entities});
+          res.render('display',{entities,name});
       	else
       		res.render('404')
     });

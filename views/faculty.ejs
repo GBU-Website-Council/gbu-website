@@ -11,8 +11,9 @@
                   <div class="content">
                     <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
                     <script type="text/javascript">
-
                     $(document).ready(function(){
+
+
                     $.showAllFaculty=function()
                     {
                     $("div.select-item").addClass("select-item-active");
@@ -358,7 +359,7 @@
                       <p>The Institute is organized as research groups and education programs, and has not maintained strong department boundaries. However, faculty can be broadly grouped according to their disciplines which are given below. Apart from those listed below, the institute also has a number of Guest, Adjunct and Visiting faculty members in various disciplines</p>
                     </div>
                     <div class="select">
-                      <div class="select-item select-item-active" onclick="$.showAllFaculty()">All</div>
+                      <div class="select-item select-item-active" onclick="$.showAllFaculty()" style="display: none">All</div>
                       <div class="select-item-soict" onclick="$.showSOICTFaculty()">SOICT</div>
                       <div class="select-item-soe" onclick="$.showSOEFaculty()">SOE</div>
                       <div class="select-item-sovs" onclick="$.showSOVSFaculty()">SOVS</div>

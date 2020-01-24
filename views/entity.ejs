@@ -13,7 +13,8 @@
               <p class="card-text">
                 <%entity.pdf.forEach(function(x){%>
               <button class="btn btn-sm btn-outline-success">
-              <a style="color: green" href="/files/<%=entity.type%>/<%=x.filename%>" target="_blank">Download</a></button>
+              <a style="color: green" href="/files/<%=entity.type%>/<%=x.filename%>" target="_blank"><%=x.filename%></a></button>
+              <br>
                 <%})%>
             </div>
           </div>
