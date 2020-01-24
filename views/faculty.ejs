@@ -375,6 +375,7 @@
                       		
                       	</div>
                       </form>
+                      <%if(search=="foo"){%>
                     <div id="cards-container">
                     	<%if(noMatch !==undefined){%>
                     	<h3><%=noMatch%></h3>
@@ -388,6 +389,7 @@
                       </div>
                       <%})%>
                     </div>
+                    <%}%>
                     <div id="cards-container-soict">
                     	<%if(noMatch !==undefined){%>
                     	<h3><%=noMatch%></h3>

@@ -13,6 +13,7 @@ const conn=mongoose.createConnection(process.env.DATABASEURL||mongoLocalURI);
 const School=require('./models/schools.js');
 const Entity=require('./models/entity.js');
 const Tender=require('./models/tender.js');
+const ETender=require('./models/e-tender.js');
 const Faculty=require('./models/faculty.js');
 app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.urlencoded({extended:true}));
@@ -53,7 +54,7 @@ conn.once('open',()=>{
 });
 const upload = multer({ storage });
 app.get('/',function(req,res){
-	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
+	Entity.find({school:"main"}).sort({createdAt:-1}).exec(function(err,entities){
         if(err){
         	console.log(err);
         }
@@ -91,6 +92,20 @@ app.get('/',function(req,res){
 // app.post('/ivy99_gbu_adminPage/photos',upload.single('file'),function(req,res){
 //      res.redirect('/');
 // });
+app.get('/files/tenders/:filename', (req, res) => {
+  gfs.files.findOne({filename: req.params.filename}, (err, file) => {
+    // Check if file
+    if (!file || file.length === 0) {
+      return res.status(404).json({
+        err: 'No file exists'
+      });
+    }
+    // File exists
+    const readstream = gfs.createReadStream(file.filename);
+    return readstream.pipe(res);
+  });
+});
+
 app.get('/files/:type/:filename', (req, res) => {
 	if(req.params.type=='news'||req.params.type=='events'||req.params.type=='notices'||req.params.type=='workshops'||req.params.type=='technology'||req.params.type=='cultural'){
   gfs.files.findOne({filename: req.params.filename}, (err, file) => {
@@ -118,6 +133,9 @@ else
 app.get('/ivy99_gbu_adminPage',function(req,res){
 res.render('admin');
 });
+app.get('/ivy99_gbu_adminPage/e-tender',function(req,res){
+	res.render('edit_e_tender');
+})
 app.get('/ivy99_gbu_adminPage/tender',function(req,res){
 	res.render('edit_tender');
 })
@@ -132,13 +150,28 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
     else 
     	res.render("404")
 });
-app.post('/ivy99_gbu_adminPage/tender',upload.array('file',10),function(req,res){
+app.post('/ivy99_gbu_adminPage/tender',upload.single('file'),function(req,res){
 	Tender.create({
 		title:req.body.title,
-		createdAt:req.body.createdAt,
-		file:req.files
+		createdAt:req.body.date,
+		file:req.file.filename
 	},function(err,tender){
-
+		if(err)
+			res.redirect('back')
+		else
+			res.redirect('/')
+	})
+})
+app.post('/ivy99_gbu_adminPage/e-tender',upload.single('file'),function(req,res){
+	ETender.create({
+		title:req.body.title,
+		createdAt:req.body.date,
+		file:req.file.filename
+	},function(err,etender){
+		if(err)
+			res.redirect('back')
+		else
+			res.redirect('/')
 	})
 })
 app.post('/ivy99_gbu_adminPage/:name',upload.fields([{
@@ -158,8 +191,8 @@ app.post('/ivy99_gbu_adminPage/:name',upload.fields([{
 	createdAt:req.body.date,
 	photo:req.files['photo'][0].filename,
 	description:req.body.description,
+	school:"main",
 	type:req.params.name,
-	school:'all',
 	pdf:req.files['pdf']
 	},function(err,entity){
 		if(err){
@@ -167,10 +200,6 @@ app.post('/ivy99_gbu_adminPage/:name',upload.fields([{
 			res.redirect('back')
 		}
 		else{
-			schools.forEach(function(school){
-               school.entities.push(entity._id);
-               school.save();
-       		})
 			res.redirect('/');
 		}
 	});
@@ -353,7 +382,12 @@ app.get('/library/contact-us',(req,res)=>{
 	res.render('library_contact')
 })
 app.get('/tender',(req,res)=>{
-	res.render('tender');
+	Tender.find({}).sort({createdAt:-1}).exec(function(err,tenders){
+		if(!err){
+			res.render('tender',{tenders})
+		}
+	})
+
 })
 app.get('/city-life',(req,res)=>{
 	res.render('city');
@@ -396,7 +430,11 @@ app.get('/examinations/phd-news',(req,res)=>{
 })
 
 app.get('/e-tender',(req,res)=>{
-	res.render('etender');
+	ETender.find({}).sort({createdAt:-1}).exec(function(err,etenders){
+		if(!err){
+			res.render('etender',{etenders})
+		}
+	})
 })
 app.get('/faqs',(req,res)=>{
 	res.render('faqs')
@@ -451,21 +489,23 @@ app.get('/schools/soljg',(req,res)=>{
 });
 app.get('/faculty',(req,res)=>{
 	var noMatch="";
+	var search="";
 	if(req.query.search){
+		search="foo";
 		 const regex = new RegExp(escapeRegex(req.query.search), 'gi');
 		Faculty.find({Name:regex},(err,faculties)=>{
 			var noMatch;
 			if(faculties.length<1){
 				noMatch="No Results Found!";
 			}
-		res.render('faculty',{faculties,noMatch})
+		res.render('faculty',{faculties,noMatch,search})
 	})
 	}
 	else
 {
 
 	Faculty.find({},(err,faculties)=>{
-		res.render('faculty',{faculties,noMatch})
+		res.render('faculty',{faculties,noMatch,search})
 	})
 }
 })

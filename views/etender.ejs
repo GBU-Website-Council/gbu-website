@@ -26,17 +26,17 @@
           </h3>
           <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 10%; background-color:#FB8C00 "></div>
           <br>
-			<div class="card mt-2 mb-3">
-				<div class="card-header">
-					Date 28/09/2019
-				</div>
-				<div class="card-body">
-					<h5 class="card-title_rohit">Tender for Supply and Installation of Computer hardware</h5>
-					<a href="#" class="btn btn-primary  float-right">Details</a>
-				</div>
-			</div>
+			<%etenders.forEach(function(etender){%>
+	<div class="card mt-2 mb-3">
+  <div class="card-header">
+    <%=etender.createdAt.getDate() + "/" + (etender.createdAt.getMonth() + 1) + "/" + etender.createdAt.getFullYear()%>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title_rohit"><%=etender.title%></h5>
+    <a href="/files/tenders/<%=etender.file%>" class="btn btn-primary  float-right">Details</a>
+  </div>
+</div>
+<%})%>
 		</div>
-	</div>
-	
 </body>
 <%include footer%>

@@ -38,34 +38,34 @@
       <h1>Admin Panel</h1>
       <hr>
         <div class="container mx-auto">
-					<h4>Manage Tenders</h4>
-					<form onsubmit="return confirm('Do you really want to submit the form?');" method="post" action="/ivy99_gbu_adminPage/<%=name%>" enctype="multipart/form-data">
-					  <div class="form-group row">
-					    <label type="text" class="col-sm-2 col-form-label">Title</label>
-					    <div class="col-sm-10">
-					      <input class="form-control" placeholder="Title" name="title" 
-                required>
-					    </div>
-					  </div>
-					  <div class="form-group row">
-					    <label class="col-sm-2 col-form-label">Date Picker</label>
-					    <div class="col-sm-10">
-					      <input class="form-control" type="date" name="date">
-					    </div>
-					  </div>
+          <h4>Manage Tenders</h4>
+          <form onsubmit="return confirm('Do you really want to submit the form?');" method="post" action="/ivy99_gbu_adminPage/tender" enctype="multipart/form-data">
             <div class="form-group row">
-              <label class="col-sm-2 col-form-label">Choose File
-              (hold ctrl to upload multiple files)</label>
+              <label type="text" class="col-sm-2 col-form-label">Title</label>
               <div class="col-sm-10">
-                <input class="form-control" accept="/*" type="file" name="file" multiple >
+                <input class="form-control" placeholder="Title" name="title" 
+                required>
               </div>
             </div>
-					  <div class="form-group row">
-					    <div class="col-sm-10">
-					      <button type="submit" class="btn btn-primary">Submit</button>
-					    </div>
-					  </div>
-					</form>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Date Picker</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="date" name="date">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Choose File
+              </label>
+              <div class="col-sm-10">
+                <input class="form-control" accept="/*" type="file" name="file">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
         </div>
 
     </div>

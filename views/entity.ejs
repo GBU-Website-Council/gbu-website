@@ -10,7 +10,7 @@
               <h4><%=entity.title%></h4>
               <p class="small"><%=entity.createdAt.getDate() + "/" + (entity.createdAt.getMonth() + 1) + "/" + entity.createdAt.getFullYear()%></p>
               <p><%-entity.description%></p>
-              <h6>View Links:</h6>
+              <h6>Download Links:</h6>
               <p class="card-text">
                 <%entity.pdf.forEach(function(x){%>
               <li>
