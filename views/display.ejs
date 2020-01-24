@@ -1,5 +1,31 @@
 <%include header%>
 <div class="container text-center">
+
+   <h1><%= name%></h1>
+                                    <div class="row">
+                                    	<%entities.forEach(function(entity){%>
+                                       <div class="col-md-3 " style="font-size: 16px">
+                                          <a style="text-decoration: none;color:#000;" href="/<%=entity.type%>/<%=entity._id%>" class="m-1">
+                                             <div class="tab">
+                                                <div class="news-img">
+                                                   <img
+                                                   src="/files/events/<%=entity.photo%>"
+                                                   alt="img" class="" height="175px" width="300px">
+                                                </div>
+                                             </div>
+                                             <br>
+                                             <div class="">
+                                                <h5 class="text-left font-weight-light" style="font-weight: 400">
+                                                <%-entity.description%>
+                                                </h5>
+                                             </div>
+                                             <br>
+                                            
+                                          </a>
+                                       </div>
+                                       <%})%>
+                                    </div>
+                                 </div>
 <h2 class="my-3 text-capitalize"><%=name%></h2>
       <div class="row">
       	<%entities.forEach(function(entity){%>
