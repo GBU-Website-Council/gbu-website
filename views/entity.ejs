@@ -13,8 +13,7 @@
               <h6>View Links:</h6>
               <p class="card-text">
                 <%entity.pdf.forEach(function(x){%>
-
-              </p>
+              <li>
               <a style="color: green" href="/files/<%=entity.type%>/<%=x.filename%>" target="_blank"><%=x.filename%></a></p>
             </li>
                 <%})%>
