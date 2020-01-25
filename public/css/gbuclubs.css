@@ -1,3 +1,12 @@
+body{
+
+	text-align:justify; 
+  	text-justify:auto;
+}
+p{
+  text-align:justify; 
+  text-justify:auto;
+}
 .navbarcolour_rohit{
 	background-color: #012454;
 	color: white;

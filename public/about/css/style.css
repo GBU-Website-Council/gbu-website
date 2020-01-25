@@ -1,5 +1,11 @@
 body{
 	zoom: 100%;
+  text-align:justify; 
+  text-justify:auto;
+}
+p{
+  text-align:justify; 
+  text-justify:auto;
 }
 #search-icon{
 	padding-left: 10px;
@@ -475,4 +481,14 @@ body{
     .bgimage_about_home_mukul{
       background-position: 100% 52%;
     }
-  }
+  
+.banner-mob-view {
+    height: 180px!important;
+}
+}
+@media only screen and (max-width: 992px){
+  
+.banner-mob-view {
+    height: 200px!important;
+}
+}
