@@ -33,7 +33,7 @@ p{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 #col-college-name-1{
-	padding-right: 18px;
+	padding-right: 20px;
 	font-family: font-family: 'Poppins', sans-serif;
 	font-family: 'Lato', sans-serif;
 	border-right: 7px solid #cc3636; 
@@ -46,19 +46,10 @@ p{
 	letter-spacing: 0;
 }
 #college-name-2{
-	font-size: 20px ;
 	color: #010327;
 	font-weight: 500;
 	font-family: 'Lato', sans-serif;
 }
-.vl {
-  	border: 2px solid #cc3636;
- 	height: 36px;
- 	display: inline-flex;
- 	margin-left: 10px;
- 	margin-right: 10px; 
-}
-
 .navbar{
 	color: #012454;
 	align-items: center;
@@ -157,11 +148,14 @@ p{
  	color: #fff;
  }
 @media only screen and (min-width : 320px) {
+		#col-college-name-1{
+			border-right: 4px solid #cc3636; 
+		}
 		#college-name-1{
-	      	font-size: 16px;
+	      	font-size: 12px;
 	    }
 		#college-name-2{
-			font-size: 17px;
+			font-size: 12px;
 	    }
 	    #fill-image {
         width: 180%;
@@ -173,11 +167,14 @@ p{
       }
     }
 @media only screen and (min-width : 480px) {
+		#col-college-name-1{
+			border-right: 5px solid #cc3636; 
+		}
   		#college-name-1{
-      	    font-size: 17px;
+      	    font-size: 13px;
         }
         #college-name-2{
-      	    font-size: 18px;
+      	    font-size: 14px;
         }
         #fill-image {
         width: 180%;
@@ -189,8 +186,11 @@ p{
       }
     }
 @media only screen and (min-width : 768px) {
+		#col-college-name-1{
+			border-right: 6px solid #cc3636; 
+		}
   		#college-name-1{
-    	  	font-size: 28px;
+    	  	font-size: 17px;
         }
         #college-name-2{
       	    font-size: 18px;
@@ -205,8 +205,11 @@ p{
       }
     }
 @media only screen and (min-width : 992px) {
+		#col-college-name-1{
+			border-right: 7px solid #cc3636; 
+		}
   		#college-name-1{
-    	  	font-size: 20px;
+    	  	font-size: 19px;
         }
       	#college-name-2{
       		font-size: 20px;
@@ -221,11 +224,14 @@ p{
       }
     }
 @media only screen and (min-width : 1200px) {
+		#col-college-name-1{
+			border-right: 7px solid #cc3636; 
+		}	
   		#college-name-1{
     	  	font-size: 22px;
       	}
         #college-name-2{
-      	    font-size: 20px;
+      	    font-size: 24px;
         }
 
       #fill-image {
