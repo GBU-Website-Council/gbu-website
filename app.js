@@ -107,7 +107,7 @@ app.get('/files/tenders/:filename', (req, res) => {
 });
 
 app.get('/files/:type/:filename', (req, res) => {
-	if(req.params.type=='news'||req.params.type=='events'||req.params.type=='notices'||req.params.type=='workshops'||req.params.type=='technology'||req.params.type=='cultural'){
+	if(req.params.type=='news'||req.params.type=='events'||req.params.type=='notices'||req.params.type=='workshops'||req.params.type=='conferences'||req.params.type=='activities'){
   gfs.files.findOne({filename: req.params.filename}, (err, file) => {
     // Check if file
     if (!file || file.length === 0) {
@@ -145,7 +145,7 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
 	// 	res.render('edit_admin_photos');
 	// else if(name='faculty')
 	// 	res.render('edit_admin_faculty');
-	if (name=='news' || name=='events' || name=='notices'||name=='workshops'||name=='technology'||name=='cultural')
+	if (name=='news' || name=='events' || name=='notices'||name=='workshops'||name=='conferences'||name=='activities')
          res.render('edit_admin',{name});
     else 
     	res.render("404")
@@ -487,13 +487,34 @@ app.get('/schools/soljg',(req,res)=>{
 	res.render('soljg',{entities})
 	});
 });
+app.get('/faculty/:name',(req,res)=>{
+	var name=req.params.name;
+	Faculty.findOne({name},function(err,faculty){
+		if(err)
+			res.redirect('back')
+		else{
+			console.log(faculty)
+			res.render('profile',{faculty})
+		}
+	})
+})
+app.get('/faculty/:name/research',(req,res)=>{
+	var name=req.params.name;
+	Faculty.findOne({name},function(err,faculty){
+		if(err)
+			res.redirect('back')
+		else{
+			res.render('profile_research',{faculty})
+		}
+	})
+})
 app.get('/faculty',(req,res)=>{
 	var noMatch="";
 	var search="";
 	if(req.query.search){
 		search="foo";
 		 const regex = new RegExp(escapeRegex(req.query.search), 'gi');
-		Faculty.find({Name:regex},(err,faculties)=>{
+		Faculty.find({name:regex},(err,faculties)=>{
 			var noMatch;
 			if(faculties.length<1){
 				noMatch="No Results Found!";
@@ -667,7 +688,7 @@ app.get('/contact-us',(req,res)=>{
 
 app.get('/:type',function(req,res){
 	var name=req.params.type;
-	if (name=='news' || name=='events' || name=='notices'||name=='workshops'||name=='technology'||name=='cultural'){
+	if (name=='news' || name=='events' || name=='notices'||name=='workshops'||name=='conferences'||name=='activities'){
 		Entity.find({type:req.params.type},function(err,entities){
     	// console.log(entity)
     	if(entities)

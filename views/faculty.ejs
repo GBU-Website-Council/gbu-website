@@ -12,12 +12,9 @@
                     <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
                     <script type="text/javascript">
                     $(document).ready(function(){
-
-
                     $.showAllFaculty=function()
                     {
                     $("div.select-item").addClass("select-item-active");
-                    	
                     	 $("div.select-item-sob").removeClass("select-item-active");
                     	 $("div.select-item-sobs").removeClass("select-item-active");
                     	 $("div.select-item-soe").removeClass("select-item-active");
@@ -382,10 +379,11 @@
                     	<%}%>
                       <%faculties.forEach(function(faculty){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
-                        <p><strong><%=faculty.Post%></strong></p>
-                        <p><%=faculty.Education%></p>
-                        <p><%=faculty.Description%></p>
+                        <strong><img alt="" src="" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
                       </div>
                       <%})%>
                     </div>
@@ -395,12 +393,13 @@
                     	<h3><%=noMatch%></h3>
                     	<%}%>
                       <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.School=="SOICT"){%>
+                      	<%if(faculty.school=="University School Of Information And Communication Technology"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
-                        <p><strong><%=faculty.Post%></strong></p>
-                        <p><%=faculty.Education%></p>
-                        <p><%=faculty.Description%></p>
+                        <strong><img alt="" src="" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
                       </div>
                       <%}%>
                       <%})%>
@@ -410,12 +409,13 @@
                     	<h3><%=noMatch%></h3>
                     	<%}%>
                       <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.School=="SOB"){%>
+                      	<%if(faculty.school=="University School Of BioTechnology"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
-                        <p><strong><%=faculty.Post%></strong></p>
-                        <p><%=faculty.Education%></p>
-                        <p><%=faculty.Description%></p>
+                        <strong><img alt="" src="" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
                       </div>
                       <%}%>
                       <%})%>
@@ -425,12 +425,13 @@
                     	<h3><%=noMatch%></h3>
                     	<%}%>
                       <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.School=="SOBS"){%>
+                      	<%if(faculty.school=="SOBS"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
-                        <p><strong><%=faculty.Post%></strong></p>
-                        <p><%=faculty.Education%></p>
-                        <p><%=faculty.Description%></p>
+                        <strong><img alt="" src="" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
                       </div>
                       <%}%>
                       <%})%>
@@ -440,12 +441,13 @@
                     	<h3><%=noMatch%></h3>
                     	<%}%>
                       <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.School=="SOE"){%>
+                      	<%if(faculty.school=="University School Of Engineering"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
-                        <p><strong><%=faculty.Post%></strong></p>
-                        <p><%=faculty.Education%></p>
-                        <p><%=faculty.Description%></p>
+                        <strong><img alt="" src="" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
                       </div>
                       <%}%>
                       <%})%>
@@ -455,12 +457,13 @@
                     	<h3><%=noMatch%></h3>
                     	<%}%>
                       <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.School=="SOH"){%>
+                      	<%if(faculty.school=="University School Of Humanities & Social Sciences"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
-                        <p><strong><%=faculty.Post%></strong></p>
-                        <p><%=faculty.Education%></p>
-                        <p><%=faculty.Description%></p>
+                        <strong><img alt="" src="" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
                       </div>
                       <%}%>
                       <%})%>
@@ -470,12 +473,13 @@
                     	<h3><%=noMatch%></h3>
                     	<%}%>
                       <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.School=="SOLJG"){%>
+                      	<%if(faculty.school=="University School Of Law, Justice & Governance"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
-                        <p><strong><%=faculty.Post%></strong></p>
-                        <p><%=faculty.Education%></p>
-                        <p><%=faculty.Description%></p>
+                        <strong><img alt="" src="" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
                       </div>
                       <%}%>
                       <%})%>
@@ -485,12 +489,13 @@
                     	<h3><%=noMatch%></h3>
                     	<%}%>
                       <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.School=="SOM"){%>
+                      	<%if(faculty.school=="University School Of Management"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
-                        <p><strong><%=faculty.Post%></strong></p>
-                        <p><%=faculty.Education%></p>
-                        <p><%=faculty.Description%></p>
+                        <strong><img alt="" src="" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
                       </div>
                       <%}%>
                       <%})%>
@@ -500,12 +505,13 @@
                     	<h3><%=noMatch%></h3>
                     	<%}%>
                       <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.School=="SOVS"){%>
+                      	<%if(faculty.school=="University School Of Vocational Studies & Applied Sciences"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../faculty/img/faculty_<%=faculty.Sno%>.png" style="float:left;height:150px;"><a href="/faculty/<%=faculty.Name%>"><%=faculty.Name%></a></strong>
-                        <p><strong><%=faculty.Post%></strong></p>
-                        <p><%=faculty.Education%></p>
-                        <p><%=faculty.Description%></p>
+                        <strong><img alt="" src="" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
                       </div>
                       <%}%>
                       <%})%>

@@ -1,0 +1,158 @@
+<%include header%>
+    <div class="site-wrap">
+        <div class="jumbotron pt-2 mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-4 text-center">
+                                <img class="img-fluid img-thumbnail" width="200" src="img/test.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="row header-profile text-left">
+                                    <div class="col-12 ">
+                                        <h1 style="color: #49B5AF; font-size: 40px;"><%=faculty.name%></h1>
+                                    </div>
+                                    <div class="col-12">
+                                        
+                                     <%-faculty.qualification%>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gbulogoonpage text-center">
+                        <img class="img-fluid " width="200" src="img/gbulogo.png" alt="">
+                        <style>
+                            .jumbotron{
+                                background-color: #ffffff!important;
+                            }
+                            @media only screen and (max-width: 767px){
+                                .gbulogoonpage{
+                                    display: none;
+                                }
+                            }
+                            @media only screen and (max-width: 1000px){
+                                .header-profile div h1{
+                                    font-size:29px!important;
+                                }
+                                .header-profile div h6, h4{
+                                    font-size: 0.8rem!important;
+                                }
+                            }
+                            #content ul li{
+                                color: #32668F;
+                            }
+                            #content ul li a{
+                                color: #E25822;
+                                text-decoration: none;
+                            }
+                            @media only screen and (max-width: 991px){
+                                        .profesh{
+                                            display: none;
+                                        } 
+                                        .profesh-2{
+                                            background-color: #78335d!important;
+                                        }
+                                    }
+                        </style>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="jumbotron mt-0 pt-0">
+            <div class="container">
+                <div class="row text-left">
+                    <div class="col-md-3">
+                        <div class="text-center profesh" style="color: #ffff; background-color:#78335d; padding: 5px 0px; ">
+                                <h5 class="">Professional</h5>
+                            </div>
+                            <nav class="navbar profesh-2 navbar-expand-md navbar-light bg-light">
+                                <div class="text-center   navbar-toggler" style="color: #ffff;  padding: 5px 10px; ">
+                                <h5 class="">Professional</h5>
+                                </div>
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav" style="display: initial!important;;">
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="/faculty/<%=faculty.name%>">Home </a>
+                                  </li>
+                                 <!--  <li class="nav-item">
+                                    <a class="nav-link" href="teaching.html">Teaching</a>
+                                  </li> -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="/faculty/<%=faculty.name%>/research">Research</a>
+                                  </li>
+                                   <li class="nav-item">
+                                    <a class="nav-link" href="/faculty/<%=faculty.name%>/publications">Publications</a>
+                                  </li>
+                                   <li class="nav-item">
+                                    <a class="nav-link" href="/faculty/<%=faculty.name%>/students">Students</a>
+                                  </li>
+                                   <li class="nav-item">
+                                    <a class="nav-link" href="/faculty/<%=faculty.name%>/contact">Contact</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </nav>
+                        <div class="text-center mt-2" >
+                            <div style="color: #ffff; background-color:#78335d; padding: 5px 0px; ">
+                                <h5 class="">Updates</h5>
+                            </div>
+                            <div class="container p-2" >
+                                <p align="left">
+                                    <marquee direction="up" behavior="scroll" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
+                                        <font size="3">
+                                            <div align="text-left">
+                                                <font color="red">
+                                                    <%-faculty.updates%>
+                                                </font>
+                                            </div>
+                                        </font>
+                                    </marquee>
+                                </p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="maincontent">
+                        <div class="roundbannertop"><div></div></div>
+                        <!--    <div></div>-->
+                        <!--    <div></div>-->
+                        
+                        <div id="content">
+                            <div class="font-weight-normal" style="color: #ffff; background-color:#78335d; padding: 5px 0px; ">
+                                <h5 class="ml-3">Current Course - Session 2019</h5>
+                            </div>
+                            
+                           <%-faculty.current_course%>
+                           <br>
+                            <div class="font-weight-normal" style="color: #ffff; background-color:#78335d; padding: 5px 0px; ">
+                                <h5 class="ml-3">Planned Courses</h5>
+                            </div>
+                            <%-faculty.planned_course%>
+                             <br>
+                            <div class="font-weight-normal" style="color: #ffff; background-color:#78335d; padding: 5px 0px; ">
+                                <h5 class="ml-3">Past Courses</h5>
+                            </div>
+                            <%-faculty.past_course%>                           
+                            <br>
+                            
+                            </div><!-- Content -->
+                            <div class="roundbannerbottom"><div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+  <%include footer%>
+    
+        
+    
