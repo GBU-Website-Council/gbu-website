@@ -186,7 +186,7 @@ app.post('/gbu_ivy_99/e-tender',upload.single('file'),function(req,res){
 app.post('/gbu_ivy_99/:name',upload.fields([{
            name: 'photo', maxCount: 1
          }, {
-           name: 'pdf', maxCount: 8
+           name: 'pdf', maxCount: 20
          }]),function(req,res){
 	if(req.body.school=="all"){
        School.find({},function(err,schools){
