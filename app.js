@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express=require('express'),
       app=express();
 const mongoose=require('mongoose');
@@ -136,7 +135,7 @@ res.render('login');
 });
 app.post('/gbu_ivy_99',function(req,res){
 	console.log(process.env.password)
-	if(req.body.username==process.env.name&&req.body.password==process.env.password){
+	if(req.body.username=="gbu@admin"&&req.body.password=="gbu@admin#p@ssw0rd"){
 		res.render("admin");
 	}
 	else
