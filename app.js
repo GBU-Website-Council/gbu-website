@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express=require('express'),
       app=express();
 const mongoose=require('mongoose');
@@ -130,16 +131,25 @@ else
 //           res.render('entity.ejs',{entity})
 //     });
 // });
-app.get('/ivy99_gbu_adminPage',function(req,res){
-res.render('admin');
+app.get('/gbu_ivy_99',function(req,res){
+res.render('login');
 });
-app.get('/ivy99_gbu_adminPage/e-tender',function(req,res){
+app.post('/gbu_ivy_99',function(req,res){
+	console.log(process.env.password)
+	if(req.body.username==process.env.name&&req.body.password==process.env.password){
+		res.render("admin");
+	}
+	else
+		res.redirect("back")
+})
+
+app.get('/gbu_ivy_99/e-tender',function(req,res){
 	res.render('edit_e_tender');
 })
-app.get('/ivy99_gbu_adminPage/tender',function(req,res){
+app.get('/gbu_ivy_99/tender',function(req,res){
 	res.render('edit_tender');
 })
-app.get('/ivy99_gbu_adminPage/:name',function(req,res){
+app.get('/gbu_ivy_99/:name',function(req,res){
 	var name=req.params.name;
 	// if(name=="photos")
 	// 	res.render('edit_admin_photos');
@@ -150,7 +160,7 @@ app.get('/ivy99_gbu_adminPage/:name',function(req,res){
     else 
     	res.render("404")
 });
-app.post('/ivy99_gbu_adminPage/tender',upload.single('file'),function(req,res){
+app.post('/gbu_ivy_99/tender',upload.single('file'),function(req,res){
 	Tender.create({
 		title:req.body.title,
 		createdAt:req.body.date,
@@ -162,7 +172,7 @@ app.post('/ivy99_gbu_adminPage/tender',upload.single('file'),function(req,res){
 			res.redirect('/')
 	})
 })
-app.post('/ivy99_gbu_adminPage/e-tender',upload.single('file'),function(req,res){
+app.post('/gbu_ivy_99/e-tender',upload.single('file'),function(req,res){
 	ETender.create({
 		title:req.body.title,
 		createdAt:req.body.date,
@@ -174,7 +184,7 @@ app.post('/ivy99_gbu_adminPage/e-tender',upload.single('file'),function(req,res)
 			res.redirect('/')
 	})
 })
-app.post('/ivy99_gbu_adminPage/:name',upload.fields([{
+app.post('/gbu_ivy_99/:name',upload.fields([{
            name: 'photo', maxCount: 1
          }, {
            name: 'pdf', maxCount: 8
