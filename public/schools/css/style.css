@@ -141,7 +141,7 @@ p{
  .card-header{
  	border: none;
  	background-color: #cc3636;
- 	color: #fff;
+ 	color: #fff; 	
  }
  .dropdown-item:hover{
  	background: #cc3636;
