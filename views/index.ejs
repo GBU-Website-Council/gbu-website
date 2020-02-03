@@ -301,7 +301,7 @@
                                     <div class="row mx-auto">
                                        
                                        <%entities.forEach(function(entity){%>
-                                       <%if(entity.type=="technology" &&count<=7){%>
+                                       <%if(entity.type=="conferences" &&count<=7){%>
                                        <%count++%>
                                        <div class="col-md-3 ">
                                           <a href="/<%=entity.type%>/<%=entity._id%>" class="m-1">
@@ -332,7 +332,7 @@
                                  </div>
                               </div>
                               <div class="view-more text-md-right pt-1 container">
-                                 <a href="/technology" class="btn btn-sm btn-outline-secondary">Show More</a>
+                                 <a href="/conferences" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
                            <div id="cultural" class="news-content tab-pane pt-1">
@@ -342,7 +342,7 @@
                                     <div class="row mx-auto">
                                        
                                        <%entities.forEach(function(entity){%>
-                                       <%if(entity.type=="cultural" &&count<=7){%>
+                                       <%if(entity.type=="activities" &&count<=7){%>
                                        <%count++%>
                                        <div class="col-md-3">
                                           <a href="/<%=entity.type%>/<%=entity._id%>" class="m-1">
@@ -373,7 +373,7 @@
                                  </div>
                               </div>
                               <div class="view-more text-md-right pt-1 container">
-                                 <a href="/cultural" class="btn btn-sm btn-outline-secondary">Show More</a>
+                                 <a href="/activities" class="btn btn-sm btn-outline-secondary">Show More</a>
                               </div>
                            </div>
                            
