@@ -15,4 +15,28 @@ var schoolSchema=new mongoose.Schema({
 	}]
 })
 var School=mongoose.model('School',schoolSchema);
+School.create({
+	abbr:"soict"
+})
+School.create({
+	abbr:"sob"
+})
+School.create({
+	abbr:"sobs"
+})
+School.create({
+	abbr:"sovs"
+})
+School.create({
+	abbr:"soh"
+})
+School.create({
+	abbr:"soe"
+})
+School.create({
+	abbr:"som"
+})
+School.create({
+	abbr:"soljg"
+})
 module.exports=School;
