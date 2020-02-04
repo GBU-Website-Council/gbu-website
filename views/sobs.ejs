@@ -23,7 +23,7 @@
         <div class="back-to-home justify-content-center">
           <nav class="navbar shadow py-1" id="top-navigation">
             <div class="container">
-              <a class="navbar-brand float-left" href="/"><img src="../../img/logo_gbu.png" id="gbu-logo" class="logo ">
+              <a class="navbar-brand float-left" href="/"><img src="../../img/logo_gbu.png" id="gbu-logo" >
                 <h5 class="px-2 my-auto" id="gbu-name">Gautam Buddha University</h5>
               </a>
               <form class="form-inline my-1 my-lg-0 d-none d-lg-block">
@@ -149,7 +149,7 @@
             <div class="container-fluid col-md-4 my-2">
               <div class="card" id="card-height">
                 <div class="card-header text-center">News</div>
-                <div class="card-body">
+                <div class="card-body overflow-auto">
                   <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3"> 
                     <%entities.forEach(function(entity){%> 
                   <%if(entity.type=='news'){%>
@@ -162,7 +162,7 @@
             <div class="container-fluid col-md-4 my-2">
               <div class="card" id="card-height">
                 <div class="card-header text-center">Events</div>
-                <div class="card-body">
+                <div class="card-body overflow-auto">
                   <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3"> 
                     <%entities.forEach(function(entity){%> 
                   <%if(entity.type=='events'){%>
@@ -175,7 +175,7 @@
             <div class="container-fluid col-md-4 my-2">
               <div class="card" id="card-height">
                 <div class="card-header text-center">Notices</div>
-                <div class="card-body">
+                <div class="card-body overflow-auto">
                   <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3"> 
                    <%entities.forEach(function(entity){%> 
                   <%if(entity.type=='notices'){%>
