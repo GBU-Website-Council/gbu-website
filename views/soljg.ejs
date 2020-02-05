@@ -13,6 +13,20 @@
      <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins:400,500|Source+Sans+Pro&display=swap" rel="stylesheet">
+        <script async src="https://cse.google.com/cse.js?cx=014142162027795520387:rpatngdrvw9"></script>
+      <script type="text/javascript">
+      function executeQuery() {
+    var input = document.getElementById('form-search-input');
+    console.log(input)
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+    </script>
   </head>
   <body>
     
@@ -26,9 +40,9 @@
               <a class="navbar-brand float-left" href="/"><img src="../../img/logo_gbu.png" id="gbu-logo" >
                 <h5 class="px-2 my-auto" id="gbu-name">Gautam Buddha University</h5>
               </a>
-              <form class="form-inline my-1 my-lg-0 d-none d-lg-block">
+              <form class="form-inline my-1 my-lg-0 d-none d-lg-block" onsubmit="return executeQuery();">
                 <div class="container">
-                  <input class="form-control  form-control-sm" type="search" placeholder="Search" aria-label="Search">
+                  <input class="form-control  form-control-sm" type="search" placeholder="Search" aria-label="Search" id="form-search-input">
                   <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
                 </div>
               </form>
@@ -556,6 +570,7 @@
         </div>
       </div>
     </div>
+     <div class="gcse-searchresults-only"></div>
     <script type="text/javascript" src="../schools/js/school_main.js"></script>
 
 <%include footer%>
