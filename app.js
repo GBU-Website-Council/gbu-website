@@ -306,6 +306,9 @@ res.render('bodies')
 app.get('/about/organisation',function(req,res){
 res.render('organisation')
 });
+app.get('/about/regulatory-bodies',function(req,res){
+res.render('regulatory-bodies')
+});
 app.get('/about/gbu-commitee',function(req,res){
 res.render('commitee')
 });
@@ -658,6 +661,8 @@ function escapeRegex(text) {
 app.get('/ishanvarshney',(req,res)=>{
 	res.redirect('https://github.com/ishvar99')
 })
+
+
 app.get('/placements',(req,res)=>{
 	res.render('placements')
 })
@@ -685,6 +690,12 @@ app.get('/contact',(req,res)=>{
 app.get('/leave-form',(req,res)=>{
 	res.render('leave')
 })
+app.get('/pranjalvarshney',(req,res)=>{
+	res.redirect('https://github.com/pranjalvarshney')
+})
+app.get('/mukulrai',(req,res)=>{
+	res.redirect('https://github.com/raimukul')
+})
 app.get('/payment',(req,res)=>{
 	res.render('payment')
 })
@@ -694,7 +705,13 @@ app.get('/sitemap',(req,res)=>{
 app.get('/contact-us',(req,res)=>{
 	res.render('contact')
 })
+app.get('/iqac',function(req,res){
+res.render('iqac')
+});
 
+app.get('/ugc',(req,res)=>{
+	res.render('ugc')
+})
 app.get('/:type',function(req,res){
 	var name=req.params.type;
 	if (name=='news' || name=='events' || name=='notices'||name=='workshops'||name=='conferences'||name=='activities'){
