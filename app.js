@@ -375,6 +375,9 @@ app.get('/alumni',function(req,res){
 app.get('/admissions',(req,res)=>{
 	res.render('admissions')
 })
+app.get('/cultural-council',(req,res)=>{
+	res.render('cultural-council')
+})
 app.get('/library/home',(req,res)=>{
 	res.render('library_home')
 })

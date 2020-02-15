@@ -417,7 +417,7 @@ p{
 	height: 250px;
 }
 .navbarcolour{
-	background-color: #012425;
+	background-color: #012425!important;
 	color: white;
 
 }
