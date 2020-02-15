@@ -1081,3 +1081,13 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 }
 
 /*popup css ends here*/
+
+#website-council-link{
+  text-decoration: none;
+  color: darkblue;
+
+}
+
+#website-council-link:hover{
+  text-decoration: none;
+}
