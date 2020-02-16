@@ -1,23 +1,61 @@
 <%include header%>
 <!-- ccc banner start -->
     <section>
-      <div class="jumbotron mb-0 clubheader banner-bg" style="background-image: url(../../../ccc/assets/img/banner1.png);">
-        <div class="banner-over" id="banner-over" style="background-image: url(../../../ccc/assets/img/pattern.png)!important;">
-          <div class="">
-            <div class="container mb-0 ">
-              <h1 class="font-weight-lighter display-5 mb-0 text-left" style="color: #ffffff">
-              <strong>
-              CENTRAL COMPUTER CENTER
-              </strong>
-              </h1>
-              <hr class="mt-0  pt-0 mb-1">
-              
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-12 p-0">
+               <div id="demo" class="carousel slide shadow carousel-fade" data-ride="carousel">
+                  <ul class="carousel-indicators">
+                     <li data-target="#demo" data-slide-to="0" class="active"></li>
+                     <li data-target="#demo" data-slide-to="1"></li>
+                     <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="../ccc/assets/img/Artboard 1ccc banner 3.png" id="fill" width="100%">
+                        <div class="carousel-caption py-2 px-1" id="carousel-capton-text">
+                           <h2>A 511 acres lush green campus in Greater Noida and one of the most iconic infrastructures in India</h2>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../ccc/assets/img/Artboard 1ccc banner 2.png" id="fill" width="100%">
+                        <div class="carousel-caption py-2 px-1" id="carousel-capton-text">
+                           <h2>Mahatma Jyotiba Phule Meditation Centre to provide a peaceful environment for meditation</h2>
+                        </div> 
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../ccc/assets/img/Artboard 1ccc banner 1.png" id="fill" width="100%">
+                        
+                        <div class="carousel-caption py-2 px-1" id="carousel-capton-text">
+                           <h2>Explore and seek answers to your curiosity at GBU</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                     <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                     <span class="carousel-control-next-icon"></span>
+                  </a>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
     </section>
 <!-- ccc banner end -->
+<!-- marquee start -->
+<section>
+  <div class="" style="background-color: #fb8d1c; height: 30px;" >
+         <div class="container text-center" style="vertical-align:middle;">
+            <marquee align="center" onmouseout="start();" onmouseover="stop();" scrollamount="4" >
+               <a href="http://adm-del.nielit.in/"><p style="color: #000; font-size: 16px;">Welcome to the official webpage of Central Computer enter GBU</p>
+               </a>
+            </marquee> 
+         </div>
+      </div>
+</section>
+
+<!-- marquee end -->
 <!-- about ccc start -->
  <nav class="navbar navbar-expand-md  navbar-dark " style="background-color: #78335d">
       <div class="container">
@@ -84,7 +122,10 @@
             <p class="card-text text-justify">Software for Scientific Computing, Office Automation, and Database Applications are available on various servers. SPSS (Statistical Package for Social Sciences), Prowess (CMIE) are few of scientific libraries available. MATLAB is the application package for scientific applications.  Oracle 9i, and SQL SERVER 2008 are the major database packages.</p>
           </li>
         </ul> 
-        </div>  
+        </div>
+
+
+
       </div>   
     
     <!-- about ccc end -->
@@ -616,3 +657,6 @@
   
       <!-- End CCC FAQs -->
 <%include footer%>
+
+   
+   

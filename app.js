@@ -434,6 +434,9 @@ app.get('/iprcell/iprs',(req,res)=>{
 app.get('/ccc',(req,res)=>{
 	res.render('ccc');
 })
+app.get('/video',(req,res)=>{
+	res.render('video');
+})
 app.get('/crc',(req,res)=>{
 	res.render('crc');
 })

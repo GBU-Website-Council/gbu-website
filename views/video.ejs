@@ -1,0 +1,60 @@
+<%include header%>
+
+  <style type="text/css">
+      .videoccc {
+  position: relative;
+  background-color: black;
+  height: 110vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.videoccc video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+.overlay{
+  background-color: rgba(0,0,0,0.5);
+}
+    </style>
+  	<section>
+  <div class="videoccc container">
+  <div class="overlay">
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="../ccc/New video.mp4" type="video/mp4">
+  </video>
+  </div>
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+<section>
+	 <div class="videoccc container">
+  <div class="overlay">
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="../ccc/media.io_Gautam Buddha University Version 01_Trim.mp4" type="video/mp4">
+  </video>
+  </div>
+</div>
+	
+</section>
+  <%include footer%>
