@@ -378,23 +378,8 @@ app.get('/admissions',(req,res)=>{
 app.get('/cultural-council',(req,res)=>{
 	res.render('cultural-council')
 })
-app.get('/library/home',(req,res)=>{
-	res.render('library_home')
-})
-app.get('/library/about',(req,res)=>{
-	res.render('library_about')
-})
-app.get('/library/online-catalogue',(req,res)=>{
-	res.render('library_online')
-})
-app.get('/library/e-resources',(req,res)=>{
-	res.render('library_resources')
-})
-app.get('/library/downloads-&-forums',(req,res)=>{
-	res.render('library_downloads')
-})
-app.get('/library/contact-us',(req,res)=>{
-	res.render('library_contact')
+app.get('/library',(req,res)=>{
+	res.render('library')
 })
 app.get('/tender',(req,res)=>{
 	Tender.find({}).sort({createdAt:-1}).exec(function(err,tenders){
