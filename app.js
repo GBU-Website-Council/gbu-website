@@ -378,6 +378,10 @@ app.get('/admissions',(req,res)=>{
 app.get('/cultural-council',(req,res)=>{
 	res.render('cultural-council')
 })
+app.get('/sport-council',(req,res)=>{
+	res.render('sport-council')
+})
+
 app.get('/library',(req,res)=>{
 	res.render('library')
 })
