@@ -518,6 +518,46 @@ app.get('/faculty/:name/research',(req,res)=>{
 		}
 	})
 })
+app.get('/faculty/:name/publications',(req,res)=>{
+	var name=req.params.name;
+	Faculty.findOne({name},function(err,faculty){
+		if(err)
+			res.redirect('back')
+		else{
+			res.render('profile_publications',{faculty})
+		}
+	})
+})
+app.get('/faculty/:name/teaching',(req,res)=>{
+	var name=req.params.name;
+	Faculty.findOne({name},function(err,faculty){
+		if(err)
+			res.redirect('back')
+		else{
+			res.render('profile_teaching',{faculty})
+		}
+	})
+})
+app.get('/faculty/:name/students',(req,res)=>{
+	var name=req.params.name;
+	Faculty.findOne({name},function(err,faculty){
+		if(err)
+			res.redirect('back')
+		else{
+			res.render('profile_students',{faculty})
+		}
+	})
+})
+app.get('/faculty/:name/contact',(req,res)=>{
+	var name=req.params.name;
+	Faculty.findOne({name},function(err,faculty){
+		if(err)
+			res.redirect('back')
+		else{
+			res.render('profile_contact',{faculty})
+		}
+	})
+})
 app.get('/faculty',(req,res)=>{
 	var noMatch="";
 	var search="";

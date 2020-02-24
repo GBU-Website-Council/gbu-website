@@ -1,0 +1,50 @@
+<%include header%>
+<div class="site-wrap">
+        <%include faculty_head%>
+                    
+        <div class="jumbotron mt-0 pt-0">
+            <div class="container">
+                <div class="row text-left">
+
+                        <%include faculty_nav%>
+
+                    <div class="col-md-9">
+                        <div id="maincontent">
+                            <!--    <div></div>-->
+                                <div id="content">
+                                    <div class="font-weight-normal" style="color: #ffff; background-color:#78335d; padding: 5px 0px; ">
+                                       <h5 class="ml-3">Contact Information</h5>
+                                    </div>
+                                <br>
+                                <address> 
+
+                                    <p align = "justify">
+                                          
+                                       <%-faculty.contact_information%><br>
+                                        Phone: <a href="tel:<?php echo $row['contact_phone_number']; ?>"> <%-faculty.contact_phone_number%> </a><br>
+                                       Email:<a href="mailto:<?php echo $row['contact_email']; ?>">  <%-faculty.contact_email%><br> </a>
+                                        
+                                </p><br>
+                                </address>
+                               
+                                <br>
+                                <div class="font-weight-normal" style="color: #ffff; background-color:#78335d; padding: 5px 0px; ">
+                                   <h5 class="ml-3">Correspondence Address</h5>
+                                </div><br>
+                                <address> 
+
+                                    <p align = "justify">
+                                          
+                                       <%-faculty.correspondence_address%><br><br>
+                                       Phone: <a href="tel:<?php echo $row['correspondence_phone_number']; ?>"> <%-faculty.contact_phone_number%><br> </a><br>
+                                    Email:<a href="mailto:<?php echo $row['contact_email']; ?>">  <%-faculty.correspondence_email%><br> </a>
+                                        
+                                </p><br>
+                                </address>      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
