@@ -255,8 +255,8 @@ app.get('/clubs/drama',(req,res)=>{
 app.get('/clubs/dance',(req,res)=>{
 	res.render('club_dance')
 })
-app.get('/clubs/dhristikon',(req,res)=>{
-	res.render('club_dhristikon')
+app.get('/clubs/dhristikon',(req,res)=>{ 
+	res.render('club_debating')
 })
 app.get('/clubs/literary',(req,res)=>{
 	res.render('club_literary')
