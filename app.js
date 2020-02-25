@@ -292,37 +292,39 @@ app.get('/clubs/nature',(req,res)=>{
 	res.render('club_nature')
 })
 app.get('/about/home',function(req,res){
-	res.render('home')
 })
 app.get('/about/vision-&-mission',function(req,res){
-res.render('vision')
+res.render('about_vision')
 });
 app.get('/about/vc-message',function(req,res){
-res.render('vc')
+res.render('about_vc')
 });
 app.get('/about/governing-bodies',function(req,res){
-res.render('bodies')
+res.render('about_bodies')
 });
 app.get('/about/organisation',function(req,res){
-res.render('organisation')
+res.render('about_organisation')
 });
 app.get('/about/regulatory-bodies',function(req,res){
-res.render('regulatory-bodies')
+res.render('about_regulatory-bodies')
 });
-app.get('/about/gbu-commitee',function(req,res){
-res.render('commitee')
+app.get('/about/gbu-committee',function(req,res){
+res.render('about_committee')
 });
 app.get('/about/annual-report',function(req,res){
-res.render('report')
+res.render('about_annual-report')
+});
+app.get('/about/about_nirf',function(req,res){
+	res.render('about_nirf')
 });
 app.get('/about/forums-and-associations',function(req,res){
-res.render('forums')
+res.render('about_forums')
 });
 app.get('/about/gbu-act',function(req,res){
-res.render('act')
+res.render('about_acts')
 });
  app.get('/about/right-to-information',function(req,res){
-res.render('rti')
+res.render('about_rti')
 });
 app.get('/academics/academic-programmes',function(req,res){
 	res.render('academics_programmes')
@@ -354,9 +356,6 @@ app.get('/academics/national-service-scheme',function(req,res){
 app.get('/academics/anti-ragging',function(req,res){
 	res.render('academics_ragging')
 });
-app.get('/academics/nirf-report',function(req,res){
-	res.render('academics_nirf')
-});
 app.get('/academics/student-satisfaction-survey',function(req,res){
 	res.render('academics_survey')
 });
@@ -365,6 +364,9 @@ app.get('/academics/national-academic-depository',function(req,res){
 });
 app.get('/campus-life',function(req,res){
 	res.render('campus')
+})
+app.get('/forms',function(req,res){
+	res.render('forms')
 })
 app.get('/students',function(req,res){
 	res.render('student')
