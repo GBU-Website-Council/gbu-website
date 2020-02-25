@@ -292,6 +292,7 @@ app.get('/clubs/nature',(req,res)=>{
 	res.render('club_nature')
 })
 app.get('/about/home',function(req,res){
+	res.render('about_home')
 })
 app.get('/about/vision-&-mission',function(req,res){
 res.render('about_vision')
