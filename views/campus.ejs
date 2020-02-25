@@ -69,7 +69,7 @@
   background: rgba(0,0,0,0);
   padding: 0 10px 0 10px;
   } 
-  @media (min-width: 300px){
+  @media only screen and (min-width: 300px){
   .campus-banner-x {
     box-shadow: none;
     border: none;
@@ -89,7 +89,7 @@
     line-height: 1.166666667;
     color: #373a36;
 }
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
   .campus-life-head{
     display: none!important;
   }
@@ -100,7 +100,7 @@
   }
 
 }
-@media screen and (min-width: 768 and max-width: 950px){
+@media only screen and (max-width: 950px){
   .campus-life-head{
     width:70%!important;
   }
@@ -109,6 +109,11 @@
     width: 25%!important;
   }
 
+}
+@media only screen and (max-width: 768px){
+  .revese-md{
+    flex-direction: column-reverse!important;
+  }
 }
   </style>
   <body>
@@ -119,13 +124,13 @@
         <div class="row my-5" style="padding: 0px 0px;">
           <div class="col-md-9 campus-life-head">
           </div>
-          <div class="col-md-3 campus-banner-x my-auto p-5 container text-center">
+          <div class="col-md-3 campus-banner-x my-auto p-4 container text-center">
             <div class="position text-left">
-              <h2 class=" pt-2 pl-2 city-life-t ">Campus life</h2>
+              <h2 class=" pt-1 pl-2 city-life-t ">Campus life</h2>
              <hr style="width: 40%; left: 10 ; position: absolute; border: 2px solid red">
               <br>
               <br>
-              <p style="color: rgb(91, 97, 102); font-size: 18px;">We’re ready to see you thrive. <br>Be a part of a vibrant community of intellectuals and entrepreneurs endowed with Character, Creativity, Competence and Commitment</p>
+              <p style="color: rgb(91, 97, 102); font-size: 16px;">We’re ready to see you thrive. <br>Be a part of a vibrant community of intellectuals and entrepreneurs endowed with Character, Creativity, Competence and Commitment</p>
             </div>
           </div>
         </div>
@@ -253,15 +258,15 @@
     <!--    section1 start -->
     <div class="section-1 p-4 mt-5">
       <div class="container">
-        <div class="row">
-          <div class="column col-md-6 mb-4" style="background-image: url(img/canteen.jpeg) !important;
+        <div class="row revese-md">
+          <div class="col-md-6 mb-4" style="min-height: 250px; background-image: url(img/canteen.jpeg) !important;
             background-size: cover !important;
             background-position: 50% 50% !important;
             background-attachment: scroll !important;
             background-repeat: no-repeat !important;" >
             
           </div>
-          <div class="column col-md-6 mb-4">
+          <div class="col-md-6 mb-4">
             <h2 style="font-size: 22px !important;">Dining services</h2>​​​​
             <div class=" mb-3 mt-2 float-left" style="height: 2px; width: 20%; background-color:rgb(228, 0, 43);"></div><br><br>
             <p>Feast on fresh, nutritious food, or grab a quick snack. If you want to eat it, you can find it here. In addition to our buffet-style dining hall, try out our delis, Starbucks station, Tex-Mex takeout, on-campus Domino’s, and any number of local food trucks that make regular stops on campus. You’ll eat well here!</p>
@@ -274,12 +279,12 @@
     <div class="section-1 p-4">
       <div class="container">
         <div class="row">
-          <div class="column col-md-6 mb-5">
+          <div class="col-md-6 mb-5">
             <h2 style="font-size: 22px !important;">​Evening out @ Grand walk</h2>​​​​
             <div class=" mb-3 mt-2 float-left" style="height: 2px; width: 20%; background-color:rgb(228, 0, 43);"></div><br><br>
             <p>The cardiovascular benefits of walking are biologically plausible; like other forms of regular moderate exercise, walking improves cardiac risk factors such as cholesterol, blood pressure, diabetes, obesity, vascular stiffness and inflammation, and mental stress.<br> And if cardiac protection and a lower death rate are not enough to get you moving, consider that walking and other moderate exercise programs also help protect against dementia, peripheral artery disease, obesity, diabetes, depression, colon cancer, and even erectile dysfunction.</p>
           </div>
-          <div class="column col-md-6" style="    background-image: url(img/eveningout1.jpg) !important;
+          <div class="col-md-6" style="min-height: 250px; background-image: url(img/eveningout1.jpg) !important;
             background-size: cover !important;
             background-position: 50% 50% !important;
             background-attachment: scroll !important;
@@ -294,11 +299,11 @@
     <!-- section1 start -->
   <div class="section-1 p-4">
     <div class="container">
-      <div class="row " style="padding: 20px 0px;">
-        <div class="column col-md-6 " style=" background-image: url(img/meditationcenternight2.jpg);background-repeat: no-repeat;background-size: cover;" >
+      <div class="row revese-md" style="padding: 20px 0px;">
+        <div class="col-md-6 " style=" min-height: 250px; background-image: url(img/meditationcenternight2.jpg);background-repeat: no-repeat;background-size: cover;" >
           
         </div>
-        <div class="column col-md-6">
+        <div class="col-md-6">
           <h2 style="font-size: 22px !important;">Meditation Center @ GBU</h2>​​​​
           <div class=" mb-3 mt-2 float-left" style="height: 2px; width: 20%; background-color:rgb(228, 0, 43);"></div><br><br>
           <p>In addition to curricular inputs the university is creating facilities to guide and shape Mahatma Jyotiba Phule Dhyana Kendra, inspired by stupa architecture is a learning and retreat centre to give an experience of the power of peace and inner silence. <br>The centre is looking forward to organize seminars, lectures and experiential workshops in meditation, positive values, stress free living and self management.<br>It aims to help the residents at campus in recognizing their own inherent qualities and recollect their inner most potential. The meditation centre facilitates the experience of the inner self through silence.
@@ -312,14 +317,14 @@
   <div class="section-1 p-4">
     <div class="container">
       <div class="row">
-        <div class="column col-md-6">
+        <div class="col-md-6">
           <h2 style="font-size: 22px !important;">​Meet at Shanti Sarowar</h2>​​​​
           <div class=" mb-3 mt-2 float-left" style="height: 2px; width: 20%; background-color:rgb(228, 0, 43);"></div><br><br>
           <p>An oasis of peace in the happening in GBU, Shanti Sarovar is a perfect place to relax, refresh and recharge the soul. As an academy for higher learning of values and spiritual skills, it conducts a wide spectrum of courses, retreats, seminars and workshops.
             
           </p>
         </div>
-        <div class="column col-md-6" style="    background-image: url(img/4.jpg) !important;
+        <div class="col-md-6" style="    min-height: 250px; background-image: url(img/4.jpg) !important;
           background-size: cover !important;
           background-position: 50% 50% !important;
           background-attachment: scroll !important;
