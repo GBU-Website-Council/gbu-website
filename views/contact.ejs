@@ -5,13 +5,30 @@
         
       </div>
     </div>
-    <style type="text/css">
-      
-    </style>
-    <br>
-    <div class="container">
-      <!--Start Address -->
-      <div id="address">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #78335d;">
+      <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="text-center mx-auto" >
+          <ul class="navbar-nav  text-white container" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link text-white active" id="pills-home-tab" data-toggle="pill" href="#add" role="tab" aria-controls="pills-home" aria-selected="true">Address</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" id="pills-profile-tab" data-toggle="pill" href="#map" role="tab" aria-controls="pills-profile" aria-selected="false">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" id="pills-contact-tab" data-toggle="pill" href="#contact-book" role="tab" aria-controls="pills-contact" aria-selected="false">Contact Book</a>
+          </li>
+        </ul>
+        </div>
+      </div></nav>
+    
+    <div class="tab-content" >
+      <div class="tab-pane fade show active" id="add" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div id="address">
         
         <div class="container">
           <h3 class=" text-lg-left mt-4 mb-0">
@@ -21,19 +38,18 @@
           <br>
           <br>
           <h5 class="card-title ml-5">Gautam Buddha University</h5>
-          <p class="card-text ml-5">Near Yamuna Expressway,<br>
+          <p class="card-text ml-5">Yamuna Expressway,<br>
             Greater Noida<br>
             Gautam Budh Nagar<br>
-            Uttar Pradesh (INDIA) - 201312<br>
+            Uttar Pradesh (INDIA) - 201310<br>
             <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202344200"> 0120-234 4200 </a><br>
             <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:info@gbu.ac.in"> info@gbu.ac.in</a>
           </p>
           
         </div>
-      </div>
-      <!--End Address -->
-      <!-- Google map -->
-      <div id="map">
+      </div></div>
+      <div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div >
         <div class="container">
           <h3 class=" text-lg-left mt-4 mb-0">
           <i class="fa fa-map-marker"></i> &nbsp;Map
@@ -46,10 +62,9 @@
           </p>
         </div>
       </div>
-    </div>
-    <!-- End google map -->
-    <!--Start Table for Phone No. -->
-    <div id="contact-book">
+      </div>
+      <div class="tab-pane fade" id="contact-book" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div >
       <div class="card-body">
         <div class="container table-responsive">
           <h3 class=" text-lg-left mt-4 mb-0">
@@ -144,9 +159,136 @@
                 <td><a href="tel:01202344241">0120-234 4241</a></td>
                 <!-- <td>4241</td> -->
               </tr>
+              <tr>
+                <td>irector International Affairs</td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>Director Works</td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>DSA </td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>Chief Proctor </td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>Chief Security Officer </td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>International Convention Center</td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>University Guest House </td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>Dean Academics </td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>Dean Research & Planning </td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>Sports Officer </td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>Public Information Officer </td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+              <tr>
+                <td>Admission Inquiry </td>
+                <td><a href="tel:0120"></a></td>
+                <!-- <td>Ext. No.</td> -->
+              </tr>
+
             </tbody>
           </table>
         </div>
       </div>
     </div>
+      </div>
+    </div>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+      <!--Start Address -->
+      <!-- <div id="address">
+        
+        <div class="container" id="add">
+          <h3 class=" text-lg-left mt-4 mb-0">
+          <i class="fa fa-university"></i> &nbsp;Address
+          </h3>
+          <div class=" mb-3 mt-2 float-left" style="height: 5px; widtd: 12%; background-color:#FB8C00 "></div>
+          <br>
+          <br>
+          <h5 class="card-title ml-5">Gautam Buddha University</h5>
+          <p class="card-text ml-5">Near Yamuna Expressway,<br>
+            Greater Noida<br>
+            Gautam Budh Nagar<br>
+            Uttar Pradesh (INDIA) - 201312<br>
+            <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202344200"> 0120-234 4200 </a><br>
+            <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:info@gbu.ac.in"> info@gbu.ac.in</a>
+          </p>
+          
+        </div>
+      </div> -->
+      <!--End Address -->
+      <!-- Google map -->
+      <!-- <div id="map">
+        <div class="container">
+          <h3 class=" text-lg-left mt-4 mb-0">
+          <i class="fa fa-map-marker"></i> &nbsp;Map
+          </h3>
+          <div class=" mb-3 mt-2 float-left" style="height: 5px; widtd: 12%; background-color:#FB8C00 "></div>
+          <br>
+          <br>
+          <p class="jumbotron text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14035.88120762492!2d77.52141986407929!3d28.420152964155182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc0f918abee8d%3A0x8c72169fdd7154b0!2sGautam+Buddha+University!5e0!3m2!1sen!2sin!4v1560271081976!5m2!1sen!2sin" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+          </p>
+        </div>
+      </div> -->
+    </div>
+    <!-- End google map -->
+    <!--Start Table for<a href="tel:0120"></a> -->
+    
     <%include footer%>
