@@ -309,7 +309,7 @@ res.render('about_organisation')
 app.get('/about/regulatory-bodies',function(req,res){
 res.render('about_regulatory-bodies')
 });
-app.get('/about/gbu-committee',function(req,res){
+app.get('/about/about_committee',function(req,res){
 res.render('about_committee')
 });
 app.get('/about/annual-report',function(req,res){
