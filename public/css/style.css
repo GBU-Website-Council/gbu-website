@@ -1114,3 +1114,26 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
       .clubheader1{
       height: 155px;
       }}
+
+
+/* Club Bannet css*/
+.club-head{
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+.club-heading{
+  padding: 44px 0px;
+}
+@media only screen and (max-width: 768px){
+  .club-head{
+    
+  }
+  .club-heading h1{
+    padding: 5px 0px;
+    font-size: 30px!important;
+  }
+  .club-heading h3{
+    font-size: 25px;
+  }
+}
