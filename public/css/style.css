@@ -396,11 +396,23 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 
 
 .card-img-top-250 {
-  max-height: 250px;
+  height: 200px;
   overflow: hidden;
 }
 
 /* schools hover */
+
+#card-img-div{
+
+  align-content: center;
+}
+#card-img-text{
+  background: rgba(0, 0, 0, 0.27);
+  opacity: 0.8;
+  width: 70%;
+  color: #fff;
+
+}
 
 .img-hover-zoom {
   overflow: hidden;
@@ -888,7 +900,7 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
       font-size: 1.8vh;
       }
       #college-name{
-        font-size: 1.9vh;
+        font-size: 1.8vh;
       }
       .college-name-tag{
         font-size: 0.8vh;
@@ -1085,7 +1097,8 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 
 #website-council-link{
   text-decoration: none;
-  color: darkblue;
+  color:#030523;
+  font-weight: 600;
 
 }
 
