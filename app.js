@@ -246,6 +246,9 @@ else{
 app.get('/clubs',(req,res)=>{
 	res.render('clubs');
 })
+app.get('/e-cell',(req,res)=>{
+	res.render('ecell');
+})
 app.get('/clubs/website-council',(req,res)=>{
 	res.render('club_website')
 })
