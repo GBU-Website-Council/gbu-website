@@ -1150,3 +1150,59 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
     font-size: 25px;
   }
 }
+
+/*  Faculty css start */
+
+.jumbotron{
+  background-color: #ffffff!important;
+  }
+  @media only screen and (max-width: 575px){
+  .head-title{
+  text-align: center !important;
+  }
+  .profile-image{
+  width: 320px!important;
+  max-height: 380px!important;
+  }
+  }
+  @media only screen and (max-width: 767px){
+  
+  .gbulogoonpage{
+  display: none;
+  }
+  
+  }
+  @media only screen and (max-width: 1000px){
+  .header-profile div h1{
+  font-size:29px!important;
+  }
+  /* .header-profile div h6, h4{
+  font-size: 0.8rem!important;
+  } */
+  .gbulogoonpage img{
+  width:150px!important;
+  }
+  }
+  #content ul li{
+  color: #32668F;
+  }
+  #content ul li a{
+  color: #E25822;
+  text-decoration: none;
+  }
+  @media only screen and (max-width: 991px){
+  .profesh{
+  display: none;
+  }
+  .profesh-2{
+  background-color: #78335d!important;
+  }
+  .profesh-2 ul li a{
+    color: #ffffff!important;
+  }
+  }
+  #content ul li{
+  margin-bottom: 15px;
+  }
+
+/* faculty css end */
