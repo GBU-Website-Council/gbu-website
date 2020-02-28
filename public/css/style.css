@@ -1190,7 +1190,7 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
   color: #E25822;
   text-decoration: none;
   }
-  @media only screen and (max-width: 991px){
+  @media only screen and (max-width: 767px){
   .profesh{
   display: none;
   }
