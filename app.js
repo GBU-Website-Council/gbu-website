@@ -740,6 +740,12 @@ app.get('/pranjalvarshney',(req,res)=>{
 app.get('/mukulrai',(req,res)=>{
 	res.redirect('https://github.com/raimukul')
 })
+app.get('/navneet',(req,res)=>{
+	res.redirect('https://github.com/Navimaurya')
+})
+app.get('/navneetmaurya',(req,res)=>{
+	res.redirect('https://www.hackerrank.com/mauryanavis')
+})
 app.get('/payment',(req,res)=>{
 	res.render('payment')
 })
