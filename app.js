@@ -744,7 +744,7 @@ app.get('/navneet',(req,res)=>{
 	res.redirect('https://github.com/Navimaurya')
 })
 app.get('/navneetmaurya',(req,res)=>{
-	res.redirect('https://www.hackerrank.com/mauryanavis')
+	res.render('club_website')
 })
 app.get('/payment',(req,res)=>{
 	res.render('payment')
