@@ -525,7 +525,6 @@ app.get('/faculty/:name',(req,res)=>{
 		if(err)
 			res.redirect('back')
 		else{
-			console.log(faculty)
 			res.render('profile',{faculty})
 		}
 	})
