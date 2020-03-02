@@ -396,11 +396,23 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 
 
 .card-img-top-250 {
-  max-height: 250px;
+  height: 200px;
   overflow: hidden;
 }
 
 /* schools hover */
+
+#card-img-div{
+
+  align-content: center;
+}
+#card-img-text{
+  background: rgba(0, 0, 0, 0.27);
+  opacity: 0.8;
+  width: 70%;
+  color: #fff;
+
+}
 
 .img-hover-zoom {
   overflow: hidden;
@@ -888,7 +900,7 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
       font-size: 1.8vh;
       }
       #college-name{
-        font-size: 1.9vh;
+        font-size: 1.8vh;
       }
       .college-name-tag{
         font-size: 0.8vh;
@@ -1085,7 +1097,8 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 
 #website-council-link{
   text-decoration: none;
-  color: darkblue;
+  color:#030523;
+  font-weight: 600;
 
 }
 
@@ -1114,3 +1127,82 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
       .clubheader1{
       height: 155px;
       }}
+
+
+/* Club Bannet css*/
+.club-head{
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+.club-heading{
+  padding: 44px 0px;
+}
+@media only screen and (max-width: 768px){
+  .club-head{
+    
+  }
+  .club-heading h1{
+    padding: 5px 0px;
+    font-size: 30px!important;
+  }
+  .club-heading h3{
+    font-size: 25px;
+  }
+}
+
+/*  Faculty css start */
+
+.jumbotron{
+  background-color: #ffffff!important;
+  }
+  @media only screen and (max-width: 575px){
+  .head-title{
+  text-align: center !important;
+  }
+  .profile-image{
+  width: 320px!important;
+  max-height: 380px!important;
+  }
+  }
+  @media only screen and (max-width: 767px){
+  
+  .gbulogoonpage{
+  display: none;
+  }
+  
+  }
+  @media only screen and (max-width: 1000px){
+  .header-profile div h1{
+  font-size:29px!important;
+  }
+  /* .header-profile div h6, h4{
+  font-size: 0.8rem!important;
+  } */
+  .gbulogoonpage img{
+  width:150px!important;
+  }
+  }
+  #content ul li{
+  color: #32668F;
+  }
+  #content ul li a{
+  color: #E25822;
+  text-decoration: none;
+  }
+  @media only screen and (max-width: 767px){
+  .profesh{
+  display: none;
+  }
+  .profesh-2{
+  background-color: #78335d!important;
+  }
+  .profesh-2 ul li a{
+    color: #ffffff!important;
+  }
+  }
+  #content ul li{
+  margin-bottom: 15px;
+  }
+
+/* faculty css end */
