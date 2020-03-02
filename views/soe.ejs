@@ -29,7 +29,148 @@
     </script>
   </head>
   <body>
-    
+    <style type="text/css">
+                    .select
+                    {
+                    display:block;
+                    text-align:center;
+                    }
+                    .select-item,.select-item-sob,.select-item-sobs, .select-item-soe,.select-item-soh,                     .select-item-soict, .select-item-soljg
+                    , .select-item-som, .select-item-sovs
+                    {
+                    display:inline-block;
+                    color:#fff;
+                    background-color:#78335d;
+                    border-radius:2px;
+                    border:1px solid #78335d;
+                    cursor:pointer;
+                    padding:4px 10px;
+                    margin:5px;
+                    transition:0.4s;
+                    }
+                    .rteleft {
+                    text-align: left
+                    }
+                    .select-item:hover,.select-item-sob:hover,.select-item-sobs:hover, .select-item-soe:hover,.select-item-soh:hover,                     .select-item-soict:hover, .select-item-soljg:hover
+                    , .select-item-som:hover, .select-item-sovs:hover,.select-item-active
+                    {
+                    background-color:#fff;
+                    color:#3fada8;
+                    }
+                    #cards-container
+                    {
+                    display:block;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container-soict
+                    {
+                    display:none;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container-sob
+                    {
+                    display:none;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container-sobs
+                    {
+                    display:none;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container-soe
+                    {
+                    display:none;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container-soh
+                    {
+                    display:none;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container-soljg
+                    {
+                    display:none;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container-som
+                    {
+                    display:none;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container-sovs
+                    {
+                    display:none;
+                    text-align:center;
+                    padding:10px;
+                    }
+                    #cards-container .card,#cards-container-soict .card
+                    ,#cards-container-sob .card,#cards-container-sobs .card,
+                    #cards-container-soe .card,#cards-container-soh .card,
+                    #cards-container-soljg .card,#cards-container-som .card,
+                    #cards-container-sovs .card
+                    {
+                    width:350px;
+                    height:300px;
+                    vertical-align:top;
+                    border-radius:4px;
+                    border:1px solid #ddd;
+                    background:#fafafa;
+                    padding:20px;
+                    display:inline-block;
+                    margin:10px;
+                    overflow:hidden;
+                    }
+                    #cards-container .card img,#cards-container-soict .card img
+                    ,#cards-container-sob .card img,#cards-container-sobs .card img,
+                    #cards-container-soe .card img,#cards-container-soh .card img,
+                    #cards-container-soljg .card img,#cards-container-som .card img,
+                    #cards-container-sovs .card img
+                    {
+                    /*height:130px!important;
+                    width:110px!important;*/
+                    width:auto;
+                    padding:3px!important;
+                    background:#fff;
+                    margin:0!important;
+                    margin-right:20px!important;
+                    margin-bottom:20px!important;
+                    }
+                    #cards-container .card hr,#cards-container-soict .card hr
+                    ,#cards-container-sob .card hr,#cards-container-sobs .card hr,
+                    #cards-container-soe .card hr,#cards-container-soh .card hr,
+                    #cards-container-soljg .card hr,#cards-container-som .card hr,
+                    #cards-container-sovs .card hr
+                    {
+                    margin:0;
+                    margin-top:20px;
+                    margin-bottom:10px;
+                    background:-webkit-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    background:-moz-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    background:-ms-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    background:-o-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    background:linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+                    clear:both;
+                    }
+                    @media screen and (max-width:500px)
+                    {
+                    #cards-container .card,#cards-container-soict .card
+                    ,#cards-container-sob .card,#cards-container-sobs .card,
+                    #cards-container-soe .card,#cards-container-soh .card,
+                    #cards-container-soljg .card,#cards-container-som .card,
+                    #cards-container-sovs .card
+                    {
+                    width:80%;
+                    }
+                    }
+                    </style>
     <div class="header sticky-top">
       <div class="global-header">
         
@@ -634,119 +775,26 @@
     </div>
     
     <div class="tab-pane fade" id="faculty-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
+      <div class="">
+        <div class="container">
           <h1 class="text-center">Faculty | SOE</h1>
           <br>
-          <p class="py-3">Our accomplished and dedicated intellectual resource ensures delivery of our objectives in engineering education, research and training. The faculty members have distinguished academic achievements in their respective areas and the related basic disciplines and are committed to the cause. They undertake consultancy assignments to keep themselves updated with the real-life challenges in public and Private Sectors, Financial Institutions, Government Agencies and International Agencies. We are committed to identify, nurture and groom our young aspirants who intend to assume their role as techno leaders. We walk extra mile that separates excellence from merely being adequate. The University being a residential campus ensures availability of its faculty member for consultations and guidance outside the classroom in an informal and customized situation.</p>
-          <table class="table-responsive border-0" class="mx-auto" border="1" width="100%">
-            <tbody>
-              <tr>
-                <th class="py-1 px-3" scope="col">Title</th>
-                <th class="py-1 px-3" scope="col">Name of Faculty</th>
-                <th class="py-1 px-3" scope="col">Designation</th>
-              </tr>
-              <tr>
-                <td class="py-1 px-3">Prof.</td>
-                <td class="py-1 px-3"><a href="../../gbudata/faculty/Pradeep Kumar Yadav">Pradeep Kumar Yadav</a>
-                <br>
-              </td>
-              <td class="py-1 px-3"> Professor and Dean </td>
-            </tr>
-            <tr>
-              <td class="py-1 px-3">Dr.</td>
-              <td class="py-1 px-3"><a href="../../gbudata/faculty/Kirti Pal">Kirti Pal </a>
-              <br>
-            </td>
-            <td class="py-1 px-3">Associate Professor</td>
-          </tr>
-          <tr>
-            <td class="py-1 px-3">Dr.</td>
-            <td class="py-1 px-3"><a href="../../gbudata/faculty/Satpal Sharma">Satpal Sharma </a>
-            <br>
-          </td>
-          <td class="py-1 px-3">Assistant Professor</td>
-        </tr>
-        <tr>
-          <td class="py-1 px-3">Dr.</td>
-          <td class="py-1 px-3"><a href="../../gbudata/faculty/Nirmita Mehrotra (HOD Architecture Planning)">Nirmita Mehrotra (HOD Architecture Planning) </a>
-          <br>
-        </td>
-        <td class="py-1 px-3">Assistant Professor</td>
-      </tr>
-      <tr>
-        <td class="py-1 px-3">Dr.</td>
-        <td class="py-1 px-3"><a href="../../gbudata/faculty/Mohd. Ahmad Ansari">Mohd. Ahmad Ansari </a>
-        <br>
-      </td>
-      <td class="py-1 px-3">Assistant Professor</td>
-    </tr>
-    <tr>
-      <td class="py-1 px-3">Dr.</td>
-      <td class="py-1 px-3"><a href="../../gbudata/faculty/Nidhi Singh Pal">Nidhi Singh Pal </a>
-      <br>
-    </td>
-    <td class="py-1 px-3">Assistant Professor</td>
-  </tr>
-  <tr>
-    <td class="py-1 px-3">Dr.</td>
-    <td class="py-1 px-3"><a href="../../gbudata/faculty/Shabana Urooj">Shabana Urooj </a>
-    <br>
-  </td>
-  <td class="py-1 px-3">Assistant Professor</td>
-</tr>
-<tr>
-  <td class="py-1 px-3">Dr.</td>
-  <td class="py-1 px-3"><a href="../../gbudata/faculty/Harishchandra Thakur">Harishchandra Thakur </a>
-  <br>
-</td>
-<td class="py-1 px-3">Assistant Professor</td>
-</tr>
-<tr>
-<td class="py-1 px-3">Dr.</td>
-<td class="py-1 px-3"><a href="../../gbudata/faculty/Shobharam">Shobharam </a>
-<br>
-</td>
-<td class="py-1 px-3">Assistant Professor</td>
-</tr>
-<tr>
-<td class="py-1 px-3">Dr.</td>
-<td class="py-1 px-3"><a href="../../gbudata/faculty/Dharamvir Mangal">Dharamvir Mangal </a>
-<br>
-</td>
-<td class="py-1 px-3">Assistant Professor</td>
-</tr>
-<tr>
-<td class="py-1 px-3">Dr.</td>
-<td class="py-1 px-3"><a href="../../gbudata/faculty/Chandra Bhan Vishwakarma">Chandra Bhan Vishwakarma </a>
-<br>
-</td>
-<td class="py-1 px-3">Assistant Professor</td>
-</tr>
-<tr>
-<td class="py-1 px-3">Dr.</td>
-<td class="py-1 px-3"><a href="../../gbudata/faculty/Omveer Singh">Omveer Singh </a>
-<br>
-</td>
-<td class="py-1 px-3">Assistant Professor</td>
-</tr>
-<tr>
-<td class="py-1 px-3">Dr.</td>
-<td class="py-1 px-3"><a href="../../gbudata/faculty/Anant Pratap Singh">Anant Pratap Singh </a>
-<br>
-</td>
-<td class="py-1 px-3">Assistant Professor</td>
-</tr>
-<tr>
-<td class="py-1 px-3">Ms.</td>
-<td class="py-1 px-3"><a href="../../gbudata/faculty/Madhuri Agarwal">Madhuri Agarwal </a>
-<br>
-</td>
-<td class="py-1 px-3">Assistant Professor</td>
-</tr>
-</tbody>
-</table>
+          <p class="py-3 text-justify">Our accomplished and dedicated intellectual resource ensures delivery of our objectives in engineering education, research and training. The faculty members have distinguished academic achievements in their respective areas and the related basic disciplines and are committed to the cause. They undertake consultancy assignments to keep themselves updated with the real-life challenges in public and Private Sectors, Financial Institutions, Government Agencies and International Agencies. We are committed to identify, nurture and groom our young aspirants who intend to assume their role as techno leaders. We walk extra mile that separates excellence from merely being adequate. The University being a residential campus ensures availability of its faculty member for consultations and guidance outside the classroom in an informal and customized situation.</p>
 </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                         <div id="cards-container">
+                        <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Engineering"){%>
+                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a target="_blank" href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
+                      </div>
+                      <%}%>
+                      <%})%>
+            </div>
 </div>
 </div>
 

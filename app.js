@@ -457,50 +457,66 @@ app.get('/faqs',(req,res)=>{
 })
 app.get('/schools/soict',(req,res)=>{
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
-	  entities=	entities.filter((entity)=>entity.school=='all'||entity.school=='soict')
-	res.render('soict',{entities})
+	  entities=entities.filter((entity)=>entity.school=='all'||entity.school=='soict')
+	  	Faculty.find({},(err,faculties)=>{
+		res.render('soict',{entities,faculties});
+	})
 	});
 });
 app.get('/schools/sob',(req,res)=>{
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
 	entities=entities.filter((entity)=>entity.school=='all'||entity.school=='sob')
-	res.render('sob',{entities})
+	Faculty.find({},(err,faculties)=>{
+		res.render('sob',{entities,faculties});
+	})
 	});
 });
 app.get('/schools/sobs',(req,res)=>{
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
 	entities=entities.filter((entity)=>entity.school=='all'||entity.school=='sobs')
-	res.render('sobs',{entities})
+	Faculty.find({},(err,faculties)=>{
+		res.render('sobs',{entities,faculties});
+	})
 	});
 });
 app.get('/schools/som',(req,res)=>{
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
 	entities=entities.filter((entity)=>entity.school=='all'||entity.school=='som')
-	res.render('som',{entities})
+	Faculty.find({},(err,faculties)=>{
+		res.render('som',{entities,faculties});
+	})
 	});
 });
 app.get('/schools/sovs',(req,res)=>{
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
 	entities=entities.filter((entity)=>entity.school=='all'||entity.school=='sovs')
-	res.render('sovs',{entities})
+	Faculty.find({},(err,faculties)=>{
+		res.render('sovs',{entities,faculties});
+	})
 	});
 });
 app.get('/schools/soh',(req,res)=>{
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
 	entities=entities.filter((entity)=>entity.school=='all'||entity.school=='soh')
-	res.render('soh',{entities})
+	Faculty.find({},(err,faculties)=>{
+		res.render('soh',{entities,faculties});
+	})
 	});
 });
 app.get('/schools/soe',(req,res)=>{
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
 	entities=entities.filter((entity)=>entity.school=='all'||entity.school=='soe')
-	res.render('soe',{entities})
+	Faculty.find({},(err,faculties)=>{
+		res.render('soe',{entities,faculties});
+	})
 	});
 });
 app.get('/schools/soljg',(req,res)=>{
 	Entity.find({}).sort({createdAt:-1}).exec(function(err,entities){
 	entities=entities.filter((entity)=>entity.school=='all'||entity.school=='soljg')
-	res.render('soljg',{entities})
+	Faculty.find({},(err,faculties)=>{
+		res.render('soljg',{entities,faculties});
+	})
 	});
 });
 app.get('/faculty/:name',(req,res)=>{
