@@ -1533,8 +1533,19 @@
             </div>
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
                          <div id="cards-container">
+                          <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position=="Dean"){%>
+                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                        <p><strong><%=faculty.position
+                        %></strong></p>
+                        <p><%=faculty.qualification%></p>
+                        <p><%=faculty.field_of_teaching%></p>
+                      </div>
+                      <%}%>
+                      <%})%>
                         <%faculties.forEach(function(faculty){%>
-                        <%if(faculty.school=="University School of Information And Communication Technology"){%>
+                        <%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position!="Dean"){%>
                       <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
                         <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a target="_blank" href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
                         <p><strong><%=faculty.position
