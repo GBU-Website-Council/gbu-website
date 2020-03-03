@@ -20,9 +20,8 @@ $( document ).ready(function() {
         $(this).removeClass('open');
     }); 
 
-    $("dropdown-item").on('click',function(){
-        $(.dropdown-item).removeClass('open');
-    }); 
-    
+    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    });
 
 });
