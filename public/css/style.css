@@ -531,11 +531,16 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
   width: 100%;
   height: 250px;
 }
-
+ 
 .bgimage_about_home_mukul {
   background-image: url('../img/banner_about1.png');
   width: 100%;
   height: 250px;
+}
+.bgimage_about2_home_mukul {
+  background-image: url('../img/banner_about2 - Copy.png');
+  width: 100%;
+  height: 260px;
 }
 
 .bgimage_about_Committee_mukul {
