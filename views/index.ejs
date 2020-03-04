@@ -20,11 +20,12 @@
                         </div>
                      </div>
                      <div class="carousel-item">
-                        <img src="../../../img/banner/banner2.jpg" id="fill" width="100%">
+                        <img src="../../../img/banner/banner5.jpg" id="fill" width="100%">
                         <div class="carousel-caption py-2 px-1" id="carousel-capton-text">
-                           <h2>Mahatma Jyotiba Phule Meditation Centre to provide a peaceful environment for meditation</h2>
-                        </div> 
+                           <h2>GBU travails various international benchmarks of academic quality and innovativeness.</h2>
+                        </div>
                      </div>
+                     
                      <div class="carousel-item">
                         <img src="../../../img/banner/banner3.jpg" id="fill" width="100%">
                         
@@ -33,17 +34,18 @@
                         </div>
                      </div>
                      <div class="carousel-item">
+                        <img src="../../../img/banner/banner2.jpg" id="fill" width="100%">
+                        <div class="carousel-caption py-2 px-1" id="carousel-capton-text">
+                           <h2>Mahatma Jyotiba Phule Meditation Centre to provide a peaceful environment for meditation</h2>
+                        </div> 
+                     </div>
+                     <div class="carousel-item">
                         <img src="../../../img/banner/banner4.jpg" id="fill" width="100%">
                         <div class="carousel-caption py-2 px-1" id="carousel-capton-text">
                            <h2>Regular sports activities at its own majestic indoor and outdoor stadium</h2>
                         </div>
                      </div>
-                     <div class="carousel-item">
-                        <img src="../../../img/banner/banner5.jpg" id="fill" width="100%">
-                        <div class="carousel-caption py-2 px-1" id="carousel-capton-text">
-                           <h2>GBU travails various international benchmarks of academic quality and innovativeness.</h2>
-                        </div>
-                     </div>
+                     
                   </div>
                   <!-- Left and right controls -->
                   <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -214,16 +216,17 @@
                                              <br>
                                             <p class="h5 text-left"><%=entity.title%></p>
 
+
                         <%if(entity.description.split(" ").length>10){%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+                             <p id="text-description-card" class="text-left">
                                                 <%-entity.description.split(" ").splice(0,10).join(" ")%>
-                                                </h5>
+                                                </p>
                         <%}else{%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+                              <p id="text-description-card" class="text-left">
                                                 <%-entity.description%>
-                                                </h5>
+                                                </p>
                         <%}%>
-                                                
+                                                             
                                              <div class="date-time text-left">
                                                 <h1
                                                 style="text-transform: uppercase; font-size: 10px;letter-spacing: 4px; word-spacing: 1px; color: #ffffff8c; font-weight: 600">
@@ -261,14 +264,14 @@
                                              </div>
                                              <br>
                                             <p class="h5 text-left"><%=entity.title%></p>
-<%if(entity.description.split(" ").length>10){%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+   <%if(entity.description.split(" ").length>10){%>
+                             <p id="text-description-card" class="text-left">
                                                 <%-entity.description.split(" ").splice(0,10).join(" ")%>
-                                                </h5>
+                                                </p>
                         <%}else{%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+                              <p id="text-description-card" class="text-left">
                                                 <%-entity.description%>
-                                                </h5>
+                                                </p>
                         <%}%>
                                              <div class="date-time text-left">
                                                 <h1
@@ -313,14 +316,14 @@
 
                                             <p class="h5 text-left"><%=entity.title%></p>
 
-                                               <%if(entity.description.split(" ").length>10){%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+   <%if(entity.description.split(" ").length>10){%>
+                             <p id="text-description-card" class="text-left">
                                                 <%-entity.description.split(" ").splice(0,10).join(" ")%>
-                                                </h5>
+                                                </p>
                         <%}else{%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+                              <p id="text-description-card" class="text-left">
                                                 <%-entity.description%>
-                                                </h5>
+                                                </p>
                         <%}%>
                                              <div class="date-time text-left">
                                                 <h1
@@ -360,14 +363,14 @@
                                              <br>
                                             <p class="h5 text-left"><%=entity.title%></p>
 
-                                               <%if(entity.description.split(" ").length>10){%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+   <%if(entity.description.split(" ").length>10){%>
+                             <p id="text-description-card" class="text-left">
                                                 <%-entity.description.split(" ").splice(0,10).join(" ")%>
-                                                </h5>
+                                                </p>
                         <%}else{%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+                              <p id="text-description-card" class="text-left">
                                                 <%-entity.description%>
-                                                </h5>
+                                                </p>
                         <%}%>
                                              <div class="date-time text-left">
                                                 <h1
@@ -406,14 +409,14 @@
                                              </div>
                                              <br>
                                             <p class="h5 text-left"><%=entity.title%></p>
-<%if(entity.description.split(" ").length>10){%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+   <%if(entity.description.split(" ").length>10){%>
+                             <p id="text-description-card" class="text-left">
                                                 <%-entity.description.split(" ").splice(0,10).join(" ")%>
-                                                </h5>
+                                                </p>
                         <%}else{%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+                              <p id="text-description-card" class="text-left">
                                                 <%-entity.description%>
-                                                </h5>
+                                                </p>
                         <%}%>
                                              <div class="date-time text-left">
                                                 <h1
@@ -453,14 +456,14 @@
                                              <br>
                                             <p class="h5 text-left"><%=entity.title%></p>
 
-                                               <%if(entity.description.split(" ").length>10){%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+   <%if(entity.description.split(" ").length>10){%>
+                             <p id="text-description-card" class="text-left">
                                                 <%-entity.description.split(" ").splice(0,10).join(" ")%>
-                                                </h5>
+                                                </p>
                         <%}else{%>
-                        <h5 class="block-text text-left" style="font-weight: 300; letter-spacing: 1.1px; font-size: 14px !important ; color: #a7a7a7; text-align:justify; text-justify:auto;">
+                              <p id="text-description-card" class="text-left">
                                                 <%-entity.description%>
-                                                </h5>
+                                                </p>
                         <%}%>
                                              <div class="date-time text-left">
                                                 <h1
