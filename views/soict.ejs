@@ -217,20 +217,22 @@
             <button class="navbar-toggler collapsed my-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
               <span ><i class="fa fa-bars"></i></span>
             </button>
-
+            <script>
+              
+            </script>
             <div class="navbar-collapse collapse" id="collapsibleNavbar">
               <ul class="navbar-nav nav ml-auto text-center justify-content-center" id="nav-tabs" role="tablist">
                 <li class="nav-item active"><a href="#home-tab" class="nav-link" data-toggle="tab" role="tab">Home</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" >About Us</a>
+                    <ul class="dropdown-menu" id="dropdown-h" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item"  href="#deanmsg-tab" data-toggle="tab">Dean's Message</a></li>
                         <li><a class="dropdown-item" href="#boardofstudies-tab" data-toggle="tab">Board of Studies</a></li>
                         <li class="dropdown-item dropdown"><a class="nav-item dropdown-toggle">Departments</a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#department-cse-tab" data-toggle="tab">Computer Science Engineering</a></li>
-                              <li><a class="dropdown-item" href="#department-ece-tab" data-toggle="tab">Electronics and Communication</a></li>
-                            </ul>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#department-cse-tab" data-toggle="tab">Computer Science Engineering</a></li>
+                            <li><a class="dropdown-item" href="#department-ece-tab" data-toggle="tab">Electronics and Communication</a></li>
+                          </ul>
                         </li>
                         <li><a class="dropdown-item"  href="#programs-tab" data-toggle="tab">Programs</a></li>
                         <li><a class="dropdown-item"  href="#laboratories-tab" data-toggle="tab">Laboratories</a></li>
@@ -255,7 +257,7 @@
                 </li> -->
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Placements</a>
-                  <div class="dropdown-menu">
+                  <div class="dropdown-menu" id="dropdown-h">
                     <a class="dropdown-item" href="#placements-overview-tab" data-toggle="tab">Overview</a>
                     <a class="dropdown-item" href="#summer-placements-tab" data-toggle="tab">Summer Placements</a>
                     <a class="dropdown-item" href="#final-placements-tab" data-toggle="tab">Final Placements</a>
@@ -265,7 +267,7 @@
                 <li class="nav-item"><a href="#faculty-tab" class="nav-link" data-toggle="tab">Faculty</a></li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Research</a>
-                  <div class="dropdown-menu">
+                  <div class="dropdown-menu" id="dropdown-h">
                     <a class="dropdown-item" href="#research-publication-tab" data-toggle="tab">Research & Publications</a>
                     <a class="dropdown-item" href="#training-consultancy-tab" data-toggle="tab">Training & Consultancy</a>
                   </div>
@@ -1651,3 +1653,4 @@
     
 
 <%include footer%>
+        

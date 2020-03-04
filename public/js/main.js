@@ -116,14 +116,14 @@ $( document ).ready(function() {
 
     
 
-    $(".dropdown").hover(function () {
-        $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
-        $(this).addClass('open');
-    },
-    function () {
-        $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
-        $(this).removeClass('open');
-    });  
+    // $(".dropdown").hover(function () {
+    //     $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+    //     $(this).addClass('open');
+    // },
+    // function () {
+    //     $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+    //     $(this).removeClass('open');
+    // });  
     
       // manual carousel controls
     $('.next').click(function(){ $('.carousel').carousel('next');return false; });
