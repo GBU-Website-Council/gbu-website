@@ -1211,3 +1211,18 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
   }
 
 /* faculty css end */
+
+
+
+#text-description-card {
+  text-decoration: none;
+  font-size: 15px;
+  color: #a7a7a7;
+  text-align: justify;
+}
+#text-description-card a{
+  text-decoration: none;
+  font-size: 15px !important;
+  color: #a7a7a7;
+  text-align: justify;
+}
