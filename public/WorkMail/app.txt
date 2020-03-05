@@ -1,0 +1,18 @@
+app.get('/admissions/team',function(req,res){
+	res.render('admission_team')
+});
+app.get('/admissions/contact-us',function(req,res){
+	res.render('admission_contact')
+});
+app.get('/admission/important-dates',function(req,res){
+	res.render('important_dates')
+});
+app.get('/admission/fee-structure',function(req,res){
+	res.render('fee_structure')
+});
+app.get('/admissions/international-students',function(req,res){
+	res.render('international_students')
+});
+app.get('/admissions/query',function(req,res){
+	res.render('admission_query')
+});
