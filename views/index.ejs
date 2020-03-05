@@ -14,7 +14,7 @@
                   <!-- The slideshow -->
                   <div class="carousel-inner">
                      <div class="carousel-item active">
-                        <img src="../../../img/banner/banner1.jpg" id="fill" width="100%">
+                        <img src="../../../img/banner/banner-new.png" id="fill" width="100%">
                         <div class="carousel-caption py-2 px-1" id="carousel-capton-text">
                            <h2>A 455 acres lush green campus in Greater Noida and one of the most iconic infrastructures in India</h2>
                         </div>
@@ -89,7 +89,7 @@
                                  </div>
                                  <div class=" container  mt-3 pb-0">
                                     <div class=" text-white text-center ml-4 mr-4">
-                                       <h3 class="display-4">Who we are</h3>
+                                       <h3 class="display-4">Who are we</h3>
                                        <p class="m-4 who-we">Education in its truest sense is our foremost mission. At Gautam Buddha University dreamers become thinkers, achievers, solvers, pioneers, and influencers. We are devoted in assisting our students to endure imperishable intellectual, societal and individual transformation.</p>
                                     </div>
                                  </div>
@@ -200,11 +200,10 @@
                                  <div class="container text-center">
                                     <%var count=0%>
                                     <div class="row mx-auto">
-                                       
                                        <%entities.forEach(function(entity){%>
                                        <%if(entity.type=="news" &&count<=7){%>
                                        <%count++%>
-                                       <div class="col-md-3 ">
+                                       <dziv class="col-md-3 ">
                                           <a href="/<%=entity.type%>/<%=entity._id%>" class="m-1">
                                              <div class="tab">
                                                 <div class="news-img">
