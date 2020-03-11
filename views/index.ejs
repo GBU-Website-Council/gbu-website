@@ -1,6 +1,6 @@
 <%include header%>
       <div class="container-fluid" >
-         <div class="row ">
+         <div class="row my-0 p-0">
             <div class="col-lg-9 col-md-8 p-0">
                <div id="demo" class="carousel slide shadow carousel-fade" data-ride="carousel">
                   <!-- Indicators -->
@@ -56,25 +56,24 @@
                   </a>
                </div>
             </div>
-            <div class="col-lg-3 col-md-4 overflow-none">
-               <div class="card card-responsive">
-                  <div class="card-header text-center">Recent Anouncements</div>
-                  <div class="card-body overflow-auto" style="height: 200px;">
-                     <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
-                        <p id="">this is the latest news</p>
+            <div class="col-lg-3 col-md-4 " style="min-height: 300px; overflow-y: hidden" >
+               <div class="position-absolute" style="min-height: 300px; margin: 0px 0px 0px 0px; left: 0; top: 0; right: 0; bottom: 0;">
+                  <div class="card card-responsive" style="border-radius: 0px; ">
+                  <div class="card-header text-center font-weight-bold py-2" style="background: #fb8d1c;color: #fff;border-radius: 0px;">Recent Anouncements</div>
+                  <div class="card-body overflow-auto" style="overflow-y: auto; height: 380px;">
+                     <marquee direction="down" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+                        <p class=" my-2">this is the latest news</p>
+                        <p class=" my-2">this is the latest news</p>
+                        <p class=" my-2">this is the latest news</p>
+                        <p class=" my-2">this is the latest news</p>
+                        <p class=" my-2">this is the latest news</p>
+                        <p class=" my-2">this is the latest news</p>
+                     
                      </marquee>
                    </div>
                </div>
+               </div>
+               
             </div>
          </div>
       </div>
