@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>GBU | Biotechnology</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,345 +16,387 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins:400,500|Source+Sans+Pro&display=swap" rel="stylesheet">
     <script async src="https://cse.google.com/cse.js?cx=014142162027795520387:rpatngdrvw9"></script>
     <script type="text/javascript">
-    function executeQuery() {
-    var input = document.getElementById('form-search-input');
-    console.log(input)
-    var element = google.search.cse.element.getElement('searchresults-only0');
-    if (input.value == '') {
-    element.clearAllResults();
-    } else {
-    element.execute(input.value);
-    }
-    return false;
-    }
+        function executeQuery() {
+            var input = document.getElementById('form-search-input');
+            console.log(input)
+            var element = google.search.cse.element.getElement('searchresults-only0');
+            if (input.value == '') {
+                element.clearAllResults();
+            } else {
+                element.execute(input.value);
+            }
+            return false;
+        }
     </script>
-  </head>
-  <body>
-     <style type="text/css">
-                    .select
-                    {
-                    display:block;
-                    text-align:center;
-                    }
-                    .select-item,.select-item-sob,.select-item-sobs, .select-item-soe,.select-item-soh,                     .select-item-soict, .select-item-soljg
-                    , .select-item-som, .select-item-sovs
-                    {
-                    display:inline-block;
-                    color:#fff;
-                    background-color:#78335d;
-                    border-radius:2px;
-                    border:1px solid #78335d;
-                    cursor:pointer;
-                    padding:4px 10px;
-                    margin:5px;
-                    transition:0.4s;
-                    }
-                    .rteleft {
-                    text-align: left
-                    }
-                    .select-item:hover,.select-item-sob:hover,.select-item-sobs:hover, .select-item-soe:hover,.select-item-soh:hover,                     .select-item-soict:hover, .select-item-soljg:hover
-                    , .select-item-som:hover, .select-item-sovs:hover,.select-item-active
-                    {
-                    background-color:#fff;
-                    color:#3fada8;
-                    }
-                    #cards-container
-                    {
-                    display:block;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-soict
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-sob
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-sobs
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-soe
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-soh
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-soljg
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-som
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-sovs
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container .card,#cards-container-soict .card
-                    ,#cards-container-sob .card,#cards-container-sobs .card,
-                    #cards-container-soe .card,#cards-container-soh .card,
-                    #cards-container-soljg .card,#cards-container-som .card,
-                    #cards-container-sovs .card
-                    {
-                    width:350px;
-                    height:300px;
-                    vertical-align:top;
-                    border-radius:4px;
-                    border:1px solid #ddd;
-                    background:#fafafa;
-                    padding:20px;
-                    display:inline-block;
-                    margin:10px;
-                    overflow:hidden;
-                    }
-                    #cards-container .card img,#cards-container-soict .card img
-                    ,#cards-container-sob .card img,#cards-container-sobs .card img,
-                    #cards-container-soe .card img,#cards-container-soh .card img,
-                    #cards-container-soljg .card img,#cards-container-som .card img,
-                    #cards-container-sovs .card img
-                    {
-                    /*height:130px!important;
-                    width:110px!important;*/
-                    width:auto;
-                    padding:3px!important;
-                    background:#fff;
-                    margin:0!important;
-                    margin-right:20px!important;
-                    margin-bottom:20px!important;
-                    }
-                    #cards-container .card hr,#cards-container-soict .card hr
-                    ,#cards-container-sob .card hr,#cards-container-sobs .card hr,
-                    #cards-container-soe .card hr,#cards-container-soh .card hr,
-                    #cards-container-soljg .card hr,#cards-container-som .card hr,
-                    #cards-container-sovs .card hr
-                    {
-                    margin:0;
-                    margin-top:20px;
-                    margin-bottom:10px;
-                    background:-webkit-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    background:-moz-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    background:-ms-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    background:-o-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    background:linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    clear:both;
-                    }
-                    @media screen and (max-width:500px)
-                    {
-                    #cards-container .card,#cards-container-soict .card
-                    ,#cards-container-sob .card,#cards-container-sobs .card,
-                    #cards-container-soe .card,#cards-container-soh .card,
-                    #cards-container-soljg .card,#cards-container-som .card,
-                    #cards-container-sovs .card
-                    {
-                    width:80%;
-                    }
-                    }
-                    </style>
-    <div class="header sticky-top">
-      <div class="global-header">
+</head>
+
+<body>
+    <style type="text/css">
+        .select {
+            display: block;
+            text-align: center;
+        }
         
-        <div class="back-to-home justify-content-center">
-          <nav class="navbar shadow py-1" id="top-navigation">
-            <div class="container">
-              <a class="navbar-brand float-left" href="/"><img src="../../img/logo_gbu.png" id="gbu-logo" >
-                <h5 class="px-2 my-auto" id="gbu-name">Gautam Buddha University</h5>
-              </a>
-              <form class="form-inline my-1 my-lg-0 d-none d-lg-block" onsubmit="return executeQuery();">
-                <div class="container">
-                  <input class="form-control form-control-sm" type="search"  id="form-search-input" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                </div>
-              </form>
+        .select-item,
+        .select-item-sob,
+        .select-item-sobs,
+        .select-item-soe,
+        .select-item-soh,
+        .select-item-soict,
+        .select-item-soljg,
+        .select-item-som,
+        .select-item-sovs {
+            display: inline-block;
+            color: #fff;
+            background-color: #78335d;
+            border-radius: 2px;
+            border: 1px solid #78335d;
+            cursor: pointer;
+            padding: 4px 10px;
+            margin: 5px;
+            transition: 0.4s;
+        }
+        
+        .rteleft {
+            text-align: left
+        }
+        
+        .select-item:hover,
+        .select-item-sob:hover,
+        .select-item-sobs:hover,
+        .select-item-soe:hover,
+        .select-item-soh:hover,
+        .select-item-soict:hover,
+        .select-item-soljg:hover,
+        .select-item-som:hover,
+        .select-item-sovs:hover,
+        .select-item-active {
+            background-color: #fff;
+            color: #3fada8;
+        }
+        
+        #cards-container {
+            display: block;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #cards-container-soict {
+            display: none;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #cards-container-sob {
+            display: none;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #cards-container-sobs {
+            display: none;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #cards-container-soe {
+            display: none;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #cards-container-soh {
+            display: none;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #cards-container-soljg {
+            display: none;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #cards-container-som {
+            display: none;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #cards-container-sovs {
+            display: none;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #cards-container .card,
+        #cards-container-soict .card,
+        #cards-container-sob .card,
+        #cards-container-sobs .card,
+        #cards-container-soe .card,
+        #cards-container-soh .card,
+        #cards-container-soljg .card,
+        #cards-container-som .card,
+        #cards-container-sovs .card {
+            width: 350px;
+            height: 300px;
+            vertical-align: top;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            background: #fafafa;
+            padding: 20px;
+            display: inline-block;
+            margin: 10px;
+            overflow: hidden;
+        }
+        
+        #cards-container .card img,
+        #cards-container-soict .card img,
+        #cards-container-sob .card img,
+        #cards-container-sobs .card img,
+        #cards-container-soe .card img,
+        #cards-container-soh .card img,
+        #cards-container-soljg .card img,
+        #cards-container-som .card img,
+        #cards-container-sovs .card img {
+            /*height:130px!important;
+                    width:110px!important;*/
+            width: auto;
+            padding: 3px!important;
+            background: #fff;
+            margin: 0!important;
+            margin-right: 20px!important;
+            margin-bottom: 20px!important;
+        }
+        
+        #cards-container .card hr,
+        #cards-container-soict .card hr,
+        #cards-container-sob .card hr,
+        #cards-container-sobs .card hr,
+        #cards-container-soe .card hr,
+        #cards-container-soh .card hr,
+        #cards-container-soljg .card hr,
+        #cards-container-som .card hr,
+        #cards-container-sovs .card hr {
+            margin: 0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            background: -webkit-linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+            background: -moz-linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+            background: -ms-linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+            background: -o-linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+            background: linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+            clear: both;
+        }
+        
+        @media screen and (max-width:500px) {
+            #cards-container .card,
+            #cards-container-soict .card,
+            #cards-container-sob .card,
+            #cards-container-sobs .card,
+            #cards-container-soe .card,
+            #cards-container-soh .card,
+            #cards-container-soljg .card,
+            #cards-container-som .card,
+            #cards-container-sovs .card {
+                width: 80%;
+            }
+        }
+    </style>
+    <div class="header sticky-top">
+        <div class="global-header">
+
+            <div class="back-to-home justify-content-center">
+                <nav class="navbar shadow py-1" id="top-navigation">
+                    <div class="container">
+                        <a class="navbar-brand float-left" href="/"><img src="../../img/logo_gbu.png" id="gbu-logo">
+                            <h5 class="px-2 my-auto" id="gbu-name">Gautam Buddha University</h5>
+                        </a>
+                        <form class="form-inline my-1 my-lg-0 d-none d-lg-block" onsubmit="return executeQuery();">
+                            <div class="container">
+                                <input class="form-control form-control-sm" type="search" id="form-search-input" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
             </div>
-          </nav>
+            <nav class="navbar shadow navbar-expand-lg navbar-bgcolor">
+                <div class="container px-3 my-3">
+                    <a class="navbar-brand my-auto" href="/schools/sob">
+                        <div class="row">
+                            <div class="col" id="col-college-name-1">
+                                <div class="row justify-content-end">
+                                    <h5 class="my-auto" id="college-name-1">University</h5>
+                                </div>
+                                <div class="row justify-content-end">
+                                    <h5 class="my-auto " id="college-name-1">School of</h5>
+                                </div>
+                            </div>
+                            <div class="col my-auto">
+                                <h5 class="my-auto float-right" id="college-name-2">Biotechnology</h5>
+                            </div>
+                        </div>
+
+                    </a>
+                    <button class="navbar-toggler collapsed my-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
+                        <span><i class="fa fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="collapsibleNavbar">
+                        <ul class="nav ml-auto text-center justify-content-center" id="nav-tabs" role="tablist">
+                            <li class="nav-item active"><a href="#home-tab" class="nav-link" data-toggle="tab" role="tab">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="">About Us</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#about-overview-tab" data-toggle="tab" role="tab">Overview</a>
+                                    <a class="dropdown-item" href="#deanmsg-tab" data-toggle="tab" role="tab">Dean's Message</a>
+                                    <a class="dropdown-item" href="#boardofstudies-tab" data-toggle="tab" role="tab">Board of Studies</a>
+                                    <a class="dropdown-item" href="#department-tab" data-toggle="tab" role="tab">Departments</a>
+                                    <a class="dropdown-item" href="#programs-tab" data-toggle="tab" role="tab">Programs</a>
+                                    <a class="dropdown-item" href="#laboratories-tab" data-toggle="tab" role="tab">Laboratories</a>
+                                    <a class="dropdown-item" href="#acheivements-tab" data-toggle="tab" role="tab">Acheivements</a>
+                                    <a class="dropdown-item" href="#departmental-activities-tab" data-toggle="tab" role="tab">Departmental Activities</a>
+                                    <a class="dropdown-item" href="#directory-tab" data-toggle="tab" role="tab">Directory</a>
+                                    <a class="dropdown-item" href="#guest-speaker-tab" data-toggle="tab" role="tab">Guest Speaker</a>
+                                    <a class="dropdown-item" href="#contactus-tab" data-toggle="tab" role="tab">Contact Us</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Placements</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#placements-overview-tab" data-toggle="tab" role="tab">Overview</a>
+                                    <a class="dropdown-item" href="#final-placements-tab" data-toggle="tab" role="tab">Final Placements</a>
+                                    <a class="dropdown-item" href="#list-of-students-tab" data-toggle="tab" role="tab">List of Students</a>
+                                    <a class="dropdown-item" href="#placement-helpdesk-tab" data-toggle="tab" role="tab">Placement Helpdesk</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="#faculty-tab" class="nav-link" data-toggle="tab" role="tab">Faculty</a></li>
+                            <li class="nav-item"><a href="#alumni-tab" class="nav-link" data-toggle="tab" role="tab">Alumni</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Research</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#research-overview" data-toggle="tab" role="tab">Overview</a>
+                                    <a class="dropdown-item" href="#research-profile" data-toggle="tab" role="tab">Research Profile</a>
+                                    <a class="dropdown-item" href="#research-publications" data-toggle="tab" role="tab">Research Publications</a>
+                                    <a class="dropdown-item" href="#research-grants" data-toggle="tab" role="tab">Research Grants</a>
+                                    <a class="dropdown-item" href="#research-scholars" data-toggle="tab" role="tab">Research Scholars</a>
+                                    <a class="dropdown-item" href="#research-patents" data-toggle="tab" role="tab">Patents</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <nav class="navbar shadow navbar-expand-lg navbar-bgcolor">
-          <div class="container px-3 my-3">
-            <a class="navbar-brand my-auto" href="/schools/sob">
-              <div class="row">
-                <div class="col" id="col-college-name-1">
-                  <div class="row justify-content-end">
-                    <h5 class="my-auto" id="college-name-1">University</h5>
-                  </div>
-                  <div class="row justify-content-end">
-                    <h5 class="my-auto " id="college-name-1">School of</h5>
-                  </div>
-                </div>
-                <div class="col my-auto">
-                  <h5 class="my-auto float-right" id="college-name-2">Biotechnology</h5>
-                </div>
-              </div>
-              
-            </a>
-            <button class="navbar-toggler collapsed my-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
-            <span ><i class="fa fa-bars"></i></span>
-            </button>
-            <div class="navbar-collapse collapse" id="collapsibleNavbar">
-              <ul class="nav ml-auto text-center justify-content-center" id="nav-tabs" role="tablist">
-                <li class="nav-item active"><a href="#home-tab" class="nav-link" data-toggle="tab" role="tab">Home</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="">About Us</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#about-overview-tab" data-toggle="tab" role="tab">Overview</a>
-                    <a class="dropdown-item" href="#deanmsg-tab" data-toggle="tab" role="tab">Dean's Message</a>
-                    <a class="dropdown-item" href="#boardofstudies-tab" data-toggle="tab" role="tab">Board of Studies</a>
-                    <a class="dropdown-item" href="#department-tab" data-toggle="tab" role="tab">Departments</a>
-                    <a class="dropdown-item" href="#programs-tab" data-toggle="tab" role="tab">Programs</a>
-                    <a class="dropdown-item" href="#laboratories-tab" data-toggle="tab" role="tab">Laboratories</a>
-                    <a class="dropdown-item" href="#acheivements-tab" data-toggle="tab" role="tab">Acheivements</a>
-                    <a class="dropdown-item" href="#departmental-activities-tab" data-toggle="tab" role="tab">Departmental Activities</a>
-                    <a class="dropdown-item" href="#directory-tab" data-toggle="tab" role="tab">Directory</a>
-                    <a class="dropdown-item" href="#guest-speaker-tab" data-toggle="tab" role="tab">Guest Speaker</a>
-                    <a class="dropdown-item" href="#contactus-tab" data-toggle="tab" role="tab">Contact Us</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Placements</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#placements-overview-tab" data-toggle="tab" role="tab">Overview</a>
-                    <a class="dropdown-item" href="#final-placements-tab" data-toggle="tab" role="tab">Final Placements</a>
-                    <a class="dropdown-item" href="#list-of-students-tab" data-toggle="tab" role="tab">List of Students</a>
-                    <a class="dropdown-item" href="#placement-helpdesk-tab" data-toggle="tab" role="tab">Placement Helpdesk</a>
-                  </div>
-                </li>
-                <li class="nav-item"><a href="#faculty-tab" class="nav-link" data-toggle="tab" role="tab">Faculty</a></li>
-                <li class="nav-item"><a href="#alumni-tab" class="nav-link" data-toggle="tab" role="tab">Alumni</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Research</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#research-overview" data-toggle="tab" role="tab">Overview</a>
-                    <a class="dropdown-item" href="#research-profile" data-toggle="tab" role="tab">Research Profile</a>
-                    <a class="dropdown-item" href="#research-publications" data-toggle="tab" role="tab">Research Publications</a>
-                    <a class="dropdown-item" href="#research-grants" data-toggle="tab" role="tab">Research Grants</a>
-                    <a class="dropdown-item" href="#research-scholars" data-toggle="tab" role="tab">Research Scholars</a>
-                    <a class="dropdown-item" href="#research-patents" data-toggle="tab" role="tab">Patents</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
     </div>
     <div class="tab-content" id="nav-tabcontent">
-      <div class="tab-pane active" id="home-tab" role="tabpanel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img id="fill-image" src="../schools/img/banner/Artboard1SObt.jpg" alt="First slide" width="100%">
-            </div>
-            <div class="carousel-item">
-              <img id="fill-image" src="../img/banner/banner5.png" alt="Second slide" width="100%">
-            </div>
-            <div class="carousel-item">
-              <img id="fill-image" src="../img/banner/banner3.png" alt="Third slide" width="100%">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="my-5">
-          <div class="container">
-            <div class="jumbotron">
-              <h1 class="text-center">School of Biotechnology</h1>
-              <br>
-              <p class="text-justify">The School of Biotechnology is located in a state of the art building which incorporates both teaching and research facilities. The entire school building, including the lecture halls, teaching and research laboratories and school library are centrally air-conditioned and equipped with round the clock internet connectivity. Students here are educated in classical as well as modern biotechnology using the latest pedagogy techniques and also provided opportunity of hands on laboratory training. Biotechnology combines disciplines like genetics, molecular biology, biochemistry, microbiology, immunology and cell biology, which are in turn linked to practical disciplines like chemical engineering, information technology and biorobotics.
-              </p>
-              <br>
-              <p class="text-justify collapse" id="more-content">The School of Biotechnology emphasizes on Biotechnology education programme with an impetus to generate a workforce that could turn into a substantially trainedpool to meet the countrys demands. The school is dedicated to provide quality service through teamwork, partnerships and developing team and individual strengths. Patenting of innovations, technology transfer to industries and close interaction with them have given a new direction to Biotechnology research in the world today. The School is an active centre of basic and applied research and aims to achieve a balance of pure basic, strategic basic, applied and experimental development research.
-              </p>
-              <a href="#more-content" class="float-right" data-toggle="collapse"><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        
-        <div class="my-5">
-          <div class="container py-5">
-            <h1 class="text-center">Updates</h1>
-          </div>
-          <div class="row container mx-auto mb-5">
-            <div class="container-fluid col-md-4 my-2">
-              <div class="card" id="card-height">
-                <div class="card-header text-center">News</div>
-                <div class="card-body overflow-auto">
-                  <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
-                  <%entities.forEach(function(entity){%>
-                  <%if(entity.type=='news'){%>
-                  <a href="/schools/sob/news/<%=entity._id%>"><p><%=entity.title%></p></a>
-                  <%}});%>
-                  </marquee>
+        <div class="tab-pane active" id="home-tab" role="tabpanel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="fill-image" src="../schools/img/banner/Artboard1SObt.jpg" alt="First slide" width="100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="fill-image" src="../img/banner/banner5.png" alt="Second slide" width="100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="fill-image" src="../img/banner/banner3.png" alt="Third slide" width="100%">
+                    </div>
                 </div>
-              </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="container-fluid col-md-4 my-2">
-              <div class="card" id="card-height">
-                <div class="card-header text-center">Events</div>
-                <div class="card-body overflow-auto">
-                  <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
-                  <%entities.forEach(function(entity){%>
-                  <%if(entity.type=='events'){%>
-                  <a href="/schools/sob/events/<%=entity._id%>"><p><%=entity.title%></p></a>
-                  <%}});%>
-                  </marquee>
+            <div class="my-5">
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1 class="text-center">School of Biotechnology</h1>
+                        <br>
+                        <p class="text-justify">The School of Biotechnology is located in a state of the art building which incorporates both teaching and research facilities. The entire school building, including the lecture halls, teaching and research laboratories and school library are centrally air-conditioned and equipped with round the clock internet connectivity. Students here are educated in classical as well as modern biotechnology using the latest pedagogy techniques and also provided opportunity of hands on laboratory training. Biotechnology combines disciplines like genetics, molecular biology, biochemistry, microbiology, immunology and cell biology, which are in turn linked to practical disciplines like chemical engineering, information technology and biorobotics.
+                        </p>
+                        <br>
+                        <p class="text-justify collapse" id="more-content">The School of Biotechnology emphasizes on Biotechnology education programme with an impetus to generate a workforce that could turn into a substantially trainedpool to meet the countrys demands. The school is dedicated to provide quality service through teamwork, partnerships and developing team and individual strengths. Patenting of innovations, technology transfer to industries and close interaction with them have given a new direction to Biotechnology research in the world today. The School is an active centre of basic and applied research and aims to achieve a balance of pure basic, strategic basic, applied and experimental development research.
+                        </p>
+                        <a href="#more-content" class="float-right" data-toggle="collapse"><i class="fa fa-plus"></i></a>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="container-fluid col-md-4 my-2">
-              <div class="card" id="card-height">
-                <div class="card-header text-center">Notices</div>
-                <div class="card-body overflow-auto">
-                  <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
-                  <%entities.forEach(function(entity){%>
-                  <%if(entity.type=='notices'){%>
-                  <a href="/schools/sob/notices/<%=entity._id%>"><p><%=entity.title%></p></a>
-                  <%}});%>
-                  </marquee>
+
+            <div class="my-5">
+                <div class="container py-5">
+                    <h1 class="text-center">Updates</h1>
                 </div>
-              </div>
+                <div class="row container mx-auto mb-5">
+                    <div class="container-fluid col-md-4 my-2">
+                        <div class="card" id="card-height">
+                            <div class="card-header text-center">News</div>
+                            <div class="card-body overflow-auto">
+                                <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+                                    <%entities.forEach(function(entity){%>
+                                        <%if(entity.type=='news'){%>
+                                            <a href="/schools/sob/news/<%=entity._id%>">
+                                                <p>
+                                                    <%=entity.title%>
+                                                </p>
+                                            </a>
+                                            <%}});%>
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid col-md-4 my-2">
+                        <div class="card" id="card-height">
+                            <div class="card-header text-center">Events</div>
+                            <div class="card-body overflow-auto">
+                                <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+                                    <%entities.forEach(function(entity){%>
+                                        <%if(entity.type=='events'){%>
+                                            <a href="/schools/sob/events/<%=entity._id%>">
+                                                <p>
+                                                    <%=entity.title%>
+                                                </p>
+                                            </a>
+                                            <%}});%>
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid col-md-4 my-2">
+                        <div class="card" id="card-height">
+                            <div class="card-header text-center">Notices</div>
+                            <div class="card-body overflow-auto">
+                                <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+                                    <%entities.forEach(function(entity){%>
+                                        <%if(entity.type=='notices'){%>
+                                            <a href="/schools/sob/notices/<%=entity._id%>">
+                                                <p>
+                                                    <%=entity.title%>
+                                                </p>
+                                            </a>
+                                            <%}});%>
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- <header class="py-3 mx-auto">
+            <!-- <header class="py-3 mx-auto">
           <h1 id="photo-galary-header" class="pt-3">Photo Gallery</h1>
         </header> -->
-        <!-- carousel  ------>
-        <!-- <div class="container my-3 pb-5">
+            <!-- carousel  ------>
+            <!-- <div class="container my-3 pb-5">
           <div id="demo" class="carousel slide" data-ride="carousel">
-            
+
             <ul class="carousel-indicators">
               <li data-target="#demo" data-slide-to="0" class="active"></li>
               <li data-target="#demo" data-slide-to="1"></li>
@@ -392,8 +435,7 @@
                 <img src="../schools/img/sob/sob9.jpg" class="img-fluid" id="carousel-item-img" width="100%" height="400">
               </div>
             </div>
-            
-            
+
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </a>
@@ -402,105 +444,113 @@
             </a>
           </div>
         </div> -->
-      </div>
-      <div class="tab-pane fade" id="about-overview-tab" role="tabpanel">
-        <div class="container my-5">
-          <div class="jumbotron p-5">
-            <h1 class="text-center">Overview</h1>
-            <br>
-            <p>
-              This is the century of “Biotechnology”. As a multidisciplinary applied science, Biotechnology is to utilize tools and techniques of biology for human welfare. The primary aim of modern Biotechnology is to make a living cell perform a specific useful task in predictable and controllable way.
-            </p>
-            <p>Gautam Buddha University has started offering post graduates courses in ‘Genetic Engineering’, in ‘Bioinformatics’ and ‘Food technology’ under the School of Biotechnology. These courses in Biotechnology intends to supply both basic and advanced knowledge of biological systems and the technological competence to allow the graduate to carry out research and development activities in the numerous fields of Biotechnology, especially in medical and pharmaceutical sectors. Genetic engineering and Bioinformatics have a key role to play in the cutting edge of research and development area such as functional genomics, proteomics, protein engineering, metabolic pathway engineering, discoveries of new drugs and vaccines, molecular diagnostic kits etc. Food technology, new emerging area of Biotechnology, holds the promise of providing surplus and healthier food products.
-            </p>
-            <p>Here in School of Biotechnology, GBU, we offer a science and technology oriented course structure aimed to bridge the gap between academics and escalating demand for skilled personnel in the rapidly growing Biotechnology industry. The biotech industry is growing at an accelerated rate by launching number of companies. Thus the entry of corporate sector into Biotechnology makes career prospects in this field bright.
-            </p>
-          </div>
         </div>
-      </div>
-      <div class="tab-pane fade" id="deanmsg-tab" role="tabpanel">
-        <div class="container py-3">
-          <div class="card">
-            <div class="row ">
-              <div class="col-md-3">
-                <center><img src="../schools/img/sob/shwetaanand.png" class="w-100"  id="card-image">
-                </center>
-                <h4 class="text-center py-3">Dean's Message</h4>
-              </div>
-              <div class="col-md-9 p-4 my-auto">
-                <div class="card-block px-3">
-                  
-                  <p class="card-text">In the School of Biotechnology, we bring together highly talented, innovative and well groomed faculty with specialization in diverse fields ranging from various basic to advanced aspects of Biotechnology. Our faculty includes skilled personnel with excellent research experience from renowned universities and institutes of India and abroad. These faculty members motivate students to work in collaborative environment. The faculty is imbued with a sense of deep commitment and is capable of imparting state of art education. They work hard to inculcate scientific ethics, morality and inquisitiveness.
-                  </p>
-                  <p class="card-text">The school offers various programmes at different entry levels finally aimed to confer the degree of Master of Technology (M. Tech) in Biotechnology with specializations in the areas of Genetic engineering and Bioinformatics.
-                  </p>
-                  <p class="card-text">We have started our programme with the objective of generating work force that could turn into a substantially trained manpower to meet the existing and future global demands. The school is equipped with state of art laboratories and a curriculum tailored to suit the needs of various sectors of economy. The programme curricula combine a strong theoretical background coupled with practical experience in laboratory with a view to achieve their optimum potential as researcher. The foundation thus laid enables students to enhance their learning capability and adapt themselves to the fast scientific development in the world. We strive to keep our students updated with ongoing progress in frontier areas of Biotechnology. Our vision is to make School of Biotechnology a truly academic and research and development center providing the balanced combination of teaching and research fused with power of innovation.
-                  </p>
-                  <div class="float-left">
-                    <h5 class="card-title">Prof. Shweta Anand</h5>
-                    <p class="card-title">Dean, School of Biotechnology</p>
-                  </div>
+        <div class="tab-pane fade" id="about-overview-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron p-5">
+                    <h1 class="text-center">Overview</h1>
+                    <br>
+                    <p>
+                        This is the century of “Biotechnology”. As a multidisciplinary applied science, Biotechnology is to utilize tools and techniques of biology for human welfare. The primary aim of modern Biotechnology is to make a living cell perform a specific useful task in predictable and controllable way.
+                    </p>
+                    <p>Gautam Buddha University has started offering post graduates courses in ‘Genetic Engineering’, in ‘Bioinformatics’ and ‘Food technology’ under the School of Biotechnology. These courses in Biotechnology intends to supply both basic and advanced knowledge of biological systems and the technological competence to allow the graduate to carry out research and development activities in the numerous fields of Biotechnology, especially in medical and pharmaceutical sectors. Genetic engineering and Bioinformatics have a key role to play in the cutting edge of research and development area such as functional genomics, proteomics, protein engineering, metabolic pathway engineering, discoveries of new drugs and vaccines, molecular diagnostic kits etc. Food technology, new emerging area of Biotechnology, holds the promise of providing surplus and healthier food products.
+                    </p>
+                    <p>Here in School of Biotechnology, GBU, we offer a science and technology oriented course structure aimed to bridge the gap between academics and escalating demand for skilled personnel in the rapidly growing Biotechnology industry. The biotech industry is growing at an accelerated rate by launching number of companies. Thus the entry of corporate sector into Biotechnology makes career prospects in this field bright.
+                    </p>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="tab-pane fade" id="boardofstudies-tab" role="tabpanel">
-        <div class="container my-5">
-          <div class="jumbotron">
-            <h1 class="text-center">Board of Studies</h1>
-            <br>
-            <div class="container ">
-              <div class="container py-3">
+        <div class="tab-pane fade" id="deanmsg-tab" role="tabpanel">
+            <div class="container py-3">
                 <div class="card">
-                  <div class="row">
-                    <div class="col-md-4">
-                      
+                    <div class="row ">
+                        <div class="col-md-3">
+                            <center><img src="../schools/img/sob/shwetaanand.png" class="w-100" id="card-image">
+                            </center>
+                            <h4 class="text-center py-3">Dean's Message</h4>
+                        </div>
+                        <div class="col-md-9 p-4 my-auto">
+                            <div class="card-block px-3">
+
+                                <p class="card-text">In the School of Biotechnology, we bring together highly talented, innovative and well groomed faculty with specialization in diverse fields ranging from various basic to advanced aspects of Biotechnology. Our faculty includes skilled personnel with excellent research experience from renowned universities and institutes of India and abroad. These faculty members motivate students to work in collaborative environment. The faculty is imbued with a sense of deep commitment and is capable of imparting state of art education. They work hard to inculcate scientific ethics, morality and inquisitiveness.
+                                </p>
+                                <p class="card-text">The school offers various programmes at different entry levels finally aimed to confer the degree of Master of Technology (M. Tech) in Biotechnology with specializations in the areas of Genetic engineering and Bioinformatics.
+                                </p>
+                                <p class="card-text">We have started our programme with the objective of generating work force that could turn into a substantially trained manpower to meet the existing and future global demands. The school is equipped with state of art laboratories and a curriculum tailored to suit the needs of various sectors of economy. The programme curricula combine a strong theoretical background coupled with practical experience in laboratory with a view to achieve their optimum potential as researcher. The foundation thus laid enables students to enhance their learning capability and adapt themselves to the fast scientific development in the world. We strive to keep our students updated with ongoing progress in frontier areas of Biotechnology. Our vision is to make School of Biotechnology a truly academic and research and development center providing the balanced combination of teaching and research fused with power of innovation.
+                                </p>
+                                <div class="float-left">
+                                    <h5 class="card-title">Prof. Shweta Anand</h5>
+                                    <p class="card-title">Dean, School of Biotechnology</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8 p-4 my-auto">
-                      <div class="card-block px-3">
-                        <h4 class="card-title">Dr. Shweta Anand</h4>
-                        <p class="card-text">Dean & Professor<br>School of Biotechnology<br>Gautam Buddha University</p>
-                        
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="container my-5">
-                <h3 class="text-center">Internal Members</h3>
-              </div>
-              <div class="card-deck justify-content-center">
-                <div class="card my-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Dr. Bhupendra Chaudhary</h5>
-                    <p class="card-text">Head of the Department<br>School of Biotechnology<br>Gautam Buddha University</p>
-                    
-                  </div>
-                </div>
-                <div class="card my-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Dr. Seema Dwivedi</h5>
-                    <p class="card-text">Associate Professor<br>School of Biotechnology<br>Gautam Buddha University</p>
-                  </div>
-                </div>
-                <div class="card my-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Dr. Md. Tashfeen Ashraf</h5>
-                    <p class="card-text">Assistant Professor<br>School of Biotechnology<br>Gautam Buddha University</p>
-                  </div>
-                </div>
-              </div>
-              <div class="container my-5">
-                <h3 class="text-center">External Members</h3>
-              </div>
-              <!-- <div class="card-deck justify-content-center">
+            </div>
+        </div>
+        <div class="tab-pane fade" id="boardofstudies-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Board of Studies</h1>
+                    <br>
+                    <div class="container ">
+                        <div class="container py-3">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-md-4">
+
+                                    </div>
+                                    <div class="col-md-8 p-4 my-auto">
+                                        <div class="card-block px-3">
+                                            <h4 class="card-title">Dr. Shweta Anand</h4>
+                                            <p class="card-text">Dean & Professor
+                                                <br>School of Biotechnology
+                                                <br>Gautam Buddha University</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container my-5">
+                            <h3 class="text-center">Internal Members</h3>
+                        </div>
+                        <div class="card-deck justify-content-center">
+                            <div class="card my-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Bhupendra Chaudhary</h5>
+                                    <p class="card-text">Head of the Department
+                                        <br>School of Biotechnology
+                                        <br>Gautam Buddha University</p>
+
+                                </div>
+                            </div>
+                            <div class="card my-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Seema Dwivedi</h5>
+                                    <p class="card-text">Associate Professor
+                                        <br>School of Biotechnology
+                                        <br>Gautam Buddha University</p>
+                                </div>
+                            </div>
+                            <div class="card my-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Md. Tashfeen Ashraf</h5>
+                                    <p class="card-text">Assistant Professor
+                                        <br>School of Biotechnology
+                                        <br>Gautam Buddha University</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container my-5">
+                            <h3 class="text-center">External Members</h3>
+                        </div>
+                        <!-- <div class="card-deck justify-content-center">
                 <div class="card my-3">
                   <div class="card-body">
                     <h5 class="card-title">Prof. K.J. Mukherjee</h5>
                     <p class="card-text">Professor<br>School of Biotechnology<br>Jawaharlal Nehru University, New Delhi</p>
-                    
+
                   </div>
                 </div>
                 <div class="card my-3">
@@ -510,647 +560,880 @@
                   </div>
                 </div>
               </div> -->
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="tab-pane fade" id="programs-tab" role="tabpanel">
-        <div class="container my-5">
-          <div class="jumbotron">
-            <h2 class="text-center pb-5">Programme | SOBT</h2>
-            <div class="table-responsive">
-        <table class="table table-hover table-bordered">
-              <tbody><tr>
-                <th>S.No.</th>
-                <th>Program Name</th>
-                <th>Course Structure/Syllabus</th>
-                <th>Course Contents</th>
-                
-              </tr>
-           
-            <tr>
-              <td>1.</td>
-              <td>Integrated B.Tech.- M.Tech./MBA</td>
-              <td><a href="../../../../gbudata/AcadProg/SOBT/Course Struture_Intergrated BTech MTech_2020 onwards.pdf"> Course Structure</a></td>
-              <td><a href="../../../../gbudata/coursestructure/biotech/Integrated_BTech-MTech_17July2019.pdf"> Course Content</a></td>
-            </tr>
-            <tr> 
-              <td>2.</td>
-              <td>M.Tech. Biotech. (Two years programme)</td>
-              <td> <a href="../../../../gbudata/AcadProg/SOBT/Course Struture_MTech_2020 onwards.pdf"> Course Structure</a></td>
-              <td><a href="../../../gbudata/coursestructure/biotech/MTech_BiotechCourseContent_17July2019.pdf"> Course Content</a></td>
-            </tr>
-            <tr>
-              <td>3.</td>
-              <td>M.Sc. Biotech. (Two years programme)</td>
-              <td> <a href="../../../../gbudata/AcadProg/SOBT/Course Struture_M.Sc._2020 onwards.pdf"> Course Structure</a></td>
-              <td><a href="../../../gbudata/coursestructure/biotech/MSc_Biotech_17July2019.pdf"> Course Content</a></td>
-            </tr>
-            <tr>
-              <td>4.</td>
-              <td>Ph.D. (Biotechnology)</td>
-              <td> <a href="../../../../gbudata/AcadProg/SOBT/Course Structure_PHD_2020 onwards.pdf"> Course Structure </a> </td>
-              <td><a href="../../../gbudata/coursestructure/biotech/PhD_CourseContents_12Sept19.pdf"> Course Content</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-pane fade" id="department-tab" role="tabpanel">
-    <div class="container my-5">
-      <div class="jumbotron">
-        <h1 class="text-center">Departments | SOBT</h1>
-        <br>
-        <table class="table-responsive border-0" width="100%" height="98%" border="0"><tbody><tr><td><table class="table-responsive border-0" width="100%"><tbody><tr><td><p>The Department of Biotechnology is an interdisciplinary Department with an amalgamation of expertise from diverse areas of basic and applied biology, mathematics, microbial, plant, animal sciences and computer sciences. The aim of Department is to generate highly skilled manpower to meet the existing and future demands of various sectors of economy. The Department offer courses that integrate basic research with industrial application and have excellent job opportunities in Biotechnology. The course curriculum is rigorous with strong emphasis on practical skills. The Department has state of art laboratories to pursue research in frontier areas of Biotechnology. It imbibes in students an innovative thought process by providing them an understanding of both conceptual and applied aspects of Biotechnology.</p><br><p>The mission and vision of the department is:</p><br><p>• To become a globally recognized institution of higher learning in Biotechnology.</p><p>• To promote high quality interdisciplinary research in various areas of Biotechnology.</p><p>• To built synergistic relationships with industry to develop and advance research in cutting edge areas of Biotechnology.</p><br><p>The School of Biotechnology offers following programs:</p>
-        <p><b>1. Doctoral Programme</b></p>
-        <p><b>2. Post Graduate Programmes (Two years)</b><br><br>
-          i. M.Tech. Biotechnology for (Engineering Graduates)<br><br>
-          ii. M.Sc. Biotechnology</p><p><b>3. Integrated Post Graduate Programmes</b></p><p>i. Integrated B.Tech.-M.Tech./MBA</p></td></tr><tr><td colspan="3"></td></tr></tbody></table></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td colspan="3"><div><div><ul class="extras"><b></b></ul></div></div></td></tr></tbody></table>
+        <div class="tab-pane fade" id="programs-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h2 class="text-center pb-5">Programme | SOBT</h2>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>S.No.</th>
+                                    <th>Program Name</th>
+                                    <th>Course Structure/Syllabus</th>
+                                    <th>Course Contents</th>
+
+                                </tr>
+
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Integrated B.Tech.- M.Tech./MBA</td>
+                                    <td><a href="../../../../gbudata/AcadProg/SOBT/Course Struture_Intergrated BTech MTech_2020 onwards.pdf"> Course Structure</a></td>
+                                    <td><a href="../../../../gbudata/coursestructure/biotech/Integrated_BTech-MTech_17July2019.pdf"> Course Content</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>M.Tech. Biotech. (Two years programme)</td>
+                                    <td> <a href="../../../../gbudata/AcadProg/SOBT/Course Struture_MTech_2020 onwards.pdf"> Course Structure</a></td>
+                                    <td><a href="../../../gbudata/coursestructure/biotech/MTech_BiotechCourseContent_17July2019.pdf"> Course Content</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>M.Sc. Biotech. (Two years programme)</td>
+                                    <td> <a href="../../../../gbudata/AcadProg/SOBT/Course Struture_M.Sc._2020 onwards.pdf"> Course Structure</a></td>
+                                    <td><a href="../../../gbudata/coursestructure/biotech/MSc_Biotech_17July2019.pdf"> Course Content</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>Ph.D. (Biotechnology)</td>
+                                    <td> <a href="../../../../gbudata/AcadProg/SOBT/Course Structure_PHD_2020 onwards.pdf"> Course Structure </a> </td>
+                                    <td><a href="../../../gbudata/coursestructure/biotech/PhD_CourseContents_12Sept19.pdf"> Course Content</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="departmental-activities-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">Departmental Activities | SOBT</h1>
-          
+
+        <div class="tab-pane fade" id="department-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Departments | SOBT</h1>
+                    <br>
+                    <table class="table-responsive border-0" width="100%" height="98%" border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="table-responsive border-0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>The Department of Biotechnology is an interdisciplinary Department with an amalgamation of expertise from diverse areas of basic and applied biology, mathematics, microbial, plant, animal sciences and computer sciences. The aim of Department is to generate highly skilled manpower to meet the existing and future demands of various sectors of economy. The Department offer courses that integrate basic research with industrial application and have excellent job opportunities in Biotechnology. The course curriculum is rigorous with strong emphasis on practical skills. The Department has state of art laboratories to pursue research in frontier areas of Biotechnology. It imbibes in students an innovative thought process by providing them an understanding of both conceptual and applied aspects of Biotechnology.</p>
+                                                    <br>
+                                                    <p>The mission and vision of the department is:</p>
+                                                    <br>
+                                                    <p>• To become a globally recognized institution of higher learning in Biotechnology.</p>
+                                                    <p>• To promote high quality interdisciplinary research in various areas of Biotechnology.</p>
+                                                    <p>• To built synergistic relationships with industry to develop and advance research in cutting edge areas of Biotechnology.</p>
+                                                    <br>
+                                                    <p>The School of Biotechnology offers following programs:</p>
+                                                    <p><b>1. Doctoral Programme</b></p>
+                                                    <p><b>2. Post Graduate Programmes (Two years)</b>
+                                                        <br>
+                                                        <br> i. M.Tech. Biotechnology for (Engineering Graduates)
+                                                        <br>
+                                                        <br> ii. M.Sc. Biotechnology</p>
+                                                    <p><b>3. Integrated Post Graduate Programmes</b></p>
+                                                    <p>i. Integrated B.Tech.-M.Tech./MBA</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div>
+                                        <div>
+                                            <ul class="extras"><b></b></ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="directory-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">Directory | SOBT</h1>
-          <br>
-          <div class="table-responsive">
-            <table class="table table-hover text-center table-bordered">
-              <tbody>
-                <tr>
-                  <th>Name</th>
-                  <th>Phone No.</th>
-                  <th>Ext. No.</th>
-                </tr>
-              </tbody>
-              <tr>
-                <td>Dean</td>
-                <td>0120-2344266</td>
-                <td>4266</td>
-              </tr>
-              <tr>
-                <td>Dr. Seema Dwivedi</td>
-                <td>0120-2344282</td>
-                <td>4282</td>
-              </tr>
-              <tr>
-                <td>Dr. Bhupendra Chaudhary</td>
-                <td>0120-2344274</td>
-                <td>4274</td>
-              </tr>
-              <tr>
-                <td>Dr. Jai Prakash Muyal</td>
-                <td>0120-2344273</td>
-                <td>4273</td>
-              </tr>
-              <tr>
-                <td>Dr. Gunjan Garg</td>
-                <td>0120-2344272 </td>
-                <td>4272</td>
-              </tr>
-              <tr>
-                <td>Dr. Md. Tashfeen Ashraf</td>
-                <td>0120-2344285</td>
-                <td>4285</td>
-              </tr>
-              <tr>
-                <td>Dr. Vikrant Nain</td>
-                <td>0120-2344283</td>
-                <td>4283</td>
-              </tr>
-              <tr>
-                <td>Dr. Shakti Sahi</td>
-                <td>0120-2344275</td>
-                <td>4275</td>
-              </tr>
-              <tr>
-                <td>Dr. Siya Ram</td>
-                <td>0120-2344284</td>
-                <td>4284</td>
-              </tr>
-              <tr>
-                <td>Dr. Jitendra Singh Rathore</td>
-                <td>0120-2344286</td>
-                <td>4286</td>
-              </tr>
-              <tr>
-                <td>Dr. Rekha Puria</td>
-                <td>0120-2344276</td>
-                <td>4276</td>
-              </tr>
-              <tr>
-                <td>Dr. Nagendra Singh</td>
-                <td>0120-2344277</td>
-                <td>4277</td>
-              </tr>
-              <tr>
-                <td>Dr. Bhaswati Banerjee </td>
-                <td>0120-2344287</td>
-                <td>4287</td>
-              </tr>
-              <tr>
-              </tr>
-              <tr>
-                <td>Dr. Vishwas Tripathi </td>
-                <td>0120-2344288</td>
-                <td>4288</td>
-              </tr>
-              <tr>
-                <td>Dr. Barkha Singhal</td>
-                <td>0120-2344290</td>
-                <td>4290</td>
-              </tr>
-              <tr>
-                <td> Dr. Sachin Teotia </td>
-                <td>0120-2344279</td>
-                <td>4279</td>
-              </tr>
-              <tr>
-                <td>Dr. Imteyaz Qamar </td>
-                <td>0120-2344280</td>
-                <td>4280</td>
-              </tr>
-              <tr>
-                <td>Dr. Deepali Singh </td>
-                <td>0120-2344281</td>
-                <td>4281</td>
-              </tr>
-              
-            </table>
-          </div>
+        <div class="tab-pane fade" id="departmental-activities-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Departmental Activities | SOBT</h1>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="laboratories-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">Laboratories | SOBT</h1>
-          <br>
-          <ul>
-            <li><a href="../../gbudata/labs/biotech/list-of-labs.pdf">List of laboratories</a></li>
-            <li><a href="../../gbudata/labs/biotech/list-of-lab-equipments.pdf">List Of Lab Equipments</a></li>
-          </ul>
+        <div class="tab-pane fade" id="directory-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Directory | SOBT</h1>
+                    <br>
+                    <div class="table-responsive">
+                        <table class="table table-hover text-center table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone No.</th>
+                                    <th>Ext. No.</th>
+                                </tr>
+                            </tbody>
+                            <tr>
+                                <td>Dean</td>
+                                <td>0120-2344266</td>
+                                <td>4266</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Seema Dwivedi</td>
+                                <td>0120-2344282</td>
+                                <td>4282</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Bhupendra Chaudhary</td>
+                                <td>0120-2344274</td>
+                                <td>4274</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Jai Prakash Muyal</td>
+                                <td>0120-2344273</td>
+                                <td>4273</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Gunjan Garg</td>
+                                <td>0120-2344272 </td>
+                                <td>4272</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Md. Tashfeen Ashraf</td>
+                                <td>0120-2344285</td>
+                                <td>4285</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Vikrant Nain</td>
+                                <td>0120-2344283</td>
+                                <td>4283</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Shakti Sahi</td>
+                                <td>0120-2344275</td>
+                                <td>4275</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Siya Ram</td>
+                                <td>0120-2344284</td>
+                                <td>4284</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Jitendra Singh Rathore</td>
+                                <td>0120-2344286</td>
+                                <td>4286</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Rekha Puria</td>
+                                <td>0120-2344276</td>
+                                <td>4276</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Nagendra Singh</td>
+                                <td>0120-2344277</td>
+                                <td>4277</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Bhaswati Banerjee </td>
+                                <td>0120-2344287</td>
+                                <td>4287</td>
+                            </tr>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td>Dr. Vishwas Tripathi </td>
+                                <td>0120-2344288</td>
+                                <td>4288</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Barkha Singhal</td>
+                                <td>0120-2344290</td>
+                                <td>4290</td>
+                            </tr>
+                            <tr>
+                                <td> Dr. Sachin Teotia </td>
+                                <td>0120-2344279</td>
+                                <td>4279</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Imteyaz Qamar </td>
+                                <td>0120-2344280</td>
+                                <td>4280</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. Deepali Singh </td>
+                                <td>0120-2344281</td>
+                                <td>4281</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="acheivements-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">Achievement | SOBT</h1>
-          <br>
-          <p><img alt="" src="../../gbudata/images/bullet.gif"><b>Conferences: </b></p><p>National Conference on “Development and advancement in conservation, propagation and sustainable utilization of medicinal plants (DSUMP 2017)” funded by Ministry of Ayush, Govt. of India was successfully organized School of Biotechnology in January 2017, which had participations from many eminent scientists and academicians of India.</p><p><img alt="" src="../../gbudata/images/bullet.gif"><b>1st Alumni Meet of School of Biotechnology </b> was organized in April 2017 </p><p><img alt="" src="../../gbudata/images/bullet.gif"><b>Industry-Academia Meet, 2016</b> was conducted in <b>School of Biotechnology</b> in April 2016</p><p><img alt="" src="../../gbudata/images/bullet.gif"><b>Workshop on Intellectual Property &amp; Innovation Management in Knowledge Era </b>was organized by School of Biotechnology in collaboration with <b>National Research Development Corporation (NRDC),</b> New Delhi in March 2016</p><p><img alt="" src="../../gbudata/images/bullet.gif"><b>Students Achievements</b></p> <p><br> A. <a href="../../gbudata/SOB/Students_Achievements_26June19.pdf" target="_blank">Achievements of PhD and M.Tech students of SoBT</a></p><p><img alt="" src="../../gbudata/images/bullet.gif"><b>Success stories of our students: </b></p><p><br> A. <a href="../../gbudata/SOB/SUCCESS_STORY_SoBt_26June19.pdf" target="_blank">Achievements of PhD and M.Tech students of SoBT</a></p>
-          <p>As a result of the rigorous academic training and exposure that students obtain here at School of Biotechnology, their performance at national and global platforms has been consistently outstanding. Some of the significant achievements are highlighted below:</p>
-          <p><b>A.    International recognitions and fellowships: <br> <br>   i.    Khorana Fellowship: Ms Jyotsna Mishra (2011 Batch)</b><span> made the commendable achievement of being the first student from GBU who was selected for the prestigious</span><b> Indo-US Khorana Fellowship</b><span> through the </span><b>Khorana &amp; S.N. Bose Program (2015) <br> <br>   ii.    Dissertations: Ms. Akansha Trivedi (2013 Batch) and Mr. Abhishek Kumar (2012 Batch) </b><span>were selected for carrying out their M. Tech. dissertations at </span><b>NMBU, Oslo, Norway (2016) and Institut de Biologie de Lillie CNRS, France (2017) </b><span>respectively. </span><br><br><span>    </span><b>iii. GRE: Mr. Abhishek Kumar (2012 Batch), Mr. Ashwani Kumar Rai (2012 Batch) Ms. Jyotsna Mishra (2011 Batch) </b><span>have cleared GRE and TOEFL examinations (2016) with good scores and have been selected as PhD scholars in reputed universities of USA and Europe</span><br><br></p>
-          <p><b></b><b>B.    Students selected for International Doctoral Programs </b><br><br><span>i.    Ms. Jyotsna Mishra awarded Ph.D fellowship from University of Wisconsin, USA. (2017)   </span><br><br><span>ii. Mr. Ashwani Rai awarded Ph.D fellowship from Lusiana State University USA. (2017)   </span><br><br><span>iii. Mr. Abhishek awarded Ph.D fellowship from Institut de biologie de Lillie,CNRS France. (2017)   </span><br><br><span>iv. Mr. Vimal Kumar,awarded Ph.D fellowship from Hallam University, South Korea (2017)   </span><br><br><span>v. Ms. Sahar Waseem awarded Ph.D fellowship from Hormone Research Centre, Chonnam National University, South Korea. (2015)   </span><br><br><span>vi. Ms. PraptiPrakash awarded Ph.D fellowship from University of Science &amp; Technology, Daejeon, South Korea. (2014)   </span><br><br><span>vii. Mr. SushantSadotra awarded Ph.D fellowship from Taipe, Taiwan. (2013)   </span><br><br><span>viii. Ms. Preety Bajwa awarded Ph.D fellowship from New Castle University, Australia. (2013)   </span><br><br><span>ix. Mr. Samir Giri awarded Ph.D fellowship from Max Planck institute for chemical ecology, Germany. (2012) </span><br><br></p>
-          <p><b>C.    National recognitions and fellowships: <br><br></b><span>    Many of our students have successfully qualified for the prestigious national fellowships such as GATE, JRF/NET fellowships sponsored by CSIR, ICMR etc.</span><br></p>
-          <p><b></b><b>1.    SoBT students holding Research Fellowships </b><span></span><br><br><span>i. Dr. Neelima Rathi: Awarded Post Doctoral Fellowship for Women by UGC, India. (2015-2020)   </span><br><br><span>ii. Dr. Mala Mishra    </span><br><br><span>iii. Mr. Amit Sharma: Awarded CSIR-Senior Research Fellowship, 2017     </span><br><br><span>iv. Ms. Suman: Awarded CSIR-Senior Research Fellowship, 2017     </span><br><br><span>iv Mr. Avneesh Dwivedi: Awarded ICMR-Senior Research Fellowship, 2017     </span><br><br><span>v. Ms. Tripti Singh: Awarded Rajiv Gandhi National Fellowship for Scheduled Caste Students (NFSC)-2017.     </span><br><br><span>vi. Mr. Jogendra Singh Nim: Awarded Rajiv Gandhi National Fellowship for Scheduled Caste Students (NFSC)-2017.    </span><br><br><span>vii. Ms. Anjana: Awarded Rajiv Gandhi National Fellowship for Scheduled Caste Students (NFSC)-2016 </span><br><br><b>2. CSIR/UGC NET-LS Qualified students from SoBT: </b><span></span><br><br><span>i.    Ms. IshaTyagi, NET-JRF, CSIR 2012   </span><br><br><span>ii. DhananjayPandey, NET-JRF, CSIR 2013   </span><br><br><span>iii. Ms. Swati Uniyal, NET-LS, CSIR 2014   </span><br><br><span>iv. Twinkle Sanchan, NET-LS, CSIR 2014   </span><br><br><span>v. Ms. Lucky Singh, NET-JRF, CSIR 2014   </span><br><br><span>vi. Abhay Kumar, NET-JRF, CSIR 2014    </span><br><br><span>vii. SarjanKapoor, NET-LS, CSIR 2015    </span><br><br><span>viii. Ms. SaharWaseem, NET-JRF, CSIR 2015   </span><br><br><span>ix. Ms. NeelimaChaudhary, NET-LS, CSIR 2015   </span><br><br><span>x. Ms. Medha Sharma, NET-JRF, CSIR 2015   </span><br><br><span>xi. Ms. Tarang Gaur,    NET-LS, CSIR 2015   </span><br><br><span>xii. Ms. KirtiTyagi, DBT-JRF    2015   </span><br><br><span>xiii. Ms. HeenaGautam, NET-LS, CSIR    2015   </span><br><br><span>xiv.Rahul Yadav, UGC-NET 2015   </span><br><br><span>xv.Saddam Hussain, NET-JRF, CSIR 2016     </span><br><br><span>xvi. Piyanshu Singh, DBT-JRF 2017     </span><br><br><span>xvii. Varun Kumar, DBT-JRF     </span><br><br><span>xviii. Hritika Sharma, NET-LS &amp; </span><br><br><b>3. GATE Qualified students from SoBT: </b><span></span><br><br><span>i. Dhananjay v Pandey, GATE    2012    </span><br><br><span>ii. Anshuman Chandra, GATE 2015   </span><br><br><span>iii. ShatakshiPunia,GATE 2015   </span><br><br><span>iv. ShaliniSoni, GATE 2015   </span><br><br><span>v. Akash Saraswati GATE 2015, 2016, 2017   </span><br><br><span>vi. GayatriKaur, GATE 2016   </span><br><br><span>vii. Himalaya Singh, GATE 2016   </span><br><br><span>viii. Pratap Chandra, GATE 2016   </span><br><br><span>ix. Puneet Kumar, GATE 2016   </span><br><br><span>x. Nawaz, GATE 2016    </span><br><br><span>xi. Manish Singh, GATE 2017   </span><br><br><span>xii. Hritika Sharma, GATE2013   </span><br><br><span>xiii. Arti Singh GATE 2017    </span><br><br><span>xiv. imanshu GATE 2017    </span><br><br><span>xv. Akshay Prakask GATE 2017    </span><br><br><span>xvi. Prashant Kumar GATE 2017   </span><br><br><b>ii.    Dissertations: </b><span>Over the past couple of years many meritorious students from SoBT have been selected for carrying out M. Tech. dissertations and/or short term training projects in several reputed institutes like NCCS, Pune; CCMB, Hyderabad; RCB, Faridabad; ICPO, Noida; ICAR, Ludhiana; INMAS, DRDO; DIPAS, DRDO; IIT-Gandhinagar, Gujarat; FRI, Dehradun; IISER, Bhopal; ICGEB, New Delhi and so on</span><span></span><br></p>
+        <div class="tab-pane fade" id="laboratories-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Laboratories | SOBT</h1>
+                    <br>
+                    <ul>
+                        <li><a href="../../gbudata/labs/biotech/list-of-labs.pdf">List of laboratories</a></li>
+                        <li><a href="../../gbudata/labs/biotech/list-of-lab-equipments.pdf">List Of Lab Equipments</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="guest-speaker-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">Guest Speaker | SOBT</h1>
-          <br>
-          <!--  <div>
+        <div class="tab-pane fade" id="acheivements-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Achievement | SOBT</h1>
+                    <br>
+                    <p><img alt="" src="../../gbudata/images/bullet.gif"><b>Conferences: </b></p>
+                    <p>National Conference on “Development and advancement in conservation, propagation and sustainable utilization of medicinal plants (DSUMP 2017)” funded by Ministry of Ayush, Govt. of India was successfully organized School of Biotechnology in January 2017, which had participations from many eminent scientists and academicians of India.</p>
+                    <p><img alt="" src="../../gbudata/images/bullet.gif"><b>1st Alumni Meet of School of Biotechnology </b> was organized in April 2017 </p>
+                    <p><img alt="" src="../../gbudata/images/bullet.gif"><b>Industry-Academia Meet, 2016</b> was conducted in <b>School of Biotechnology</b> in April 2016</p>
+                    <p><img alt="" src="../../gbudata/images/bullet.gif"><b>Workshop on Intellectual Property &amp; Innovation Management in Knowledge Era </b>was organized by School of Biotechnology in collaboration with <b>National Research Development Corporation (NRDC),</b> New Delhi in March 2016</p>
+                    <p><img alt="" src="../../gbudata/images/bullet.gif"><b>Students Achievements</b></p>
+                    <p>
+                        <br> A. <a href="../../gbudata/SOB/Students_Achievements_26June19.pdf" target="_blank">Achievements of PhD and M.Tech students of SoBT</a></p>
+                    <p><img alt="" src="../../gbudata/images/bullet.gif"><b>Success stories of our students: </b></p>
+                    <p>
+                        <br> A. <a href="../../gbudata/SOB/SUCCESS_STORY_SoBt_26June19.pdf" target="_blank">Achievements of PhD and M.Tech students of SoBT</a></p>
+                    <p>As a result of the rigorous academic training and exposure that students obtain here at School of Biotechnology, their performance at national and global platforms has been consistently outstanding. Some of the significant achievements are highlighted below:</p>
+                    <p><b>A.    International recognitions and fellowships: <br> <br>   i.    Khorana Fellowship: Ms Jyotsna Mishra (2011 Batch)</b><span> made the commendable achievement of being the first student from GBU who was selected for the prestigious</span><b> Indo-US Khorana Fellowship</b><span> through the </span><b>Khorana &amp; S.N. Bose Program (2015) <br> <br>   ii.    Dissertations: Ms. Akansha Trivedi (2013 Batch) and Mr. Abhishek Kumar (2012 Batch) </b><span>were selected for carrying out their M. Tech. dissertations at </span><b>NMBU, Oslo, Norway (2016) and Institut de Biologie de Lillie CNRS, France (2017) </b><span>respectively. </span>
+                        <br>
+                        <br><span>    </span><b>iii. GRE: Mr. Abhishek Kumar (2012 Batch), Mr. Ashwani Kumar Rai (2012 Batch) Ms. Jyotsna Mishra (2011 Batch) </b><span>have cleared GRE and TOEFL examinations (2016) with good scores and have been selected as PhD scholars in reputed universities of USA and Europe</span>
+                        <br>
+                        <br>
+                    </p>
+                    <p><b></b><b>B.    Students selected for International Doctoral Programs </b>
+                        <br>
+                        <br><span>i.    Ms. Jyotsna Mishra awarded Ph.D fellowship from University of Wisconsin, USA. (2017)   </span>
+                        <br>
+                        <br><span>ii. Mr. Ashwani Rai awarded Ph.D fellowship from Lusiana State University USA. (2017)   </span>
+                        <br>
+                        <br><span>iii. Mr. Abhishek awarded Ph.D fellowship from Institut de biologie de Lillie,CNRS France. (2017)   </span>
+                        <br>
+                        <br><span>iv. Mr. Vimal Kumar,awarded Ph.D fellowship from Hallam University, South Korea (2017)   </span>
+                        <br>
+                        <br><span>v. Ms. Sahar Waseem awarded Ph.D fellowship from Hormone Research Centre, Chonnam National University, South Korea. (2015)   </span>
+                        <br>
+                        <br><span>vi. Ms. PraptiPrakash awarded Ph.D fellowship from University of Science &amp; Technology, Daejeon, South Korea. (2014)   </span>
+                        <br>
+                        <br><span>vii. Mr. SushantSadotra awarded Ph.D fellowship from Taipe, Taiwan. (2013)   </span>
+                        <br>
+                        <br><span>viii. Ms. Preety Bajwa awarded Ph.D fellowship from New Castle University, Australia. (2013)   </span>
+                        <br>
+                        <br><span>ix. Mr. Samir Giri awarded Ph.D fellowship from Max Planck institute for chemical ecology, Germany. (2012) </span>
+                        <br>
+                        <br>
+                    </p>
+                    <p><b>C.    National recognitions and fellowships: <br><br></b><span>    Many of our students have successfully qualified for the prestigious national fellowships such as GATE, JRF/NET fellowships sponsored by CSIR, ICMR etc.</span>
+                        <br>
+                    </p>
+                    <p><b></b><b>1.    SoBT students holding Research Fellowships </b><span></span>
+                        <br>
+                        <br><span>i. Dr. Neelima Rathi: Awarded Post Doctoral Fellowship for Women by UGC, India. (2015-2020)   </span>
+                        <br>
+                        <br><span>ii. Dr. Mala Mishra    </span>
+                        <br>
+                        <br><span>iii. Mr. Amit Sharma: Awarded CSIR-Senior Research Fellowship, 2017     </span>
+                        <br>
+                        <br><span>iv. Ms. Suman: Awarded CSIR-Senior Research Fellowship, 2017     </span>
+                        <br>
+                        <br><span>iv Mr. Avneesh Dwivedi: Awarded ICMR-Senior Research Fellowship, 2017     </span>
+                        <br>
+                        <br><span>v. Ms. Tripti Singh: Awarded Rajiv Gandhi National Fellowship for Scheduled Caste Students (NFSC)-2017.     </span>
+                        <br>
+                        <br><span>vi. Mr. Jogendra Singh Nim: Awarded Rajiv Gandhi National Fellowship for Scheduled Caste Students (NFSC)-2017.    </span>
+                        <br>
+                        <br><span>vii. Ms. Anjana: Awarded Rajiv Gandhi National Fellowship for Scheduled Caste Students (NFSC)-2016 </span>
+                        <br>
+                        <br><b>2. CSIR/UGC NET-LS Qualified students from SoBT: </b><span></span>
+                        <br>
+                        <br><span>i.    Ms. IshaTyagi, NET-JRF, CSIR 2012   </span>
+                        <br>
+                        <br><span>ii. DhananjayPandey, NET-JRF, CSIR 2013   </span>
+                        <br>
+                        <br><span>iii. Ms. Swati Uniyal, NET-LS, CSIR 2014   </span>
+                        <br>
+                        <br><span>iv. Twinkle Sanchan, NET-LS, CSIR 2014   </span>
+                        <br>
+                        <br><span>v. Ms. Lucky Singh, NET-JRF, CSIR 2014   </span>
+                        <br>
+                        <br><span>vi. Abhay Kumar, NET-JRF, CSIR 2014    </span>
+                        <br>
+                        <br><span>vii. SarjanKapoor, NET-LS, CSIR 2015    </span>
+                        <br>
+                        <br><span>viii. Ms. SaharWaseem, NET-JRF, CSIR 2015   </span>
+                        <br>
+                        <br><span>ix. Ms. NeelimaChaudhary, NET-LS, CSIR 2015   </span>
+                        <br>
+                        <br><span>x. Ms. Medha Sharma, NET-JRF, CSIR 2015   </span>
+                        <br>
+                        <br><span>xi. Ms. Tarang Gaur,    NET-LS, CSIR 2015   </span>
+                        <br>
+                        <br><span>xii. Ms. KirtiTyagi, DBT-JRF    2015   </span>
+                        <br>
+                        <br><span>xiii. Ms. HeenaGautam, NET-LS, CSIR    2015   </span>
+                        <br>
+                        <br><span>xiv.Rahul Yadav, UGC-NET 2015   </span>
+                        <br>
+                        <br><span>xv.Saddam Hussain, NET-JRF, CSIR 2016     </span>
+                        <br>
+                        <br><span>xvi. Piyanshu Singh, DBT-JRF 2017     </span>
+                        <br>
+                        <br><span>xvii. Varun Kumar, DBT-JRF     </span>
+                        <br>
+                        <br><span>xviii. Hritika Sharma, NET-LS &amp; </span>
+                        <br>
+                        <br><b>3. GATE Qualified students from SoBT: </b><span></span>
+                        <br>
+                        <br><span>i. Dhananjay v Pandey, GATE    2012    </span>
+                        <br>
+                        <br><span>ii. Anshuman Chandra, GATE 2015   </span>
+                        <br>
+                        <br><span>iii. ShatakshiPunia,GATE 2015   </span>
+                        <br>
+                        <br><span>iv. ShaliniSoni, GATE 2015   </span>
+                        <br>
+                        <br><span>v. Akash Saraswati GATE 2015, 2016, 2017   </span>
+                        <br>
+                        <br><span>vi. GayatriKaur, GATE 2016   </span>
+                        <br>
+                        <br><span>vii. Himalaya Singh, GATE 2016   </span>
+                        <br>
+                        <br><span>viii. Pratap Chandra, GATE 2016   </span>
+                        <br>
+                        <br><span>ix. Puneet Kumar, GATE 2016   </span>
+                        <br>
+                        <br><span>x. Nawaz, GATE 2016    </span>
+                        <br>
+                        <br><span>xi. Manish Singh, GATE 2017   </span>
+                        <br>
+                        <br><span>xii. Hritika Sharma, GATE2013   </span>
+                        <br>
+                        <br><span>xiii. Arti Singh GATE 2017    </span>
+                        <br>
+                        <br><span>xiv. imanshu GATE 2017    </span>
+                        <br>
+                        <br><span>xv. Akshay Prakask GATE 2017    </span>
+                        <br>
+                        <br><span>xvi. Prashant Kumar GATE 2017   </span>
+                        <br>
+                        <br><b>ii.    Dissertations: </b><span>Over the past couple of years many meritorious students from SoBT have been selected for carrying out M. Tech. dissertations and/or short term training projects in several reputed institutes like NCCS, Pune; CCMB, Hyderabad; RCB, Faridabad; ICPO, Noida; ICAR, Ludhiana; INMAS, DRDO; DIPAS, DRDO; IIT-Gandhinagar, Gujarat; FRI, Dehradun; IISER, Bhopal; ICGEB, New Delhi and so on</span><span></span>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="guest-speaker-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Guest Speaker | SOBT</h1>
+                    <br>
+                    <!--  <div>
             1.<a href="../../gbudata/SOB/SOBiotech_Guest%20speakers_19Nov14.pdf"> List of Guest Speakers and Workshops for Year 2014</a>
             <br>
             2.<a href="../../gbudata/SOB/SOBt_Guest%20speakers_10May2016.pdf"> List of Guest Speakers and Workshops</a>
           </div> -->
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="contactus-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">Contact Us | SOBT</h1>
-          <br>
-          <ul>
-            <li><b>For Admissions Related information Contact us at: </b><br>Admission Office</li>
-          </ul>
-          <div class="ml-5">
-            <p>
-            <b>Phone No.</b>: 0120-2344234/47</p>
-            <p><b>Email </b>: admissions@gbu.ac.in</p>
-          </div>
-          <ul>
-            <li><b>For more information about M.Tech (Biotechnology) programmes contact us at:</b></li>
-          </ul>
-          <div class="ml-5">
-            <p><b>Programme Office</b></p><p><b>Phone No.: 0120-2344268</b></p><p><b>Email:</b> biotech.gbu@gbu.ac.in</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="tab-pane fade" id="placements-overview-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">Placements | SOBT</h1>
-          <br>
-          <p><b>Placement in School of Biotechnology </b><br><br>The School of Biotechnology strives to ensure good placement of its students by adopting a curriculum that enriches and encourages its students to go for higher education and research. It also imparts them with the appropriate knowledge and skills to make them industry-ready and competent for Biotechnology sector.</p><p>After completing their post graduate studies, most of the students of School of Biotechnology either opt for higher studies like PhD and research projects or join Biotech/other companies. Based on the information available:<br><br>•    Several students of our school have been placed in various organizations of high repute all over India e.g. Biocon, Daiichi Sankyo India, Zydus Cadila, Panacea, Johnson &amp; Johnson, Zyme Pharmaceuticals, Alere Medical, Genetix Asia, Patanjali, Wrig Nanosystems, IDS Infotech, Bioglobe Research Solutions etc. <br>•    Some of our students are also pursuing PhD programs in esteemed Indian Universities and research institutes e.g., IIT Delhi, IIT Guwahati, NIPGR, IARI (PUSA), TERI, NIFTM, DRDO, NSIT, Pant Nagar University, Nirma University etc. <br>•    A few of our students have also been selected in PhD programs outside India including C.N.U, South Korea; Max Planck Institute of Chemical Ecology, Germany; New Castle University, Australia and Louisiana State University, USA. <br>•    Some of the students have also joined as research fellows in sponsored research projects in different Indian institutes while some of them have joined as Faculty in various colleges.</p><p><br></p><p><br></p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="tab-pane fade" id="final-placements-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">Final Placements | SOBT</h1>
-          <br>
-          <a href="../../gbudata/SOB/SOB_AcademicIndustrialPlacement_31Jan18.pdf">Academic and Industrial Placements of SoBT Students </a>
-          <br><br>
-          <a href="../../gbudata/SOB/SOB_ListStudentsFinal%20Year_31Jan18.pdf">List of final semester Students </a>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="list-of-students-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">List of Students | SOBT</h1>
-          <br>
-          <!-- <a href="../../gbudata/data/biotech/list-of-students.pdf">List Of Students</a> -->
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="placement-helpdesk-tab" role="tabpanel">
-      <div class="container my-5">
-        <div class="jumbotron">
-          <h1 class="text-center">Placement HelpDesk | SOBT</h1>
-          <br>
-          
-          <table class="table-responsive border-0" width="100%" height="98%" border="0">
-            <tbody>
-              <tr>
-                <td>
-                  <table class="table-responsive border-0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td>
-                          <p><b>Mr. Vinay Kumar Litoria</b></p>
-                          <p>Director</p>
-                          <p>Corporate Relations Cell</p>
-                          <p>Phone no. +91-120-2344209</p>
-                          <p>Mobile no. +91-9717195787</p>
-                          <p><b>Email:</b> crc@gbu.ac.in , vinay.litoria@gbu.ac.in</p>
-                          <p><b>Web:</b> www.gbu.ac.in</p>
-                          <br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="3"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td colspan="3">
-                  <div>
-                    <div>
-                    <ul class="extras"><b></b></ul>
-                  </div>
                 </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-  <div class="tab-pane fade" id="faculty-tab" role="tabpanel">
-      <div class="container">
-        <h1 class="text-center">Faculty | SOBT</h1>
-        <br>
-        <div class="p-3 text-justify">One of the biggest strengths of the University is its dedicated, competent and accomplished faculty. The faculty members in School of Biotechnology have distinguished academic achievements in their respective areas and the related basic disciplines. They are actively involved in teaching, training, and multidisciplinary research ranging from basic animal/plant/microbial Biotechnology to advanced branches like proteomics, structural biology, nano-Biotechnology, regenerative medicine, molecular biology etc. Dedicated academicians and eminent researchers are also committed to bring out the latent potential in every student. The faculty members of the school are prepared to take an extra step that separates excellence from merely adequate. Their enthusiastic approach and commendable initiatives continue to make this nascent school an advanced centre for education and research in basic and applied aspects of Biotechnology. The faculty members are available for consultations and guidance outside the classroom as well in an informal and customized level.
+            </div>
         </div>
-      </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-                         <div id="cards-container">
-                        <%faculties.forEach(function(faculty){%>
-                        <%if(faculty.school=="University School of BioTechnology"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a target="_blank" href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
+        <div class="tab-pane fade" id="contactus-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Contact Us | SOBT</h1>
+                    <br>
+                    <ul>
+                        <li><b>For Admissions Related information Contact us at: </b>
+                            <br>Admission Office</li>
+                    </ul>
+                    <div class="ml-5">
+                        <p>
+                            <b>Phone No.</b>: 0120-2344234/47</p>
+                        <p><b>Email </b>: admissions@gbu.ac.in</p>
+                    </div>
+                    <ul>
+                        <li><b>For more information about M.Tech (Biotechnology) programmes contact us at:</b></li>
+                    </ul>
+                    <div class="ml-5">
+                        <p><b>Programme Office</b></p>
+                        <p><b>Phone No.: 0120-2344268</b></p>
+                        <p><b>Email:</b> biotech.gbu@gbu.ac.in</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-  <div class="tab-pane fade" id="research-overview" role="tabpanel">
-    <div class="container my-5">
-      <div class="jumbotron">
-        <h1 class="text-center">Research and Publications | SOBT</h1>
-        <br>
-        <table class="table-responsive border-0" width="100%" height="98%" border="0" ><tbody><tr><td><table class="table-responsive border-0" width="100%"><tbody><tr><td><p>The University aspires to make a distinct identity at both national and international levels as an integrated academic and research institution of excellent repute. The University promotes research and explorations of possibilities that can prepare students endowed with innovative and entrepreneurial orientations and a deeply rooted faith in human values. Thus the University is dedicated to create an educated and progressive society which provides equal opportunities to all.</p><p><br></p><p>Research being at the core, the University patronizes attempts to provide new theoretical frameworks which enable reassessment and refinement of current practices and theory. The path-breaking interdisciplinary research by the faculty helps directly enhance qualitatively teaching-learning environment of the University and caters to the needs the practicing professionals in the field. More attention is paid to the relevance, objectivity, and depth of research. In addition to conduct research internally, the faculty is encouraged to undertake several projects which are commissioned and funded by the institutions/companies of national / international repute. Faculty of the University also commit themselves to supervise the research work by the scholars under the Ph. D. programme conducted in the modes such as, faculty/research associates, JRF/UGC sponsored projects, CSIR projects, and other research funding organizations.</p><br></td></tr><tr><td colspan="3"></td></tr></tbody></table></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td colspan="3"><div><div><ul class="extras"><b></b></ul></div></div></td></tr></tbody></table>
-      </div>
-    </div>
-  </div>
-  <div class="tab-pane fade" id="research-profile" role="tabpanel">
-    <div class="container my-5">
-      <div class="jumbotron">
-        <h1 class="text-center">Research Profiles | SOBT</h1>
-        <br>
-        <div class="table-responsive">
-          <table class="table table-hover table-bordered">
-            <tbody>
-              <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Name of Faculty</th>
-                <th scope="col">Designation</th>
-              </tr>
-              <tr>
-                <td>Prof.</td>
-                <td><a href="../../gbudata/faculty/Shweta Anand">Shweta Anand</a></td>
-                <td>Professor and Dean</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Seema Dwivedi">Seema Dwivedi</a></td>
-                <td>Associate Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Gunjan Garg">Gunjan Garg</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Jai Prakash Muyal">Jai Prakash Muyal</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Shakti Sahi">Shakti Sahi</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Bhupendra Chaudhary">Bhupendra Chaudhary</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Rekha Puria">Rekha Puria</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Nagendra Singh">Nagendra Singh</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Imteyaz Qamar">Imteyaz Qamar</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Deepali Singh">Deepali Singh</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Mohd. Tashfeen Ashraf">Mohd. Tashfeen Ashraf</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Siya Ram">Siya Ram</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Vikrant Nain">Vikrant Nain</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Jitendra Singh Rathore">Jitendra Singh Rathore</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Vishwas Tripathi">Vishwas Tripathi</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Barkha Singhal">Barkha Singhal</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Bhaswati Banerjee">Bhaswati Banerjee</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-              <tr>
-                <td>Dr.</td>
-                <td><a href="../../gbudata/faculty/Navin Kumar">Navin Kumar</a></td>
-                <td>Assistant Professor</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="tab-pane fade" id="placements-overview-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Placements | SOBT</h1>
+                    <br>
+                    <p><b>Placement in School of Biotechnology </b>
+                        <br>
+                        <br>The School of Biotechnology strives to ensure good placement of its students by adopting a curriculum that enriches and encourages its students to go for higher education and research. It also imparts them with the appropriate knowledge and skills to make them industry-ready and competent for Biotechnology sector.</p>
+                    <p>After completing their post graduate studies, most of the students of School of Biotechnology either opt for higher studies like PhD and research projects or join Biotech/other companies. Based on the information available:
+                        <br>
+                        <br>• Several students of our school have been placed in various organizations of high repute all over India e.g. Biocon, Daiichi Sankyo India, Zydus Cadila, Panacea, Johnson &amp; Johnson, Zyme Pharmaceuticals, Alere Medical, Genetix Asia, Patanjali, Wrig Nanosystems, IDS Infotech, Bioglobe Research Solutions etc.
+                        <br>• Some of our students are also pursuing PhD programs in esteemed Indian Universities and research institutes e.g., IIT Delhi, IIT Guwahati, NIPGR, IARI (PUSA), TERI, NIFTM, DRDO, NSIT, Pant Nagar University, Nirma University etc.
+                        <br>• A few of our students have also been selected in PhD programs outside India including C.N.U, South Korea; Max Planck Institute of Chemical Ecology, Germany; New Castle University, Australia and Louisiana State University, USA.
+                        <br>• Some of the students have also joined as research fellows in sponsored research projects in different Indian institutes while some of them have joined as Faculty in various colleges.</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>
+                        <br>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="tab-pane fade" id="research-publications" role="tabpanel">
-    <div class="container my-5">
-      <div class="jumbotron">
-        <h1 class="text-center">Research Publications | SOBT</h1>
-        <br>
-        <h5><b>Publications in 2020</b></h5>
-        <ol>
-          <li>Ankita Awasthi, Vikrant Nain, CV Srikanth, Rekha Puria.
-            A regulatory circuit between lncRNA and TOR directs amino acid uptake in yeast.&nbsp;<a href="https://www.sciencedirect.com/science/journal/01674889">Biochimica et Biophysica Acta (BBA) - Molecular Cell Research</a>, Feb 2020
-          </li>
-          <li>Khuman A., Arora S., Makkar H., Patel A. and Chaudhary
-            B. (2020) Extensive intragenic divergences amongst ancient WRKY transcription factor gene family is largely associated with their functional diversity in plants. Plant Gene (in press)
-          </li>
-          <li>Suman, Ahmad Y, Nain V. A convenient and robust protocol
-            for preparation of ODAP-free&nbsp;Lathyrus sativus&nbsp;protein. Analytical Biochemistry 591: 2020
-          </li>
-          <li>Yadav M, Rathore JS. The hipBA(Xn) operon from
-            Xenorhabdus nematophila functions as a bonafide&nbsp;toxin-antitoxin module. Appl Microbiol Biotechnol. 2020 Feb 11. doi: 10.1007/s00253-020-10441-1. [Epub ahead of print] PubMed PMID: 32043192.
-          </li>
-          <li>Suman, Chaudhary M, Nain V. In silico identification and
-            evaluation of Bacillus subtilis cold shock protein B (cspB)-like plant RNA chaperones. J Biomol Struct Dyn. 2020 Feb 12:1-10. doi: 10.1080/07391102.2020.1719198. [Epub ahead of&nbsp; print] PubMed PMID: 31959085.
-          </li>
-        </ol>
-        <br>
-        <h5><b>Publications in 2019</b></h5>
-        <ol>
-          <li>Arora S, Pandey DK, Chaudhary B. Target-mimicry based diminution of miRNA167 reinforced flowering-time phenotypes in tobacco via spatial-transcriptional biases of flowering-associated miRNAs. Gene 682: 67-80, 2019</li>
-          <li>Goyal N, Chandra A, Qamar I, Singh N. Structural studies on dihydrouridine synthase A (DusA) from Pseudomonas aeruginosa. Int J BiolMacromol. Mar 28;132:254-264. 2019 doi: 10.1016/j.ijbiomac.2019.03.209.
-          </li>
-          <li>Pandey, D. K. and Chaudhary, B. Synchronous transcription of cytoskeleton-associated genes is critical to cotton fiber elongation. J Plant Growth Regulation, 2019 https://doi.org/10.1007/s00344-019-09913-0
-          </li>
-          <li>Pavan Kumar, Debasreekundu, Alok k Mondal, Vikrant Nain, RekhaPuria . Inhibition of TOR signalling in <em>lea1</em> mutant induces apoptosis in <em>Saccharomyces cerevisiae. </em>Annals of Microbiology April, Volume 69, <a href="https://link.springer.com/journal/13213/69/4/page/1">Issue&nbsp;4</a>, pp 341&ndash;352, 2019
-        </li>
-        <li>Upadhyay, A.K., Arora, S., Pandey, D. K. and Chaudhary, B.&nbsp; Interspersed 5&prime;cis-regulatory elements ascertain the spatio-temporal transcription of cytoskeletal profilin gene family in Arabidopsis. Computational Biology and Chemistry 80:177-186, 2019.
-        </li>
-        <li>Zaman Khan N., Banerjee P., and Qamar,I. A critical review on genetics and implications of type 1 diabetes. Endocrinol Metab Int J ;7(1):11‒14, 2019</li>
-        <li>Banerjee P, Khan NZ, Sakshi, Singh T, Singh N, and Qamar,I et.al. Latent autoimmune diabetes in adults: complication, management and treatment modalities. Endocrinol Metab Int J. 2019;7(3):67-72.</li>
-        <li>Aman Chandra Kaushik; Aamir Mehmood; Arnav Kumar Upadhyay; Shalinee Paul; Shubham Srivastava; Prayuv Mali; Yi Xiong; Xiaofeng Dai; Dong-Qing Wei; Shakti Sahi (2019). CytoMegalo Virus Infection Database: a public omics database for systematic and comparable information of CMV. Interdisciplinary Sciences: Computational Life Sciences.</li>
-        <li>Kaushik, A., Mao, X., Li, C., Li, Y., Wei, D., &amp; Sahi, S. (2019). G-protein-coupled receptors function as logic gates for nanoparticle binding using systems and synthetic biology approach. Journal of Materials Research, 34(11), 1854-1867. doi:10.1557/jmr.2018.453</li>
-        <li>Kaushik, A.C., Gautam, D., Nangraj, A.S.,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Wei%20DQ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=31177377">Wei DQ</a>,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Sahi%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=31177377">Sahi S</a>. Protection of Primary Dopaminergic Midbrain Neurons Through Impact of Small Molecules Using Virtual Screening of GPR139 Supported by Molecular Dynamic Simulation and Systems Biology; Interdiscip Sci Comput Life Sci (2019). &nbsp;Jun;11(2):247-257 <a href="https://doi.org/10.1007/s12539-019-00334-x">https://doi.org/10.1007/s12539-019-00334-x</a></li>
-        <li>Garg G. and Parween N. (2019). Plant Transcription factors networking of Pyrroline-5-Carboxylate (P5C) enzyme under stress condition: A Review&rdquo; (accepted for publication),&nbsp;Plant Archive, Vol. 19(2).</li>
-        <li>Liang Z, Li P, Wang C, Singh D, Zhang X. Visualizing the Transport of Porcine Reproductive and Respiratory Syndrome Virus in Live Cells by Quantum Dots-Based Single Virus Tracking. Virol Sin. (2019) Dec 23. doi: 10.1007/s12250-019-00187-0.</li>
-      </ol>
-      <br>
-      <h5><b>Publications in 2018</b></h5>
-      <ol>
-        <li>Aarti Singh, Vishakha Vishwakarma, BarkhaSinghal &ldquo;Metabiotics: The Functional Metabolic Signatures of Probiotics: Current State-of-Art and Future Research Priorities&rdquo;, Advances in Bioscience and Biotechnology, 9, 147-189, 2018</li>
-        
-        <li>Ankita Awasthi, Vikrant Nain, RekhaPuria. MYOD and HAND transcription factors have conserved recognition sites in mTOR promoter: insights from in silico analysis. Interdisciplinary Sciences: Computational Life Sciences 2018 Jan. DOI: 10.1007/s12539-018-0284-5.</li>
-        
-        <li>Chaudhary, B., Singh, N., and Pandey, D. K. Bioengineering of crop plants for improved tetrahydrofolate production. Bioengineered&nbsp; 2018. doi.org/10.1080/21655979.2017</li>
-        
-        <li>Chaudhary, R. K.; Singh, G.; Ram S. Homology Modeling and in silico Structural Annotation of the Toxin-Antitoxin Systems in Pseudomonas aeruginosa.Indian Res. J. Genet. &amp; Biotech, 10(1): 180-188, 2018</li>
-        <li>Chaudhary, R. K.; Singh, G.; Ram S. Structural and Functional In-silico Analysis of Toxin Antitoxin Proteins in Persister cells of Pseudomonas aeruginosa. Plant Archive, 18 (2), 1643-1651, 2018</li>
-        
-        <li>Garg G, Ankita S , Bhati S, and Pandey S. A plant aquaporin (SoPIP2; 1): Regulatory protein channel in plants under stress, Octa J. Biosci. Vol. 6(1) 2018, online journal</li>
-        <li>Garg Gunjan and Bhati Sharmista. Synergistic interaction of plant growth-promoting bacteria (PGPB) ACDS and ACDR genes: The plant strategy to cope up with biotic and abiotic stressors, Indian J plant Sci. Vol 7(4) pp1-8, 2018</li>
-        
-        <li>Hussain MS, Tripathi V. <a href="https://www.ncbi.nlm.nih.gov/pubmed/29598831">Smoking under hypoxic conditions: a potent environmental risk factor for inflammatory and autoimmune diseases.</a> Med. Res. 5(1):11. 2018 doi: 10.1186/s40779-018-0158-5. Review. PMID:&nbsp;29598831,</li>
-        <li><a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Jain</a> P, <a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Singh</a> V, <a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Ali</a> S, <a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Tripathi</a> V, <a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Saraswat</a> Synthesis, characterization, molecular docking and biological activity of 5,6-bis-(4-fluoro-phenyl)-3,4,7,8-tetraaza-bicyclo [8.3.1] tetradeca-1(13),4,6,10 (14),11-pentaene-2,9-dione and its transition metal complexes. Journal of Saudi Chemical Society. 22(5):546-557, 2018</li>
-        <li>Jitendra Kumar Verma, Vijay Wardhan, Deepali Singh, SubhraChakraborty, NiranjanChakraborty. Genome-Wide Identification of Alba Gene Family in Plants and Stress-Responsive Expression of Rice Alba Genes. Genes 2018</li>
-        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Kaushik%20AC%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=29492402">Kaushik AC</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Kumar%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=29492402">Kumar S</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Wei%20DQ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=29492402">Wei DQ</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Sahi%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=29492402">Sahi S</a>. Structure-Based Virtual Screening Studies to Identify Novel Potential Compounds for GPR142 and Their Relative Dynamic Analysis for Study of Type 2 Diabetes. <a href="https://www.ncbi.nlm.nih.gov/pubmed/29492402">Front Chem.</a> 6:23, 2018. doi: 10.3389/fchem.2018.00023. eCollection 2018.</li>
-        <li>Kaushik AC, Sahi S. <a href="https://www.ncbi.nlm.nih.gov/pubmed/28571491">Insights into unbound-bound states of GPR142 receptor in a membrane-aqueous system using molecular dynamics simulations.</a> J Biomol Struct Dyn. ;36(7):1788-1805, doi: 10.1080/07391102.2017.1335234. Epub 2017 Jun 22.</li>
-        <li>Kaushik, AC &amp; Sahi,S. HOGPred: Artificial neural network based model for orphan GPCRs.. Neural Computing and Applications. 29:985&ndash;992, 2018. https://doi.org/10.1007/s00521-016-2502-6</li>
-        <li>Kaushik,AC, Kumar A, Ur Rehman A, Junaid,M, Khan,A, Bharadwaj,S, Sahi,S,&nbsp; and Wei DQ&nbsp; Deciphering G-Protein-Coupled Receptor 119 Agonists as Promising Strategy against Type 2 Diabetes Using Systems Biology Approach ACS Omega, 3, 18214&minus;18226, 2018</li>
-        <li>Lavania S, Das R, Dhiman A, Myneedu VP, Verma A, Singh N, Sharma TK, Tyagi JS. Aptamer-Based TB Antigen Tests for the Rapid Diagnosis of Pulmonary Tuberculosis: Potential Utility in Screening for Tuberculosis. ACS Infect Dis. Oct 25. 2018 doi: 10.1021/acsinfecdis.8b00201. [Epub ahead of print] IF: 4.2</li>
-        
-        <li>&nbsp;Nimisha Gaur, Ankit Sharma,BarkhaSinghal<sup> &ldquo;</sup>Bacterial Surface Layer Proteins: From Moonlighting to Biomimetics: A New Horizon to Lead&rdquo;,Advances in Biosciences and Biotechnology 9, 352-372, 2018.</li>
-        
-        <li>Pavan Kumar*, AnkitaAwasthi*, Vikrant Nain, BijuIssac, RekhaPuria. Novel insights into TOR signalling in Saccharomyces cerevisiae through Torin2. Gene May: 669; 15-27. (*equal first co-author) 2018.</li>
-        <li>K. Mishra, S.K. Niranjan, B. Banerjee, P.K. Dubey, D.S. Gonge, B.P. Mishra, and R.S. Kataria. Identification of novel allelic variants at the MHC class II DQA locus in Murrah water buffalo. Animal Genetics; DOI: 10.1111/age.12704; 2018</li>
-        <li>Singh A, Chauhan S. S, Tripathi V. Quinic Acid Attenuates Oral Cancer Cell Proliferation by&nbsp;Down-regulating Cyclin D1 Expression and Akt Signaling. Pharmacognosy Mgazine, ,(14):55,14-19, 2018</li>
-        <li>Singh A, Tripathi V. Effect of Trans-ferulic acid on oral squamous carcinoma cells. Journal of Pharmacognosy and Phytochemistry.,7(1), 1955-58, 2018.</li>
-        <li>Singh, G.; Chhabra, M.; Singh, P.; Gupta, N. K.; Singhal, M.; Dhariwal, A.C.; Ram, S. Molecular study of glycoprotein (G) gene region of rabies virus from spotted deer, Delhi, India. J. Commun. Dis.; 50(3), 28-35, 2018.</li>
-        <li>Tripathi V, Singh A, Ashraf M T. Avenanthramides of Oats: Medicinal Importance and Future&nbsp;Perspectives. Pharmacognosy review. 12 (23) 66-71, 2018</li>
-        <li>Uniyal S, Dhasmana A, Tyagi A,&nbsp;Muyal&nbsp;JP. <a href="https://www.ncbi.nlm.nih.gov/pubmed/30372846">ATRA reduces inflammation and improves alveolar epithelium regeneration in emphysematous rat lung.</a> Biomed Pharmacother (Elsevier). Dec; 108:1435-1450, 2018</li>
-        <li>Yadav M and RathoreJS TAome analysis of type-II toxin-antitoxin system from&nbsp;Xenorhabdusnematophila. Comput Biol Chem. 2018 Oct;76:293-301, 2018</li>
-      </ol>
-      <br>
-      <h5><b>Publications in 2017</b></h5>
-      <ol>
-        <li>Abdul Arif Khan, Zakir Khan, Abdul Malik, Mohd Abul Kalam, Phillip Cash, Mohd. Tashfeen Ashraf, Aws Alshamsan. Colorectal cancer-inflammatory bowel disease nexus and felony of Escherichia coli- Review Article. Life Sciences(1 July 2017); Volume 180: 60-67 , 2017</li>
-        <li>Aggarwal C, Paul S, Tripathi V, Paul B, Khan MA. <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993620">Characterization of putative virulence factors of Serratia marcescens strain SEN for pathogenesis in Spodoptera litura.</a> J Invertebrate Pathol. 143:115-123, 2017</li>
-        <li>Ahmad, F and Qamar, I. Novel strategy for the treatment of fungal infections. WJPPS (In press) Doi: 10.20959/wjpps201711-10361, 2017</li>
-        <li><a href="http://www.frontiersin.org/people/u/357924">Amit Kumar</a>, <a href="http://www.frontiersin.org/people/u/340622">Deepti Singh</a>,&nbsp;<a href="http://www.frontiersin.org/people/u/308089">Krishna K. Sharma</a>,&nbsp;<a href="http://www.frontiersin.org/people/u/356591">Sakshi Arora</a>,&nbsp;Amarjeet K. Singh,&nbsp;Sarvajeet S. Gilland&nbsp;Barkha Singhal,&nbsp; Gel-based purification and biochemical study of laccaseisozymes from&nbsp;Ganoderma&nbsp;sp. and its role in enhanced cotton callogensis, Frontiers in Microbiology 8, 2017. doi.org/10.3389/fmicb.2017.00674.&nbsp;</li>
-        <li>Ankita Awasthi, Pharvendra Kumar, CV Srikanth, Shakti Sahi, RekhaPuria. Invitro Evaluation of Torin2 and 2, 6-Dihydroxyacetophenone in Colorectal Cancer Therapy. PatholOncol Res Oct :1&ndash;9. , 2017. doi: 10.1007/s12253-017-0347-</li>
-        <li>Beg MA and Qamar, I. Expression-Regulation of Hif-Induced Gene and Oxidative Stress Gene in Acute Hypobaric Hypoxia. International Journal of Genetic Engineering and Recombination Volume 3 Issue 2 Page 9-28, 2017</li>
-        <li>Beg MA and Qamar, I. Hexokinase II and its Major Partners: Role in Cancer Progression. International Journal of Cell Biology and Cellular Processes Volume 3 Issue 2 Page 1-8, 2017</li>
-        <li>Chand V, Prakash J, Ashraf T, Gupta V. Can Vitamin D Slow Progression of Osteoarthritis? J Arthritis ; 6: 232, 2017. doi: 10.4172/2167-7921.1000232.</li>
-        <li>DK Pandey, A Kumar, JS Rathore, N Singh, B Chaudhary.) Recombinant overexpression of dihydroneopterinaldolase catalyst potentially regulates folate‐ Journal of Basic Microbiology 57 (6), 517-524, 2017</li>
-        <li>Garg G, Prachi K and Bhati S . Aluminum activated malate transporter protein (ALMT): Prime GABA receptor in plants under abiotic stress: A review, vol. 5(2): 52-55, Octa J of biosci. 2017. ISSN 2321-3663</li>
-        <li>GautamLK,Yadav M, and Functional annotation of novel toxin-antitoxin system Xn-RelT of Xenorhabdusnematophila;a combined in silico and in vitro approach. J Mol Model 23 (6): 189 , 2017</li>
-        <li>Kaushik AC, Pal A, Kumar A, Dwivedi VD, Bharadwaj S, Pandey A, Mishra SK, Sahi, S.&nbsp; Internal transcribed spacer sequence database of plant fungal pathogens: PFP-ITSS database. Informatics in Medicine Unlocked, 7, 34-38, 2017 <a href="https://doi.org/10.1016/j.imu.2017.02.006">doi 10.1016/j.imu.2017.02.006</a></li>
-        <li>
-          Kaushik, A.C. and Sahi, S.&nbsp; Molecular modeling and molecular dynamics simulations based structural analysis of GPR3&nbsp; Network Modeling Analysis in Health Informatics and Bioinformatics, 6: 9 , 2017. DOI: 10.1007/s13721-017-0150-0
-        </li>
-        
-        <li>Kaushik, A.C. and Sahi, S., Modeling and Receptor based&nbsp;virtual screening studies of GPR139, International Journal of Bioinformatics Research and Applications, Vol. 13(3), 2017</li>
-        <li>Kaushik, N. Iqbal, N. Singh, J. S. Sikarwar, P. K. Singh, P.Sharma1, P. Kaur, S. Sharma, M. Owais and T. P. Singh Search of Multiple Hot Spots on the Surface of Peptidyl-tRNA Hydrolase: Structural,Binding and Antibacterial Studies. Biochem J. 9;475(3):547-560, 2017. doi: 10.1042/BCJ20170666.</li>
-        <li>Kotnala S, Tyagi A,&nbsp;Muyal&nbsp;JP . <a href="https://www.ncbi.nlm.nih.gov/pubmed/28552795">rHuKGF ameliorates protease/anti-protease imbalance in emphysematous mice.</a>. Pulm Pharmacol Ther (Elsevier).&nbsp; Aug; 45:124-135, 2017.</li>
-        <li>Lavania S, Anthwal D, Bhalla M, Singh N, Haldar S, Tyagi JS Direct detection of Mycobacterium tuberculosis rifampin resistance in bio-safe stained sputum smears. PLoS ONE 12(12): 2017, e0189149.S.</li>
-        <li>Navin Kumar, MohdShariq, Amarjeet Kumar, Rajesh Kumari, Naidu Subbarao, Rakesh K. Tyagi, GaurangaMukhopadhyay . Analyzing the role of CagV, a VirB8 homologue of the type IV secretion system of Helicobacter pylori. FEBS Open Bio.DOI: 10.1002/2211-5463.12225, 2017.</li>
-        <li>Pandey, D. K. and Chaudhary, B. Evolutionary expansion and structural functionalism of the ancient family of profilin proteins. Gene 626: 70-86, 2017</li>
-        <li>Poonam Mishra Vijay Wardhan, Aarti Pandey, Subhra Chakraborty, Gunjan Garg and Niranjan Chakraborty. Comparative analysis of sequence-structure function relationship of the SUN-domain protein CaSUN1, Phylogenetics Evol Biol, 5:3; 2017. DOI: 10.4172/2329-9002.1000189</li>
-        <li>Prachi Rajput, Gunjan Garg . Effect of Different Types of Cytokines on Bryophyllum pinnatum Micropropagation and Evaluating the Antimicrobial Activity of In-Vivo and In-Vitro Methonolic Leaf Extract, Vol. 3 (2): 10-19, 2017 Internat. J.Plant Biotech., eISSN: 2456-0162</li>
-        <li>Prachi Rajput, Gunjan Garg . Endangered and Critical Endangered Medicinal Plants Species and Their Ethnobotanical Medicinal Values in India, Vol. 3 (2): 68-74, Internat. J. Plant Biotech., 2017. eISSN: 2456-0162</li>
-        <li>Rajesh Kumari, MohdShariq, Navin Kumar, GaurangaMukhopadhyay. <a href="https://www.ncbi.nlm.nih.gov/pubmed/28103624">Biochemical characterization of the Helicobacter&nbsp;pylori Cag-type IV secretion system unique component CagU.</a> FEBS Lett. 591(3):500-512, 2017.</li>
-        <li>Kumar, Qamar I., Singh N. Non steroidal Anti-inflammatory drugs (NSAIDs). ELS, Willey Sciences Published Online : 20 MAR 2017, DOI:&nbsp;10.1002/9780470015902.a0024221</li>
-        <li>Singh, G., Fritz, S. M., Ranji, A., Singh, D., Boris-Lawrie, K. Isolation of Cognate RNA-protein Complexes from Cells Using Oligonucleotide-directed Elution. J. Vis. Exp. (119), e54391, 2017</li>
-        <li>Singh, G.; Jaiswal, R.; Chhabra, M.; Sood, Y.; Gupta, N.; Singhal, M.; Tiwari, S.; Dhariwal, A.C.; Sharma, R., Ram, S. Evaluation of Direct Rapid Immunohistochemistry Test (DRIT) for Postmortem Diagnosis of Rabies, J. Commun. Dis.; 49 (3), 9-13. 2017 (doi: 10.24321/0019.5138.201715).</li>
-        <li>Srishti Jha and Mohd. Tashfeen Ashraf . Acutodesmus dimorphus: A Promising Alga for Commercial Scale Cultivation for Biofuels and Biomass. IJPB; 3(1): 29-33, 2017.</li>
-        <li>Srishti Jha and Mohd. Tashfeen Ashraf. Resource Utilization in Algal Cultures: Synergistic Effect of Biodiversity and Genetic Modification on Biomass Production. IJMB; 3(1): 1-8, 2017.</li>
-        <li>Sudhir Kotnala, Sumit Baghel, Deepali Verma, Amit Tyagi &amp; Jai PrakashMuyal Recombinant human keratinocyte growth factor attenuates apoptosis in elastase induced emphysematous mice lungs, Inhalation Toxicology (Taylor &amp; Francis), 29:1, 23-31, 2017</li>
-        <li>Swati Uniyal, Sudhir Kotnala, Ekta Teotia, Rahul Kumar, Amit Tyagi, Jai Prakash Muyal. ATRA modulates gluconeogenesis and triglyceride biosynthesis pathway of liver in elastase induced emphysematous rats. Journal of Experimental and Applied Animal Sciences. Volume 2, Number 2, pp. 109-125, 2017 Print ISSN 2314-5684</li>
-      </ol>
-      
-      <h5><b>Publications in 2016</b></h5>
-      <ol>
-        <li>Barkha Singhal, Shubham Srivastava, Ankita Mukherje. Role of probiotics in pancreatic cancer prevention: The prospects and challenges, Advances in Biosciences and Biotechnology, 7, 468-500, 2016</li>
-        <li>Chaudhari, N and Qamar,I. Polycystic ovary syndrome: conditions, genetics and current cure. EndocrinolMetabInt J 2016, 3(5): 00060, 2016</li>
-        <li>Chaudhary M, Singh V, Anvikar AR, Sahi S. <a href="https://www.ncbi.nlm.nih.gov/pubmed/27449897">Screening and In Vitro Evaluation of Potential Plasmodium falciparum Leucyl Aminopeptidase Inhibitors.</a> Curr Comput Aided Drug Des.;12(4):282-293, 2016</li>
-        <li>Chaudhary, R.K., Narain, R., Singh, G., Kumar, A., Ram, S.The role of toxin-antitoxin systems in the survival of multidrug tolerant pathogens and designing of new approaches to treat them. J. Infect. Dis., 45, 274-275, 2016</li>
-        <li>Garg &amp; Kumari. Functional analysis of plants SRG-genes/transmembrane protein (RLKs) under stress condition J. Biosci. Agric. Res. Vol. 09(02), pp827-836, DOI: 10.18801/jbar.090216.100</li>
-        <li>Gunjan Garg*, Durvesh Kumar. Role of CBF/DRFBs in ABA signalling during cold stress in plants, Electronic Journal of Biology, Vol.S1: 13-17, &nbsp;ISSN 1860-3122</li>
-        <li>Hegde, M., Mantelingua, K., Swarupa HA., Pavankumara CS., Qamar, I., Raghavan, SC., and Rangappaa SK. Novel PARP Inhibitors Sensitize Human Leukemic Cells in an Endogenous PARP Activity Dependent Manner. Royale Society of Chemistry, Advances, <a href="http://pubs.rsc.org/en/journals/journal/ra"><strong>RSC Adv.</strong></a>, 2016,<strong>6</strong>, 6308-6319, 2016.</li>
-        <li>Kaushik, A.C. and Sahi, S., Biological complexity: Ant colony meta-heuristic optimization algorithm for protein folding.&nbsp;Neural Computing and Applications, pp.1-7. DOI 10.1007/s00521-016-2252-5</li>
-        <li>Lata, P.;Ram, S., Shanker, R. Multiplex PCR based genotypic characterization of pathogenic vancomycin resistant Enterococcus faecalis recovered from an Indian river along a city landscape. SpringerPlus, 5 (1), 1199, 2016. https://doi.org/10.1186/s40064-016-2870-5</li>
-        <li>Mishra, S.K., Niranjan, S.K., Banerjee, B., Dubey, P.K., Gonge, D.S., Mishra, B.P. and Kataria, R.S., High genetic diversity and distribution of Bubu-DQA alleles in swamp buffaloes (Bubalusbubaliscarabanesis): identification of new Bubu-DQA loci and haplotypes Immunogenetics Vol 68, 439-447, 2016</li>
-        <li>Mishra, S.K., Niranjan, S.K., Banerjee, B., Singh, R., Singh, R.V., Kumar, N. and Kataria, R.S., Genetic diversity at MHC-DRB3 locus suggests distinctness of the riverine-swamp buffalo populations in North-East region of India Indian Journal of Animal Research (No. ARCC/B-3294), 2016</li>
-        <li>Naraian, R.; Singh, M. P. ; Ram, S. Supplementation of basal substrate to boost up substrate strength and oyster mushroom yield: An overview of substrates and supplements, Int.J.Curr.Microbiol.App.Sci 2016.</li>
-        <li>Pandey, D. K. and Chaudhary, B. A botanist&rsquo;s cognitive view on plant growth: cross-talk between developmental and sensitivity networks. American Journal of Plant Sciences 7: 2307-2322, 2016</li>
-        <li>Pandey, D. K. and Chaudhary, B. Domestication-driven Gossypium profilin 1 (GhPRF1) gene transduces early flowering phenotype in tobacco by spatial alteration of apical/floral-meristem related gene expression. BMC Plant Biology 16: 1-21, 2016</li>
-        <li>Qamar, I., Singh, Nagendra.,Waseem, S., Prakash, P., Veerendra, S.N., and Ahmad, F. . Cloning and Expression of Novel Lingo-1 Gene from BubalisBubalis. WJPPS, Volume 5, Issue 6, 2013-2024, 2016</li>
-        <li>Teotia Sachin, Singh Deepali, Tang X, Tang G. Essential RNA-Based Technologies and Their Applications in Plant Functional Genomics. Trends Biotechnol. pii: S0167-7799(15)00248-6, 2016</li>
-        <li>Vishal Chand, Sipahee Lal Patel, Rachana Mishra, Baishnab C Tripathy, Jaya Prakash, Md. Tashfeen Ashraf and Varsha Gupta &ldquo;Molecular signatures in peripheral blood mononuclear cells with osteoarthritis&rdquo;. Int. J. Clin. Rheum. Vol. 11, Issue 6, 2016</li>
-      </ol>
-      <br>
-      <h5><b>Publications in 2015</b></h5>
-      
-      <ol>
-        <li>Aggarwal C, Paul S, Tripathi V, Paul B, Khan MA. Chitinase producing Serratia marcescens for biocontrol of Spodoptera litura (Fab) and studies on its chitinolytic activities. Ann. Agric. res. New series., 36 (2):132-137, 2015.</li>
-        <li>Aggarwal C, Paul S, Tripathi V, Paul B, Khan MA. Chitinolytic activity in Serratia marcescens (strain SEN) and potency against different larval instars of Spodoptera litura with effect of sublethal doses on insect development. Bio Control. 60(5) 631-640, 2015.</li>
-        <li>Dwivedi, V. Gurjar, S. Kumar, N. Singh. Molecular basis for nonspecificity of nonsteroidal anti-inflammatory drugs (NSAIDs). Drug Discovery Today; 20(7):863-73. 2015</li>
-        <li>Bhardwaj R, Qamar I and Singh N. Persister Formation in Klebsiellapneumoniae: Recombinant Expression and Purification of hipA and hipB proteins from K. pneumoniae. Int. J. Applied &amp; pure Science &amp; Agriculture, 1(11), 1-7. 2015</li>
-        <li>Chaudhary, N and Qamar, I Advancement of Poly-(ADP &ndash; Ribose) Polymerase (PARP) Inhibitors in Cancer Progression and Treatment. International Journal of Animal Biotechnology &amp; Applications Vol. 1: Issue 1 page 19-30, 2015.</li>
-        <li>Garg G., Yadav S., Ruchi, Yadav G. <a href="http://article.sapub.org/10.5923.j.als.20150501.03.html">Key roles of calreticulin and calnexin proteins in plant perception under stress conditions: A Review</a>, Adv. Life Sci., vol. 5(1), pp.18-26, 10.5923/j.als.20150501.03</li>
-        <li>GautamLK, YennamalliRM, Rathore JS&nbsp; Implication on the function of novel Xn-relE toxin structure of Xenorhabdusnematophila using Homology modeling.Current Bioinformatics12(6): 535 &ndash; 542, 2016</li>
-        <li>Gulam Rabbani, Ejaz Ahmad, Mohsin Vahid Khan, Mohd. Tashfeen Ashraf, Rajiv Bhat and Rizwan Hasan Khan &ldquo;Impact of structural stability of cold adapted Candida antarctica lipase B (CaLB): in relation to pH, chemical and thermal denaturation&rdquo;. RSC Adv., ,5, 20115-20131, 2015.</li>
-        <li>JP Muyal, D Kumar, S Kotnala, V Muyal, AK Tyagi . <a href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=pUUy2-8AAAAJ&amp;citation_for_view=pUUy2-8AAAAJ:UebtZRa9Y70C">Recombinant Human Keratinocyte Growth Factor Induces Akt Mediated Cell Survival Progression in Emphysematous Mice</a>.. Archivos de Bronconeumolog&iacute;a. Jul;51(7):328-37, 2015.</li>
-        <li>Kaushik, A.C. and Sahi, S., Boolean network model for GPR142 against Type 2 diabetes and relative dynamic change ratio analysis using systems and biological circuits approach.&nbsp;Syst Synth Biol. Jun;9(1-2):45-54. 2015 doi: 10.1007/s11693-015-9163-0. Epub 2015 Mar 14.</li>
-        <li>Matthew Stake*, Deepali Singh*, J Marcela Hernandez, Rebecca Kaddis, Leslie J Parent, Kathleen Boris-Lawrie. HIV-1 and two avian retroviral 5' untranslated regions bind orthologous human and chicken RNA binding proteins. Virology 486:307-20. 2015 * equal contribution</li>
-        <li>MohdShariq, Navin Kumar, Rajesh Kumari, Amarjeet Kumar, Naidu Subbarao, GaurangaMukhopadhyay Biochemical Analysis of CagE: A VirB4 Homologue of Helicobacter pylori Cag-T4SS. PLoS One. Nov 13;10(11), 2015.</li>
-        <li>Qamar, I., Ahmad, F., and Narayansami, N.. A time-course study of long term over-expression of ARR19 in mice. Nature's Scientific Reports, Nature&rsquo;s Sci Rep. Aug 11;5:13014. 2015</li>
-        <li>Rathore JS and Yan Wang Protective role of Th17 cells in pulmonary infection. Review. Vaccine34(13):1504-1514, 2016</li>
-        <li>Urvashi, Ram, S, Pant P, Nagar, S. Application of cloud computing in microbiological studies (Vibrio spp.) of Yamuna Water using PCR techniques. Int. J. Sci. Tech. &amp; Management;, 6 (1), 1-13. 2015</li>
-      </ol>
-      <br>
-      <h5><b>Publications in 2014</b></h5>
-      <ol>
-        <li>Chaudhary, B., Chattopadhyay, P. and Banerjee, N. Modulations in seed micromorphology reveal signature of adaptive species-diversification in Dendrobium (Orchidaceae). Open Journal of Ecology 2:33-42, 2014</li>
-        <li>Garg, G Application of nanoproteomics in biological systems: A review, Int. J. Gen. Eng. and Tech., vol 3(4), pp.29-40, ISSN: 2279-9928, 2014</li>
-        <li>Gunjan Garg and Sanjay Kataria . Water deficit at anthesis stage induceds early leaf senescence and affects dry matter accumulation and remobilization efficiency in Black gram (P. mungo, L.), J. Adv. Botany and Zoology, vol 1(4), pp.1-6, 2014</li>
-        <li>JP Muyal, S Kotnala, H Bhardwaj, A Tyagi. <a href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=pUUy2-8AAAAJ&amp;citation_for_view=pUUy2-8AAAAJ:hqOjcs7Dif8C">Effect of recombinant human keratinocyte growth factor in inducing Ras&ndash;Raf&ndash;Erk pathway-mediated cell proliferation in emphysematous mice lung</a>. Inhalation toxicology. 26 (13), 761-771. 2014</li>
-        <li>Pandey, D. K. and Chaudhary, B. Oxidative stress responsive SERK1 gene directs the progression of somatic embryogenesis in cotton (Gossypium hirsutum cv. Coker 310). American Journal of Plant Sciences 5:80-102, 2014</li>
-        <li>Pandey, D. K. and Chaudhary, B. Role of Plant Somatic Embryogenesis Receptor Kinases (SERKs) in Cell-to-Embryo Transitional Activity: Key at Novel Assorted Structural Subunits. American Journal of Plant Sciences 5: 3177-3193, 2014</li>
-        <li>Rathore JS and Gautam LK. Expression, purification and functional analysis of novel relE operon from X. nematophila. The Scientific World Journal Volume (2014) 428159 2014</li>
-        <li>Sahi S, Rai S, Chaudhary M, Nain V. <a href="http://www.ncbi.nlm.nih.gov/pubmed/25258488">Modeling of human M1 aminopeptidases for in silico screening of potential Plasmodium falciparum alanine aminopeptidase (PfA-M1) specific inhibitors</a>, Bioinformation.&nbsp; Aug 30;10(8):518-25. 2014 doi:&nbsp;&nbsp;&nbsp; 6026/97320630010518.</li>
-        <li>Sahi S, Raj U, Chaudhary M, Nain V. <a href="http://www.ncbi.nlm.nih.gov/pubmed/25269653">Modelling of Human Leucyl Aminopeptidases For In silico Off Target Binding Analysis Of Potential Plasmodium falciparum Leucine Aminopeptidase (PfA-M17) Specific Inhibitors.</a> Recent Pat Endocr Metab Immune Drug Discov. 8(3):191-202014</li>
-        <li>Tewatia P, Agrawal N, Gaur M, Sahi S. In<a href="http://www.ncbi.nlm.nih.gov/pubmed/24508605">sights into the conformational perturbations of novel agonists with &beta;3-adrenergic receptor using molecular dynamics simulations.</a> Biochimie. 101:168-82. doi: 10.1016/j.biochi.2014.01.016. Epub 2014 Feb 6. 2014</li>
-        <li>Tripathi V, Kumar R, Dinda AK, Kaur J, Luthra K.<a href="http://www.ncbi.nlm.nih.gov/pubmed/24450273">CXCL12-CXCR7 Signaling Activates ERK and Akt Pathways in Human Choriocarcinoma Cells.</a> Cell Communication. Adhesion., 21(4):221-228. 2014</li>
-        <li>V Nain, R Buddham, R Puria, S Sahi <a href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=k7lnVggAAAAJ&amp;cstart=20&amp;pagesize=80&amp;authorid=15290292814549416248&amp;citation_for_view=k7lnVggAAAAJ:5nxA0vEk-isC">Role of TCA cycle Truncation in Cancer Cell Energetics</a>. Current Trends in Biotechnology and Pharmacy 8 (4), 428-438, 2014</li>
-      </ol>
-      <br>
-      <h5>Average Impact Factor (for last 5 years) = 2.83</5>
+
+        <div class="tab-pane fade" id="final-placements-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Final Placements | SOBT</h1>
+                    <br>
+                    <a href="../../gbudata/SOB/SOB_AcademicIndustrialPlacement_31Jan18.pdf">Academic and Industrial Placements of SoBT Students </a>
+                    <br>
+                    <br>
+                    <a href="../../gbudata/SOB/SOB_ListStudentsFinal%20Year_31Jan18.pdf">List of final semester Students </a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="list-of-students-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">List of Students | SOBT</h1>
+                    <br>
+                    <!-- <a href="../../gbudata/data/biotech/list-of-students.pdf">List Of Students</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="placement-helpdesk-tab" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Placement HelpDesk | SOBT</h1>
+                    <br>
+
+                    <table class="table-responsive border-0" width="100%" height="98%" border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="table-responsive border-0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p><b>Mr. Vinay Kumar Litoria</b></p>
+                                                    <p>Director</p>
+                                                    <p>Corporate Relations Cell</p>
+                                                    <p>Phone no. +91-120-2344209</p>
+                                                    <p>Mobile no. +91-9717195787</p>
+                                                    <p><b>Email:</b> crc@gbu.ac.in , vinay.litoria@gbu.ac.in</p>
+                                                    <p><b>Web:</b> www.gbu.ac.in</p>
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div>
+                                        <div>
+                                            <ul class="extras"><b></b></ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="faculty-tab" role="tabpanel">
+            <div class="container">
+                <h1 class="text-center">Faculty | SOBT</h1>
+                <br>
+                <div class="p-3 text-justify">One of the biggest strengths of the University is its dedicated, competent and accomplished faculty. The faculty members in School of Biotechnology have distinguished academic achievements in their respective areas and the related basic disciplines. They are actively involved in teaching, training, and multidisciplinary research ranging from basic animal/plant/microbial Biotechnology to advanced branches like proteomics, structural biology, nano-Biotechnology, regenerative medicine, molecular biology etc. Dedicated academicians and eminent researchers are also committed to bring out the latent potential in every student. The faculty members of the school are prepared to take an extra step that separates excellence from merely adequate. Their enthusiastic approach and commendable initiatives continue to make this nascent school an advanced centre for education and research in basic and applied aspects of Biotechnology. The faculty members are available for consultations and guidance outside the classroom as well in an informal and customized level.
+                </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+            <div id="cards-container">
+                <%faculties.forEach(function(faculty){%>
+                    <%if(faculty.school=="University School of BioTechnology"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                            <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a target="_blank" href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                            <p><strong><%=faculty.position
+                        %></strong></p>
+                            <p>
+                                <%=faculty.qualification%>
+                            </p>
+                            <p>
+                                <%=faculty.field_of_teaching%>
+                            </p>
+                        </div>
+                        <%}%>
+                            <%})%>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="research-overview" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Research and Publications | SOBT</h1>
+                    <br>
+                    <table class="table-responsive border-0" width="100%" height="98%" border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="table-responsive border-0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>The University aspires to make a distinct identity at both national and international levels as an integrated academic and research institution of excellent repute. The University promotes research and explorations of possibilities that can prepare students endowed with innovative and entrepreneurial orientations and a deeply rooted faith in human values. Thus the University is dedicated to create an educated and progressive society which provides equal opportunities to all.</p>
+                                                    <p>
+                                                        <br>
+                                                    </p>
+                                                    <p>Research being at the core, the University patronizes attempts to provide new theoretical frameworks which enable reassessment and refinement of current practices and theory. The path-breaking interdisciplinary research by the faculty helps directly enhance qualitatively teaching-learning environment of the University and caters to the needs the practicing professionals in the field. More attention is paid to the relevance, objectivity, and depth of research. In addition to conduct research internally, the faculty is encouraged to undertake several projects which are commissioned and funded by the institutions/companies of national / international repute. Faculty of the University also commit themselves to supervise the research work by the scholars under the Ph. D. programme conducted in the modes such as, faculty/research associates, JRF/UGC sponsored projects, CSIR projects, and other research funding organizations.</p>
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div>
+                                        <div>
+                                            <ul class="extras"><b></b></ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="research-profile" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Research Profiles | SOBT</h1>
+                    <br>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Name of Faculty</th>
+                                    <th scope="col">Designation</th>
+                                </tr>
+                                <tr>
+                                    <td>Prof.</td>
+                                    <td><a href="../../gbudata/faculty/Shweta Anand">Shweta Anand</a></td>
+                                    <td>Professor and Dean</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Seema Dwivedi">Seema Dwivedi</a></td>
+                                    <td>Associate Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Gunjan Garg">Gunjan Garg</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Jai Prakash Muyal">Jai Prakash Muyal</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Shakti Sahi">Shakti Sahi</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Bhupendra Chaudhary">Bhupendra Chaudhary</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Rekha Puria">Rekha Puria</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Nagendra Singh">Nagendra Singh</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Imteyaz Qamar">Imteyaz Qamar</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Deepali Singh">Deepali Singh</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Mohd. Tashfeen Ashraf">Mohd. Tashfeen Ashraf</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Siya Ram">Siya Ram</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Vikrant Nain">Vikrant Nain</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Jitendra Singh Rathore">Jitendra Singh Rathore</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Vishwas Tripathi">Vishwas Tripathi</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Barkha Singhal">Barkha Singhal</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Bhaswati Banerjee">Bhaswati Banerjee</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.</td>
+                                    <td><a href="../../gbudata/faculty/Navin Kumar">Navin Kumar</a></td>
+                                    <td>Assistant Professor</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="research-publications" role="tabpanel">
+            <div class="container my-5">
+                <div class="jumbotron">
+                    <h1 class="text-center">Research Publications | SOBT</h1>
+                    <br>
+                    <h5><b>Publications in 2020</b></h5>
+                    <ol>
+                        <li>Ankita Awasthi, Vikrant Nain, CV Srikanth, Rekha Puria. A regulatory circuit between lncRNA and TOR directs amino acid uptake in yeast.&nbsp;<a href="https://www.sciencedirect.com/science/journal/01674889">Biochimica et Biophysica Acta (BBA) - Molecular Cell Research</a>, Feb 2020
+                        </li>
+                        <li>Khuman A., Arora S., Makkar H., Patel A. and Chaudhary B. (2020) Extensive intragenic divergences amongst ancient WRKY transcription factor gene family is largely associated with their functional diversity in plants. Plant Gene (in press)
+                        </li>
+                        <li>Suman, Ahmad Y, Nain V. A convenient and robust protocol for preparation of ODAP-free&nbsp;Lathyrus sativus&nbsp;protein. Analytical Biochemistry 591: 2020
+                        </li>
+                        <li>Yadav M, Rathore JS. The hipBA(Xn) operon from Xenorhabdus nematophila functions as a bonafide&nbsp;toxin-antitoxin module. Appl Microbiol Biotechnol. 2020 Feb 11. doi: 10.1007/s00253-020-10441-1. [Epub ahead of print] PubMed PMID: 32043192.
+                        </li>
+                        <li>Suman, Chaudhary M, Nain V. In silico identification and evaluation of Bacillus subtilis cold shock protein B (cspB)-like plant RNA chaperones. J Biomol Struct Dyn. 2020 Feb 12:1-10. doi: 10.1080/07391102.2020.1719198. [Epub ahead of&nbsp; print] PubMed PMID: 31959085.
+                        </li>
+                    </ol>
+                    <br>
+                    <h5><b>Publications in 2019</b></h5>
+                    <ol>
+                        <li>Arora S, Pandey DK, Chaudhary B. Target-mimicry based diminution of miRNA167 reinforced flowering-time phenotypes in tobacco via spatial-transcriptional biases of flowering-associated miRNAs. Gene 682: 67-80, 2019</li>
+                        <li>Goyal N, Chandra A, Qamar I, Singh N. Structural studies on dihydrouridine synthase A (DusA) from Pseudomonas aeruginosa. Int J BiolMacromol. Mar 28;132:254-264. 2019 doi: 10.1016/j.ijbiomac.2019.03.209.
+                        </li>
+                        <li>Pandey, D. K. and Chaudhary, B. Synchronous transcription of cytoskeleton-associated genes is critical to cotton fiber elongation. J Plant Growth Regulation, 2019 https://doi.org/10.1007/s00344-019-09913-0
+                        </li>
+                        <li>Pavan Kumar, Debasreekundu, Alok k Mondal, Vikrant Nain, RekhaPuria . Inhibition of TOR signalling in <em>lea1</em> mutant induces apoptosis in <em>Saccharomyces cerevisiae. </em>Annals of Microbiology April, Volume 69, <a href="https://link.springer.com/journal/13213/69/4/page/1">Issue&nbsp;4</a>, pp 341&ndash;352, 2019
+                        </li>
+                        <li>Upadhyay, A.K., Arora, S., Pandey, D. K. and Chaudhary, B.&nbsp; Interspersed 5&prime;cis-regulatory elements ascertain the spatio-temporal transcription of cytoskeletal profilin gene family in Arabidopsis. Computational Biology and Chemistry 80:177-186, 2019.
+                        </li>
+                        <li>Zaman Khan N., Banerjee P., and Qamar,I. A critical review on genetics and implications of type 1 diabetes. Endocrinol Metab Int J ;7(1):11‒14, 2019</li>
+                        <li>Banerjee P, Khan NZ, Sakshi, Singh T, Singh N, and Qamar,I et.al. Latent autoimmune diabetes in adults: complication, management and treatment modalities. Endocrinol Metab Int J. 2019;7(3):67-72.</li>
+                        <li>Aman Chandra Kaushik; Aamir Mehmood; Arnav Kumar Upadhyay; Shalinee Paul; Shubham Srivastava; Prayuv Mali; Yi Xiong; Xiaofeng Dai; Dong-Qing Wei; Shakti Sahi (2019). CytoMegalo Virus Infection Database: a public omics database for systematic and comparable information of CMV. Interdisciplinary Sciences: Computational Life Sciences.</li>
+                        <li>Kaushik, A., Mao, X., Li, C., Li, Y., Wei, D., &amp; Sahi, S. (2019). G-protein-coupled receptors function as logic gates for nanoparticle binding using systems and synthetic biology approach. Journal of Materials Research, 34(11), 1854-1867. doi:10.1557/jmr.2018.453</li>
+                        <li>Kaushik, A.C., Gautam, D., Nangraj, A.S.,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Wei%20DQ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=31177377">Wei DQ</a>,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Sahi%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=31177377">Sahi S</a>. Protection of Primary Dopaminergic Midbrain Neurons Through Impact of Small Molecules Using Virtual Screening of GPR139 Supported by Molecular Dynamic Simulation and Systems Biology; Interdiscip Sci Comput Life Sci (2019). &nbsp;Jun;11(2):247-257 <a href="https://doi.org/10.1007/s12539-019-00334-x">https://doi.org/10.1007/s12539-019-00334-x</a></li>
+                        <li>Garg G. and Parween N. (2019). Plant Transcription factors networking of Pyrroline-5-Carboxylate (P5C) enzyme under stress condition: A Review&rdquo; (accepted for publication),&nbsp;Plant Archive, Vol. 19(2).</li>
+                        <li>Liang Z, Li P, Wang C, Singh D, Zhang X. Visualizing the Transport of Porcine Reproductive and Respiratory Syndrome Virus in Live Cells by Quantum Dots-Based Single Virus Tracking. Virol Sin. (2019) Dec 23. doi: 10.1007/s12250-019-00187-0.</li>
+                    </ol>
+                    <br>
+                    <h5><b>Publications in 2018</b></h5>
+                    <ol>
+                        <li>Aarti Singh, Vishakha Vishwakarma, BarkhaSinghal &ldquo;Metabiotics: The Functional Metabolic Signatures of Probiotics: Current State-of-Art and Future Research Priorities&rdquo;, Advances in Bioscience and Biotechnology, 9, 147-189, 2018</li>
+
+                        <li>Ankita Awasthi, Vikrant Nain, RekhaPuria. MYOD and HAND transcription factors have conserved recognition sites in mTOR promoter: insights from in silico analysis. Interdisciplinary Sciences: Computational Life Sciences 2018 Jan. DOI: 10.1007/s12539-018-0284-5.</li>
+
+                        <li>Chaudhary, B., Singh, N., and Pandey, D. K. Bioengineering of crop plants for improved tetrahydrofolate production. Bioengineered&nbsp; 2018. doi.org/10.1080/21655979.2017</li>
+
+                        <li>Chaudhary, R. K.; Singh, G.; Ram S. Homology Modeling and in silico Structural Annotation of the Toxin-Antitoxin Systems in Pseudomonas aeruginosa.Indian Res. J. Genet. &amp; Biotech, 10(1): 180-188, 2018</li>
+                        <li>Chaudhary, R. K.; Singh, G.; Ram S. Structural and Functional In-silico Analysis of Toxin Antitoxin Proteins in Persister cells of Pseudomonas aeruginosa. Plant Archive, 18 (2), 1643-1651, 2018</li>
+
+                        <li>Garg G, Ankita S , Bhati S, and Pandey S. A plant aquaporin (SoPIP2; 1): Regulatory protein channel in plants under stress, Octa J. Biosci. Vol. 6(1) 2018, online journal</li>
+                        <li>Garg Gunjan and Bhati Sharmista. Synergistic interaction of plant growth-promoting bacteria (PGPB) ACDS and ACDR genes: The plant strategy to cope up with biotic and abiotic stressors, Indian J plant Sci. Vol 7(4) pp1-8, 2018</li>
+
+                        <li>Hussain MS, Tripathi V. <a href="https://www.ncbi.nlm.nih.gov/pubmed/29598831">Smoking under hypoxic conditions: a potent environmental risk factor for inflammatory and autoimmune diseases.</a> Med. Res. 5(1):11. 2018 doi: 10.1186/s40779-018-0158-5. Review. PMID:&nbsp;29598831,</li>
+                        <li><a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Jain</a> P, <a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Singh</a> V, <a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Ali</a> S, <a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Tripathi</a> V, <a href="https://www.sciencedirect.com/science/article/pii/S1319610317301126#!">Saraswat</a> Synthesis, characterization, molecular docking and biological activity of 5,6-bis-(4-fluoro-phenyl)-3,4,7,8-tetraaza-bicyclo [8.3.1] tetradeca-1(13),4,6,10 (14),11-pentaene-2,9-dione and its transition metal complexes. Journal of Saudi Chemical Society. 22(5):546-557, 2018</li>
+                        <li>Jitendra Kumar Verma, Vijay Wardhan, Deepali Singh, SubhraChakraborty, NiranjanChakraborty. Genome-Wide Identification of Alba Gene Family in Plants and Stress-Responsive Expression of Rice Alba Genes. Genes 2018</li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Kaushik%20AC%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=29492402">Kaushik AC</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Kumar%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=29492402">Kumar S</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Wei%20DQ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=29492402">Wei DQ</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Sahi%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=29492402">Sahi S</a>. Structure-Based Virtual Screening Studies to Identify Novel Potential Compounds for GPR142 and Their Relative Dynamic Analysis for Study of Type 2 Diabetes. <a href="https://www.ncbi.nlm.nih.gov/pubmed/29492402">Front Chem.</a> 6:23, 2018. doi: 10.3389/fchem.2018.00023. eCollection 2018.</li>
+                        <li>Kaushik AC, Sahi S. <a href="https://www.ncbi.nlm.nih.gov/pubmed/28571491">Insights into unbound-bound states of GPR142 receptor in a membrane-aqueous system using molecular dynamics simulations.</a> J Biomol Struct Dyn. ;36(7):1788-1805, doi: 10.1080/07391102.2017.1335234. Epub 2017 Jun 22.</li>
+                        <li>Kaushik, AC &amp; Sahi,S. HOGPred: Artificial neural network based model for orphan GPCRs.. Neural Computing and Applications. 29:985&ndash;992, 2018. https://doi.org/10.1007/s00521-016-2502-6</li>
+                        <li>Kaushik,AC, Kumar A, Ur Rehman A, Junaid,M, Khan,A, Bharadwaj,S, Sahi,S,&nbsp; and Wei DQ&nbsp; Deciphering G-Protein-Coupled Receptor 119 Agonists as Promising Strategy against Type 2 Diabetes Using Systems Biology Approach ACS Omega, 3, 18214&minus;18226, 2018</li>
+                        <li>Lavania S, Das R, Dhiman A, Myneedu VP, Verma A, Singh N, Sharma TK, Tyagi JS. Aptamer-Based TB Antigen Tests for the Rapid Diagnosis of Pulmonary Tuberculosis: Potential Utility in Screening for Tuberculosis. ACS Infect Dis. Oct 25. 2018 doi: 10.1021/acsinfecdis.8b00201. [Epub ahead of print] IF: 4.2</li>
+
+                        <li>&nbsp;Nimisha Gaur, Ankit Sharma,BarkhaSinghal<sup> &ldquo;</sup>Bacterial Surface Layer Proteins: From Moonlighting to Biomimetics: A New Horizon to Lead&rdquo;,Advances in Biosciences and Biotechnology 9, 352-372, 2018.</li>
+
+                        <li>Pavan Kumar*, AnkitaAwasthi*, Vikrant Nain, BijuIssac, RekhaPuria. Novel insights into TOR signalling in Saccharomyces cerevisiae through Torin2. Gene May: 669; 15-27. (*equal first co-author) 2018.</li>
+                        <li>K. Mishra, S.K. Niranjan, B. Banerjee, P.K. Dubey, D.S. Gonge, B.P. Mishra, and R.S. Kataria. Identification of novel allelic variants at the MHC class II DQA locus in Murrah water buffalo. Animal Genetics; DOI: 10.1111/age.12704; 2018</li>
+                        <li>Singh A, Chauhan S. S, Tripathi V. Quinic Acid Attenuates Oral Cancer Cell Proliferation by&nbsp;Down-regulating Cyclin D1 Expression and Akt Signaling. Pharmacognosy Mgazine, ,(14):55,14-19, 2018</li>
+                        <li>Singh A, Tripathi V. Effect of Trans-ferulic acid on oral squamous carcinoma cells. Journal of Pharmacognosy and Phytochemistry.,7(1), 1955-58, 2018.</li>
+                        <li>Singh, G.; Chhabra, M.; Singh, P.; Gupta, N. K.; Singhal, M.; Dhariwal, A.C.; Ram, S. Molecular study of glycoprotein (G) gene region of rabies virus from spotted deer, Delhi, India. J. Commun. Dis.; 50(3), 28-35, 2018.</li>
+                        <li>Tripathi V, Singh A, Ashraf M T. Avenanthramides of Oats: Medicinal Importance and Future&nbsp;Perspectives. Pharmacognosy review. 12 (23) 66-71, 2018</li>
+                        <li>Uniyal S, Dhasmana A, Tyagi A,&nbsp;Muyal&nbsp;JP. <a href="https://www.ncbi.nlm.nih.gov/pubmed/30372846">ATRA reduces inflammation and improves alveolar epithelium regeneration in emphysematous rat lung.</a> Biomed Pharmacother (Elsevier). Dec; 108:1435-1450, 2018</li>
+                        <li>Yadav M and RathoreJS TAome analysis of type-II toxin-antitoxin system from&nbsp;Xenorhabdusnematophila. Comput Biol Chem. 2018 Oct;76:293-301, 2018</li>
+                    </ol>
+                    <br>
+                    <h5><b>Publications in 2017</b></h5>
+                    <ol>
+                        <li>Abdul Arif Khan, Zakir Khan, Abdul Malik, Mohd Abul Kalam, Phillip Cash, Mohd. Tashfeen Ashraf, Aws Alshamsan. Colorectal cancer-inflammatory bowel disease nexus and felony of Escherichia coli- Review Article. Life Sciences(1 July 2017); Volume 180: 60-67 , 2017</li>
+                        <li>Aggarwal C, Paul S, Tripathi V, Paul B, Khan MA. <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993620">Characterization of putative virulence factors of Serratia marcescens strain SEN for pathogenesis in Spodoptera litura.</a> J Invertebrate Pathol. 143:115-123, 2017</li>
+                        <li>Ahmad, F and Qamar, I. Novel strategy for the treatment of fungal infections. WJPPS (In press) Doi: 10.20959/wjpps201711-10361, 2017</li>
+                        <li><a href="http://www.frontiersin.org/people/u/357924">Amit Kumar</a>, <a href="http://www.frontiersin.org/people/u/340622">Deepti Singh</a>,&nbsp;<a href="http://www.frontiersin.org/people/u/308089">Krishna K. Sharma</a>,&nbsp;<a href="http://www.frontiersin.org/people/u/356591">Sakshi Arora</a>,&nbsp;Amarjeet K. Singh,&nbsp;Sarvajeet S. Gilland&nbsp;Barkha Singhal,&nbsp; Gel-based purification and biochemical study of laccaseisozymes from&nbsp;Ganoderma&nbsp;sp. and its role in enhanced cotton callogensis, Frontiers in Microbiology 8, 2017. doi.org/10.3389/fmicb.2017.00674.&nbsp;</li>
+                        <li>Ankita Awasthi, Pharvendra Kumar, CV Srikanth, Shakti Sahi, RekhaPuria. Invitro Evaluation of Torin2 and 2, 6-Dihydroxyacetophenone in Colorectal Cancer Therapy. PatholOncol Res Oct :1&ndash;9. , 2017. doi: 10.1007/s12253-017-0347-</li>
+                        <li>Beg MA and Qamar, I. Expression-Regulation of Hif-Induced Gene and Oxidative Stress Gene in Acute Hypobaric Hypoxia. International Journal of Genetic Engineering and Recombination Volume 3 Issue 2 Page 9-28, 2017</li>
+                        <li>Beg MA and Qamar, I. Hexokinase II and its Major Partners: Role in Cancer Progression. International Journal of Cell Biology and Cellular Processes Volume 3 Issue 2 Page 1-8, 2017</li>
+                        <li>Chand V, Prakash J, Ashraf T, Gupta V. Can Vitamin D Slow Progression of Osteoarthritis? J Arthritis ; 6: 232, 2017. doi: 10.4172/2167-7921.1000232.</li>
+                        <li>DK Pandey, A Kumar, JS Rathore, N Singh, B Chaudhary.) Recombinant overexpression of dihydroneopterinaldolase catalyst potentially regulates folate‐ Journal of Basic Microbiology 57 (6), 517-524, 2017</li>
+                        <li>Garg G, Prachi K and Bhati S . Aluminum activated malate transporter protein (ALMT): Prime GABA receptor in plants under abiotic stress: A review, vol. 5(2): 52-55, Octa J of biosci. 2017. ISSN 2321-3663</li>
+                        <li>GautamLK,Yadav M, and Functional annotation of novel toxin-antitoxin system Xn-RelT of Xenorhabdusnematophila;a combined in silico and in vitro approach. J Mol Model 23 (6): 189 , 2017</li>
+                        <li>Kaushik AC, Pal A, Kumar A, Dwivedi VD, Bharadwaj S, Pandey A, Mishra SK, Sahi, S.&nbsp; Internal transcribed spacer sequence database of plant fungal pathogens: PFP-ITSS database. Informatics in Medicine Unlocked, 7, 34-38, 2017 <a href="https://doi.org/10.1016/j.imu.2017.02.006">doi 10.1016/j.imu.2017.02.006</a></li>
+                        <li>
+                            Kaushik, A.C. and Sahi, S.&nbsp; Molecular modeling and molecular dynamics simulations based structural analysis of GPR3&nbsp; Network Modeling Analysis in Health Informatics and Bioinformatics, 6: 9 , 2017. DOI: 10.1007/s13721-017-0150-0
+                        </li>
+
+                        <li>Kaushik, A.C. and Sahi, S., Modeling and Receptor based&nbsp;virtual screening studies of GPR139, International Journal of Bioinformatics Research and Applications, Vol. 13(3), 2017</li>
+                        <li>Kaushik, N. Iqbal, N. Singh, J. S. Sikarwar, P. K. Singh, P.Sharma1, P. Kaur, S. Sharma, M. Owais and T. P. Singh Search of Multiple Hot Spots on the Surface of Peptidyl-tRNA Hydrolase: Structural,Binding and Antibacterial Studies. Biochem J. 9;475(3):547-560, 2017. doi: 10.1042/BCJ20170666.</li>
+                        <li>Kotnala S, Tyagi A,&nbsp;Muyal&nbsp;JP . <a href="https://www.ncbi.nlm.nih.gov/pubmed/28552795">rHuKGF ameliorates protease/anti-protease imbalance in emphysematous mice.</a>. Pulm Pharmacol Ther (Elsevier).&nbsp; Aug; 45:124-135, 2017.</li>
+                        <li>Lavania S, Anthwal D, Bhalla M, Singh N, Haldar S, Tyagi JS Direct detection of Mycobacterium tuberculosis rifampin resistance in bio-safe stained sputum smears. PLoS ONE 12(12): 2017, e0189149.S.</li>
+                        <li>Navin Kumar, MohdShariq, Amarjeet Kumar, Rajesh Kumari, Naidu Subbarao, Rakesh K. Tyagi, GaurangaMukhopadhyay . Analyzing the role of CagV, a VirB8 homologue of the type IV secretion system of Helicobacter pylori. FEBS Open Bio.DOI: 10.1002/2211-5463.12225, 2017.</li>
+                        <li>Pandey, D. K. and Chaudhary, B. Evolutionary expansion and structural functionalism of the ancient family of profilin proteins. Gene 626: 70-86, 2017</li>
+                        <li>Poonam Mishra Vijay Wardhan, Aarti Pandey, Subhra Chakraborty, Gunjan Garg and Niranjan Chakraborty. Comparative analysis of sequence-structure function relationship of the SUN-domain protein CaSUN1, Phylogenetics Evol Biol, 5:3; 2017. DOI: 10.4172/2329-9002.1000189</li>
+                        <li>Prachi Rajput, Gunjan Garg . Effect of Different Types of Cytokines on Bryophyllum pinnatum Micropropagation and Evaluating the Antimicrobial Activity of In-Vivo and In-Vitro Methonolic Leaf Extract, Vol. 3 (2): 10-19, 2017 Internat. J.Plant Biotech., eISSN: 2456-0162</li>
+                        <li>Prachi Rajput, Gunjan Garg . Endangered and Critical Endangered Medicinal Plants Species and Their Ethnobotanical Medicinal Values in India, Vol. 3 (2): 68-74, Internat. J. Plant Biotech., 2017. eISSN: 2456-0162</li>
+                        <li>Rajesh Kumari, MohdShariq, Navin Kumar, GaurangaMukhopadhyay. <a href="https://www.ncbi.nlm.nih.gov/pubmed/28103624">Biochemical characterization of the Helicobacter&nbsp;pylori Cag-type IV secretion system unique component CagU.</a> FEBS Lett. 591(3):500-512, 2017.</li>
+                        <li>Kumar, Qamar I., Singh N. Non steroidal Anti-inflammatory drugs (NSAIDs). ELS, Willey Sciences Published Online : 20 MAR 2017, DOI:&nbsp;10.1002/9780470015902.a0024221</li>
+                        <li>Singh, G., Fritz, S. M., Ranji, A., Singh, D., Boris-Lawrie, K. Isolation of Cognate RNA-protein Complexes from Cells Using Oligonucleotide-directed Elution. J. Vis. Exp. (119), e54391, 2017</li>
+                        <li>Singh, G.; Jaiswal, R.; Chhabra, M.; Sood, Y.; Gupta, N.; Singhal, M.; Tiwari, S.; Dhariwal, A.C.; Sharma, R., Ram, S. Evaluation of Direct Rapid Immunohistochemistry Test (DRIT) for Postmortem Diagnosis of Rabies, J. Commun. Dis.; 49 (3), 9-13. 2017 (doi: 10.24321/0019.5138.201715).</li>
+                        <li>Srishti Jha and Mohd. Tashfeen Ashraf . Acutodesmus dimorphus: A Promising Alga for Commercial Scale Cultivation for Biofuels and Biomass. IJPB; 3(1): 29-33, 2017.</li>
+                        <li>Srishti Jha and Mohd. Tashfeen Ashraf. Resource Utilization in Algal Cultures: Synergistic Effect of Biodiversity and Genetic Modification on Biomass Production. IJMB; 3(1): 1-8, 2017.</li>
+                        <li>Sudhir Kotnala, Sumit Baghel, Deepali Verma, Amit Tyagi &amp; Jai PrakashMuyal Recombinant human keratinocyte growth factor attenuates apoptosis in elastase induced emphysematous mice lungs, Inhalation Toxicology (Taylor &amp; Francis), 29:1, 23-31, 2017</li>
+                        <li>Swati Uniyal, Sudhir Kotnala, Ekta Teotia, Rahul Kumar, Amit Tyagi, Jai Prakash Muyal. ATRA modulates gluconeogenesis and triglyceride biosynthesis pathway of liver in elastase induced emphysematous rats. Journal of Experimental and Applied Animal Sciences. Volume 2, Number 2, pp. 109-125, 2017 Print ISSN 2314-5684</li>
+                    </ol>
+
+                    <h5><b>Publications in 2016</b></h5>
+                    <ol>
+                        <li>Barkha Singhal, Shubham Srivastava, Ankita Mukherje. Role of probiotics in pancreatic cancer prevention: The prospects and challenges, Advances in Biosciences and Biotechnology, 7, 468-500, 2016</li>
+                        <li>Chaudhari, N and Qamar,I. Polycystic ovary syndrome: conditions, genetics and current cure. EndocrinolMetabInt J 2016, 3(5): 00060, 2016</li>
+                        <li>Chaudhary M, Singh V, Anvikar AR, Sahi S. <a href="https://www.ncbi.nlm.nih.gov/pubmed/27449897">Screening and In Vitro Evaluation of Potential Plasmodium falciparum Leucyl Aminopeptidase Inhibitors.</a> Curr Comput Aided Drug Des.;12(4):282-293, 2016</li>
+                        <li>Chaudhary, R.K., Narain, R., Singh, G., Kumar, A., Ram, S.The role of toxin-antitoxin systems in the survival of multidrug tolerant pathogens and designing of new approaches to treat them. J. Infect. Dis., 45, 274-275, 2016</li>
+                        <li>Garg &amp; Kumari. Functional analysis of plants SRG-genes/transmembrane protein (RLKs) under stress condition J. Biosci. Agric. Res. Vol. 09(02), pp827-836, DOI: 10.18801/jbar.090216.100</li>
+                        <li>Gunjan Garg*, Durvesh Kumar. Role of CBF/DRFBs in ABA signalling during cold stress in plants, Electronic Journal of Biology, Vol.S1: 13-17, &nbsp;ISSN 1860-3122</li>
+                        <li>Hegde, M., Mantelingua, K., Swarupa HA., Pavankumara CS., Qamar, I., Raghavan, SC., and Rangappaa SK. Novel PARP Inhibitors Sensitize Human Leukemic Cells in an Endogenous PARP Activity Dependent Manner. Royale Society of Chemistry, Advances, <a href="http://pubs.rsc.org/en/journals/journal/ra"><strong>RSC Adv.</strong></a>, 2016,<strong>6</strong>, 6308-6319, 2016.</li>
+                        <li>Kaushik, A.C. and Sahi, S., Biological complexity: Ant colony meta-heuristic optimization algorithm for protein folding.&nbsp;Neural Computing and Applications, pp.1-7. DOI 10.1007/s00521-016-2252-5</li>
+                        <li>Lata, P.;Ram, S., Shanker, R. Multiplex PCR based genotypic characterization of pathogenic vancomycin resistant Enterococcus faecalis recovered from an Indian river along a city landscape. SpringerPlus, 5 (1), 1199, 2016. https://doi.org/10.1186/s40064-016-2870-5</li>
+                        <li>Mishra, S.K., Niranjan, S.K., Banerjee, B., Dubey, P.K., Gonge, D.S., Mishra, B.P. and Kataria, R.S., High genetic diversity and distribution of Bubu-DQA alleles in swamp buffaloes (Bubalusbubaliscarabanesis): identification of new Bubu-DQA loci and haplotypes Immunogenetics Vol 68, 439-447, 2016</li>
+                        <li>Mishra, S.K., Niranjan, S.K., Banerjee, B., Singh, R., Singh, R.V., Kumar, N. and Kataria, R.S., Genetic diversity at MHC-DRB3 locus suggests distinctness of the riverine-swamp buffalo populations in North-East region of India Indian Journal of Animal Research (No. ARCC/B-3294), 2016</li>
+                        <li>Naraian, R.; Singh, M. P. ; Ram, S. Supplementation of basal substrate to boost up substrate strength and oyster mushroom yield: An overview of substrates and supplements, Int.J.Curr.Microbiol.App.Sci 2016.</li>
+                        <li>Pandey, D. K. and Chaudhary, B. A botanist&rsquo;s cognitive view on plant growth: cross-talk between developmental and sensitivity networks. American Journal of Plant Sciences 7: 2307-2322, 2016</li>
+                        <li>Pandey, D. K. and Chaudhary, B. Domestication-driven Gossypium profilin 1 (GhPRF1) gene transduces early flowering phenotype in tobacco by spatial alteration of apical/floral-meristem related gene expression. BMC Plant Biology 16: 1-21, 2016</li>
+                        <li>Qamar, I., Singh, Nagendra.,Waseem, S., Prakash, P., Veerendra, S.N., and Ahmad, F. . Cloning and Expression of Novel Lingo-1 Gene from BubalisBubalis. WJPPS, Volume 5, Issue 6, 2013-2024, 2016</li>
+                        <li>Teotia Sachin, Singh Deepali, Tang X, Tang G. Essential RNA-Based Technologies and Their Applications in Plant Functional Genomics. Trends Biotechnol. pii: S0167-7799(15)00248-6, 2016</li>
+                        <li>Vishal Chand, Sipahee Lal Patel, Rachana Mishra, Baishnab C Tripathy, Jaya Prakash, Md. Tashfeen Ashraf and Varsha Gupta &ldquo;Molecular signatures in peripheral blood mononuclear cells with osteoarthritis&rdquo;. Int. J. Clin. Rheum. Vol. 11, Issue 6, 2016</li>
+                    </ol>
+                    <br>
+                    <h5><b>Publications in 2015</b></h5>
+
+                    <ol>
+                        <li>Aggarwal C, Paul S, Tripathi V, Paul B, Khan MA. Chitinase producing Serratia marcescens for biocontrol of Spodoptera litura (Fab) and studies on its chitinolytic activities. Ann. Agric. res. New series., 36 (2):132-137, 2015.</li>
+                        <li>Aggarwal C, Paul S, Tripathi V, Paul B, Khan MA. Chitinolytic activity in Serratia marcescens (strain SEN) and potency against different larval instars of Spodoptera litura with effect of sublethal doses on insect development. Bio Control. 60(5) 631-640, 2015.</li>
+                        <li>Dwivedi, V. Gurjar, S. Kumar, N. Singh. Molecular basis for nonspecificity of nonsteroidal anti-inflammatory drugs (NSAIDs). Drug Discovery Today; 20(7):863-73. 2015</li>
+                        <li>Bhardwaj R, Qamar I and Singh N. Persister Formation in Klebsiellapneumoniae: Recombinant Expression and Purification of hipA and hipB proteins from K. pneumoniae. Int. J. Applied &amp; pure Science &amp; Agriculture, 1(11), 1-7. 2015</li>
+                        <li>Chaudhary, N and Qamar, I Advancement of Poly-(ADP &ndash; Ribose) Polymerase (PARP) Inhibitors in Cancer Progression and Treatment. International Journal of Animal Biotechnology &amp; Applications Vol. 1: Issue 1 page 19-30, 2015.</li>
+                        <li>Garg G., Yadav S., Ruchi, Yadav G. <a href="http://article.sapub.org/10.5923.j.als.20150501.03.html">Key roles of calreticulin and calnexin proteins in plant perception under stress conditions: A Review</a>, Adv. Life Sci., vol. 5(1), pp.18-26, 10.5923/j.als.20150501.03</li>
+                        <li>GautamLK, YennamalliRM, Rathore JS&nbsp; Implication on the function of novel Xn-relE toxin structure of Xenorhabdusnematophila using Homology modeling.Current Bioinformatics12(6): 535 &ndash; 542, 2016</li>
+                        <li>Gulam Rabbani, Ejaz Ahmad, Mohsin Vahid Khan, Mohd. Tashfeen Ashraf, Rajiv Bhat and Rizwan Hasan Khan &ldquo;Impact of structural stability of cold adapted Candida antarctica lipase B (CaLB): in relation to pH, chemical and thermal denaturation&rdquo;. RSC Adv., ,5, 20115-20131, 2015.</li>
+                        <li>JP Muyal, D Kumar, S Kotnala, V Muyal, AK Tyagi . <a href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=pUUy2-8AAAAJ&amp;citation_for_view=pUUy2-8AAAAJ:UebtZRa9Y70C">Recombinant Human Keratinocyte Growth Factor Induces Akt Mediated Cell Survival Progression in Emphysematous Mice</a>.. Archivos de Bronconeumolog&iacute;a. Jul;51(7):328-37, 2015.</li>
+                        <li>Kaushik, A.C. and Sahi, S., Boolean network model for GPR142 against Type 2 diabetes and relative dynamic change ratio analysis using systems and biological circuits approach.&nbsp;Syst Synth Biol. Jun;9(1-2):45-54. 2015 doi: 10.1007/s11693-015-9163-0. Epub 2015 Mar 14.</li>
+                        <li>Matthew Stake*, Deepali Singh*, J Marcela Hernandez, Rebecca Kaddis, Leslie J Parent, Kathleen Boris-Lawrie. HIV-1 and two avian retroviral 5' untranslated regions bind orthologous human and chicken RNA binding proteins. Virology 486:307-20. 2015 * equal contribution</li>
+                        <li>MohdShariq, Navin Kumar, Rajesh Kumari, Amarjeet Kumar, Naidu Subbarao, GaurangaMukhopadhyay Biochemical Analysis of CagE: A VirB4 Homologue of Helicobacter pylori Cag-T4SS. PLoS One. Nov 13;10(11), 2015.</li>
+                        <li>Qamar, I., Ahmad, F., and Narayansami, N.. A time-course study of long term over-expression of ARR19 in mice. Nature's Scientific Reports, Nature&rsquo;s Sci Rep. Aug 11;5:13014. 2015</li>
+                        <li>Rathore JS and Yan Wang Protective role of Th17 cells in pulmonary infection. Review. Vaccine34(13):1504-1514, 2016</li>
+                        <li>Urvashi, Ram, S, Pant P, Nagar, S. Application of cloud computing in microbiological studies (Vibrio spp.) of Yamuna Water using PCR techniques. Int. J. Sci. Tech. &amp; Management;, 6 (1), 1-13. 2015</li>
+                    </ol>
+                    <br>
+                    <h5><b>Publications in 2014</b></h5>
+                    <ol>
+                        <li>Chaudhary, B., Chattopadhyay, P. and Banerjee, N. Modulations in seed micromorphology reveal signature of adaptive species-diversification in Dendrobium (Orchidaceae). Open Journal of Ecology 2:33-42, 2014</li>
+                        <li>Garg, G Application of nanoproteomics in biological systems: A review, Int. J. Gen. Eng. and Tech., vol 3(4), pp.29-40, ISSN: 2279-9928, 2014</li>
+                        <li>Gunjan Garg and Sanjay Kataria . Water deficit at anthesis stage induceds early leaf senescence and affects dry matter accumulation and remobilization efficiency in Black gram (P. mungo, L.), J. Adv. Botany and Zoology, vol 1(4), pp.1-6, 2014</li>
+                        <li>JP Muyal, S Kotnala, H Bhardwaj, A Tyagi. <a href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=pUUy2-8AAAAJ&amp;citation_for_view=pUUy2-8AAAAJ:hqOjcs7Dif8C">Effect of recombinant human keratinocyte growth factor in inducing Ras&ndash;Raf&ndash;Erk pathway-mediated cell proliferation in emphysematous mice lung</a>. Inhalation toxicology. 26 (13), 761-771. 2014</li>
+                        <li>Pandey, D. K. and Chaudhary, B. Oxidative stress responsive SERK1 gene directs the progression of somatic embryogenesis in cotton (Gossypium hirsutum cv. Coker 310). American Journal of Plant Sciences 5:80-102, 2014</li>
+                        <li>Pandey, D. K. and Chaudhary, B. Role of Plant Somatic Embryogenesis Receptor Kinases (SERKs) in Cell-to-Embryo Transitional Activity: Key at Novel Assorted Structural Subunits. American Journal of Plant Sciences 5: 3177-3193, 2014</li>
+                        <li>Rathore JS and Gautam LK. Expression, purification and functional analysis of novel relE operon from X. nematophila. The Scientific World Journal Volume (2014) 428159 2014</li>
+                        <li>Sahi S, Rai S, Chaudhary M, Nain V. <a href="http://www.ncbi.nlm.nih.gov/pubmed/25258488">Modeling of human M1 aminopeptidases for in silico screening of potential Plasmodium falciparum alanine aminopeptidase (PfA-M1) specific inhibitors</a>, Bioinformation.&nbsp; Aug 30;10(8):518-25. 2014 doi:&nbsp;&nbsp;&nbsp; 6026/97320630010518.</li>
+                        <li>Sahi S, Raj U, Chaudhary M, Nain V. <a href="http://www.ncbi.nlm.nih.gov/pubmed/25269653">Modelling of Human Leucyl Aminopeptidases For In silico Off Target Binding Analysis Of Potential Plasmodium falciparum Leucine Aminopeptidase (PfA-M17) Specific Inhibitors.</a> Recent Pat Endocr Metab Immune Drug Discov. 8(3):191-202014</li>
+                        <li>Tewatia P, Agrawal N, Gaur M, Sahi S. In<a href="http://www.ncbi.nlm.nih.gov/pubmed/24508605">sights into the conformational perturbations of novel agonists with &beta;3-adrenergic receptor using molecular dynamics simulations.</a> Biochimie. 101:168-82. doi: 10.1016/j.biochi.2014.01.016. Epub 2014 Feb 6. 2014</li>
+                        <li>Tripathi V, Kumar R, Dinda AK, Kaur J, Luthra K.<a href="http://www.ncbi.nlm.nih.gov/pubmed/24450273">CXCL12-CXCR7 Signaling Activates ERK and Akt Pathways in Human Choriocarcinoma Cells.</a> Cell Communication. Adhesion., 21(4):221-228. 2014</li>
+                        <li>V Nain, R Buddham, R Puria, S Sahi <a href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=k7lnVggAAAAJ&amp;cstart=20&amp;pagesize=80&amp;authorid=15290292814549416248&amp;citation_for_view=k7lnVggAAAAJ:5nxA0vEk-isC">Role of TCA cycle Truncation in Cancer Cell Energetics</a>. Current Trends in Biotechnology and Pharmacy 8 (4), 428-438, 2014</li>
+                    </ol>
+                    <br>
+                    <h5>Average Impact Factor (for last 5 years) = 2.83</5>
       <div class="table-responsive">
         <table class="table table-hover table-bordered">
           <tbody>
@@ -1407,7 +1690,7 @@
     <div class="jumbotron">
       <h1 class="text-center">Research Grant | SOBT</h1>
       <br>
-      
+
       <div class="table-responsive">
         <table class="table table-hover table-bordered">
           <tbody>
@@ -3304,7 +3587,7 @@
         <div class="jumbotron">
           <h1 class="text-center">Latest news </h1>
           <br>
-          
+
         </div>
       </div>
     </div>
@@ -3313,7 +3596,7 @@
         <div class="jumbotron">
           <h1 class="text-center">Alumni </h1>
           <br>
-          
+
         </div>
       </div>
     </div>

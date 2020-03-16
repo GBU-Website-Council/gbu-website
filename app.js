@@ -378,6 +378,9 @@ app.get('/students',function(req,res){
 app.get('/alumni',function(req,res){
 	res.render('alumni')
 })
+app.get('/test',function(req,res){
+	res.render('test')
+})
 app.get('/admission',(req,res)=>{
 	res.render('admissions')
 })
