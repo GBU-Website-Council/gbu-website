@@ -764,6 +764,9 @@ app.get('/naac',(req,res)=>{
 app.get('/gallery',(req,res)=>{
 	res.render('gallery')
 })
+app.get('/MoU',(req,res)=>{
+	res.render('mous')
+})
 app.get('/media',(req,res)=>{
 	res.render('media')
 })
