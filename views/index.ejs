@@ -60,20 +60,22 @@
       </div>
       <div class="col-lg-3 p-0" style="background-image: url('../img/pic111.jpg'); background-repeat: no-repeat; background-size: cover;">
          <div class="text-center pt-2 pb-0" >
-            <h5 class="font-weight-bold" style="color: #78335d;">Recent Anouncements</h5>
+            <h5 class="font-weight-bold" style="color: #78335d;">Recent Announcements</h5>
          </div>
          <div class="container overflow-auto" style="height: 280px;">
+            <%recents.forEach(function(recent){%>
             <div class="mt-2 mr-1 media p-1" style="box-shadow: 0 0 20px -13px; border-radius: 5px;">
                <div class=" m-2 bg-warning text-white" style="height: 36px; width: 36px;">
-                  <p class="text-white text-center mt-1" style=" vertical-align: middle;font-size: 16px;">13</p>
+                  <p class="text-white text-center mt-1" style=" vertical-align: middle;font-size: 16px;"><%=recent.createdAt.getDate()%></p>
                </div>
                <div class="mt-1 media-body">
-                  <a href="../gbudata/General/OfficeOrder_leaveCovid_13March2020.pdf">
-                     <p class="text-left" style="font-size: 15px; color: #000 ;text-decoration: none;">University Schools will remain closed till 22nd March 2020 & Exam have been postponed till further notice.</p>
+                  <a href="/recent-announcements/<%=recent._id%>">
+                     <p class="text-left" style="font-size: 15px; color: #000 ;text-decoration: none;"><%=recent.description%></p>
                   </a>
                </div>
             </div>
-            <div class="mt-2 mr-1 media p-1" style="box-shadow: 0 0 20px -13px; border-radius: 5px;">
+            <%})%>
+           <!--  <div class="mt-2 mr-1 media p-1" style="box-shadow: 0 0 20px -13px; border-radius: 5px;">
                <div class=" m-2 bg-warning text-white" style="height: 36px; width: 36px;">
                   <p class="text-white text-center mt-1" style=" vertical-align: middle;font-size: 16px;">04</p>
                </div>
@@ -82,7 +84,7 @@
                      <p class="text-left" style="font-size: 15px; color: #000 ;text-decoration: none;">Registration open for Admission in Advance Certificate Course in Big Data Analytics.</p>
                   </a>
                </div>
-            </div>
+            </div> -->
             <!-- <div class="mt-2 mr-1 media p-1" style="box-shadow: 0 0 20px -13px; border-radius: 5px;">
                <div class=" m-2 bg-warning text-white" style="height: 36px; width: 36px;">
                   <p class="text-white text-center mt-1" style=" vertical-align: middle;font-size: 16px;">13</p>

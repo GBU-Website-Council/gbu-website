@@ -12,6 +12,7 @@ mongoose.connect(process.env.DATABASEURL||mongoLocalURI,{useNewUrlParser: true})
 const conn=mongoose.createConnection(process.env.DATABASEURL||mongoLocalURI);
 const School=require('./models/schools.js');
 const Entity=require('./models/entity.js');
+const Recent=require('./models/recent.js');
 const Tender=require('./models/tender.js');
 const ETender=require('./models/e-tender.js');
 const Faculty=require('./models/faculty.js');
@@ -59,7 +60,9 @@ app.get('/',function(req,res){
         	console.log(err);
         }
 		else{
-			res.render('index.ejs',{entities})
+			Recent.find({}).sort({createdAt:-1}).exec(function(err,recents){
+				res.render('index.ejs',{entities,recents})
+			})	
 		}
 	});
 });
@@ -105,7 +108,19 @@ app.get('/files/tenders/:filename', (req, res) => {
     return readstream.pipe(res);
   });
 });
-
+app.get('/files/recent-announcements/:filename', (req, res) => {
+  gfs.files.findOne({filename: req.params.filename}, (err, file) => {
+    // Check if file
+    if (!file || file.length === 0) {
+      return res.status(404).json({
+        err: 'No file exists'
+      });
+    }
+    // File exists
+    const readstream = gfs.createReadStream(file.filename);
+    return readstream.pipe(res);
+  });
+});
 app.get('/files/:type/:filename', (req, res) => {
 	if(req.params.type=='news'||req.params.type=='events'||req.params.type=='notices'||req.params.type=='workshops'||req.params.type=='conferences'||req.params.type=='activities'){
   gfs.files.findOne({filename: req.params.filename}, (err, file) => {
@@ -148,6 +163,9 @@ app.get('/gbu_ivy_99/e-tender',function(req,res){
 app.get('/gbu_ivy_99/tender',function(req,res){
 	res.render('edit_tender');
 })
+app.get('/gbu_ivy_99/recent',function(req,res){
+	res.render('edit_recent');
+})
 app.get('/gbu_ivy_99/:name',function(req,res){
 	var name=req.params.name;
 	// if(name=="photos")
@@ -159,6 +177,19 @@ app.get('/gbu_ivy_99/:name',function(req,res){
     else 
     	res.render("404")
 });
+app.post('/gbu_ivy_99/recent', upload.array('pdf', 12),function(req,res){
+	Recent.create({
+		title:req.body.title,
+		createdAt:req.body.date,
+		description:req.body.description,
+		pdf:req.files
+	},function(err,recent){
+		if(err)
+			res.redirect('back')
+		else
+			res.redirect('/')
+	})
+})
 app.post('/gbu_ivy_99/tender',upload.single('file'),function(req,res){
 	Tender.create({
 		title:req.body.title,
@@ -714,7 +745,16 @@ app.get('/faculty',(req,res)=>{
 // 		}
 // })
 // });
-
+app.get('/recent-announcements/:id',function(req,res){
+	Recent.findOne({_id:req.params.id},function(err,recent){
+    	// console.log(entity)
+    	if(err||!recent)
+    		res.render('404');
+    	
+    	else
+          res.render('recent',{recent})
+    });
+})
 app.get('/:type/:id',function(req,res){
     Entity.findOne({$and: [{_id:req.params.id},{type:req.params.type}]},function(err,entity){
     	// console.log(entity)
