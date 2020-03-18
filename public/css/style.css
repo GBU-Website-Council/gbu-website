@@ -115,20 +115,19 @@ p{
 
 .main-navigation-wrapper {
   width: 100%;
+  padding: 0;
   background: #fff;
   /*  border-top: 3px solid #012454;
 */
 }
-
-#main-navigation-item {}
-
 .main-navigation-a {
   color: #000;
-  font-size: 16px;
+  font-size: 15px;
+  margin: 0;
   letter-spacing: 0px;
   text-decoration: none;
   display: inline-block;
-  padding: 8px;
+  padding: 7px;
   width: 100%;
   font-weight: 600;
   text-align: center;
@@ -521,7 +520,8 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
 .jumbotron-billboard {
   opacity: 0.8;
   color: #fff;
-  background: #ccc background-size: cover;
+  background: #ccc;
+  background-size: cover;
   position: absolute;
 }
 
@@ -758,9 +758,6 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
    color: #0000006b;
    text-shadow: 0 0 5px rgba(0,0,0,0.8);
   }
-  .drop ul li:hover{
-    /*background-color: lightgray;*/
-  }
   #newsMenu{
     display: block;
   }
@@ -813,9 +810,7 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
     font-size: 0.9rem!important;
     padding: 0px 3%;
   }
-  .news-img img{
-    width
-  }
+  
 
 }
 
@@ -886,7 +881,7 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
     box-sizing: content-box;
     color: rgb(0, 140, 149);
 }
-}
+
 @media screen and (max-width: 767px){
   .news-img img {
       width: 400px;
@@ -1144,9 +1139,6 @@ background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
   padding: 44px 0px;
 }
 @media only screen and (max-width: 768px){
-  .club-head{
-    
-  }
   .club-heading h1{
     padding: 5px 0px;
     font-size: 30px!important;

@@ -378,8 +378,32 @@ app.get('/students',function(req,res){
 app.get('/alumni',function(req,res){
 	res.render('alumni')
 })
-app.get('/admissions',(req,res)=>{
+app.get('/test',function(req,res){
+	res.render('test')
+})
+app.get('/admission',(req,res)=>{
 	res.render('admissions')
+})
+app.get('/admissions/contact',(req,res)=>{
+	res.render('admission_contact')
+})
+app.get('/admissions/query',(req,res)=>{
+	res.render('admission_query')
+})
+app.get('/admissions/team',(req,res)=>{
+	res.render('admission_team')
+})
+app.get('/admission/program',(req,res)=>{
+	res.render('admission_programm')
+})
+app.get('/admissions/dates',(req,res)=>{
+	res.render('admission_dates')
+})
+app.get('/admission/fee-structure',(req,res)=>{
+	res.render('admission_fee_structure')
+})
+app.get('/admissions/international-students',(req,res)=>{
+	res.render('admissions_international_students.ejs')
 })
 app.get('/cultural-council',(req,res)=>{
 	res.render('cultural-council')
@@ -739,6 +763,12 @@ app.get('/naac',(req,res)=>{
 })
 app.get('/gallery',(req,res)=>{
 	res.render('gallery')
+})
+app.get('/MoU',(req,res)=>{
+	res.render('mous')
+})
+app.get('/StudyCircle',(req,res)=>{
+	res.render('studycircle')
 })
 app.get('/media',(req,res)=>{
 	res.render('media')
