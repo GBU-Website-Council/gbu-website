@@ -70,7 +70,7 @@
                </div>
                <div class="mt-1 media-body">
                   <a href="/recent-announcements/<%=recent._id%>">
-                     <p class="text-left" style="font-size: 15px; color: #000 ;text-decoration: none;"><%=recent.description%></p>
+                     <p class="text-left" style="font-size: 15px; color: #000 ;text-decoration: none;"><%-recent.title%></p>
                   </a>
                </div>
             </div>
@@ -230,14 +230,14 @@
                <%var count=0%>
                <div class="row">
                   <%entities.forEach(function(entity){%>
-                  <%if(entity.type=="news" &&count<=7){%>
+                  <%if(count<=7){%>
                   <%count++%>
                   <div class="col-md-3 ">
                      <a href="/<%=entity.type%>/<%=entity._id%>" class="m-1">
                         <div class="tab">
                            <div class="news-img">
                               <img
-                                 src="/files/news/<%=entity.photo%>"
+                                 src="/files/<%=entity.type%>/<%=entity.photo%>"
                                  alt="img" class="" height="175px" width="248px">
                            </div>
                         </div>
@@ -266,7 +266,7 @@
             </div>
          </div>
          <div class="view-more text-md-right pt-1 container">
-            <a href="/news" class="btn btn-sm btn-outline-secondary">Show More</a>
+            <!-- <a href="/news" class="btn btn-sm btn-outline-secondary">Show More</a> -->
          </div>
       </div>
       <!--- update ends-->
