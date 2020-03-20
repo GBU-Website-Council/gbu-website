@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
    <head>
       <title>GBU | Information & Commnication Technology</title>
@@ -30,148 +30,6 @@
       </script>
    </head>
    <body>
-      <style type="text/css">
-         .select
-         {
-         display:block;
-         text-align:center;
-         }
-         .select-item,.select-item-sob,.select-item-sobs, .select-item-soe,.select-item-soh,                     .select-item-soict, .select-item-soljg
-         , .select-item-som, .select-item-sovs
-         {
-         display:inline-block;
-         color:#fff;
-         background-color:#78335d;
-         border-radius:2px;
-         border:1px solid #78335d;
-         cursor:pointer;
-         padding:4px 10px;
-         margin:5px;
-         transition:0.4s;
-         }
-         .rteleft {
-         text-align: left
-         }
-         .select-item:hover,.select-item-sob:hover,.select-item-sobs:hover, .select-item-soe:hover,.select-item-soh:hover,                     .select-item-soict:hover, .select-item-soljg:hover
-         , .select-item-som:hover, .select-item-sovs:hover,.select-item-active
-         {
-         background-color:#fff;
-         color:#3fada8;
-         }
-         #cards-container
-         {
-         display:block;
-         text-align:center;
-         padding:10px;
-         }
-         #cards-container-soict
-         {
-         display:none;
-         text-align:center;
-         padding:10px;
-         }
-         #cards-container-sob
-         {
-         display:none;
-         text-align:center;
-         padding:10px;
-         }
-         #cards-container-sobs
-         {
-         display:none;
-         text-align:center;
-         padding:10px;
-         }
-         #cards-container-soe
-         {
-         display:none;
-         text-align:center;
-         padding:10px;
-         }
-         #cards-container-soh
-         {
-         display:none;
-         text-align:center;
-         padding:10px;
-         }
-         #cards-container-soljg
-         {
-         display:none;
-         text-align:center;
-         padding:10px;
-         }
-         #cards-container-som
-         {
-         display:none;
-         text-align:center;
-         padding:10px;
-         }
-         #cards-container-sovs
-         {
-         display:none;
-         text-align:center;
-         padding:10px;
-         }
-         #cards-container .card,#cards-container-soict .card
-         ,#cards-container-sob .card,#cards-container-sobs .card,
-         #cards-container-soe .card,#cards-container-soh .card,
-         #cards-container-soljg .card,#cards-container-som .card,
-         #cards-container-sovs .card
-         {
-         width:350px;
-         height:300px;
-         vertical-align:top;
-         border-radius:4px;
-         border:1px solid #ddd;
-         background:#fafafa;
-         padding:20px;
-         display:inline-block;
-         margin:10px;
-         overflow:hidden;
-         }
-         #cards-container .card img,#cards-container-soict .card img
-         ,#cards-container-sob .card img,#cards-container-sobs .card img,
-         #cards-container-soe .card img,#cards-container-soh .card img,
-         #cards-container-soljg .card img,#cards-container-som .card img,
-         #cards-container-sovs .card img
-         {
-         /*height:130px!important;
-         width:110px!important;*/
-         width:auto;
-         padding:3px!important;
-         background:#fff;
-         margin:0!important;
-         margin-right:20px!important;
-         margin-bottom:20px!important;
-         }
-         #cards-container .card hr,#cards-container-soict .card hr
-         ,#cards-container-sob .card hr,#cards-container-sobs .card hr,
-         #cards-container-soe .card hr,#cards-container-soh .card hr,
-         #cards-container-soljg .card hr,#cards-container-som .card hr,
-         #cards-container-sovs .card hr
-         {
-         margin:0;
-         margin-top:20px;
-         margin-bottom:10px;
-         background:-webkit-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-         background:-moz-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-         background:-ms-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-         background:-o-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-         background:linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-         clear:both;
-         }
-         @media screen and (max-width:500px)
-         {
-         #cards-container .card,#cards-container-soict .card
-         ,#cards-container-sob .card,#cards-container-sobs .card,
-         #cards-container-soe .card,#cards-container-soh .card,
-         #cards-container-soljg .card,#cards-container-som .card,
-         #cards-container-sovs .card
-         {
-         width:80%;
-         }
-         }
-      </style>
       <div class="header sticky-top">
          <div class="global-header">
             <div class="back-to-home justify-content-center">
@@ -225,19 +83,34 @@
                            <ul class="dropdown-menu" id="dropdown-h" aria-labelledby="navbarDropdownMenuLink">
                               <li><a class="dropdown-item"  href="#deanmsg-tab" data-toggle="tab">Dean's Message</a></li>
                               <li><a class="dropdown-item" href="#boardofstudies-tab" data-toggle="tab">Board of Studies</a></li>
-                              <li class="dropdown-item dropdown d-h-m">
+                              <li class="dropdown-item dropdown dropright d-h-m">
                                  <a class="dropdown-toggle">Departments</a>
                                  <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#department-cse-tab" data-toggle="tab">Computer Science Engineering</a></li>
                                     <li><a class="dropdown-item" href="#department-ece-tab" data-toggle="tab">Electronics and Communication</a></li>
                                  </ul>
                               </li>
-                              <li><a class="dropdown-item"  href="#programs-tab" data-toggle="tab">Programs</a></li>
+                              <li class="dropdown-item dropdown dropright d-h-m">
+                                 <a class="dropdown-toggle">Programme</a>
+                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#programs-tab-cse" data-toggle="tab">Computer Science Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#programs-tab-ece" data-toggle="tab">Electronics and Communication</a></li>
+                                 </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#school-activities" data-toggle="tab">School Activities</a></li>
                               <li><a class="dropdown-item"  href="#laboratories-tab" data-toggle="tab">Laboratories</a></li>
                               <li><a class="dropdown-item"  href="#guest-speaker-tab" data-toggle="tab">Guest Speaker</a></li>
                               <li><a class="dropdown-item"  href="#directory-tab" data-toggle="tab">Directory</a></li>
-                              <li><a class="dropdown-item"  href="#contactus-tab" data-toggle="tab">Contact Us</a></li>
                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Faculty & Staff</a>
+                           <div class="dropdown-menu" id="dropdown-h">
+                              <a class="dropdown-item" href="#faculty-tab" data-toggle="tab">Faculty Members</a>
+                              <a class="dropdown-item" href="#faculty-visiting11" data-toggle="tab">Visiting Faculty</a>
+                              <a class="dropdown-item" href="#" data-toggle="tab">Staff Members</a>
+                           </div>
                         </li>
                         <li class="nav-item dropdown">
                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Placements</a>
@@ -249,48 +122,40 @@
                            </div>
                         </li>
                         <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Faculty & Staff</a>
-                           <div class="dropdown-menu" id="dropdown-h">
-                              <a class="dropdown-item" href="#faculty-tab" data-toggle="tab">Faculty Members</a>
-                              <a class="dropdown-item" href="#faculty-visiting11" data-toggle="tab">Visiting Faculty</a>
-                              <a class="dropdown-item" href="#" data-toggle="tab">Staff Members</a>
-                           </div>
-                        </li>
-                        <li class="nav-item dropdown">
                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Research</a>
                            <div class="dropdown-menu" id="dropdown-h">
-                              <a class="dropdown-item" href="#" data-toggle="tab">Research Profile & Area</a>
-                              <a class="dropdown-item" href="#" data-toggle="tab">Research Scholars</a>
+                              <a class="dropdown-item" href="#profile-area" data-toggle="tab">Research Profile & Area</a>
+                              <a class="dropdown-item" href="#scholor" data-toggle="tab">Research Scholars</a>
                               <a class="dropdown-item" href="#research-publication-tab" data-toggle="tab">Research Publications</a>
-                              <a class="dropdown-item" href="#training-consultancy-tab" data-toggle="tab">Research Projects and Grants</a>
-                              <a class="dropdown-item" href="#" data-toggle="tab">Patents</a>
+                              <a class="dropdown-item" href="#project-grant" data-toggle="tab">Research Projects and Grants</a>
+                              <a class="dropdown-item" href="#patents" data-toggle="tab">Patents</a>
                            </div>
                         </li>
+                        <li class="nav-item"><a href="#contactus-tab" class="nav-link" data-toggle="tab" role="tab">Contact</a></li>
                      </ul>
                   </div>
                </div>
             </nav>
          </div>
       </div>
-      <div class="tab-content" id="nav-tabcontent">
+   <div class="tab-content" id="nav-tabcontent">
          <div class="tab-pane active" id="home-tab" role="tabpanel">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                              
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                </ol>
                <div class="carousel-inner">
                   <div class="carousel-item active">
                      <img  width="100%" id="fill-image" src="../schools/img/soict/banner-ICT.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img src="../../../admission/banner/Artificial Intelligene.jpg" id="fill" width="100%" height="100%">
-                     </div>
-                     <div class="carousel-item">
-                      <img src="../../../admission/banner/data science.jpg" id="fill" width="100%" height="100%">
-                     </div> 
+                     <img src="../../../admission/banner/Artificial Intelligene.jpg" id="fill" width="100%" height="100%">
+                  </div>
+                  <div class="carousel-item">
+                     <img src="../../../admission/banner/data science.jpg" id="fill" width="100%" height="100%">
+                  </div>
                </div>
                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -303,28 +168,43 @@
             </div>
             <div class="my-5">
                <div class="container">
-                  <div class="jumbotron">
-                     <h1 class="text-center">School of Information and Communication Technology</h1>
-                     <br>
-                     <p class="text-justify">University School of Information and Communication Technology (SICT) was established in 2009. It’s deviated in to two departments Computer Science and Engineering & Electronics and Communication Engineering. As a school ICT has the history of producing skilled doctorate, postgraduate and undergraduate professionals in the emerging areas of Information and Communication Technology (ICT). SoICT has excellence in research and education, with year-round talks by our distinguished alumni, academicians, and professionals from the industry. ICT pervades nearly all aspects of today’s digital society and will continue in the decades ahead to be of critical importance to the nation’s technological infrastructure. We are proud of the accomplishments of our many alumni, including prize-winning researchers, developers and project leaders in the world-class multinational organizations like Siemens, Astrea, Qualcomm, Cadence, Nokia, Lucideous, HCL, Sapient, NEC and so on.</p>
-                     <br>
-                     <p class="text-justify">SoICT offers Full time and part time doctoral programs with a substantial number of research scholars, postgraduate programs in Information and Communication Technology (ICT)/CSE Cyber Security, Electronics and Communication Engineering and various dual/integrated degree programs.
-                     </p>
-                     <br>
-                     <div class="collapse" id="more-content">
-                        <p class="text-justify">The School has spacious classrooms as well as state-of-the-art teaching aids including overhead projectors, LCD panels along with the learning management system. Our faculty members are highly qualified, pioneering in teaching and research. Faculty members are involved in world-class research in Software Engineering, Data Science, Wireless Communication and Networks, Artificial Intelligence & Robotics, and VLSI Design, Machine Learning, IoT, Networking, Cloud Computing, Big Data Analytics and Security and are recipients of numerous national and international awards. Several faculty members serve on the editorial boards / reviewer of many prestigious journals, including Institute for Electrical and Electronics Engineering (IEEE), Association for Computing Machinery (ACM), Springer, Elsevier, and other national and international journals etc. These are thrilling times for ICT research scholars, postgraduate and graduates students, as the discipline is contributing towards the development of tools and techniques for almost every field of technology and society.
-                        </p>
+                  <div class="">
+                     <div class="jumbotron">
+                        <h3 class="text-lg-left mt-3 mb-0">About USICT</h3>
+                        <div class="my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 ">
+                        </div>
                         <br>
-                        <p class="text-justify">The school is focused on preparing students to meet the ever-increasing technological and social challenges with traditional self-discipline, hard work, all-round personality development and a creative approach to problem-solving. We also promote and nurture the spirit of innovation and entrepreneurship in students from the initial days of their tenure, so as to enable them, not only to be industry ready but also to be job creators, not just job seekers. The representation of the industry to provide a flexible and interdisciplinary, credit-based curricular structure to students is another value addition being offered.
+                        <br>
+                        <p class="text-justify">University School of Information and Communication Technology (USICT) was established in 2009. It’s deviated in to two departments Computer Science and Engineering & Electronics and Communication Engineering. As a
+                           school ICT has the history of producing skilled doctorate, postgraduate and undergraduate professionals in the emerging areas of Information and Communication Technology (ICT). USICT has excellence in research and education, with
+                           year-round talks by our distinguished alumni, academicians, and professionals from the industry. ICT pervades nearly all aspects of today’s digital society and will continue in the decades ahead to be of critical importance to the
+                           nation’s technological infrastructure. We are proud of the accomplishments of our many alumni, including prize-winning researchers, developers and project leaders in the world-class multinational organizations like Siemens, Astrea,
+                           Qualcomm, Cadence, Nokia, Lucideous, HCL, Sapient, NEC and so on.
                         </p>
+                        <p class="text-justify">USICT offers full time and part time doctoral programmes with a substantial number of research scholars, postgraduate programmes in Information and Communication Technology (ICT)/CSE Cyber Security, Electronics and
+                           Communication Engineering and various dual/integrated degree programmes.
+                           The School has spacious classrooms as well as state-of-the-art teaching aids including overhead projectors, LCD panels along with the learning management system. Our faculty members are highly qualified, pioneering in teaching and
+                           research. Faculty members are involved in world-class research in Software Engineering, Data Science, Wireless Communication and Networks, Artificial Intelligence & Robotics, and VLSI Design, Machine Learning, IoT, Networking, Cloud
+                           Computing, Big Data Analytics and Security and are recipients of numerous national and international awards. Several faculty members serve on the editorial boards / reviewer of many prestigious journals, including Institute for
+                           Electrical and Electronics Engineering (IEEE), Association for Computing Machinery (ACM), Springer, Elsevier, and other national and international journals etc. These are thrilling times for ICT research scholars, postgraduate and
+                           graduates students, as the discipline is contributing towards the development of tools and techniques for almost every field of technology and society.
+                        </p>
+                        <p class="text-justify">The school is focused on preparing students to meet the ever-increasing technological and social challenges with traditional self-discipline, hard work, all-round personality development and a creative approach to
+                           problem-solving. We also promote and nurture the spirit of innovation and entrepreneurship in students from the initial days of their tenure, so as to enable them, not only to be industry ready but also to be job creators, not just job
+                           seekers. The representation of the industry to provide a flexible and interdisciplinary, credit-based curricular structure to students is another value addition being offered.
+                        </p>
+                        <blockquote class="blockquote">
+                           <footer class="blockquote-footer text-right">Prof. Sanjay Kumar Sharma <br>
+                              Dean, USICT
+                           </footer>
+                        </blockquote>
                      </div>
-                     <a href="#more-content" class="float-right" data-toggle="collapse"><i class="fa fa-plus"></i></a>
-                  </div>
-                  <div class="jumbotron">
-                     <h4>Vision</h4>
-                     <p>To impart quality education for producing world-class technocrats and entrepreneurs with the latest knowledge, sound ethics and innovative ideas in ICT to meet industrial needs and societal expectations.</p>
-                     <h4>Mission</h4>
-                     <p>To impart world class value based technical education in all aspects of ICT through state of the art infrastructure and innovative approach to produce ethical, motivated and skilled professionals through theoretical knowledge and practical applications.</p>
+                     <div class="jumbotron">
+                        <h4>Vision</h4>
+                        <p>To impart quality education for producing world-class technocrats and entrepreneurs with the latest knowledge, sound ethics and innovative ideas in ICT to meet industrial needs and societal expectations.</p>
+                        <h4>Mission</h4>
+                        <p>To impart world class value based technical education in all aspects of ICT through state of the art infrastructure and innovative approach to produce ethical, motivated and skilled professionals through theoretical knowledge and practical applications.</p>
+                     </div>
                   </div>
                </div>
             </div>
@@ -383,7 +263,7 @@
             <header class="py-3 mx-auto">
                <h1 id="photo-galary-header" class="pt-3">Photo Gallery</h1>
             </header>
-            <!-- carousel  ------>
+            <!-- carousel start ------>
             <div class="container">
                <div class="fadeuponsc row w-100 visible">
                   <div class="container m-0 ttab w-100">
@@ -532,11 +412,12 @@
             </div>
             <!--- carousel end --->
          </div>
+         <!-- dean message start -->
          <div class="tab-pane fade" id="deanmsg-tab" role="tabpanel">
             <div class="container py-3">
                <div class="card ">
                   <div class="row ">
-                     <div class="col-md-3">
+                     <div class="col-md-3 mt-4">
                         <center><img src="../schools/img/soict/sanjaykumarsharma.png" class="w-100 m-auto"  id="card-image"></center>
                         <h4 class="text-center py-3">Dean's Message</h4>
                      </div>
@@ -544,7 +425,7 @@
                         <div class="card-block px-3">
                            <p class="card-text">University School of Information and Communication Technology came in to existence in 2008 with the primary objective of catering all academic/research requirements in fields of electronics communication and computer science first academic session consisting of post graduate program started in July 2009 and at present it is successfully running under graduate post graduate and research programs in all emerging areas related with information & Communication Technology. School is committed towards providing highest quality teaching education and producing technocrats who can work on the latest available technologies in the global context. To fulfill this aim and to provide education according to industrial requirement the extra academic activities like lectures from outside expert / workshops / symposiums / conferences are organized on a regular basis. First batch of postgraduate students has success fully passed in 2011, School has wonderful infrastructure having classrooms equipped with state of the art audio visual support and large number of functional laboratories equipped with state of the are instruments/hardware software and highly committed and dedicated faculty. School has already made a roadmap for its development for next 10 years in the form of “Vision 2020” document and is in real spirit marching on this roadmap for fulfilling the defined objectives. School aims to become a hub of higher end research activities and has started successfully its research program and have many research scholars on its roll, carrying research in all prominent areas of electronics / communication / computer engineering.
                            </p>
-                           <p class="card-text">I am more than confident to tell you that the strongest, most effective and finest weapon an academic organization can ever have is “knowledge” and it is a common quote in ICT field that “knowledge is power”. The School of ICT works on the sole objective of acquiring and propagating as much knowledge as possible to the students.
+                           <p class="card-text">I am more than confident to tell you that the best, most effective and finest weapon an academic organization can ever have is “knowledge” and it is a common quote in ICT field that “knowledge is power”. The School of ICT works on the sole objective of acquiring and propagating as much knowledge as possible to the students.
                            </p>
                            <h6 class="card-title float-left font-weight-bold">Prof. Sanjay Kumar Sharma<br>Dean, SOICT</h6>
                         </div>
@@ -553,10 +434,14 @@
                </div>
             </div>
          </div>
+         <!-- dean message end -->
+         <!-- BOS start -->
          <div class="tab-pane fade" id="boardofstudies-tab" role="tabpanel">
-            <div class="container my-5">
+            <div class="container my-4">
                <div class="jumbotron">
-                  <h1 class="text-center">Board of Studies</h1>
+                  <h4 class="text-lg-left mt-1 mb-0">Board of Studies</h4>
+                  <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 "></div>
+                  <br>
                   <br>
                   <ul>
                      <li>
@@ -617,373 +502,32 @@
                </div>
             </div>
          </div>
-         <div class="tab-pane fade" id="programs-tab" role="tabpanel">
-            <div class="container my-5">
-               <div class="jumbotron">
-                  <h1 class="text-center py-3">Programs Offerred</h1>
-                  <!-- <table class="table-responsive border-0" class="mx-auto" border="1" width="100%">
-                     <tbody>
-                             <tr>
-                                <th class="py-1 px-3">S.No.</th>
-                                <th class="py-1 px-3">Program Name</th>
-                                <th class="py-1 px-3">Course Structure/Syllabus</th>
-                             </tr>
-                     
-                     </tbody>
-                     <tbody>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">1.</td>
-                                   <td class="py-1 px-3">Integrated Dual Degree VLSI (ECE)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/ECE Syllabus/Dual Degree VLSI (ECE).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">2.</td>
-                                   <td class="py-1 px-3">Integrated Dual Degree WCN (ECE)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/ECE Syllabus/Dual Degree WCN (ECE).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">3.</td>
-                                   <td class="py-1 px-3">M.Tech. VLSI Design_Scheme and Syllabi</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/ECE Syllabus/M.Tech. VLSI Design_Scheme and Syllabi.pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">4.</td>
-                                   <td class="py-1 px-3">Integrated Dual Degree VLSI (ECE)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/ECE Syllabus/Dual Degree VLSI (ECE).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">5.</td>
-                                   <td class="py-1 px-3">SOICT_CourseStruc(17-19)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/2 M.Tech - AIR/SOICT_CourseStruc(17-19).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">6.</td>
-                                   <td class="py-1 px-3">MTech SE (2017-19)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/2 Year M.Tech -SE/MTech SE (2017-19).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">7.</td>
-                                   <td class="py-1 px-3">SOICT_MTechCS_(2017-19)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/2 Year M.Tech CS/SOICT_MTechCS_(2017-19).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">8.</td>
-                                   <td class="py-1 px-3">IT (2016-20)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/4 Year B.Tech (IT)/IT (2016-20).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">9.</td>
-                                   <td class="py-1 px-3">IT (2017-21)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/4 Year B.Tech (IT)/IT (2017-21).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">10.</td>
-                                   <td class="py-1 px-3">IT (2018-22)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/4 Year B.Tech (IT)/IT (2018-22).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">11.</td>
-                                   <td class="py-1 px-3">Dual Degree ISR final (2014-19)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/integrated/Dual Degree ISR final (2014-19).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">12.</td>
-                                   <td class="py-1 px-3">Dual degree ISR final (2015-20)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/integrated/dual degree ISR final (2015-20).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">13.</td>
-                                   <td class="py-1 px-3">Dual degree ISR final (2016-21)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/integrated/dual degree ISR final (2016-21).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">14.</td>
-                                   <td class="py-1 px-3">Dual degree ISR final (2017-22)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/integrated/dual degree ISR final (2017-22).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">15.</td>
-                                   <td class="py-1 px-3">Dual degree SE final( 2015-20)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/integrated/dual degree SE final( 2015-20).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">16.</td>
-                                   <td class="py-1 px-3">Dual degree SE final( 2016-21)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/integrated/dual degree SE final( 2016-21).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">17.</td>
-                                   <td class="py-1 px-3">Dual degree SE final( 2017-22)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/integrated/dual degree SE final( 2017-22).pdf"> Course Structure</a></td>
-                                 </tr>
-                     
-                                 <tr>
-                                   <td class="py-1 px-3">18.</td>
-                                   <td class="py-1 px-3">Dual degree SE final(14-19)</td>
-                                   <td class="py-1 px-3"><a href="../../gbudata/data/ict/CSE Syllabus/integrated/dual degree SE final(14-19).pdf"> Course Structure</a></td>
-                                 </tr>
-                     </tbody>
-                     </table>
-                     -->
-                  <table class="table-responsive border-0" border="1">
-                     <thead>
-                        <h5 class="text-center font-weight-bold my-5">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h5>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td class="px-3 py-1 font-weight-bold">S. No.</td>
-                           <td class="px-3 py-1 font-weight-bold">Programme's Name</td>
-                           <td class="px-3 py-1 font-weight-bold">Course Structure</td>
-                           <td class="px-3 py-1 font-weight-bold">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td></td>
-                           <td class="px-3 py-1 font-weight-bold text-center">UNDERGRADUATE PROGRAMMES</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">1</td>
-                           <td class="px-3 py-1">B.Tech. Artificial Intelligence </td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1"><a href="../../gbudata/programms/4 Year B.Tech.  AI.pdf"> Detailed Syllabus </a> </td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">2</td>
-                           <td class="px-3 py-1">B.Tech. Computer Science and Engineering</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1"><a href="../../gbudata/programms/4 Year B.Tech CSE.pdf"> Detailed Syllabus </a> </td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">3</td>
-                           <td class="px-3 py-1">B.Tech. Computer Science and Engineering (Under Self Finance Scheme)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1"><a href="../../gbudata/programms/4 Year B.Tech CSE.pdf"> Detailed Syllabus </a> </td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">4</td>
-                           <td class="px-3 py-1">B.Tech. Information Technology</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus </td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">5</td>
-                           <td class="px-3 py-1">Bachelors in Computer Application (BCA)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1"><a href="../../gbudata/programms/BCA FINAL.pdf"> Detailed Syllabus </a> </td>
-                        </tr>
-                        <tr>
-                           <td></td>
-                           <td class="px-3 py-1 font-weight-bold text-center">INEGRATED PROGRAMMES</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">6</td>
-                           <td class="px-3 py-1">5 Year Integrated Dual Degree Programme B.Tech. (CSE) + M.Tech. (CSE) / MBA (Closed in 2018)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">7</td>
-                           <td class="px-3 py-1">5 Year Integrated Programme B.Tech.-M.Tech (CSE)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td></td>
-                           <td class="px-3 py-1 font-weight-bold text-center">POST GRADUATE PROGRAMMES</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">8</td>
-                           <td class="px-3 py-1">M.Tech. CSE (Specialization: Software Engineering)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">9</td>
-                           <td class="px-3 py-1">M.Tech. CSE (Specialization: Artificial Intelligence and Robotics)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">10</td>
-                           <td class="px-3 py-1">M.Tech. CSE (Specialization: Data Science)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">11</td>
-                           <td class="px-3 py-1">M.Tech. Cyber Security</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1"><a href="../../gbudata/programms/2 YEAR M.TECH CYBER SECURITY.pdf"> Detailed Syllabus</a></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">12</td>
-                           <td class="px-3 py-1">Masters in Computer Application (MCA)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1"><a href="../../gbudata/programms/MCA FINAL.pdf">Detailed Syllabus </a> </td>
-                        </tr>
-                        <tr>
-                           <td></td>
-                           <td class="px-3 py-1 font-weight-bold text-center">DOCTORAL PROGRAMME</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">13</td>
-                           <td class="px-3 py-1">Ph.D. (CSE)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td></td>
-                           <td class="px-3 py-1 font-weight-bold text-center">DIPLOMA AND CERTIFICATE PROGRAMME</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">14</td>
-                           <td class="px-3 py-1">Advanced Certificate Course in Big Data Analytics</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table-responsive border-0" border="1">
-                     <thead >
-                        <h5 class="text-center font-weight-bold my-5">DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING</h5>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td class="px-3 py-1 font-weight-bold">S. No.</td>
-                           <td class="px-3 py-1 font-weight-bold">Programme's Name</td>
-                           <td class="px-3 py-1 font-weight-bold">Course Structure</td>
-                           <td class="px-3 py-1 font-weight-bold">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td></td>
-                           <td class="px-3 py-1 font-weight-bold text-center">UNDERGRADUATE PROGRAMMES</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">1</td>
-                           <td class="px-3 py-1">B.Tech. Electronics and Communication Engineering </td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">2</td>
-                           <td class="px-3 py-1">B.Tech. Design Engineering</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td></td>
-                           <td class="px-3 py-1 font-weight-bold text-center">INEGRATED PROGRAMMES</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">3</td>
-                           <td class="px-3 py-1">5 Year Integrated Dual Degree Programme B.Tech. (ECE) + M.Tech. (ECE) / MBA (Closed in 2018)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">4</td>
-                           <td class="px-3 py-1">5 Year Integrated Programme B.Tech.-M.Tech (ECE)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td></td>
-                           <td class="px-3 py-1 font-weight-bold text-center">POST GRADUATE PROGRAMMES</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">5</td>
-                           <td class="px-3 py-1">M.Tech. ECE (Specialization: Wireless Communication and Networks)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">6</td>
-                           <td class="px-3 py-1">M.Tech. ECE (Specialization: VLSI Design)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">7</td>
-                           <td class="px-3 py-1">M.Tech. ECE (Railway Signaling, Telecommunication and RAMS)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                        <tr>
-                           <td></td>
-                           <td class="px-3 py-1 font-weight-bold text-center">DOCTORAL PROGRAMME</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td class="px-3 py-1">8</td>
-                           <td class="px-3 py-1">Ph.D. (ECE)</td>
-                           <td class="px-3 py-1">Course Structure</td>
-                           <td class="px-3 py-1">Detailed Syllabus</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </div>
-         </div>
+         <!-- BOS end -->
+         <!-- department cse start -->
          <div class="tab-pane fade" id="department-cse-tab" role="tabpanel">
             <div class="container my-5">
-               <div class="jumbotron">
-                  <h2 class="text-center pb-3">Department | Computer Science Engineering</h2>
-                  <br><br>
+               <div class="jumbotron py-2">
+                  <h3 class="text-lg-left mt-3 mb-0">Department | Computer Science and Engineering</h3>
+                  <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 "></div>
+                  <br>
+                  <br>
                   <ul>
                      <li>
-                        <h5 class="font-weight-bold">From the Desk of the HoD, CSE</h5>
-                        <p>The field of Computer Science and Engineering has been pushing the envelope of almost all other disciplines, which use computing as a fundamental means of inquiry and tool for discovery. Computer Science and Engineering offers exciting, intellectually challenging, and rapidly growing career opportunities. It is the heart of where the action is: whether this means artificial intelligence applications, intelligent game playing, mobile applications, smart robots, cloud computing, data security, big data analytics, cyber security, and social networks. Teaching-Learning process is given at most priority in pursuit of improving the quality of technical education. Innovative teaching aids and methodologies are used by the department towards this goal. The efficacy of the Teaching-Learning process is reflected in the consistently excellent results being achieved every year. The department regularly organizes short term training programme, conferences, seminars, workshops, and expert lecturers for the students. Faculty development programs are organized for faculty to promote high standards in technical education.</p>
-                        <p>We, at the Department of Computer Science and Engineering, look forward to working with you to make your engagement with our department a successful and pleasant experience.</p>
-                        <h6 class="font-weight-bold">Dr. Pradeep Tomar <br>HoD, CSE</h6>
-                     </li>
-                     <br><br>
-                     <li>
                         <h5 class="font-weight-bold">About the Department</h5>
-                        <p>Department of Computer Science and Engineering offers courses in the area of Computer Science, Artificial Intelligence as well as in Information Technology. Five year integrated courses and M.Tech. courses have been our strength since long. Being part of University School of ICT, we offer and support interdisciplinary courses. Recently we have started 4 year B.Tech. programmes in Computer Science and Engineering, Information Technology, and Artificial Intelligence. We offer M.Tech. ICT / CSE with specialization in Software Engineering, Data Science, Artificial Intelligence and Robotics, M.Tech. in Cyber Security and we support M.Tech. (ECE) with specialization in Wireless and Communication Networks (WCN). We also offer Ph.D. Programmes for full time and working professional mode in all areas where research is being currently conducted by our faculty members. </p>
-                        <p>We have highly qualified, competent and experienced faculty which is supported by well-equipped labs and infrastructure. Our department carries a vision to groom our students into professionals in their respective area of expertise. To do so, besides curriculum, we expose our students to frequent high quality skill enhancement workshops, industry visits, expert lectures, national and international conferences. Our students have achieved very high ratio of placement in good companies and several of them progressed to pursue further education abroad. We do regular updates in our curriculum to address need of the hour in the industry and to make our students ready for cutting edge technology. Under the supervision of our esteemed faculty, several scholars have completed their Ph.D. with high quality research and several are still pursuing. Our students and scholars have explored very deep in latest area in the computer science and information technology. These areas include Artificial Intelligence, Data Science, Cloud Computing, Cyber Security, Big Data, Deep Learning, Pattern Recognition, Decision Making, Sensor Networks, Object-Oriented Programming, Component-Oriented Programming, Aspect-Oriented Programming, professional level Software Engineering, and many more.</p>
+                        <p>Department of Computer Science and Engineering offers courses in the area of Computer Science, Artificial Intelligence as well as in Information Technology. Five year integrated courses and M.Tech. courses have been our strength
+                           since long. Being part of University School of ICT, we offer and support interdisciplinary courses. Recently we have started 4 year B.Tech. programmes in Computer Science and Engineering, Information Technology, and Artificial
+                           Intelligence. We offer M.Tech. ICT / CSE with specialization in Software Engineering, Data Science, Artificial Intelligence and Robotics, M.Tech. in Cyber Security and we support M.Tech. (ECE) with specialization in Wireless and
+                           Communication Networks (WCN). We also offer Ph.D. Programmes for full time and working professional mode in all areas where research is being currently conducted by our faculty members. 
+                        </p>
+                        <p>We have highly qualified, competent and experienced faculty which is supported by well-equipped labs and infrastructure. Our department carries a vision to groom our students into professionals in their respective area of expertise.
+                           To do so, besides curriculum, we expose our students to frequent high quality skill enhancement workshops, industry visits, expert lectures, national and international conferences. Our students have achieved very high ratio of
+                           placement in good companies and several of them progressed to pursue further education abroad. We do regular updates in our curriculum to address need of the hour in the industry and to make our students ready for cutting edge
+                           technology. Under the supervision of our esteemed faculty, several scholars have completed their Ph.D. with high quality research and several are still pursuing. Our students and scholars have explored very deep in latest area in the
+                           computer science and information technology. These areas include Artificial Intelligence, Data Science, Cloud Computing, Cyber Security, Big Data, Deep Learning, Pattern Recognition, Decision Making, Sensor Networks, Object-Oriented
+                           Programming, Component-Oriented Programming, Aspect-Oriented Programming, professional level Software Engineering, and many more.
+                        </p>
                      </li>
-                     <li>
-                        <h5 class="font-weight-bold">Vision</h5>
-                        <p>To impart quality education for producing world-class technocrats and entrepreneurs with the latest knowledge, sound ethics and innovative ideas in Computer Science and Engineering and will try to meet industrial needs and societal expectations. Department of Computer Science and Engineering will have a transformative impact on society through continual innovation in computer education and research.</p>
-                     </li>
-                     <li>
-                        <h5 class="font-weight-bold">Mission</h5>
-                        <p>To impart world class value based technical education in all aspects of Computer Science and Engineering through state of the art infrastructure and innovative approach to produce ethical, motivated and skilled professionals through theoretical knowledge and practical applications. Department will try to provide a transformative educational experience for students and research scholars by providing deep disciplinary knowledge. Department will try to (a) attract and retain diverse students with world-class talent; (b) create a collaborative environment open to the free exchange of ideas, where research, creativity, innovation, and entrepreneurship can flourish through various study circles and clubs.</p>
-                     </li>
-                     <br><br>
+                     <br>
                      <li>
                         <h5 class="font-weight-bold">Department’s Programme</h5>
                         <br>
@@ -1021,30 +565,55 @@
                            <li>Advanced Certificate Course in Big Data Analytics</li>
                         </ul>
                      </li>
+                     <br>
+                     <li>
+                        <h5 class="font-weight-bold">Vision</h5>
+                        <p>To impart quality education for producing world-class technocrats and entrepreneurs with the latest knowledge, sound ethics and innovative ideas in Computer Science and Engineering and will try to meet industrial needs and societal
+                           expectations. Department of Computer Science and Engineering will have a transformative impact on society through continual innovation in computer education and research.
+                        </p>
+                     </li>
+                     <li>
+                        <h5 class="font-weight-bold">Mission</h5>
+                        <p>To impart world class value based technical education in all aspects of Computer Science and Engineering through state of the art infrastructure and innovative approach to produce ethical, motivated and skilled professionals through
+                           theoretical knowledge and practical applications. Department will try to provide a transformative educational experience for students and research scholars by providing deep disciplinary knowledge. Department will try to (a) attract
+                           and retain diverse students with world-class talent; (b) create a collaborative environment open to the free exchange of ideas, where research, creativity, innovation, and entrepreneurship can flourish through various study circles
+                           and clubs.
+                        </p>
+                     </li>
+                     <br>
+                     <li>
+                        <h5 class="font-weight-bold">From the Desk of the HoD, CSE</h5>
+                        <p>The field of Computer Science and Engineering has been pushing the envelope of almost all other disciplines, which use computing as a fundamental means of inquiry and tool for discovery. Computer Science and Engineering offers
+                           exciting, intellectually challenging, and rapidly growing career opportunities. It is the heart of where the action is: whether this means artificial intelligence applications, intelligent game playing, mobile applications, smart
+                           robots, cloud computing, data security, big data analytics, cyber security, and social networks. Teaching-Learning process is given at most priority in pursuit of improving the quality of technical education. Innovative teaching aids
+                           and methodologies are used by the department towards this goal. The efficacy of the Teaching-Learning process is reflected in the consistently excellent results being achieved every year. The department regularly organizes short term
+                           training programme, conferences, seminars, workshops, and expert lecturers for the students. Faculty development programs are organized for faculty to promote high standards in technical education.
+                           We, at the Department of Computer Science and Engineering, look forward to working with you to make your engagement with our department a successful and pleasant experience.
+                        </p>
+                        <h6 class="font-weight-bold">Dr. Pradeep Tomar <br>HoD, CSE</h6>
+                     </li>
                   </ul>
                </div>
             </div>
          </div>
+         <!-- department cse end -->
+         <!-- department ece start -->
          <div class="tab-pane fade" id="department-ece-tab" role="tabpanel">
             <div class="container my-5">
-               <div class="jumbotron">
-                  <h2 class="text-center pb-3">Department | Electronics and Communication Engineering </h2>
+               <div class="jumbotron py-2">
+                  <h3 class="text-lg-left mt-3 mb-0">Department | Electronics and Communication Engineering</h3>
+                  <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 "></div>
                   <br><br>
                   <ul>
                      <li>
-                        <h5 class="font-weight-bold">From the Desk of the HoD, ECE</h5>
-                        <p>I warmly welcome you to the Department of Electronics and Communication Engineering, Gautam Buddha University. Over all these years, we have made progress in imparting technical education to our students and bring them at par with the ever-expanding horizons of Electronics and Communication Engineering and its application areas.</p>
-                        <p>At the under graduate level, we offer four-year B.Tech. Programme, and four-year B.Tech. (Engineering Design) Programme. At post graduate level, we offer three areas of specialization for two-year M.Tech. Programmes: (i) Wireless Communication and Networks, (ii) VLSI Design (iii) Railway Signalling Telecommunication and RAMS. We also offer Ph.D. Programmes for full time and working professional mode in all areas where research is being currently conducted by our faculty members.</p>
-                        <p>The Electronics and Communication Engineering department has always placed prime emphasis on excellence in teaching and research. Faculty members have very good academic credentials, and are highly motivated towards imparting the best of education, and also pioneering research and development. Our courses are frequently updated in terms of depth as well as the subjects themselves, so that our students always remain on the forefront of technological advancement. Well-equipped Laboratories and encouragement to pursue research has increased our students’ productivity in terms of placements, higher studies and research contributions. It has been observed that student research contribution has increased tremendously during last few years. We regularly organize seminars/workshops/conferences/faculty development programs/skill enhancement programs/expert talks/invited lectures etc. that benefits our students as well as the staff members of our school.</p>
-                        <p>Thank you for visiting us. If you require any information, or wish to get in touch, please feel free to reach me via email.</p>
-                        <h6 class="font-weight-bold">Dr. Sandeep Sharma <br>HoD, ECE</h6>
-                     </li>
-                     <br><br>
-                     <li>
                         <h5 class="font-weight-bold">About the Department</h5>
-                        <p>Electronics and Communication Engineering is one of the most fascinating fields for understanding and practicing. Even tiny pieces of device nugget possess incredible magic. A mobile phone takes the electromagnetic signal from the air, converts, compress and processes this information further and shove it again in the air. Jillions of these data in a very short span of time received these messages and sent reliably to the different corner of the globe. Everybody in the universe is connected wirelessly through just one identity number. The students of the department are nurtured in such a way they can be well recruitable in repute companies or become researchers after completion of their degree from the department. Further, I am confident that this bunch of professional talents, who are going to complete our studies from the department, will be of great value and a big asset to any organization they join.</p>
+                        <p>Electronics and Communication Engineering is one of the most fascinating fields for understanding and practicing. Even tiny pieces of device nugget possess incredible magic. A mobile phone takes the electromagnetic signal from the
+                           air, converts, compress and processes this information further and shove it again in the air. Jillions of these data in a very short span of time received these messages and sent reliably to the different corner of the globe.
+                           Everybody in the universe is connected wirelessly through just one identity number. The students of the department are nurtured in such a way they can be well recruitable in repute companies or become researchers after completion of
+                           their degree from the department. Further, I am confident that this bunch of professional talents, who are going to complete our studies from the department, will be of great value and a big asset to any organization they join.
+                        </p>
                      </li>
-                     <br><br>
+                     <br>
                      <li>
                         <h5 class="font-weight-bold">Department’s Programme</h5>
                         <br>
@@ -1072,166 +641,479 @@
                            <li>Ph.D. (ECE)</li>
                         </ul>
                      </li>
+                     <br>
+                     <li>
+                        <h5 class="font-weight-bold">From the Desk of the HoD, ECE</h5>
+                        <p>I warmly welcome you to the Department of Electronics and Communication Engineering, Gautam Buddha University. Over all these years, we have made progress in imparting technical education to our students and bring them at par with
+                           the ever-expanding horizons of Electronics and Communication Engineering and its application areas.<br>
+                           At the under graduate level, we offer four-year B.Tech. Programme, and four-year B.Tech. (Engineering Design) Programme. At post graduate level, we offer three areas of specialization for two-year M.Tech. Programmes: (i) Wireless
+                           Communication and Networks, (ii) VLSI Design (iii) Railway Signalling Telecommunication and RAMS. We also offer Ph.D. Programmes for full time and working professional mode in all areas where research is being currently conducted by
+                           our faculty members.<br>
+                           The Electronics and Communication Engineering department has always placed prime emphasis on excellence in teaching and research. Faculty members have very good academic credentials, and are highly motivated towards imparting the
+                           best of education, and also pioneering research and development. Our courses are frequently updated in terms of depth as well as the subjects themselves, so that our students always remain on the forefront of technological
+                           advancement. Well-equipped Laboratories and encouragement to pursue research has increased our students’ productivity in terms of placements, higher studies and research contributions. It has been observed that student research
+                           contribution has increased tremendously during last few years. We regularly organize seminars/workshops/conferences/faculty development programmes/skill enhancement programmes/expert talks/invited lectures etc. that benefits our
+                           students
+                           as well as the staff members of our school. <br>
+                           Thank you for visiting us. If you require any information, or wish to get in touch, please feel free to reach me via email.
+                        </p>
+                        <h6 class="font-weight-bold">Dr. Sandeep Sharma <br>HoD, ECE</h6>
+                     </li>
                   </ul>
                </div>
             </div>
          </div>
-         <div class="tab-pane fade" id="directory-tab" role="tabpanel">
+         <!-- department ece end  -->
+         <!-- program cse start -->
+         <div class="tab-pane fade" id="programs-tab-cse" role="tabpanel">
             <div class="container my-5">
-               <div class="jumbotron text-center">
-                  <h1 class="text-center strong">Directory | SOICT</h1>
-                  <br>
-                  <div class="table-responsive">
-                     <table class="table table-hover table-bordered">
-                        <thead>
-                           <tr>
-                              <th scope="col">S.No.</th>
-                              <th scope="col">Name</th>
-                              <th scope="col">Phone No.</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <th scope="row">1</th>
-                              <td>
-                                 Dean
-                              </td>
-                              <td>
-                                 0120-2346067
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">2</th>
-                              <td>
-                                 Dr. Rajesh Mishra
-                              </td>
-                              <td>
-                                 0120-2346076
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">3</th>
-                              <td>
-                                 Dr. Vidushi Sharma
-                              </td>
-                              <td>
-                                 0120-2346077
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">4</th>
-                              <td>
-                                 Dr. Anurag Singh   Baghel
-                              </td>
-                              <td>
-                                 0120-2346090
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">5</th>
-                              <td>
-                                 Dr. Neeta Singh
-                              </td>
-                              <td>
-                                 0120-2346080
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">6</th>
-                              <td>
-                                 Dr. Pradeep Tomar
-                              </td>
-                              <td>
-                                 0120-2346085
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">7</th>
-                              <td>
-                                 Dr. Arun Solanki
-                              </td>
-                              <td>
-                                 0120-2346083
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">8</th>
-                              <td>
-                                 Dr. Sandhya Tarar
-                              </td>
-                              <td>
-                                 0120-2346078
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">9</th>
-                              <td>
-                                 Dr. Navaid Zafar Rizvi
-                              </td>
-                              <td>
-                                 0120-2346086
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">10</th>
-                              <td>
-                                 Dr. Sandeep Sharma
-                              </td>
-                              <td>
-                                 0120-2346087
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">11</th>
-                              <td>
-                                 Ms. Nidhi Gulati
-                              </td>
-                              <td>
-                                 0120-2346079
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">12</th>
-                              <td>
-                                 Dr. Vimlesh Kumar
-                              </td>
-                              <td>
-                                 0120-2346093
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">13</th>
-                              <td>
-                                 Ms. Aarti Gautam Dinker
-                              </td>
-                              <td>
-                                 0120-2346096
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">14</th>
-                              <td>
-                                 Mr. Rajendra Bahadur Singh
-                              </td>
-                              <td>
-                                 0120-2346095
-                              </td>
-                           </tr>
-                           <tr>
-                              <th scope="row">15</th>
-                              <td>
-                                 Dr. Priyanka Goyal
-                              </td>
-                              <td>
-                                 0120-2346098
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
+               <div class="jumbotron py-3">
+                  <h3 class="text-lg-left mt-3 mb-0">Programme Structure</h3>
+                  <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 "></div>
+                  <table class="table-responsive border-0" border="1">
+                     <thead>
+                        <h5 class="font-weight-bold my-5">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h5>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold">S. No.</td>
+                           <td class="px-3 py-1 font-weight-bold">Programme's Name</td>
+                           <td class="px-3 py-1 font-weight-bold">Course Structure</td>
+                           <td class="px-3 py-1 font-weight-bold">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold text-primary" colspan="4">UNDERGRADUATE PROGRAMMES</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">1</td>
+                           <td class="px-3 py-1">B.Tech. Artificial Intelligence </td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1"><a href="../../gbudata/programms/4 Year B.Tech.  AI.pdf"> Detailed Syllabus </a> </td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">2</td>
+                           <td class="px-3 py-1">B.Tech. Computer Science and Engineering</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1"><a href="../../gbudata/programms/4 Year B.Tech CSE.pdf"> Detailed Syllabus </a> </td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">3</td>
+                           <td class="px-3 py-1">B.Tech. Computer Science and Engineering (Under Self Finance Scheme)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1"><a href="../../gbudata/programms/4 Year B.Tech CSE.pdf"> Detailed Syllabus </a> </td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">4</td>
+                           <td class="px-3 py-1">B.Tech. Information Technology</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus </td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">5</td>
+                           <td class="px-3 py-1">Bachelors in Computer Application (BCA)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1"><a href="../../gbudata/programms/BCA FINAL.pdf"> Detailed Syllabus </a> </td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold text-primary" colspan="4">INTEGRATED PROGRAMMES</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">6</td>
+                           <td class="px-3 py-1">5 Year Integrated Dual Degree Programme B.Tech. (CSE) + M.Tech. (CSE) / MBA (Closed in 2018)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">7</td>
+                           <td class="px-3 py-1">5 Year Integrated Programme B.Tech.-M.Tech (CSE)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold text-primary" colspan="4">POST GRADUATE PROGRAMMES</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">8</td>
+                           <td class="px-3 py-1">M.Tech. CSE (Specialization: Software Engineering)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">9</td>
+                           <td class="px-3 py-1">M.Tech. CSE (Specialization: Artificial Intelligence and Robotics)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">10</td>
+                           <td class="px-3 py-1">M.Tech. CSE (Specialization: Data Science)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">11</td>
+                           <td class="px-3 py-1">M.Tech. Cyber Security</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1"><a href="../../gbudata/programms/2 YEAR M.TECH CYBER SECURITY.pdf"> Detailed Syllabus</a></td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">12</td>
+                           <td class="px-3 py-1">Masters in Computer Application (MCA)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1"><a href="../../gbudata/programms/MCA FINAL.pdf">Detailed Syllabus </a> </td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold text-primary" colspan="4">DOCTORAL PROGRAMME</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">13</td>
+                           <td class="px-3 py-1">Ph.D. (CSE)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold text-primary" colspan="4">DIPLOMA AND CERTIFICATE PROGRAMME</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">14</td>
+                           <td class="px-3 py-1">Advanced Certificate Course in Big Data Analytics</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <!-- program cse end -->
+         <!-- program ece start -->
+         <div class="tab-pane fade" id="programs-tab-ece" role="tabpanel">
+            <div class="container my-5">
+               <div class="jumbotron py-3">
+                  <h3 class="text-lg-left mt-3 mb-0">Programme Structure</h3>
+                  <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 "></div>
+                  <table class="table-responsive border-0" border="1">
+                     <thead>
+                        <h5 class="font-weight-bold my-5">DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING</h5>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold">S. No.</td>
+                           <td class="px-3 py-1 font-weight-bold">Programme's Name</td>
+                           <td class="px-3 py-1 font-weight-bold">Course Structure</td>
+                           <td class="px-3 py-1 font-weight-bold">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold text-primary" colspan="4">UNDERGRADUATE PROGRAMMES</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">1</td>
+                           <td class="px-3 py-1">B.Tech. Electronics and Communication Engineering </td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">2</td>
+                           <td class="px-3 py-1">B.Tech. Design Engineering</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold text-primary" colspan="4">INTEGRATED PROGRAMMES</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">3</td>
+                           <td class="px-3 py-1">5 Year Integrated Dual Degree Programme B.Tech. (ECE) + M.Tech. (ECE) / MBA (Closed in 2018)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">4</td>
+                           <td class="px-3 py-1">5 Year Integrated Programme B.Tech.-M.Tech (ECE)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold text-primary" colspan="4">POST GRADUATE PROGRAMMES</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">5</td>
+                           <td class="px-3 py-1">M.Tech. ECE (Specialization: Wireless Communication and Networks)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">6</td>
+                           <td class="px-3 py-1">M.Tech. ECE (Specialization: VLSI Design)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">7</td>
+                           <td class="px-3 py-1">M.Tech. ECE (Railway Signaling, Telecommunication and RAMS)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1 font-weight-bold text-primary" colspan="4">DOCTORAL PROGRAMME</td>
+                        </tr>
+                        <tr>
+                           <td class="px-3 py-1">8</td>
+                           <td class="px-3 py-1">Ph.D. (ECE)</td>
+                           <td class="px-3 py-1">Course Structure</td>
+                           <td class="px-3 py-1">Detailed Syllabus</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <!-- program ece end -->
+         <!-- school activities start -->
+         <div class="tab-pane fade" id="school-activities" role="tabpanel">
+            <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #78335d;">
+               <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               &#9776;
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="text-center mx-auto">
+                     <ul class="navbar-nav  text-white container" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link text-white active" id="pills-home-tab" data-toggle="pill" href="#conferences" role="tab" aria-controls="pills-home" aria-selected="true">Conferences</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white" id="pills-profile-tab" data-toggle="pill" href="#expert-lectures" role="tab" aria-controls="pills-profile" aria-selected="false">Expert Lectures</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white" id="pills-contact-tab" data-toggle="pill" href="#fdp-sttp" role="tab" aria-controls="pills-contact" aria-selected="false">
+                              FDP/STTP
+                              <!-- Faculty Development Programmes/Short Term Training Programmes -->
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white" id="pills-contact-tab" data-toggle="pill" href="#programming-events" role="tab" aria-controls="pills-contact" aria-selected="false">Programming Events</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white" id="pills-contact-tab" data-toggle="pill" href="#university-industry-round-table" role="tab" aria-controls="pills-contact" aria-selected="false">Round Tables</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white" id="pills-contact-tab" data-toggle="pill" href="#seminars" role="tab" aria-controls="pills-contact" aria-selected="false">Seminars</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white" id="pills-contact-tab" data-toggle="pill" href="#workshops" role="tab" aria-controls="pills-contact" aria-selected="false">Workshops</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+            <div class="tab-content">
+               <div class="tab-pane fade show active" id="conferences" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="container">
+                     <h3 class=" text-lg-left mt-4 mb-0">Conferences</h3>
+                     <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+                     <br>
+                     <br>
+                     <ul type="circle">
+                        <li> International Conference on <b>2012 Emerging Paradigms and Practices in Information & Communication Technology and Management (2012 EPPICTM)</b> at the School of Information and Communication Technology, Gautam Buddha
+                           University, Greater NOIDA, UP, INDIA in collaboration with MTMI, USA, University of Maryland Eastern Shore, USA and Frostburg State University, USA. 26th - 28th Jul, 2012.
+                        </li>
+                        <br>
+                        <li> <b>1st International Conference on Innovations and Advancements in Information and Communication Technology, 2012 (ICIAICT 2012)</b>, jointly organized by School of Information and Communication Technology, Gautam Buddha
+                           University, Greater NOIDA, U.P., INDIA and Computer Society of India NOIDA Chapter, NOIDA, UP, INDIA. 30th - 31st Mar, 2012.
+                        </li>
+                        <br>
+                        <li><b>COMMUNE Conference on Advancements in Communication, Computing & Signal Processing, 2011 (COMMUNE CACCS, 2011)</b>, jointly organize by COMMUNE and School of Information and Communication Technology, Gautam Buddha
+                           University, Greater NOIDA, UP, INDIA. 16th - 17th Apr, 2011.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="expert-lectures" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="container">
+                     <h3 class=" text-lg-left mt-4 mb-0">Expert Lectures</h3>
+                     <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+                     <br>
+                     <br>
+                     <ul type="circle">
+                        <li>Expert Lecture on <b>Smart Energy System for LED Lighting Applications</b> by Dr. Aman Kumar Jha, ST Microelectronics, Greater NOIDA and organized by the University School of Information and Communication Technology,
+                           Gautam Buddha University, Greater NOIDA, UP, on 3rd Mar, 2020.
+                        </li>
+                        <br>
+                        <li>Expert Lecture on <b>Intellectual Property Right</b> by Mr. Jaspreet Singh and organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, in collaboration
+                           with IPcurate Lab - Verispire Inc. on 25th Feb, 2020.
+                        </li>
+                        <br>
+                        <li>Expert Lecture on <b>How to Prepare for Latest upcoming Job Opportunities in IT Industry</b> by Mr. Vinay Bamil, Head of Technology Strategy and Acrhitect, Google Cloud at Google Mountain View, USA and organized by the
+                           University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, on 06th Feb, 2020.
+                        </li>
+                        <br>
+                        <li>Expert Lecture on <b>Futuristic Artificial Intelligence Direction towards the Internet of Vehicles and Cyber Security</b> by Dr. Anand Nayar, Researcher and Scientist, Graduate School, Duy Tan University, Da Nang, Vietnam
+                           and organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, on 28th Jan, 2020.
+                        </li>
+                        <br>
+                        <li>Expert Lecture on <b>Industrial Applications of Artificial Intelligence and Machine Learning</b> by Dr. Ankur Singh Bist, Chief AI Scientist, Towards Blockchain, Gurugram and organized by the University School of
+                           Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, on 18th Nov, 2019.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="fdp-sttp" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="container">
+                     <h3 class=" text-lg-left mt-4 mb-0">Faculty Development Programmes</h3>
+                     <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+                     <br>
+                     <br>
+                     <ul type="circle">
+                        <li><b>One Week Faculty Development Programme on Big Data Analytics</b> organized by the University School of Engineering and University School of Information and Communication Technology, Gautam Buddha University, Greater
+                           NOIDA, UP, India from 04th - 09th Feb, 2019.
+                        </li>
+                        <br>
+                        <li><b>One Week Faculty Development Programme on Recent Trends of Soft Computing Techniques in Software Engineering and Applications</b> in collaboration with Spoken Tutorials (IIT Bombay), Computer Society of India NOIDA
+                           Chapter and IEEE GBU Chapter and organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA 19th - 24th Dec, 2016.
+                        </li>
+                        <br>
+                        <li><b>One Week Faculty Development Programme on Recent Advancements in Software Engineering and Network Technologies</b>, organized by USICT, Gautam Buddha University, Greater NOIDA, U.P., INDIA in collaboration with CSI,
+                           Chapter NOIDA, NOIDA, UP, India, 11th - 15th Jun, 2012.
+                        </li>
+                     </ul>
+                     <br>
+                     <h3 class=" text-lg-left mt-4 mb-0">Short Term Training Programmes</h3>
+                     <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+                     <br>
+                     <br>
+                     <ul type="circle">
+                        <li><b>One Week Short Term Course on Machine Learning and its Applications</b> conducted by University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, India and sponsored by
+                           DRDO in collaboration with Computer Society of India (NOIDA Chapter) and IEEE- GBU Chapter from 2nd to 7th Feb, 2019. 
+                        </li>
+                        <br>
+                        <li><b>One Week Short Term Course on Data Science using R through ICT</b> conducted by University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, India and organized by the
+                           National Institute of Technical Teachers Training and Research, Chandigarh from 26th - 30th Nov, 2018.
+                        </li>
+                        <br>
+                        <li><b>One Week Short Term Training Program on Research Techniques in Information and Communication Technology(RTICT’17)</b>, CSIR sponsored and in collaboration with Spoken Tutorials (IIT Bombay), Computer Society of India at
+                           School of ICT, Gautam Buddha University, Greater NOIDA, 30th Jan - 4th Feb, 2017.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="programming-events" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="container">
+                     <h3 class=" text-lg-left mt-4 mb-0">Programming Events</h3>
+                     <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+                     <br>
+                     <br>
+                     <ul type="circle">
+                        <li><b>4<sup>th</sup> One Week Programming Competition and Challenge War (Technovation 2020)</b>, organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP,
+                           INDIA from 24th to 29 Feb, 2020.
+                        </li>
+                        <br>
+                        <li> <b>3<sup>rd</sup> One Week Software Code Competition and Challenge War (SC3W) and Mobile Apps Development War</b>, organized by the University School of Information and Communication Technology, Gautam Buddha University,
+                           Greater NOIDA, UP, INDIA from 11th to 15th Sept, 2017.
+                        </li>
+                        <br>
+                        <li><b>2<sup>nd</sup> One Week Software Code Competition and Challenge War (SC3W) and Mobile Apps Development War </b>, organized by the School of Information and Communication Technology, Gautam Buddha University, Greater
+                           NOIDA, UP, INDIA from 7th to 12th Nov, 2016.
+                        </li>
+                        <br>
+                        <li><b>1<sup>st</sup> Code Competition and Challenge War (C3W) and Mobile Apps Development War</b>, organized by the School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA from
+                           8th to 10th Feb, 2016.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="university-industry-round-table" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="container">
+                     <h3 class=" text-lg-left mt-4 mb-0">University Industry Round Tables</h3>
+                     <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+                     <br>
+                     <br>
+                     <ul type="circle">
+                        <li><b>One Day University-Industry Research Roundtable</b> organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, India on 14th Nov, 2018.</li>
+                        <br>
+                     </ul>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="seminars" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="container">
+                     <h3 class=" text-lg-left mt-4 mb-0">Seminars</h3>
+                     <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+                     <br>
+                     <br>
+                     <ul type="circle">
+                        <li><b>One Day Idea Generation “National Seminar on Rapid and Alternative Energy Mobility” (RAEM-2019)</b> conducted by University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA,
+                           UP, India on 24th Jan, 2019.
+                        </li>
+                        <br>
+                     </ul>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="workshops" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="container">
+                     <h3 class=" text-lg-left mt-4 mb-0">Workshops</h3>
+                     <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 12%; background-color:#FB8C00 "></div>
+                     <br>
+                     <br>
+                     <ul type="circle">
+                        <li><b>One Day Workshop on Machine Learning using Python</b>, organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, in collaboration with Mapping Skills,
+                           Greater NOIDA on 28th Feb, 2020.
+                        </li>
+                        <br>
+                        <li><b>One Day Workshop on Python</b>, organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, on 22nd Feb, 2020.</li>
+                        <br>
+                        <li><b>One Day Workshop on Data Science and Machine Learning</b>, organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater Noida, UP, India, in collaboration with
+                           APTRON, NOIDA on 13th Feb, 2020.
+                        </li>
+                        <br>
+                        <li><b>One Day Workshop on Android Technology</b> organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, India in collaboration with DUCAT NOIDA, on 31st
+                           Jan, 2020.
+                        </li>
+                        <br>
+                        <li><b>One Day Workshop on Python</b> organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, India in collaboration with DUCAT NOIDA, on 24th Jan, 2020.
+                        </li>
+                        <br>
+                        <li><b>Two Days’ Workshop on “RAMS-Reliability, Availability, Maintainability and Safety”</b> conducted by School of Information and Communication Technology and Centre of Excellence Rapid Alternative Energy and Mobility
+                           (RAEM) Gautam Buddha University, Greater NOIDA, UP, India on 22nd - 23rd Apr, 2019.
+                        </li>
+                        <br>
+                        <li><b>One Day Workshop on LaTeX</b>, jointly organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA and Spoken Tutorial of IIT, Bombay, INDIA on 31th
+                           Aug, 2016.
+                        </li>
+                        <br>
+                        <li><b>One Day Workshop on Web Development through Word Press</b>, organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, INDIA on 6th Oct, 2016.</li>
+                        <br>
+                        <li><b>One Week Workshop on Cutting Edge Technologies of ICT</b> organized by the University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, India from 24th to 28th Sept, 2016.
+                        </li>
+                        <br>
+                        <li><b>One day Workshop on Cloud Computing</b> organized by University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, U.P., India in collaboration with, Microsoft Gold Certified
+                           partner, IIHT, Bangalore, on 30th Mar, 2016. 
+                        </li>
+                        <br>
+                        <li><b>One day Workshop on Android Technology</b> at University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, Uttar Pradesh, India in collaboration with Ducat, NOIDA, on 17th Feb,
+                           2016.
+                        </li>
+                        <br>
+                        <li><b>One day Workshop on PHP</b> at University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, Uttar Pradesh, India in collaboration with Ducat, NOIDA on 15th Feb, 2016. </li>
+                        <br>
+                        <li><b>International Workshop for Cloud Computing and its Application (IWCCA)-2013</b> organized by University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, Uttar Pradesh, INDIA
+                           in collaboration with SITP, DRDO, IEEE Computer Society Indian Council and IEEE GBU Student Chapter, Greater NOIDA, Uttar Pradesh, INDIA on 16th Feb, 2013. 
+                        </li>
+                        <br>
+                        <li><b>Workshop on Software Reliability and Testing</b>at University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, UP, India on 2nd - 3rd Sept, 2011.</li>
+                        <br>
+                        <li><b>Workshop on Wireless Communication</b>, University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, Uttar Pradesh, India, 20th Apr, 2011.</li>
+                        <br>
+                        <li><b>Workshop on Impact of Information Technology in Indian Society</b>, School of Information and Communication Tech., Gautam Buddha University, Greater NOIDA, U.P., India, 22nd Mar, 2011.</li>
+                        <br>
+                        <li><b>Workshop on Open Educational Resources and WikiEducator</b>, University School of Information and Communication Technology, Gautam Buddha University, Greater NOIDA, Uttar Pradesh, India sponsored by Commonwealth
+                           Educational Media Centre for Asia, New Delhi, India, 9th - 11th Jun, 2010.
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
          </div>
+         <!-- school activities end -->
+         <!-- laboratories section start -->
          <div class="tab-pane fade" id="laboratories-tab" role="tabpanel">
             <div class="container my-5">
                <div class="jumbotron mx-auto">
@@ -1250,275 +1132,164 @@
                         <tbody>
                            <tr>
                               <th scope="row">1</th>
-                              <td> 
-                                 Computer Laboratory-I
+                              <td>  Computer Laboratory-I
                               </td>
                               <td rowspan="2">
-                                 Dr. Pradeep Tomar
-                              </td>
+                                 Dr. Pradeep Tomar</td>
                               <td rowspan="2">
-                                 Ms. Sunita
-                              </td>
+                                 Ms. Sunita</td>
                            </tr>
                            <tr>
                               <th scope="row">2</th>
-                              <td>
-                                 Multimedia Technology Lab
-                              </td>
+                              <td>Multimedia Technology Lab</td>
                            </tr>
                            <tr>
                               <th scope="row">3</th>
-                              <td>
-                                 Computer Laboratory-II
-                              </td>
-                              <td>
-                                 Dr. Arun Solanki
-                              </td>
-                              <td>
-                                 Ms. Sunita <br>
-                                 Mr. Dharm Veer Singh
-                              </td>
+                              <td>Computer Laboratory-II</td>
+                              <td>Dr. Arun Solanki</td>
+                              <td>Ms. Sunita <br>
+                                 Mr. Dharm Veer Singh</td>
                            </tr>
                            <tr>
                               <th scope="row">4</th>
-                              <td>
-                                 Digital Electronics Lab
-                              </td>
-                              <td>
-                                 Mr. R. B. Singh
-                              </td>
-                              <td>
-                                 Mr. Himanshu Saini
-                              </td>
+                              <td>Digital Electronics Lab</td>
+                              <td>Mr. R. B. Singh</td>
+                              <td>Mr. Himanshu Saini</td>
                            </tr>
                            <tr>
                               <th scope="row">5</th>
-                              <td>
-                                 Electronics Circuits Lab <br>
-                                 Basic Electronics Lab
-                              </td>
-                              <td>
-                                 Dr. Priyanka Goyal
-                              </td>
-                              <td>
-                                 Mr. Ravindra Kumar
-                              </td>
+                              <td>Electronics Circuits Lab <br>
+                                 Basic Electronics Lab</td>
+                              <td>Dr. Priyanka Goyal</td>
+                              <td>Mr. Ravindra Kumar</td>
                            </tr>
                            <tr>
                               <th scope="row">6</th>
-                              <td>
-                                 Cyber Security Lab
-                              </td>
-                              <td>
-                                 Dr. Aarti Gautam Dinker
-                              </td>
-                              <td>
-                                 Mr. Sanjeev <br>
-                                 Mr. Sumit Kumar
-                              </td>
+                              <td>Cyber Security Lab</td>
+                              <td>Dr. Aarti Gautam Dinker</td>
+                              <td>Mr. Sanjeev <br>
+                                 Mr. Sumit Kumar</td>
                            </tr>
                            <tr>
                               <th scope="row">7</th>
-                              <td>
-                                 Software Engineering Lab <br>
-                                 Programming Lab-III
-                              </td>
-                              <td>
-                                 Dr. Sandhya Tarar
-                              </td>
-                              <td>
-                                 Mr. Sanjeev Kumar <br>
-                                 Mr. Mahendra Singh
-                              </td>
+                              <td>Software Engineering Lab <br>
+                                 Programming Lab-III</td>
+                              <td>Dr. Sandhya Tarar</td>
+                              <td>Mr. Sanjeev Kumar <br>
+                                 Mr. Mahendra Singh</td>
                            </tr>
                            <tr>
                               <th scope="row">8</th>
-                              <td>
-                                 DSP Lab
-                              </td>
+                              <td>DSP Lab</td>
                               <td rowspan="2">
-                                 Dr. Rajesh Mishra
-                              </td>
+                                 Dr. Rajesh Mishra</td>
                               <td rowspan="2">
                                  Mr. Himanshu <br>
-                                 Mr. Sumit Kumar
-                              </td>
+                                 Mr. Sumit Kumar</td>
                            </tr>
                            <tr>
                               <th scope="row">9</th>
-                              <td>
-                                 Advanced DSP Lab
-                              </td>
+                              <td>Advanced DSP Lab</td>
                            </tr>
                            <tr>
                               <th scope="row">10</th>
-                              <td>
-                                 Advance Analog and Digital Communication Lab
-                              </td>
-                              <td>
-                                 Dr. Priyanka Goyal
-                              </td>
-                              <td>
-                                 Mr. Anmol Nagar
-                              </td>
+                              <td>Advance Analog and Digital Communication Lab</td>
+                              <td>Dr. Priyanka Goyal</td>
+                              <td>Mr. Anmol Nagar</td>
                            </tr>
                            <tr>
                               <th scope="row">11</th>
-                              <td>
-                                 VLSI Design Lab
-                              </td>
+                              <td>VLSI Design Lab</td>
                               <td rowspan="3">
-                                 Dr. Navaid Zafar Rizvi
-                              </td>
+                                 Dr. Navaid Zafar Rizvi</td>
                               <td rowspan="3">
                                  Mr. Anmol Nagar <br>
-                                 Mr. Moshin Khan
-                              </td>
+                                 Mr. Moshin Khan</td>
                            </tr>
                            <tr>
                               <th scope="row">12</th>
-                              <td>
-                                 Design Lab (VLSI)
-                              </td>
+                              <td>Design Lab (VLSI)</td>
                            </tr>
                            <tr>
                               <th scope="row">13</th>
-                              <td>
-                                 Digital IC Design Lab
-                              </td>
+                              <td>Digital IC Design Lab</td>
                            </tr>
                            <tr>
                               <th scope="row">14</th>
-                              <td>
-                                 Microprocessor and Interface Lab
-                              </td>
-                              <td>
-                                 Dr. Sandeep Sharma
-                              </td>
-                              <td>
-                                 Mr. Anmol Nagar <br>
-                                 Mr. Moshin Khan
-                              </td>
+                              <td>Microprocessor and Interface Lab</td>
+                              <td>Dr. Sandeep Sharma</td>
+                              <td>Mr. Anmol Nagar <br>
+                                 Mr. Moshin Khan</td>
                            </tr>
                            <tr>
                               <th scope="row">15</th>
-                              <td>
-                                 Microwave &amp; Antenna Lab
-                              </td>
+                              <td>Microwave &amp; Antenna Lab</td>
                               <td rowspan="2">
-                                 Dr. Navaid Zafar Rizvi
-                              </td>
+                                 Dr. Navaid Zafar Rizvi</td>
                               <td rowspan="2">
-                                 Mr. Ravindra Kumar
-                              </td>
+                                 Mr. Ravindra Kumar</td>
                            </tr>
                            <tr>
                               <th scope="row">16</th>
-                              <td>
-                                 Microwave Engineering Lab
-                              </td>
+                              <td>Microwave Engineering Lab</td>
                            </tr>
                            <tr>
                               <th scope="row">17</th>
-                              <td>
-                                 Computer Networking Lab
-                              </td>
+                              <td>Computer Networking Lab</td>
                               <td rowspan="3">
-                                 Dr. Neeta Singh
-                              </td>
+                                 Dr. Neeta Singh</td>
                               <td rowspan="3">
-                                 Mr. Sanjeev Kumar
-                              </td>
+                                 Mr. Sanjeev Kumar</td>
                            </tr>
                            <tr>
                               <th scope="row">18</th>
-                              <td>
-                                 Design Lab (WCN)
-                              </td>
+                              <td>Design Lab (WCN)</td>
                            </tr>
                            <tr>
                               <th scope="row">19</th>
-                              <td>
-                                 Parallel Processing Lab
-                              </td>
+                              <td>Parallel Processing Lab</td>
                            </tr>
                            <tr>
                               <th scope="row">20</th>
-                              <td>
-                                 Expert System Lab
-                              </td>
-                              <td>
-                                 Dr. Arun Solanki
-                              </td>
-                              <td>
-                                 Ms. Sunita
-                              </td>
+                              <td>Expert System Lab</td>
+                              <td>Dr. Arun Solanki</td>
+                              <td>Ms. Sunita</td>
                            </tr>
                            <tr>
                               <th scope="row">21</th>
-                              <td>
-                                 Electronic Workshop Lab
-                              </td>
-                              <td>
-                                 Dr. Vimlesh Kumar
-                              </td>
-                              <td>
-                                 Mr. Hinanshu Saini
-                              </td>
+                              <td>Electronic Workshop Lab</td>
+                              <td>Dr. Vimlesh Kumar</td>
+                              <td>Mr. Hinanshu Saini</td>
                            </tr>
                            <tr>
                               <th scope="row">22</th>
-                              <td>
-                                 Wireless Technology Research Lab
-                              </td>
-                              <td>
-                                 Dr. Vidushi Sharma
-                              </td>
-                              <td>
-                                 Mr. Sanjeev
-                              </td>
+                              <td>Wireless Technology Research Lab</td>
+                              <td>Dr. Vidushi Sharma</td>
+                              <td>Mr. Sanjeev</td>
                            </tr>
                            <tr>
                               <th scope="row">23</th>
-                              <td>
-                                 Logic Design Lab
-                              </td>
+                              <td>Logic Design Lab</td>
                               <td rowspan="2">
-                                 Dr. Anurag Singh Baghel
-                              </td>
+                                 Dr. Anurag Singh Baghel</td>
                               <td rowspan="2">
-                                 Mr. Anmol Nagar
-                              </td>
+                                 Mr. Anmol Nagar</td>
                            </tr>
                            <tr>
                               <th scope="row">24</th>
-                              <td>
-                                 Artificial Intelligence &amp; Robotic Lab
-                              </td>
+                              <td>Artificial Intelligence &amp; Robotic Lab</td>
                            </tr>
                            <tr>
                               <th scope="row">25</th>
-                              <td>
-                                 Optical Communication Lab
-                              </td>
-                              <td>
-                                 Dr. Rajesh Mishra
-                              </td>
-                              <td>
-                                 Mr. Ravindra Kumar
-                              </td>
+                              <td>Optical Communication Lab</td>
+                              <td>Dr. Rajesh Mishra</td>
+                              <td>Mr. Ravindra Kumar</td>
                            </tr>
                            <tr>
                               <th scope="row">26</th>
-                              <td>
-                                 Research Project Lab
-                              </td>
-                              <td>
-                                 Dr. Pradeep Tomar
-                              </td>
-                              <td>
-                                 Ms. Sunita
-                              </td>
+                              <td>Research Project Lab</td>
+                              <td>Dr. Pradeep Tomar</td>
+                              <td>Ms. Sunita</td>
                            </tr>
                         </tbody>
                      </table>
@@ -1526,368 +1297,8 @@
                </div>
             </div>
          </div>
-         <div class="tab-pane fade" id="contactus-tab" role="tabpanel">
-            <div class="container my-5">
-               <div class="jumbotron py-3">
-                  <h3 class="text-lg-left mt-3 mb-0">Contact Us | USICT</h3>
-                  <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 "></div>
-                  <br><br>
-                  <h5 class="card-title ml-5 "> <b>USICT Office</b></h5>
-                  <p class="card-text ml-5"> University School of Information and Communication Technology,<br>
-                     Gautam Buddha University, Greater NOIDA, 201312,<br>
-                     Distt. Gautam Budh Nagar, Uttar Pradesh, INDIA <br>
-                     <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202346070"> 0120-234 6070 </a><br>
-                     <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:soict@gbu.ac.in"> soict@gbu.ac.in</a>
-                  </p>
-                  <br>
-                  <h5 class="card-title ml-5 "> <b>Prof. Sanjay Kumar Sharma | Dean</b></h5>
-                  <p class="card-text ml-5"> University School of Information and Communication Technology,<br>
-                     Gautam Buddha University, Greater NOIDA, 201312,<br>
-                     Distt. Gautam Budh Nagar, Uttar Pradesh, INDIA <br>
-                     <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202346067"> 0120-234 6067 </a><br>
-                     <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:sanjay.sharma@gbu.ac.in"> sanjay.sharma@gbu.ac.in</a>
-                  </p>
-                  <br>
-                  <h5 class="card-title ml-5 "> <b>Dr. Pradeep Tomar | Head of Department</b></h5>
-                  <p class="card-text ml-5"> Department of Computer Science and Engineering, <br>
-                     University School of Information and Communication Technology,<br>
-                     Gautam Buddha University, Greater NOIDA, 201312,<br>
-                     Distt. Gautam Budh Nagar, Uttar Pradesh, INDIA <br>
-                     <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202346085"> 0120-234 6085 </a><br>
-                     <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:pradeep.tomar@gbu.ac.in"> pradeep.tomar@gbu.ac.in</a>
-                  </p>
-                  <br>
-                  <h5 class="card-title ml-5 "> <b>Dr. Sandeep Sharma | Head of Department</b></h5>
-                  <p class="card-text ml-5"> Department of Electronics and Communication Engineering, <br>
-                     University School of Information and Communication Technology,<br>
-                     Gautam Buddha University, Greater NOIDA, 201312,<br>
-                     Distt. Gautam Budh Nagar, Uttar Pradesh, INDIA <br>
-                     <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202346087"> 0120-234 6087 </a><br>
-                     <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:sandeepsharma@gbu.ac.in
-                        "> sandeepsharma@gbu.ac.in
-                     </a>
-                  </p>
-                  <br>
-               </div>
-            </div>
-         </div>
-         <div class="tab-pane fade" id="placements-overview-tab" role="tabpanel">
-            <div class="container my-5">
-               <div class="jumbotron">
-                  <h1 class="text-center">Placements | SOICT</h1>
-                  <br>
-                  <div class="">
-                     <p>The corporate relationship center (CRC) involves students strategically and guides them for obtaining appropriate placement. The departmental placement committee which comprises of student representatives supervised by faculty coordinators works in collaboration with the university CRC.
-                     </p>
-                     <p>
-                        <b>To Download Placement Brochure</b>
-                     </p>
-                     <p>
-                        <a href="../../gbudata/Placements/SOICT_placement%20Brochure_31Jan18.pdf" target="_blank">
-                        <span class="Apple-converted-space"></span>
-                        <span>
-                        <u>Click Here</u>
-                        </span>
-                        </a>
-                     </p>
-                     <p>
-                        <a href="../../gbudata/Placements/PlacementWebmatter2012.pdf" target="_blank">
-                        <b>List of Organizations conducted the Recruitment drive for MBA/M.Tech Students passing out in year 2012
-                        </b>
-                        </a>
-                     </p>
-                     <p>
-                        <a href="../../gbudata/Placements/SOICT_PlacementGlance_2017_31jAN18.pdf" target="_blank">
-                        <b>Placement at Glance – SOICT</b>
-                        </a>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="tab-pane fade" id="summer-placements-tab" role="tabpanel">
-            <div class="container my-5">
-               <div class="jumbotron">
-                  <h1 class="text-center">Summer Placements | SOICT</h1>
-                  <br>
-                  <table class="table-responsive border-0" width="100%" height="98%" border="0">
-                     <tbody>
-                        <tr>
-                           <td>
-                              <table class="table-responsive border-0" width="100%">
-                                 <tbody>
-                                    <tr>
-                                       <td><img alt="" src="../../gbudata/images/bullet.gif"> <a href="../../gbudata/SIT/SOICT_Preplacement%20Activities_31Jan18.pdf" target="_blank">
-                                          <b>Summer Placements</b>
-                                          </a>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td colspan="3"></td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </div>
-         </div>
-         <div class="tab-pane fade" id="final-placements-tab" role="tabpanel">
-            <div class="container my-5">
-               <div class="jumbotron">
-                  <h1 class="text-center">Final Placements | SOICT</h1>
-                  <br>
-                  <p>The Campus Placement aims to meet the increasing demands of the business organisations. The process spreads from the month of January to May, wherein the companies from diverse sectors evaluate the students before committing to a permanent hire.
-                  </p>
-                  <p>We have pleasure in announcing that we have been able to garner massive support and patronage of industries and corporate world in terms of final placement of our first batch of M.Tech. students for the session 2010-11.
-                  </p>
-                  <p>
-                     <img alt="" src="../../gbudata/images/bullet.gif">
-                     <a href="../../gbudata/SIT/SOICT_List%20of%20Students%20Placement17-18_31Jan%202018.pdf" target="_blank">
-                     <b>List of Students 17-18</b>
-                     </a>
-                  </p>
-                  <p>
-                     <img alt="" src="../../gbudata/images/bullet.gif">
-                     <a href="../../gbudata/SIT/SOICT_List%20of%20Students_16-17_31Jan18.pdf" target="_blank">
-                     <b>List of Students 16-17</b>
-                     </a>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="tab-pane fade" id="placement-helpdesk-tab" role="tabpanel">
-            <div class="container my-5">
-               <div class="jumbotron">
-                  <h1 class="text-center">Placement HelpDesk | SOICT</h1>
-                  <br>
-                  <p>Information and Communication Technology is one of the most fascinating fields for understanding and practicing. Even a tiny piece of device nugget possess incredible magic. A mobile phone take electromagnetic signal from the air, convert, compress and process this information and shove it again to air. Jillions of these data in a very short span of time received these message, and sent reliably to different corner of the globe. Everybody throught the universe is just connected wirelessly through just one number identity.</p>
-                  <p>There are plenty of infrastructure and specialized faculties available in ICT imparting uptodate programs according to the need of the time. The students of ICT are nurtured in such a way they can be well recruitable or become reasearchers after completion of their degree from our School.</p>
-                  <p>We are very young and a way towards becoming a renowned academic excellence centre in future. We are confident that this bunch of professional talents, who are going to complete our studies from our School, will be of great value and a big asset to any organization they join. We recommend the current batch for your consideration.</p>
-                  <hr>
-                  <p><b>Mr. Vinay Kumar Litoria</b></p>
-                  <p>Manager,Corporate Relations</p>
-                  <p>Phone no. +91-120-2344209</p>
-                  <p>Mobile no. +91-9717195787</p>
-                  <p><b>Email: crc@gbu.ac.in , vinay.litoria@gbu.ac.in</b></p>
-                  <p><b>Web: www.gbu.ac.in</b></p>
-                  <hr>
-                  <p><b>Dr. Navaid Z. Rizvi</b></p>
-                  <p>Mobile no. +91-9971475401</p>
-                  <p><b>Email: crc@gbu.ac.in , navaid@gbu.ac.in</b></p>
-                  <p><b>Web: www.gbu.ac.in</b></p>
-                  <hr>
-                  <p><b>Mr. Vimlesh Kumar</b></p>
-                  <p>Mobile no. +91-9650081596</p>
-                  <p><b>Email: crc@gbu.ac.in , vimlesh@gbu.ac.in</b></p>
-                  <p><b>Web: www.gbu.ac.in</b></p>
-               </div>
-            </div>
-         </div>
-         <div class="tab-pane fade" id="research-publication-tab" role="tabpanel">
-            <div class="container my-5">
-               <div class="jumbotron">
-                  <h1 class="text-center">Research and Publications | SOICT</h1>
-                  <br>
-                  <table class="table-responsive border-0" border="0" cellpadding="0" cellspacing="0" width="100%">
-                     <tbody>
-                        <tr>
-                           <td>
-                              <p>School of Information &amp; Communication Technology provides a rich platform for the Research associates to carry out the research initiatives.Currently research in following themes are being carried out.</p>
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table-responsive border-0" border="0" cellpadding="0" cellspacing="0" width="100%">
-                     <tbody>
-                        <tr>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>1. <a href="../../gbudata/SIT/PhD%20resesearch%20Scholars%20-School%20of%20ICT_5Dec2016.pdf" target="_blank"><img src="../../gbudata/images/pdfphoto.JPG" alt="" width="40" height="40"> List of Ph.D. Research Scholars –School of ICT</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </td></tr></tbody></table>
-               </div>
-            </div>
-         </div>
-         <div class="tab-pane fade" id="faculty-tab" role="tabpanel">
-            <div class="">
-               <div class="container">
-                  <h1 class="text-center">Faculty | SOICT</h1>
-                  <br>
-                  <p>One of the biggest strengths of the School of Information Technology is its dedicated, competent and accomplished faculty. The faculty members have distinguished academic achievements in their respective areas and the related basic disciplines and are actively involved in teaching, training, and research. They conduct consultancy assignments to keep in touch with the real-life corporate challenges in public and Private Companies, financial institutions, government agencies and international agencies etc. Dedicated academicians and eminent researchers are also committed to bringing out the latent potential in every student. The faculty members of the university are prepared to take an extra step that separates excellence from merely adequate. As this is a residential campus, the faculty members are available for consultations and guidance outside the classroom as well in an informal and customized level.
-                  </p>
-               </div>
-               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-               <div id="cards-container">
-                  <%faculties.forEach(function(faculty){%>
-                  <%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position=="Dean"){%>
-                  <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                     <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                     <p><strong><%=faculty.position
-                        %></strong></p>
-                     <p><%=faculty.qualification%></p>
-                     <p><%=faculty.field_of_teaching%></p>
-                  </div>
-                  <%}%>
-                  <%})%>
-                  <%faculties.forEach(function(faculty){%>
-                  <%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position!="Dean"){%>
-                  <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                     <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a target="_blank" href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                     <p><strong><%=faculty.position
-                        %></strong></p>
-                     <p><%=faculty.qualification%></p>
-                     <p><%=faculty.field_of_teaching%></p>
-                  </div>
-                  <%}%>
-                  <%})%>
-               </div>
-            </div>
-         </div>
-         <!-- guest faculty start -->
-         <div class="tab-pane fade" id="faculty-visiting11" role="tabpanel">
-               <div class="container">
-                  <h1 class="text-center">Visiting Faculty | SOICT</h1>
-                  <br>
-                  <p>One of the biggest strengths of the School of Information Technology is its dedicated, competent and accomplished faculty. The faculty members have distinguished academic achievements in their respective areas and the related basic disciplines and are actively involved in teaching, training, and research. They conduct consultancy assignments to keep in touch with the real-life corporate challenges in public and Private Companies, financial institutions, government agencies and international agencies etc. Dedicated academicians and eminent researchers are also committed to bringing out the latent potential in every student. The faculty members of the university are prepared to take an extra step that separates excellence from merely adequate. As this is a residential campus, the faculty members are available for consultations and guidance outside the classroom as well in an informal and customized level.
-                  </p>
-                  <b>Department of Computer Science and Engineering</b>
-                <div class="table-responsive">
-                     <table class="table table-hover table-bordered">
-                       <tbody>
-                           <tr>
-                              <th>S. No.</th>
-                              <th>Faculty Name</th>
-                              <th>Specialization</th>
-                           </tr>
-                           <tr>
-                              <td>1</td>
-                              <td>Mr. Ankur Kumar Singhal</td>
-                              <td>Data Structure and Algorithm</td>
-                           </tr>
-                           <tr>
-                              <td>2</td>
-                              <td>Mr. Anuj Sachan</td>
-                              <td>Information Security</td>
-                           </tr>
-                           <tr>
-                              <td>3</td>
-                              <td>Mr. Aseem Chaudhary</td>
-                              <td>Data Science</td>
-                           </tr>
-                           <tr>
-                              <td>4</td>
-                              <td>Mr. Jatin</td>
-                              <td>Computer Networks</td>
-                           </tr>
-                           <tr>
-                              <td>5</td>
-                              <td>Mr. Krishan Kumar</td>
-                              <td>Software Engineering</td>
-                           </tr>
-                           <tr>
-                              <td>6</td>
-                              <td>Mr. Mayank Tyagi</td>
-                              <td>Computer Networks</td>
-                           </tr>
-                           <tr>
-                              <td>7</td>
-                              <td>Mr. Sachin Panwar</td>
-                              <td>Java Programming</td>
-                           </tr>
-                           <tr>
-                              <td>8</td>
-                              <td>Ms. Aparna Singh</td>
-                              <td>Software Engineering</td>
-                           </tr>
-                           <tr>
-                              <td>9</td>
-                              <td>Ms. Archana</td>
-                              <td>Operating System</td>
-                           </tr>
-                           <tr>
-                              <td>10</td>
-                              <td>Ms. Deepti Singh</td>
-                              <td>Software Engineering</td>
-                           </tr>
-                           <tr>
-                              <td>11</td>
-                              <td>Ms. Diksha Sharma</td>
-                              <td>Cloud Computing</td>
-                           </tr>
-                           <tr>
-                              <td>12</td>
-                              <td>Ms. Jyoti Rani</td>
-                              <td>Artificial Intelligence</td>
-                           </tr>
-                           <tr>
-                              <td>13</td>
-                              <td>Ms. Mamta Punia</td>
-                              <td>Software Engineering</td>
-                           </tr>
-                           <tr>
-                              <td>14</td>
-                              <td>Ms. Snehlata Gautam</td>
-                              <td>Software Engineering</td>
-                           </tr>
-                           <tr>
-                              <td>15</td>
-                              <td>Ms. Sonica Upadhyay</td>
-                              <td>Data Structure and Algorithm</td>
-                           </tr>
-                           <tr>
-                              <td>16</td>
-                              <td>Ms. Sumedha</td>
-                              <td>Computer Networks</td>
-                           </tr>
-                       </tbody>
-                    </table>
-                </div>
-                <b>Department of Electronics and Communication Engineering</b>
-<div class="table-responsive">
-                     <table class="table table-hover table-bordered">
-                        <tbody>
-       <tr>
-         <th>S. No.</th>
-         <th>Faculty Name</th>
-         <th>Specialization</th>
-      </tr>
-      <tr>
-         <td>1</td>
-         <td>Dr. Gaurav Tewari</td>
-         <td>Antennas and Microwaves</td>
-      </tr>
-      <tr>
-         <td>2</td>
-         <td>Ms. Bhawna Kankane</td>
-         <td>VLSI Design</td>
-      </tr>
-      <tr>
-         <td>3</td>
-         <td>Ms. Isha</td>
-         <td>Wireless Communication &amp; Networks</td>
-      </tr>
-      <tr>
-         <td>4</td>
-         <td>Ms. Sugandha Yadav</td>
-         <td>VLSI Design</td>
-      </tr>
-      <tr>
-         <td>5</td>
-         <td>Sh. Jitendra Ahirwar</td>
-         <td>Basic Electronic</td>
-      </tr>
-   </tbody>
-</table>
-</div>
-            </div>
-         </div>
-         <!-- guest faculty end -->
+         <!-- laboratories section end -->
+         <!-- guest speaker start -->
          <div class="tab-pane fade" id="guest-speaker-tab" role="tabpanel">
             <div class="container my-5">
                <div class="jumbotron">
@@ -2114,31 +1525,581 @@
                </div>
             </div>
          </div>
-         <div class="tab-pane fade" id="training-consultancy-tab" role="tabpanel">
+         <!-- guest speaker end -->
+         <!-- directory section start -->
+         <div class="tab-pane fade" id="directory-tab" role="tabpanel">
             <div class="container my-5">
-               <div class="jumbotron">
-                  <h1 class="text-center">Training and Consultancy | SOICT</h1>
+               <div class="jumbotron text-center">
+                  <h1 class="text-center b">Directory | SOICT</h1>
                   <br>
-                  <br>
-                  <h5>School of ICT provides Corporate Consultancy, Training, FDP's, Workshop in the fields of</h5>
-                  <ul>
-                     <li>NETWORKING</li>
-                     <li>ARTIFICIAL INTELLIGENCE</li>
-                     <li>INFORMATION MANAGEMENT</li>
-                     <li>COMMUNICATION TECHNOLOGIES</li>
-                     <li>SOFTWARE ENGINEERING</li>
-                  </ul>
+                  <div class="table-responsive">
+                     <table class="table table-hover table-bordered">
+                        <thead>
+                           <tr>
+                              <th scope="col">S.No.</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Phone No.</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1</th>
+                              <td>
+                                 Dean
+                              </td>
+                              <td>
+                                 0120-2346067
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">2</th>
+                              <td>
+                                 Dr. Rajesh Mishra
+                              </td>
+                              <td>
+                                 0120-2346076
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">3</th>
+                              <td>
+                                 Dr. Vidushi Sharma
+                              </td>
+                              <td>
+                                 0120-2346077
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">4</th>
+                              <td>
+                                 Dr. Anurag Singh   Baghel
+                              </td>
+                              <td>
+                                 0120-2346090
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">5</th>
+                              <td>
+                                 Dr. Neeta Singh
+                              </td>
+                              <td>
+                                 0120-2346080
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">6</th>
+                              <td>
+                                 Dr. Pradeep Tomar
+                              </td>
+                              <td>
+                                 0120-2346085
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">7</th>
+                              <td>
+                                 Dr. Arun Solanki
+                              </td>
+                              <td>
+                                 0120-2346083
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">8</th>
+                              <td>
+                                 Dr. Sandhya Tarar
+                              </td>
+                              <td>
+                                 0120-2346078
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">9</th>
+                              <td>
+                                 Dr. Navaid Zafar Rizvi
+                              </td>
+                              <td>
+                                 0120-2346086
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">10</th>
+                              <td>
+                                 Dr. Sandeep Sharma
+                              </td>
+                              <td>
+                                 0120-2346087
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">11</th>
+                              <td>
+                                 Ms. Nidhi Gulati
+                              </td>
+                              <td>
+                                 0120-2346079
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">12</th>
+                              <td>
+                                 Dr. Vimlesh Kumar
+                              </td>
+                              <td>
+                                 0120-2346093
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">13</th>
+                              <td>
+                                 Ms. Aarti Gautam Dinker
+                              </td>
+                              <td>
+                                 0120-2346096
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">14</th>
+                              <td>
+                                 Mr. Rajendra Bahadur Singh
+                              </td>
+                              <td>
+                                 0120-2346095
+                              </td>
+                           </tr>
+                           <tr>
+                              <th scope="row">15</th>
+                              <td>
+                                 Dr. Priyanka Goyal
+                              </td>
+                              <td>
+                                 0120-2346098
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
                </div>
             </div>
          </div>
-         <div class="tab-pane fade" id="" role="tabpanel">
+         <!-- directory section end -->
+          <!-- permanent facutly ICT start -->
+         <div class="tab-pane fade" id="faculty-tab" role="tabpanel">
+            <div class="">
+               <div class="container">
+                  <h1 class="text-center">Faculty | SOICT</h1>
+                  <br>
+                  <p>One of the biggest strengths of the School of Information Technology is its dedicated, competent and accomplished faculty. The faculty members have distinguished academic achievements in their respective areas and the related basic disciplines and are actively involved in teaching, training, and research. They conduct consultancy assignments to keep in touch with the real-life corporate challenges in public and Private Companies, financial institutions, government agencies and international agencies etc. Dedicated academicians and eminent researchers are also committed to bringing out the latent potential in every student. The faculty members of the university are prepared to take an extra step that separates excellence from merely adequate. As this is a residential campus, the faculty members are available for consultations and guidance outside the classroom as well in an informal and customized level.
+                  </p>
+               </div>
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+               <div id="cards-container">
+                  <%faculties.forEach(function(faculty){%>
+                  <%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position=="Dean"){%>
+                  <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                     <b><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></b>
+                     <p><b><%=faculty.position
+                        %></b></p>
+                     <p><%=faculty.qualification%></p>
+                     <p><%=faculty.field_of_teaching%></p>
+                  </div>
+                  <%}%>
+                  <%})%>
+                  <%faculties.forEach(function(faculty){%>
+                  <%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position!="Dean"){%>
+                  <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                     <b><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a target="_blank" href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></b>
+                     <p><b><%=faculty.position
+                        %></b></p>
+                     <p><%=faculty.qualification%></p>
+                     <p><%=faculty.field_of_teaching%></p>
+                  </div>
+                  <%}%>
+                  <%})%>
+               </div>
+            </div>
+         </div>
+         <!-- permanent faculty ICT end -->
+         <!-- guest faculty start -->
+         <div class="tab-pane fade" id="faculty-visiting11" role="tabpanel">
+            <div class="container">
+               <div class="jumbotron">
+               <h1 class="text-center">Visiting Faculty | SOICT</h1>
+               <br>
+               <p>One of the biggest strengths of the School of Information Technology is its dedicated, competent and accomplished faculty. The faculty members have distinguished academic achievements in their respective areas and the related basic disciplines and are actively involved in teaching, training, and research. They conduct consultancy assignments to keep in touch with the real-life corporate challenges in public and Private Companies, financial institutions, government agencies and international agencies etc. Dedicated academicians and eminent researchers are also committed to bringing out the latent potential in every student. The faculty members of the university are prepared to take an extra step that separates excellence from merely adequate. As this is a residential campus, the faculty members are available for consultations and guidance outside the classroom as well in an informal and customized level.
+               </p>
+               <b>Department of Computer Science and Engineering</b>
+               <div class="table-responsive">
+                  <table class="table table-hover table-bordered">
+                     <tbody>
+                        <tr>
+                           <th>S. No.</th>
+                           <th>Faculty Name</th>
+                           <th>Specialization</th>
+                        </tr>
+                        <tr>
+                           <td>1</td>
+                           <td>Mr. Ankur Kumar Singhal</td>
+                           <td>Data Structure and Algorithm</td>
+                        </tr>
+                        <tr>
+                           <td>2</td>
+                           <td>Mr. Anuj Sachan</td>
+                           <td>Information Security</td>
+                        </tr>
+                        <tr>
+                           <td>3</td>
+                           <td>Mr. Aseem Chaudhary</td>
+                           <td>Data Science</td>
+                        </tr>
+                        <tr>
+                           <td>4</td>
+                           <td>Mr. Jatin</td>
+                           <td>Computer Networks</td>
+                        </tr>
+                        <tr>
+                           <td>5</td>
+                           <td>Mr. Krishan Kumar</td>
+                           <td>Software Engineering</td>
+                        </tr>
+                        <tr>
+                           <td>6</td>
+                           <td>Mr. Mayank Tyagi</td>
+                           <td>Computer Networks</td>
+                        </tr>
+                        <tr>
+                           <td>7</td>
+                           <td>Mr. Sachin Panwar</td>
+                           <td>Java Programming</td>
+                        </tr>
+                        <tr>
+                           <td>8</td>
+                           <td>Ms. Aparna Singh</td>
+                           <td>Software Engineering</td>
+                        </tr>
+                        <tr>
+                           <td>9</td>
+                           <td>Ms. Archana</td>
+                           <td>Operating System</td>
+                        </tr>
+                        <tr>
+                           <td>10</td>
+                           <td>Ms. Deepti Singh</td>
+                           <td>Software Engineering</td>
+                        </tr>
+                        <tr>
+                           <td>11</td>
+                           <td>Ms. Diksha Sharma</td>
+                           <td>Cloud Computing</td>
+                        </tr>
+                        <tr>
+                           <td>12</td>
+                           <td>Ms. Jyoti Rani</td>
+                           <td>Artificial Intelligence</td>
+                        </tr>
+                        <tr>
+                           <td>13</td>
+                           <td>Ms. Mamta Punia</td>
+                           <td>Software Engineering</td>
+                        </tr>
+                        <tr>
+                           <td>14</td>
+                           <td>Ms. Snehlata Gautam</td>
+                           <td>Software Engineering</td>
+                        </tr>
+                        <tr>
+                           <td>15</td>
+                           <td>Ms. Sonica Upadhyay</td>
+                           <td>Data Structure and Algorithm</td>
+                        </tr>
+                        <tr>
+                           <td>16</td>
+                           <td>Ms. Sumedha</td>
+                           <td>Computer Networks</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <b>Department of Electronics and Communication Engineering</b>
+               <div class="table-responsive">
+                  <table class="table table-hover table-bordered">
+                     <tbody>
+                        <tr>
+                           <th>S. No.</th>
+                           <th>Faculty Name</th>
+                           <th>Specialization</th>
+                        </tr>
+                        <tr>
+                           <td>1</td>
+                           <td>Dr. Gaurav Tewari</td>
+                           <td>Antennas and Microwaves</td>
+                        </tr>
+                        <tr>
+                           <td>2</td>
+                           <td>Ms. Bhawna Kankane</td>
+                           <td>VLSI Design</td>
+                        </tr>
+                        <tr>
+                           <td>3</td>
+                           <td>Ms. Isha</td>
+                           <td>Wireless Communication &amp; Networks</td>
+                        </tr>
+                        <tr>
+                           <td>4</td>
+                           <td>Ms. Sugandha Yadav</td>
+                           <td>VLSI Design</td>
+                        </tr>
+                        <tr>
+                           <td>5</td>
+                           <td>Sh. Jitendra Ahirwar</td>
+                           <td>Basic Electronic</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         </div>
+         <!-- guest faculty end -->
+         <!-- placement overview start -->
+         <div class="tab-pane fade" id="placements-overview-tab" role="tabpanel">
             <div class="container my-5">
                <div class="jumbotron">
-                  <h1 class="text-center">Contact Us</h1>
+                  <h1 class="text-center">Placements | SOICT</h1>
+                  <br>
+                  <div class="">
+                     <p>The corporate relationship center (CRC) involves students strategically and guides them for obtaining appropriate placement. The departmental placement committee which comprises of student representatives supervised by faculty coordinators works in collaboration with the university CRC.
+                     </p>
+                     <p>
+                        <b>To Download Placement Brochure</b>
+                     </p>
+                     <p>
+                        <a href="../../gbudata/Placements/SOICT_placement%20Brochure_31Jan18.pdf" target="_blank">
+                        <span class="Apple-converted-space"></span>
+                        <span>
+                        <u>Click Here</u>
+                        </span>
+                        </a>
+                     </p>
+                     <p>
+                        <a href="../../gbudata/Placements/PlacementWebmatter2012.pdf" target="_blank">
+                        <b>List of Organizations conducted the Recruitment drive for MBA/M.Tech Students passing out in year 2012
+                        </b>
+                        </a>
+                     </p>
+                     <p>
+                        <a href="../../gbudata/Placements/SOICT_PlacementGlance_2017_31jAN18.pdf" target="_blank">
+                        <b>Placement at Glance – SOICT</b>
+                        </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- placement overview end -->
+         <!-- summer placement start -->
+         <div class="tab-pane fade" id="summer-placements-tab" role="tabpanel">
+            <div class="container my-5">
+               <div class="jumbotron">
+                  <h1 class="text-center">Summer Placements | SOICT</h1>
+                  <br>
+                  <table class="table-responsive border-0" width="100%" height="98%" border="0">
+                     <tbody>
+                        <tr>
+                           <td>
+                              <table class="table-responsive border-0" width="100%">
+                                 <tbody>
+                                    <tr>
+                                       <td><img alt="" src="../../gbudata/images/bullet.gif"> <a href="../../gbudata/SIT/SOICT_Preplacement%20Activities_31Jan18.pdf" target="_blank">
+                                          <b>Summer Placements</b>
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td colspan="3"></td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <!-- summer placement end -->
+         <!-- final placement start -->
+         <div class="tab-pane fade" id="final-placements-tab" role="tabpanel">
+            <div class="container my-5">
+               <div class="jumbotron">
+                  <h1 class="text-center">Final Placements | SOICT</h1>
+                  <br>
+                  <p>The Campus Placement aims to meet the increasing demands of the business organisations. The process spreads from the month of January to May, wherein the companies from diverse sectors evaluate the students before committing to a permanent hire.
+                  </p>
+                  <p>We have pleasure in announcing that we have been able to garner massive support and patronage of industries and corporate world in terms of final placement of our first batch of M.Tech. students for the session 2010-11.
+                  </p>
+                  <p>
+                     <img alt="" src="../../gbudata/images/bullet.gif">
+                     <a href="../../gbudata/SIT/SOICT_List%20of%20Students%20Placement17-18_31Jan%202018.pdf" target="_blank">
+                     <b>List of Students 17-18</b>
+                     </a>
+                  </p>
+                  <p>
+                     <img alt="" src="../../gbudata/images/bullet.gif">
+                     <a href="../../gbudata/SIT/SOICT_List%20of%20Students_16-17_31Jan18.pdf" target="_blank">
+                     <b>List of Students 16-17</b>
+                     </a>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- final placement end -->
+         <!-- placement helpdesk start -->
+         <div class="tab-pane fade" id="placement-helpdesk-tab" role="tabpanel">
+            <div class="container my-5">
+               <div class="jumbotron">
+                  <h1 class="text-center">Placement HelpDesk | SOICT</h1>
+                  <br>
+                  <p>Information and Communication Technology is one of the most fascinating fields for understanding and practicing. Even a tiny piece of device nugget possess incredible magic. A mobile phone take electromagnetic signal from the air, convert, compress and process this information and shove it again to air. Jillions of these data in a very short span of time received these message, and sent reliably to different corner of the globe. Everybody throught the universe is just connected wirelessly through just one number identity.</p>
+                  <p>There are plenty of infrastructure and specialized faculties available in ICT imparting uptodate programs according to the need of the time. The students of ICT are nurtured in such a way they can be well recruitable or become reasearchers after completion of their degree from our School.</p>
+                  <p>We are very young and a way towards becoming a renowned academic excellence centre in future. We are confident that this bunch of professional talents, who are going to complete our studies from our School, will be of great value and a big asset to any organization they join. We recommend the current batch for your consideration.</p>
+                  <hr>
+                  <p><b>Mr. Vinay Kumar Litoria</b></p>
+                  <p>Manager,Corporate Relations</p>
+                  <p>Phone no. +91-120-2344209</p>
+                  <p>Mobile no. +91-9717195787</p>
+                  <p><b>Email: crc@gbu.ac.in , vinay.litoria@gbu.ac.in</b></p>
+                  <p><b>Web: www.gbu.ac.in</b></p>
+                  <hr>
+                  <p><b>Dr. Navaid Z. Rizvi</b></p>
+                  <p>Mobile no. +91-9971475401</p>
+                  <p><b>Email: crc@gbu.ac.in , navaid@gbu.ac.in</b></p>
+                  <p><b>Web: www.gbu.ac.in</b></p>
+                  <hr>
+                  <p><b>Mr. Vimlesh Kumar</b></p>
+                  <p>Mobile no. +91-9650081596</p>
+                  <p><b>Email: crc@gbu.ac.in , vimlesh@gbu.ac.in</b></p>
+                  <p><b>Web: www.gbu.ac.in</b></p>
+               </div>
+            </div>
+         </div>
+         <!-- placement helpdesk end -->
+          <!-- research profile and area start -->
+          <div class="tab-pane fade" id="profile-area" role="tabpanel">
+             <div class="container">
+               <h3 class="text-lg-left mt-3 mb-0">Research Profile & Area</h3>
+               <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 ">
+               </div>
+             </div>
+          </div>
+          <!-- research profile and area end -->
+          <!-- research scholor start -->
+          <div class="tab-pane fade" id="scholor" role="tabpanel">
+            <div class="container">
+               <h3 class="text-lg-left mt-3 mb-0">Research Scholars</h3>
+               <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 ">
+               </div>
+             </div>
+          </div>
+          <!-- research scholor end -->
+         <!-- research publication start -->
+         <div class="tab-pane fade" id="research-publication-tab" role="tabpanel">
+             <div class="container my-5">
+               <div class="jumbotron">
+                  <h3 class="text-lg-left mt-3 mb-0">Research and Publications | SOICT</h3>
+               <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 ">
+               </div>
+                                    <br>
+                  <table class="table-responsive border-0" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td>
+                              <p>School of Information &amp; Communication Technology provides a rich platform for the Research associates to carry out the research initiatives.Currently research in following themes are being carried out.</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table-responsive border-0" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>1. <a href="../../gbudata/SIT/PhD%20resesearch%20Scholars%20-School%20of%20ICT_5Dec2016.pdf" target="_blank"><img src="../../gbudata/images/pdfphoto.JPG" alt="" width="40" height="40"> List of Ph.D. Research Scholars –School of ICT</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+             </div>
+         </div>
+         <!-- research publication end -->
+         <!-- Research Projects and Grants start -->
+         <div class="tab-pane fade" id="project-grant" role="tabpanel">
+            <div class="container">
+               <h3 class="text-lg-left mt-3 mb-0">Research Projects and Grants</h3>
+               <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 ">
+               </div>
+             </div>
+          </div>
+         <!-- Research Projects and Grants end -->
+         <!-- patents start -->
+          <div class="tab-pane fade" id="patents" role="tabpanel">
+            <div class="container">
+               <h3 class="text-lg-left mt-3 mb-0">Patents</h3>
+               <div class=" my-2 float-left" style="height: 5px; width: 5%; background-color:#FB8C00 ">
+               </div>
+             </div>
+          </div>
+         <!-- patents end -->
+         <!-- contact us start -->
+         <div class="tab-pane fade" id="contactus-tab" role="tabpanel">
+            <div class="container my-5">
+               <div class="jumbotron py-3">
+                  <h3 class="text-lg-left mt-3 mb-0">Contact Us | USICT</h3>
+                  <div class=" my-2 float-left" style="height: 5px; width: 7%; background-color:#FB8C00 "></div>
+                  <br><br>
+                  <h5 class="card-title ml-5 "> <b>USICT Office</b></h5>
+                  <p class="card-text ml-5"> University School of Information and Communication Technology,<br>
+                     Gautam Buddha University, Greater NOIDA, 201312,<br>
+                     Distt. Gautam Budh Nagar, Uttar Pradesh, INDIA <br>
+                     <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202346070"> 0120-234 6070 </a><br>
+                     <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:soict@gbu.ac.in"> soict@gbu.ac.in</a>
+                  </p>
+                  <br>
+                  <h5 class="card-title ml-5 "> <b>Prof. Sanjay Kumar Sharma | Dean</b></h5>
+                  <p class="card-text ml-5"> University School of Information and Communication Technology,<br>
+                     Gautam Buddha University, Greater NOIDA, 201312,<br>
+                     Distt. Gautam Budh Nagar, Uttar Pradesh, INDIA <br>
+                     <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202346067"> 0120-234 6067 </a><br>
+                     <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:sanjay.sharma@gbu.ac.in"> sanjay.sharma@gbu.ac.in</a>
+                  </p>
+                  <br>
+                  <h5 class="card-title ml-5 "> <b>Dr. Pradeep Tomar | Head of Department</b></h5>
+                  <p class="card-text ml-5"> Department of Computer Science and Engineering, <br>
+                     University School of Information and Communication Technology,<br>
+                     Gautam Buddha University, Greater NOIDA, 201312,<br>
+                     Distt. Gautam Budh Nagar, Uttar Pradesh, INDIA <br>
+                     <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202346085"> 0120-234 6085 </a><br>
+                     <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:pradeep.tomar@gbu.ac.in"> pradeep.tomar@gbu.ac.in</a>
+                  </p>
+                  <br>
+                  <h5 class="card-title ml-5 "> <b>Dr. Sandeep Sharma | Head of Department</b></h5>
+                  <p class="card-text ml-5"> Department of Electronics and Communication Engineering, <br>
+                     University School of Information and Communication Technology,<br>
+                     Gautam Buddha University, Greater NOIDA, 201312,<br>
+                     Distt. Gautam Budh Nagar, Uttar Pradesh, INDIA <br>
+                     <i class="fa fa-phone"></i>&nbsp;<a href="tel:01202346087"> 0120-234 6087 </a><br>
+                     <i class="fa fa-envelope"></i>&nbsp; <a href="mailto:sandeepsharma@gbu.ac.in
+                        "> sandeepsharma@gbu.ac.in
+                     </a>
+                  </p>
                   <br>
                </div>
             </div>
          </div>
-      </div>
+         <!-- contact us end -->
+   </div>  
+         
       <div class="gcse-searchresults-only"></div>
-      <%include footer%>
+      <%include footer-school%>
