@@ -5,7 +5,7 @@
    }
 </style>
 <div class="container-fluid">
-   <div class="row my-0 p-0">
+   <div class="row my-0 p-0" style="border-top: 2px solid #78335d;">
       <div class="col-lg-9 col-md-12 p-0">
          <div id="demo" class="my-auto carousel slide shadow carousel-fade" data-ride="carousel">
             <!-- Indicators -->
@@ -65,8 +65,8 @@
          <div class="container overflow-auto" style="height: 280px;">
             <marquee width="100%" direction="down" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
             <%recents.forEach(function(recent){%>
-            <div class="mt-2 mr-1 media p-1" style="box-shadow: 0 0 20px -13px; border-radius: 5px;">
-               <div class="mt-1 media-body">
+            <div class="media p-1" style="box-shadow: 0 0 20px -13px; border-radius: 5px;">
+               <div class="media-body px-3">
                   <a href="/recent-announcements/<%=recent._id%>">
                      <p class="text-left" style="font-size: 15px; color: #000 ;text-decoration: none;"><%-recent.title%></p>
                   </a>
@@ -92,39 +92,42 @@
 <div class="" style="overflow-x: hidden;">
    <div class="row">
       <div class="col-md-6 pt-3 " style="background-color: #008c95; ">
-         <div class="px-3 pt-3 pb-0">
-            <div class=" text-white text-center mx-5">
-               <p class=" who-we" style="font-size: 15px;">Education in its truest sense is our foremost mission. At Gautam Buddha University dreamers become thinkers, achievers, solvers, pioneers, and influencers. We are devoted in assisting our students to endure imperishable intellectual, societal and individual transformation.</p>
+         <div class=" ml-3 mr-0" style="border-top: 3px solid #fff; border-left: 3px solid #fff;" >
+            <div class=" text-white text-center mx-1" >
+               <p class=" who-we px-3 pt-3" style="font-size: 15px;">Education in its truest sense is our foremost mission. At Gautam Buddha University dreamers become thinkers, achievers, solvers, pioneers, and influencers. We are devoted in assisting our students to endure imperishable intellectual, societal and individual transformation.</p>
+            </div>
+            <div style="height: 60px;width: 100%; background-size: contain;background-repeat: no-repeat;background-image:  url(img/lifecapbg.png);background-position-x: right;">
             </div>
          </div>
-         <div style="height: 60px;width: 100%; background-size: contain;background-repeat: no-repeat;background-image:  url(img/lifecapbg.png);background-position-x: right;">
-         </div>
+         
       </div>
-      <div class="col-md-6 pt-3 text-center row align-middle" >
-         <div class="col-2 ml-3">
-            <div class="float-right">
-               <svg class="tcb-icon " viewBox="0 0 30 32"
-                  data-name="quote-left">
-                  <path
-                     d="M13.714 17.143v6.857c0 1.893-1.536 3.429-3.429 3.429h-6.857c-1.893 0-3.429-1.536-3.429-3.429v-12.571c0-5.036 4.107-9.143 9.143-9.143h1.143c0.625 0 1.143 0.518 1.143 1.143v2.286c0 0.625-0.518 1.143-1.143 1.143h-1.143c-2.518 0-4.571 2.054-4.571 4.571v0.571c0 0.946 0.768 1.714 1.714 1.714h4c1.893 0 3.429 1.536 3.429 3.429zM29.714 17.143v6.857c0 1.893-1.536 3.429-3.429 3.429h-6.857c-1.893 0-3.429-1.536-3.429-3.429v-12.571c0-5.036 4.107-9.143 9.143-9.143h1.143c0.625 0 1.143 0.518 1.143 1.143v2.286c0 0.625-0.518 1.143-1.143 1.143h-1.143c-2.518 0-4.571 2.054-4.571 4.571v0.571c0 0.946 0.768 1.714 1.714 1.714h4c1.893 0 3.429 1.536 3.429 3.429z">
-                  </path>
-               </svg>
-            </div>
-         </div>
-         <div class="col-9 text-center py-3">
-            <div class="text-justify" style="color: rgb(53, 54, 56)">
-               <p class="who-we" style="font-size: 15px;">
-                  There is phenomenal potential in our students. We stimulate their vision and empower them to actualize their vigor, by infusing experiential, experimental and inter-disciplinary learning in a research environment."
-               </p>
-            </div>
-            <div>
+      <div class="col-md-6  text-center row align-middle" >
+         <div class="row mr-1 mb-3 pt-3" style="border-bottom: 3px solid #008c95; border-right: 3px solid #008c95;">
+            <div class="col-2 ml-3" >
                <div class="float-right">
-                  <p>
-                     <b><i>
-                     Prof. Bhagwati Prakash Sharma <br>
-                     Vice-Chancellor
-                     </i></b>
+                  <svg class="tcb-icon " viewBox="0 0 30 32"
+                     data-name="quote-left">
+                     <path
+                        d="M13.714 17.143v6.857c0 1.893-1.536 3.429-3.429 3.429h-6.857c-1.893 0-3.429-1.536-3.429-3.429v-12.571c0-5.036 4.107-9.143 9.143-9.143h1.143c0.625 0 1.143 0.518 1.143 1.143v2.286c0 0.625-0.518 1.143-1.143 1.143h-1.143c-2.518 0-4.571 2.054-4.571 4.571v0.571c0 0.946 0.768 1.714 1.714 1.714h4c1.893 0 3.429 1.536 3.429 3.429zM29.714 17.143v6.857c0 1.893-1.536 3.429-3.429 3.429h-6.857c-1.893 0-3.429-1.536-3.429-3.429v-12.571c0-5.036 4.107-9.143 9.143-9.143h1.143c0.625 0 1.143 0.518 1.143 1.143v2.286c0 0.625-0.518 1.143-1.143 1.143h-1.143c-2.518 0-4.571 2.054-4.571 4.571v0.571c0 0.946 0.768 1.714 1.714 1.714h4c1.893 0 3.429 1.536 3.429 3.429z">
+                     </path>
+                  </svg>
+               </div>
+            </div>
+            <div class="col-9 text-center pt-3">
+               <div class="text-justify" style="color: rgb(53, 54, 56) ">
+                  <p class="who-we" style="font-size: 15px;">
+                     There is phenomenal potential in our students. We stimulate their vision and empower them to actualize their vigor, by infusing experiential, experimental and inter-disciplinary learning in a research environment."
                   </p>
+               </div>
+               <div>
+                  <div class="float-right py-0">
+                     <p style="font-size: 15px;">
+                        <b><i>
+                        Prof. Bhagwati Prakash Sharma <br>
+                        Vice-Chancellor
+                        </i></b>
+                     </p>
+                  </div>
                </div>
             </div>
          </div>
