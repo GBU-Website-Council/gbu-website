@@ -1,0 +1,83 @@
+<%include header%>
+<%include navbar%>
+<div class="site-wrap">
+    <div class="jumbotron mt-0 mb-0 pt-0"
+        style="background-color:#e7e7e7ba !important; padding-top: 5rem!important; padding-bottom: 5rem!important">
+        <div class="container content-container">
+            <div class="row">
+                <div class="col-md-3 mr-0 px-0 tab-col">
+                    <div class="tab-container text-center" style="position: sticky; top: 0;">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-sm-6 col-lg-12 col-md-12">
+                                <img class="user_image" src="<%if(locals.data.image){%>/images/<%=data.image%><%}else{%>/images/default.jpg<%}%>" alt="user">
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-12 col-md-12">
+                                <div class=" p-tab text-left 0">
+                                    <a href="/facultyzone/"><i class="fas fa-home" style="font-size: 15px;"> </i> HOME</a>
+                                    <a href="/facultyzone/profileupdate"><i class="fas fa-check"style="font-size: 15px;"> </i> UPDATE PROFILE</a>
+                                    <a href="/facultyzone/index"><i class="fas fa-clipboard-list" style="font-size: 15px;"> </i> MY DATA</a>
+                                    <a href="/facultyzone/allview"><i class="fas fa-list" style="font-size: 15px;"> </i> VIEW OTHERS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 ml-0 px-0 form-col">
+                    <div class="form-container" >
+                        <div id="maincontent">
+                            <div id="content">
+                                <form id="password-form" id="form-content">
+                                    <div class="textarea-ck">
+                                        <h2 class="acc_setting">YOUR ACCOUNT SETTINGS</h2>
+                                        <div class="row header-profile text-left">
+                                            <div class="col-12 head-title">
+                                                <label class="form-level" for="name">NAME: </label>
+                                                <input type="text" class="form_input d-inline" id="name"
+                                                    placeholder="Your name" value="<%=data.name%>" disabled>
+                            </div>
+                            <div class="col-12 head-title">
+                                <label class="form-level" for="email">USERNAME: </label>
+                                <input type="email" class="form_input d-inline" id="email" placeholder="username"
+                                    value="<%=data.username%>" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textarea-ck">
+                        <div class="line">&nbsp;</div>
+                        <h2 class="acc_setting">PASSWORD CHANGE</h2>
+                        <div class="col-12 head-title">
+                            <label class="form-level" for="current_assword">Current password:
+                            </label>
+                            <input type="password" class="form_input d-inline" id="current_password"
+                                placeholder="••••••••" required value="">
+                        </div>
+                        <div class="col-12 head-title">
+                            <label class="form-level" for="password">New password: </label>
+                            <input type="password" class="form_input d-inline" id="password" placeholder="••••••••"
+                                required value="" min="8" max='16'>
+                        </div>
+                        <div class="col-12 head-title">
+                            <label class="form-level" for="passwordConfirm">Confirm password:
+                            </label>
+                            <input type="password" class="form_input d-inline" id="passwordConfirm"
+                                placeholder="••••••••" required value="" min='8' max='16'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SUBMIT BUTTON -->
+            <div class="row mt-5 ml-auto">
+                <div class="col-12 text-center">
+                    <button name="submit" id="save_password"
+                        class="sb1 btn btn--small btn--green font-weight-lighter">SAVE
+                        PASSWORD</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<%include ../footer%>

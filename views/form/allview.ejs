@@ -1,0 +1,57 @@
+<%include header%> <%include navbar%>
+<div class="py-5" id="view-list-main" style="background-color: #f7f7f7">
+  <%if(locals.list){%>
+
+  <div class="container-fluid text-center view_card_container">
+    <div class="text-right">
+      <p>
+        <%if(locals.count){%> <b><%=count.from%></b>-<b><%=count.to%></b> of
+        <b><%=count.total%></b>
+        <%}%>
+      </p>
+    </div>
+    <% (list).forEach(function(el) { %>
+    <div class="card list_card" style="width: 18rem">
+      <div class="card_image">
+        <img
+          class="card-img-top all-view-card-image"
+          src="/images/<%if(typeof el.image != 'undefined'){%><%=el.image%><%}else{%>default.jpg<%}%>"
+          alt="user"
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="min-height: 55px"><%=el.name%></h5>
+        <p class="card-text text-truncate font-weight-light">
+          <b><%=el.position%></b>
+        </p>
+        <p class="card-text" style="min-height: 55px">
+          <%=el.school%>
+          <br />
+        </p>
+      </div>
+      <div class="card-body text-right">
+        <a
+          href="/faculty/<%=el.name%>"
+          class="sb1 btn btn--small btn--green font-weight-lighter card-link"
+          >Detail</a
+        >
+      </div>
+    </div>
+    <%});%>
+  </div>
+
+  <div class="text-center my-4 track-page" id="page-link">
+    <% for(var i=1; i < count.page; i++){%> <%if(i==count.current){%>
+    <a
+      data-page=""
+      style="background-color: yellow; color: #f7f7f7"
+      href="javascript: void(0);"
+      ><%=i%></a
+    >
+    <%}else{%>
+    <a data-page="<%=i%>" href="/facultyzone/allview/<%=i%>"><%= i %></a>
+    <%}%> <%}%>
+  </div>
+  <%}%>
+</div>
+<%include ../footer%>

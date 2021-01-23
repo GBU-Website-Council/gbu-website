@@ -1,0 +1,195 @@
+<%include header%> <%include navbar%>
+<div class="site-wrap">
+  <div
+    class="jumbotron mt-0 mb-0 pt-0"
+    style="
+      background-color: #e7e7e7ba !important;
+      padding-top: 5rem !important;
+      padding-bottom: 5rem !important;
+    "
+  >
+    <div class="container content-container">
+      <div class="row">
+        <div class="col-md-3 mr-0 px-0 tab-col text-center">
+          <div class="mx-auto py-5">
+            <button
+              id="resister_tab"
+              class="mx-auto sb1 tab_login_btn btn_tab_btn btn btn--small font-weight-lighter"
+            >
+              RESISTER
+            </button>
+            <button
+              id="login_tab"
+              class="mx-auto sb1 tab_login_btn btn_tab_btn btn btn--small font-weight-lighter"
+            >
+              LOGIN
+            </button>
+          </div>
+        </div>
+        <div class="col-md-9 ml-0 px-0 form-col" style="min-height: 32rem">
+          <div id="resetmail-main" class="resetmail-main" style="display: none">
+            <button id="close-reset" class="btn btn--small">close</button>
+            <div class="resetmail-con">
+              <form id="reset-form" style="max-width: 60%; margin: 0 auto">
+                <div class="col-12 head-title text-left">
+                  <label class="form-level" for="reset-Mail">USERNAME: </label>
+                  <input
+                    type="email"
+                    class="form_input d-inline"
+                    id="reset-mail"
+                    placeholder="username"
+                    value=""
+                  />
+                </div>
+                <div class="col-12 text-center my-3">
+                  <button
+                    id="reset-btn"
+                    class="sb1 btn btn--small btn--green font-weight-lighter"
+                  >
+                    RESET
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="form-container" id="login_container">
+            <div id="loginBox" style="position: relative">
+              <div id="logcontent">
+                <form id="login_form">
+                  <div class="textarea-ck">
+                    <h2 class="acc_setting">LOGIN</h2>
+                    <div class="row header-profile text-left">
+                      <div class="col-12 head-title">
+                        <label class="form-level" for="email">USERNAME: </label>
+                        <input
+                          type="email"
+                          class="form_input d-inline"
+                          id="email"
+                          placeholder="username"
+                          value=""
+                        />
+                      </div>
+                      <div class="col-12 head-title">
+                        <label class="form-level" for="password"
+                          >Password:
+                        </label>
+                        <input
+                          type="password"
+                          class="form_input d-inline"
+                          id="password"
+                          placeholder="••••••••"
+                          required
+                          value=""
+                          min="8"
+                          max="16"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-2 text-center" style="color: #f44336">
+                    <%if(locals.message){%>
+                    <p id="error_message"><%=message%></p>
+                    <%}%>
+                  </div>
+                  <!-- SUBMIT BUTTON -->
+                  <div class="row mt-2 ml-auto">
+                    <div class="col-12 text-center">
+                      <button
+                        id="login"
+                        class="sb1 btn btn--small btn--green font-weight-lighter"
+                      >
+                        LOGIN
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <a
+                  id="rest-tab-link"
+                  class="my-2"
+                  href="javascript: void(0)"
+                  style="color: #55c57a"
+                  >Forgote your password
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-container" id="resitration_container">
+            <div id="resisterBox">
+              <div id="logcontent">
+                <form id="resister_form">
+                  <div class="textarea-ck">
+                    <h2 class="acc_setting">RESISTRATION</h2>
+                    <div class="row header-profile text-left">
+                      <div class="col-12 head-title">
+                        <label class="form-level" for="name">NAME: </label>
+                        <input
+                          type="text"
+                          class="form_input d-inline text-capitalize"
+                          id="name"
+                          placeholder="Your name"
+                          value=""
+                        />
+                      </div>
+                      <div class="col-12 head-title">
+                        <label class="form-level" for="email">USERNAME: </label>
+                        <input
+                          type="email"
+                          class="form_input d-inline"
+                          id="remail"
+                          placeholder="username"
+                          value=""
+                        />
+                      </div>
+                      <div class="col-12 head-title">
+                        <label class="form-level" for="rpassword"
+                          >Password:
+                        </label>
+                        <input
+                          type="password"
+                          class="form_input d-inline"
+                          id="rpassword"
+                          placeholder="••••••••"
+                          required
+                          value=""
+                          min="8"
+                          max="16"
+                        />
+                      </div>
+                      <div class="col-12 head-title">
+                        <label class="form-level" for="rpasswordConform"
+                          >Confirm password:
+                        </label>
+                        <input
+                          type="password"
+                          class="form_input d-inline"
+                          id="rpasswordConfirm"
+                          placeholder="••••••••"
+                          required
+                          value=""
+                          min="8"
+                          max="16"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- SUBMIT BUTTON -->
+                  <div class="row mt-5 ml-auto mb-5">
+                    <div class="col-12 text-center">
+                      <button
+                        id="resister"
+                        class="sb1 btn btn--small btn--green font-weight-lighter"
+                      >
+                        RESISTER
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%include ../footer%>

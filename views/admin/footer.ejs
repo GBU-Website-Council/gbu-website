@@ -1,0 +1,53 @@
+</div>
+<!-- overlay -->
+<style>
+    #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    #content-c {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+</style>
+
+<div id="overlay">
+    <button onclick="overlayOff()" class="btn btn--green py-2 mr-auto my-3" style="position: absolute; right: 80px">
+        Close
+    </button>
+    <!-- ovelay Content Start -->
+    <div id="ovelay-content">
+        <!-- Overlay End -->
+    </div>
+</div>
+
+<script>
+    function overlayOn() {
+        document.getElementById("overlay").style.display = "block";
+    }
+    function overlayOff() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("ovelay-content").innerHTML = null;
+    }
+</script>
+<script src="/admin/vendor/jquery/jquery.min.js"></script>
+<script src="/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Page JS -->
+<script src="/admin/js/index.js"></script>
+</body>
+
+</html>

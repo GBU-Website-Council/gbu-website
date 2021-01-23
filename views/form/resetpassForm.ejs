@@ -1,0 +1,49 @@
+<%include header%>
+<%include navbar%>
+<div class="site-wrap">
+    <div class="jumbotron mt-0 mb-0 pt-0"
+        style="background-color:#e7e7e7ba !important; padding-top: 5rem!important; padding-bottom: 5rem!important">
+        <div class="container content-container">
+            <div class="row">
+                <div class="col-md-3 mr-0 px-0 tab-col text-center">
+                </div>
+                <div class="col-md-9 ml-0 px-0 form-col">
+                    <div class="form-container" id="login_container">
+                        <div id="loginBox" style="position:relative">
+                            <div id="logcontent">
+                                <form id="forgot-reset" data-token="<%=token%>">
+                                    <div class="textarea-ck">
+                                        <h2 class="acc_setting">UPDATE PASSWORD</h2>
+                                        <div class="row header-profile text-left">
+                                            <div class="col-12 head-title">
+                                                <label class="form-level" for="reset-password">New password: </label>
+                                                <input type="password" class="form_input d-inline" id="reset-password"
+                                                    placeholder="••••••••" required value="" min="8" max='16'>
+                                            </div>
+                                            <div class="col-12 head-title">
+                                                <label class="form-level" for="reset-password-confirm">Confirm new
+                                                    password:
+                                                </label>
+                                                <input type="password" class="form_input d-inline"
+                                                    id="reset-password-confirm" placeholder="••••••••" required value=""
+                                                    min="8" max='16'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- SUBMIT BUTTON -->
+                                    <div class="row mt-5 ml-auto">
+                                        <div class="col-12 text-center">
+                                            <button name='submit'
+                                                class="sb1 btn btn--small btn--green font-weight-lighter">GO</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%include ../footer%>

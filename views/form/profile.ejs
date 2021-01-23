@@ -1,0 +1,132 @@
+<%include header%>
+<%include navbar%>
+<div id="image-popup" class="image-popup">
+    <div class="container image-box">
+        <div class="image-box-form">
+            <div class="text-right" ><button id='close_popup' class="sb1 btn btn--small text-dark">Close</button></div>
+            <form id="upload-image-from">
+                <div class="row align-items-center p-4">
+                    <div class="col-md-6">
+                        <p><i>Editor</i></p>
+                        <div style="height : 375px; width: 300px;  margin: auto; overflow: hidden;">
+                            <img id='ImageCrop' src="<%if(locals.data.image){%>/images/<%=data.image%><%}else{%>/images/default.jpg<%}%>" style="height: 300px" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center" >
+                        <p><i>Preview</i></p>
+                        <div id="divPreview" style="height: 375px; width: 300px; overflow: hidden; margin: auto; border: 1px solid;"></div>
+                    </div>
+                </div>
+                <div class="form-group my-3">
+                    
+                    <div class="inputBtnGroup">
+                        <input type="range" min="0" max="360" value="180" class="slider" id="cropperDeg">
+                        <label  id="currentInput"  class="l-photo">Edit current Photo</label>
+                        <label for="fileInput" id="inputLable"  class="l-photo">Choose new photo</label>
+                    </div>
+                </div>
+                <div class="form-group mt-4">
+                    <input id='fileInput' class="photo_upload form-control" type="file" src="" accept="image/*" >
+                    <button class="sb1 btn btn--small btn--green" style="display: none;" id="Upload_photo">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="jumbotron mb-0">
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12 col-lg-12 col-md-6">
+                                <img id="profile-image" class="profile-image mx-auto d-block rounded" width="250" height="300" src="<%if(locals.data.image){%>/images/<%=data.image%><%}else{%>/images/default.jpg<%}%>" alt="">
+                                    <div class="my-4">
+                                    <label id="l-photo" for="photo" class="l-photo">Choose new photo</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-12 col-md-6 mt-3">
+                                    <div class=" p-tab text-left 0">
+                                        <a style="color: #55c57a;" href="/facultyzone/"><i class="fas fa-home" style="font-size: 15px;"> </i> HOME</a>
+                                        <a style="color: #55c57a;" href="/facultyzone/me"><i class="fas fa-user"style="font-size: 15px;"> </i> ME</a>
+                                        <a style="color: #55c57a;" href="/facultyzone/index"><i class="fas fa-clipboard-list" style="font-size: 15px;"> </i> MY DATA</a>
+                                        <a style="color: #55c57a;" href="/facultyzone/allview"><i class="fas fa-list" style="font-size: 15px;"> </i> VIEW OTHERS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <img class=" profile-image mx-auto d-block rounded" width="250" height="300" src="<%if(data){%>/images/<%=data.image%><%}else{%>/images/default.jpg<%}%>" alt="">
+                            <div class="my-4">
+                                <label for="photo" class="l-photo">Choose new photo</label>
+                                <input id="photo" class="photo_upload form-control" type="file" name="user_image">
+                            </div> -->
+                        </div>
+                        <div class="col-lg-8" id='form-content'>
+                            <form id="profile-form">
+                            <h2 class="acc_setting">YOUR ACCOUNT SETTINGS</h2>
+                            <div class="row header-profile text-left">
+                                <div class="col-12 head-title">
+                                    <label class="form-level text-capitalize" for="name">Name: </label>
+                                    <input id="name" class="form_input text-capitalize" type="text" name="name"
+                                        placeholder="Enter your Name" value="<%=data.name%>">
+                            </div>
+                            <div class="col-12 head-title">
+                                <label class="form-level" for="position">Position: </label>
+                                <input id="position" class="form_input text-capitalize" type="text" name="position"
+                                    placeholder="Assistant Professor (Department)" value="<%=data.position%>">
+                            </div>
+                            <div class="col-12 head-title">
+                                <label class="form-level" for="select">University of school: </label>
+                                <select id="school" class="form_select_input" name="school">
+                                    <option class="text-center" value="">Select your school</option>
+                                    <%school.forEach(function(el) {%>
+                                    <option value="<%=el%>" <%if(el == data.school){%> selected <%}%> ><%=el%></option>
+                                        <%});%>
+                                        <!-- <option value="University School Of Information And Communication Technology">
+                                            University School of Information & Communication Technology</option>
+                                        <option value="University School Of Management">
+                                            University School of Management</option>
+                                        <option value="University School Of BioTechnology">
+                                            University School of BioTechnology</option>
+                                        <option value="University School Of Engineering">
+                                            University School of Engineering</option>
+                                        <option value="University School Of Buddhist Studies & Civilization">
+                                            University School of Buddhist Studies & Civilization</option>
+                                        <option value="University School Of Vocational Studies & Applied Sciences">
+                                            University School of Vocational Studies & Applied Sciences</option>
+                                        <option value="University School Of Humanities & Social Sciences">
+                                            University School of Humanities & Social Sciences</option>
+                                        <option value="University School Of Low, Justice & Governance">
+                                            University School of Law, Justice & Governance</option> -->
+                                </select>
+                            </div>
+                            <div class="col-12 head-title">
+                                <label class="form-level" for="qualification">Qualifications: </label>
+                                <input id="qualification" class="form_input" type="text" name="qualification"
+                                    placeholder="Computer Engineering, Nanyang Technological University, Singapore"
+                                    value="<%=data.qualification%>">
+                            </div>
+                            <div class="col-12 head-title">
+                                <label class="form-level" for="field_of_teaching">Fiels of teaching: </label>
+                                <input id="field_of_teaching" class="form_input" type="text" name="field_of_teaching"
+                                    placeholder="IC Technology/Design, Microwave & Antenna, RF MEMS, Analog/Digital/RF Circuits."
+                                    value="<%=data.field_of_teaching%>">
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 text-center">
+                                <button id="submit" name="submit" class="sb1 btn btn--small btn--green">Submit</button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<%include ../footer%>

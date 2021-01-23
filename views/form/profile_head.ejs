@@ -1,0 +1,37 @@
+<div class="jumbotron pb-2 pt-4 mb-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="row align-content-center">
+                    <div class="col-sm-4 text-center">
+                        <img class="img-thumbnail img-fluid profile-image mx-auto d-block rounded"
+                            style="width : 200px; min-height: 225px; max-height: 270px;" src="<%if(locals.data.image){%>/images/<%=data.image%><%}else{%>/images/default.jpg<%}%>">
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row header-profile head-title text-left">
+                            <div class="col-12 ">
+                                <h5 id="profile_name" class="profile_name text-capitalize"><%=data.name%></h5>
+                            </div>
+                            <div class=" col-12 text-left head-title">
+                        <div class="mb-2">
+                            <h4 class="text-capitalize h6"><%=data.position%></h4>
+                            <h6 class="text-capitalize h6"><%=data.school%>
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-capitalize qf" style="line-height : 1.5rem">
+                                <%=data.qualification%>
+                                <br>
+                                <%=data.field_of_teaching%>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-none d-lg-block text-center">
+        <img class="img-fluid " width="200" src="/form/img/gbulogo.png" alt="">
+    </div>
+</div>
+</div>
+</div>

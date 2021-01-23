@@ -1,608 +1,666 @@
 <%include header%>
-    <div id="main" class="clearfix">
-      <div id="primary">
-        <section id="content" role="main">
-          <div id="content-wrap">
-            <!-- line added by ankit -->
-            <div class="region region-help">
-              <div id="block-system-main" class="block block-system">
-                <div class="content">
-                  <span property="dc:title" content="Faculty" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
-                  <div class="content">
-                    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-                    <script type="text/javascript">
-                    $(document).ready(function(){
-                    $.showAllFaculty=function()
-                    {
-                    $("div.select-item").addClass("select-item-active");
-                    	 $("div.select-item-sob").removeClass("select-item-active");
-                    	 $("div.select-item-sobs").removeClass("select-item-active");
-                    	 $("div.select-item-soe").removeClass("select-item-active");
-                    	 $("div.select-item-soh").removeClass("select-item-active");
-                    	 $("div.select-item-soljg").removeClass("select-item-active");
-                    	 $("div.select-item-som").removeClass("select-item-active");
-                    	 $("div.select-item-sovs").removeClass("select-item-active");
-                    $("div.select-item-soict").removeClass("select-item-active");
-                    $("#cards-container-soict").css('display', 'none');
-                    $("#cards-container-sob").css('display', 'none');
-                    $("#cards-container-sobs").css('display', 'none');
-                    $("#cards-container-soe").css('display', 'none');
-                    $("#cards-container-soh").css('display', 'none');
-                    $("#cards-container-soljg").css('display', 'none');
-                    $("#cards-container-som").css('display', 'none');
-                    $("#cards-container-sovs").css('display', 'none');
-                    $("#cards-container").css('display', 'block');
-                    }
-                    $.showSOICTFaculty=function(){
-                    	 $("div.select-item").removeClass("select-item-active");
-                    	 $("div.select-item-sob").removeClass("select-item-active");
-                    	 $("div.select-item-sobs").removeClass("select-item-active");
-                    	 $("div.select-item-soe").removeClass("select-item-active");
-                    	 $("div.select-item-soh").removeClass("select-item-active");
-                    	 $("div.select-item-soljg").removeClass("select-item-active");
-                    	 $("div.select-item-som").removeClass("select-item-active");
-                    	 $("div.select-item-sovs").removeClass("select-item-active");
-                    	 $("div.select-item-soict").addClass("select-item-active")
-                    $("#cards-container").css('display', 'none');
-                    $("#cards-container-soict").css('display', 'block');
-                    $("#cards-container-sob").css('display', 'none');
-                    $("#cards-container-sobs").css('display', 'none');
-                    $("#cards-container-soe").css('display', 'none');
-                    $("#cards-container-soh").css('display', 'none');
-                    $("#cards-container-soljg").css('display', 'none');
-                    $("#cards-container-som").css('display', 'none');
-                    $("#cards-container-sovs").css('display', 'none');
-                    }
-                    $.showSOEFaculty=function(){
-                    	 $("div.select-item").removeClass("select-item-active");
-                    	  $("div.select-item-sob").removeClass("select-item-active");
-                    	 $("div.select-item-sobs").removeClass("select-item-active");
-                    	 $("div.select-item-soict").removeClass("select-item-active");
-                    	 $("div.select-item-soh").removeClass("select-item-active");
-                    	 $("div.select-item-soljg").removeClass("select-item-active");
-                    	 $("div.select-item-som").removeClass("select-item-active");
-                    	 $("div.select-item-sovs").removeClass("select-item-active");
-                    	 $("div.select-item-soe").addClass("select-item-active")
-                    	 $("#cards-container").css('display', 'none');
-                    $("#cards-container-soict").css('display', 'none');
-                    $("#cards-container-sob").css('display', 'none');
-                    $("#cards-container-sobs").css('display', 'none');
-                    $("#cards-container-soe").css('display', 'block');
-                    $("#cards-container-soh").css('display', 'none');
-                    $("#cards-container-soljg").css('display', 'none');
-                    $("#cards-container-som").css('display', 'none');
-                    $("#cards-container-sovs").css('display', 'none');
-                    }
-                    $.showSOBFaculty=function(){
-                    	 $("div.select-item").removeClass("select-item-active");
+<a class="zone-btn" href="/facultyzone">Faculty zone</a>
+<div id="main" class="clearfix">
+  <div id="primary">
+    <section id="content" role="main">
+      <div id="content-wrap">
+        <!-- line added by ankit -->
+        <div class="region region-help">
+          <div id="block-system-main" class="block block-system">
+            <div class="content">
+              <span property="dc:title" content="Faculty" class="rdf-meta element-hidden"></span><span
+                property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+              <div class="content">
+                <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                  <div class="field-items">
+                    <div class="field-item even" property="content:encoded">
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        $(document).ready(function () {
+                          $.showAllFaculty = function () {
+                            $("div.select-item").addClass("select-item-active");
+                            $("div.select-item-sob").removeClass("select-item-active");
+                            $("div.select-item-sobs").removeClass("select-item-active");
+                            $("div.select-item-soe").removeClass("select-item-active");
+                            $("div.select-item-soh").removeClass("select-item-active");
+                            $("div.select-item-soljg").removeClass("select-item-active");
+                            $("div.select-item-som").removeClass("select-item-active");
+                            $("div.select-item-sovs").removeClass("select-item-active");
+                            $("div.select-item-soict").removeClass("select-item-active");
+                            $("#cards-container-soict").css('display', 'none');
+                            $("#cards-container-sob").css('display', 'none');
+                            $("#cards-container-sobs").css('display', 'none');
+                            $("#cards-container-soe").css('display', 'none');
+                            $("#cards-container-soh").css('display', 'none');
+                            $("#cards-container-soljg").css('display', 'none');
+                            $("#cards-container-som").css('display', 'none');
+                            $("#cards-container-sovs").css('display', 'none');
+                            $("#cards-container").css('display', 'block');
+                          }
+                          $.showSOICTFaculty = function () {
+                            $("div.select-item").removeClass("select-item-active");
+                            $("div.select-item-sob").removeClass("select-item-active");
+                            $("div.select-item-sobs").removeClass("select-item-active");
+                            $("div.select-item-soe").removeClass("select-item-active");
+                            $("div.select-item-soh").removeClass("select-item-active");
+                            $("div.select-item-soljg").removeClass("select-item-active");
+                            $("div.select-item-som").removeClass("select-item-active");
+                            $("div.select-item-sovs").removeClass("select-item-active");
+                            $("div.select-item-soict").addClass("select-item-active")
+                            $("#cards-container").css('display', 'none');
+                            $("#cards-container-soict").css('display', 'block');
+                            $("#cards-container-sob").css('display', 'none');
+                            $("#cards-container-sobs").css('display', 'none');
+                            $("#cards-container-soe").css('display', 'none');
+                            $("#cards-container-soh").css('display', 'none');
+                            $("#cards-container-soljg").css('display', 'none');
+                            $("#cards-container-som").css('display', 'none');
+                            $("#cards-container-sovs").css('display', 'none');
+                          }
+                          $.showSOEFaculty = function () {
+                            $("div.select-item").removeClass("select-item-active");
+                            $("div.select-item-sob").removeClass("select-item-active");
+                            $("div.select-item-sobs").removeClass("select-item-active");
+                            $("div.select-item-soict").removeClass("select-item-active");
+                            $("div.select-item-soh").removeClass("select-item-active");
+                            $("div.select-item-soljg").removeClass("select-item-active");
+                            $("div.select-item-som").removeClass("select-item-active");
+                            $("div.select-item-sovs").removeClass("select-item-active");
+                            $("div.select-item-soe").addClass("select-item-active")
+                            $("#cards-container").css('display', 'none');
+                            $("#cards-container-soict").css('display', 'none');
+                            $("#cards-container-sob").css('display', 'none');
+                            $("#cards-container-sobs").css('display', 'none');
+                            $("#cards-container-soe").css('display', 'block');
+                            $("#cards-container-soh").css('display', 'none');
+                            $("#cards-container-soljg").css('display', 'none');
+                            $("#cards-container-som").css('display', 'none');
+                            $("#cards-container-sovs").css('display', 'none');
+                          }
+                          $.showSOBFaculty = function () {
+                            $("div.select-item").removeClass("select-item-active");
 
-                    	 $("div.select-item-sobs").removeClass("select-item-active");
-                    	 $("div.select-item-soe").removeClass("select-item-active");
-                    	 $("div.select-item-soh").removeClass("select-item-active");
-                    	 $("div.select-item-soljg").removeClass("select-item-active");
-                    	 $("div.select-item-som").removeClass("select-item-active");
-                    	 $("div.select-item-sovs").removeClass("select-item-active");
-                    $("div.select-item-soict").removeClass("select-item-active");
-                    	 $("div.select-item-sob").addClass("select-item-active")
-                    	 $("#cards-container").css('display', 'none');
-                    $("#cards-container-soict").css('display', 'none');
-                    $("#cards-container-sob").css('display', 'block');
-                    $("#cards-container-sobs").css('display', 'none');
-                    $("#cards-container-soe").css('display', 'none');
-                    $("#cards-container-soh").css('display', 'none');
-                    $("#cards-container-soljg").css('display', 'none');
-                    $("#cards-container-som").css('display', 'none');
-                    $("#cards-container-sovs").css('display', 'none');
-                    }
-                    $.showSOBSFaculty=function(){
-                    	 $("div.select-item").removeClass("select-item-active");
-                    	 $("div.select-item-sob").removeClass("select-item-active");
-                    	 
-                    	 $("div.select-item-soe").removeClass("select-item-active");
-                    	 $("div.select-item-soh").removeClass("select-item-active");
-                    	 $("div.select-item-soljg").removeClass("select-item-active");
-                    	 $("div.select-item-som").removeClass("select-item-active");
-                    	 $("div.select-item-sovs").removeClass("select-item-active");
-                    $("div.select-item-soict").removeClass("select-item-active");
-                    	 $("div.select-item-sobs").addClass("select-item-active")
-                    	 $("#cards-container").css('display', 'none');
-                    $("#cards-container-soict").css('display', 'none');
-                    $("#cards-container-sob").css('display', 'none');
-                    $("#cards-container-sobs").css('display', 'block');
-                    $("#cards-container-soe").css('display', 'none');
-                    $("#cards-container-soh").css('display', 'none');
-                    $("#cards-container-soljg").css('display', 'none');
-                    $("#cards-container-som").css('display', 'none');
-                    $("#cards-container-sovs").css('display', 'none');
-                    }
-                    $.showSOHFaculty=function(){
-                    	 $("div.select-item").removeClass("select-item-active");
+                            $("div.select-item-sobs").removeClass("select-item-active");
+                            $("div.select-item-soe").removeClass("select-item-active");
+                            $("div.select-item-soh").removeClass("select-item-active");
+                            $("div.select-item-soljg").removeClass("select-item-active");
+                            $("div.select-item-som").removeClass("select-item-active");
+                            $("div.select-item-sovs").removeClass("select-item-active");
+                            $("div.select-item-soict").removeClass("select-item-active");
+                            $("div.select-item-sob").addClass("select-item-active")
+                            $("#cards-container").css('display', 'none');
+                            $("#cards-container-soict").css('display', 'none');
+                            $("#cards-container-sob").css('display', 'block');
+                            $("#cards-container-sobs").css('display', 'none');
+                            $("#cards-container-soe").css('display', 'none');
+                            $("#cards-container-soh").css('display', 'none');
+                            $("#cards-container-soljg").css('display', 'none');
+                            $("#cards-container-som").css('display', 'none');
+                            $("#cards-container-sovs").css('display', 'none');
+                          }
+                          $.showSOBSFaculty = function () {
+                            $("div.select-item").removeClass("select-item-active");
+                            $("div.select-item-sob").removeClass("select-item-active");
 
-                    	 $("div.select-item-sob").removeClass("select-item-active");
-                    	 $("div.select-item-sobs").removeClass("select-item-active");
-                    	 $("div.select-item-soe").removeClass("select-item-active");
-                    	 
-                    	 $("div.select-item-soljg").removeClass("select-item-active");
-                    	 $("div.select-item-som").removeClass("select-item-active");
-                    	 $("div.select-item-sovs").removeClass("select-item-active");
-                    $("div.select-item-soict").removeClass("select-item-active");
-                    	 $("div.select-item-soh").addClass("select-item-active")
-                    	 $("#cards-container").css('display', 'none');
-                    $("#cards-container-soict").css('display', 'none');
-                    $("#cards-container-sob").css('display', 'none');
-                    $("#cards-container-sobs").css('display', 'none');
-                    $("#cards-container-soe").css('display', 'none');
-                    $("#cards-container-soh").css('display', 'block');
-                    $("#cards-container-soljg").css('display', 'none');
-                    $("#cards-container-som").css('display', 'none');
-                    $("#cards-container-sovs").css('display', 'none');
-                    }
-                    $.showSOLJGFaculty=function(){
-                    	 $("div.select-item").removeClass("select-item-active");
-                    	 $("div.select-item-sob").removeClass("select-item-active");
-                    	 $("div.select-item-sobs").removeClass("select-item-active");
-                    	 $("div.select-item-soe").removeClass("select-item-active");
-                    	 $("div.select-item-soh").removeClass("select-item-active");
-                    	 
-                    	 $("div.select-item-som").removeClass("select-item-active");
-                    	 $("div.select-item-sovs").removeClass("select-item-active");
-                    $("div.select-item-soict").removeClass("select-item-active");
-                    	 $("div.select-item-soljg").addClass("select-item-active")
-                    	 $("#cards-container").css('display', 'none');
-                    $("#cards-container-soict").css('display', 'none');
-                    $("#cards-container-sob").css('display', 'none');
-                    $("#cards-container-sobs").css('display', 'none');
-                    $("#cards-container-soe").css('display', 'none');
-                    $("#cards-container-soh").css('display', 'none');
-                    $("#cards-container-soljg").css('display', 'block');
-                    $("#cards-container-som").css('display', 'none');
-                    $("#cards-container-sovs").css('display', 'none');
-                    }
-                    $.showSOMFaculty=function(){
-                    	 $("div.select-item").removeClass("select-item-active");
-                    	 $("div.select-item-sob").removeClass("select-item-active");
-                    	 $("div.select-item-sobs").removeClass("select-item-active");
-                    	 $("div.select-item-soe").removeClass("select-item-active");
-                    	 $("div.select-item-soh").removeClass("select-item-active");
-                    	 $("div.select-item-soljg").removeClass("select-item-active");
-                    	 
-                    	 $("div.select-item-sovs").removeClass("select-item-active");
-                    $("div.select-item-soict").removeClass("select-item-active");
-                    	 $("div.select-item-som").addClass("select-item-active")
-                    	 $("#cards-container").css('display', 'none');
-                    $("#cards-container-soict").css('display', 'none');
-                    $("#cards-container-sob").css('display', 'none');
-                    $("#cards-container-sobs").css('display', 'none');
-                    $("#cards-container-soe").css('display', 'none');
-                    $("#cards-container-soh").css('display', 'none');
-                    $("#cards-container-soljg").css('display', 'none');
-                    $("#cards-container-som").css('display', 'block');
-                    $("#cards-container-sovs").css('display', 'none');
-                    }
-                    $.showSOVSFaculty=function(){
-                    	 $("div.select-item").removeClass("select-item-active");
-                    	 $("div.select-item-sob").removeClass("select-item-active");
-                    	 $("div.select-item-sobs").removeClass("select-item-active");
-                    	 $("div.select-item-soe").removeClass("select-item-active");
-                    	 $("div.select-item-soh").removeClass("select-item-active");
-                    	 $("div.select-item-soljg").removeClass("select-item-active");
-                    	 $("div.select-item-som").removeClass("select-item-active");
-                    	
-                    $("div.select-item-soict").removeClass("select-item-active");
-                    	 $("div.select-item-sovs").addClass("select-item-active")
-                    	 $("#cards-container").css('display', 'none');
-                    $("#cards-container-soict").css('display', 'none');
-                    $("#cards-container-sob").css('display', 'none');
-                    $("#cards-container-sobs").css('display', 'none');
-                    $("#cards-container-soe").css('display', 'none');
-                    $("#cards-container-soh").css('display', 'none');
-                    $("#cards-container-soljg").css('display', 'none');
-                    $("#cards-container-som").css('display', 'none');
-                    $("#cards-container-sovs").css('display', 'block');
-                    }
-                })
-                    </script>
-                    <script type="text/javascript" src="https://www.iiitd.ac.in/misc/jquery.js?v=1.4.4"></script>
-                    <style type="text/css">
-                    .select
-                    {
-                    display:block;
-                    text-align:center;
-                    }
-                    .select-item,.select-item-sob,.select-item-sobs, .select-item-soe,.select-item-soh,                     .select-item-soict, .select-item-soljg
-                    , .select-item-som, .select-item-sovs
-                    {
-                    display:inline-block;
-                    color:#fff;
-                    background-color:#78335d;
-                    border-radius:2px;
-                    border:1px solid #78335d;
-                    cursor:pointer;
-                    padding:4px 10px;
-                    margin:5px;
-                    transition:0.4s;
-                    }
-                    .rteleft {
-                    text-align: left
-                    }
-                    .select-item:hover,.select-item-sob:hover,.select-item-sobs:hover, .select-item-soe:hover,.select-item-soh:hover,                     .select-item-soict:hover, .select-item-soljg:hover
-                    , .select-item-som:hover, .select-item-sovs:hover,.select-item-active
-                    {
-                    background-color:#fff;
-                    color:#3fada8;
-                    }
-                    #cards-container
-                    {
-                    display:block;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-soict
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-sob
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-sobs
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-soe
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-soh
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-soljg
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-som
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container-sovs
-                    {
-                    display:none;
-                    text-align:center;
-                    padding:10px;
-                    }
-                    #cards-container .card,#cards-container-soict .card
-                    ,#cards-container-sob .card,#cards-container-sobs .card,
-                    #cards-container-soe .card,#cards-container-soh .card,
-                    #cards-container-soljg .card,#cards-container-som .card,
-                    #cards-container-sovs .card
-                    {
-                    width:350px;
-                    height:300px;
-                    vertical-align:top;
-                    border-radius:4px;
-                    border:1px solid #ddd;
-                    background:#fafafa;
-                    padding:20px;
-                    display:inline-block;
-                    margin:10px;
-                    overflow:hidden;
-                    }
-                    #cards-container .card img,#cards-container-soict .card img
-                    ,#cards-container-sob .card img,#cards-container-sobs .card img,
-                    #cards-container-soe .card img,#cards-container-soh .card img,
-                    #cards-container-soljg .card img,#cards-container-som .card img,
-                    #cards-container-sovs .card img
-                    {
-                    /*height:130px!important;
+                            $("div.select-item-soe").removeClass("select-item-active");
+                            $("div.select-item-soh").removeClass("select-item-active");
+                            $("div.select-item-soljg").removeClass("select-item-active");
+                            $("div.select-item-som").removeClass("select-item-active");
+                            $("div.select-item-sovs").removeClass("select-item-active");
+                            $("div.select-item-soict").removeClass("select-item-active");
+                            $("div.select-item-sobs").addClass("select-item-active")
+                            $("#cards-container").css('display', 'none');
+                            $("#cards-container-soict").css('display', 'none');
+                            $("#cards-container-sob").css('display', 'none');
+                            $("#cards-container-sobs").css('display', 'block');
+                            $("#cards-container-soe").css('display', 'none');
+                            $("#cards-container-soh").css('display', 'none');
+                            $("#cards-container-soljg").css('display', 'none');
+                            $("#cards-container-som").css('display', 'none');
+                            $("#cards-container-sovs").css('display', 'none');
+                          }
+                          $.showSOHFaculty = function () {
+                            $("div.select-item").removeClass("select-item-active");
+
+                            $("div.select-item-sob").removeClass("select-item-active");
+                            $("div.select-item-sobs").removeClass("select-item-active");
+                            $("div.select-item-soe").removeClass("select-item-active");
+
+                            $("div.select-item-soljg").removeClass("select-item-active");
+                            $("div.select-item-som").removeClass("select-item-active");
+                            $("div.select-item-sovs").removeClass("select-item-active");
+                            $("div.select-item-soict").removeClass("select-item-active");
+                            $("div.select-item-soh").addClass("select-item-active")
+                            $("#cards-container").css('display', 'none');
+                            $("#cards-container-soict").css('display', 'none');
+                            $("#cards-container-sob").css('display', 'none');
+                            $("#cards-container-sobs").css('display', 'none');
+                            $("#cards-container-soe").css('display', 'none');
+                            $("#cards-container-soh").css('display', 'block');
+                            $("#cards-container-soljg").css('display', 'none');
+                            $("#cards-container-som").css('display', 'none');
+                            $("#cards-container-sovs").css('display', 'none');
+                          }
+                          $.showSOLJGFaculty = function () {
+                            $("div.select-item").removeClass("select-item-active");
+                            $("div.select-item-sob").removeClass("select-item-active");
+                            $("div.select-item-sobs").removeClass("select-item-active");
+                            $("div.select-item-soe").removeClass("select-item-active");
+                            $("div.select-item-soh").removeClass("select-item-active");
+
+                            $("div.select-item-som").removeClass("select-item-active");
+                            $("div.select-item-sovs").removeClass("select-item-active");
+                            $("div.select-item-soict").removeClass("select-item-active");
+                            $("div.select-item-soljg").addClass("select-item-active")
+                            $("#cards-container").css('display', 'none');
+                            $("#cards-container-soict").css('display', 'none');
+                            $("#cards-container-sob").css('display', 'none');
+                            $("#cards-container-sobs").css('display', 'none');
+                            $("#cards-container-soe").css('display', 'none');
+                            $("#cards-container-soh").css('display', 'none');
+                            $("#cards-container-soljg").css('display', 'block');
+                            $("#cards-container-som").css('display', 'none');
+                            $("#cards-container-sovs").css('display', 'none');
+                          }
+                          $.showSOMFaculty = function () {
+                            $("div.select-item").removeClass("select-item-active");
+                            $("div.select-item-sob").removeClass("select-item-active");
+                            $("div.select-item-sobs").removeClass("select-item-active");
+                            $("div.select-item-soe").removeClass("select-item-active");
+                            $("div.select-item-soh").removeClass("select-item-active");
+                            $("div.select-item-soljg").removeClass("select-item-active");
+
+                            $("div.select-item-sovs").removeClass("select-item-active");
+                            $("div.select-item-soict").removeClass("select-item-active");
+                            $("div.select-item-som").addClass("select-item-active")
+                            $("#cards-container").css('display', 'none');
+                            $("#cards-container-soict").css('display', 'none');
+                            $("#cards-container-sob").css('display', 'none');
+                            $("#cards-container-sobs").css('display', 'none');
+                            $("#cards-container-soe").css('display', 'none');
+                            $("#cards-container-soh").css('display', 'none');
+                            $("#cards-container-soljg").css('display', 'none');
+                            $("#cards-container-som").css('display', 'block');
+                            $("#cards-container-sovs").css('display', 'none');
+                          }
+                          $.showSOVSFaculty = function () {
+                            $("div.select-item").removeClass("select-item-active");
+                            $("div.select-item-sob").removeClass("select-item-active");
+                            $("div.select-item-sobs").removeClass("select-item-active");
+                            $("div.select-item-soe").removeClass("select-item-active");
+                            $("div.select-item-soh").removeClass("select-item-active");
+                            $("div.select-item-soljg").removeClass("select-item-active");
+                            $("div.select-item-som").removeClass("select-item-active");
+
+                            $("div.select-item-soict").removeClass("select-item-active");
+                            $("div.select-item-sovs").addClass("select-item-active")
+                            $("#cards-container").css('display', 'none');
+                            $("#cards-container-soict").css('display', 'none');
+                            $("#cards-container-sob").css('display', 'none');
+                            $("#cards-container-sobs").css('display', 'none');
+                            $("#cards-container-soe").css('display', 'none');
+                            $("#cards-container-soh").css('display', 'none');
+                            $("#cards-container-soljg").css('display', 'none');
+                            $("#cards-container-som").css('display', 'none');
+                            $("#cards-container-sovs").css('display', 'block');
+                          }
+                        })
+                      </script>
+                      <script type="text/javascript" src="https://www.iiitd.ac.in/misc/jquery.js?v=1.4.4"></script>
+                      <style type="text/css">
+                        .select {
+                          display: block;
+                          text-align: center;
+                        }
+
+                        .select-item,
+                        .select-item-sob,
+                        .select-item-sobs,
+                        .select-item-soe,
+                        .select-item-soh,
+                        .select-item-soict,
+                        .select-item-soljg,
+                        .select-item-som,
+                        .select-item-sovs {
+                          display: inline-block;
+                          color: #fff;
+                          background-color: #78335d;
+                          border-radius: 2px;
+                          border: 1px solid #78335d;
+                          cursor: pointer;
+                          padding: 4px 10px;
+                          margin: 5px;
+                          transition: 0.4s;
+                        }
+
+                        .rteleft {
+                          text-align: left
+                        }
+
+                        .select-item:hover,
+                        .select-item-sob:hover,
+                        .select-item-sobs:hover,
+                        .select-item-soe:hover,
+                        .select-item-soh:hover,
+                        .select-item-soict:hover,
+                        .select-item-soljg:hover,
+                        .select-item-som:hover,
+                        .select-item-sovs:hover,
+                        .select-item-active {
+                          background-color: #fff;
+                          color: #3fada8;
+                        }
+
+                        #cards-container {
+                          display: block;
+                          text-align: center;
+                          padding: 10px;
+                        }
+
+                        #cards-container-soict {
+                          display: none;
+                          text-align: center;
+                          padding: 10px;
+                        }
+
+                        #cards-container-sob {
+                          display: none;
+                          text-align: center;
+                          padding: 10px;
+                        }
+
+                        #cards-container-sobs {
+                          display: none;
+                          text-align: center;
+                          padding: 10px;
+                        }
+
+                        #cards-container-soe {
+                          display: none;
+                          text-align: center;
+                          padding: 10px;
+                        }
+
+                        #cards-container-soh {
+                          display: none;
+                          text-align: center;
+                          padding: 10px;
+                        }
+
+                        #cards-container-soljg {
+                          display: none;
+                          text-align: center;
+                          padding: 10px;
+                        }
+
+                        #cards-container-som {
+                          display: none;
+                          text-align: center;
+                          padding: 10px;
+                        }
+
+                        #cards-container-sovs {
+                          display: none;
+                          text-align: center;
+                          padding: 10px;
+                        }
+
+                        #cards-container .card,
+                        #cards-container-soict .card,
+                        #cards-container-sob .card,
+                        #cards-container-sobs .card,
+                        #cards-container-soe .card,
+                        #cards-container-soh .card,
+                        #cards-container-soljg .card,
+                        #cards-container-som .card,
+                        #cards-container-sovs .card {
+                          width: 350px;
+                          height: 300px;
+                          vertical-align: top;
+                          border-radius: 4px;
+                          border: 1px solid #ddd;
+                          background: #fafafa;
+                          padding: 20px;
+                          display: inline-block;
+                          margin: 10px;
+                          overflow: hidden;
+                        }
+
+                        #cards-container .card img,
+                        #cards-container-soict .card img,
+                        #cards-container-sob .card img,
+                        #cards-container-sobs .card img,
+                        #cards-container-soe .card img,
+                        #cards-container-soh .card img,
+                        #cards-container-soljg .card img,
+                        #cards-container-som .card img,
+                        #cards-container-sovs .card img {
+                          /*height:130px!important;
                     width:110px!important;*/
-                    width:auto;
-                    padding:3px!important;
-                    background:#fff;
-                    margin:0!important;
-                    margin-right:20px!important;
-                    margin-bottom:20px!important;
-                    }
-                    #cards-container .card hr,#cards-container-soict .card hr
-                    ,#cards-container-sob .card hr,#cards-container-sobs .card hr,
-                    #cards-container-soe .card hr,#cards-container-soh .card hr,
-                    #cards-container-soljg .card hr,#cards-container-som .card hr,
-                    #cards-container-sovs .card hr
-                    {
-                    margin:0;
-                    margin-top:20px;
-                    margin-bottom:10px;
-                    background:-webkit-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    background:-moz-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    background:-ms-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    background:-o-linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    background:linear-gradient(left, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
-                    clear:both;
-                    }
-                    @media screen and (max-width:500px)
-                    {
-                    #cards-container .card,#cards-container-soict .card
-                    ,#cards-container-sob .card,#cards-container-sobs .card,
-                    #cards-container-soe .card,#cards-container-soh .card,
-                    #cards-container-soljg .card,#cards-container-som .card,
-                    #cards-container-sovs .card
-                    {
-                    width:80%;
-                    }
-                    }
-                    </style>
-                    <div class="container">
-                      <h3 class=" text-lg-left mt-3 mb-0">Faculty</h3>
-                      <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 10%; background-color:#FB8C00 ">
+                          width: auto;
+                          padding: 3px !important;
+                          background: #fff;
+                          margin: 0 !important;
+                          margin-right: 20px !important;
+                          margin-bottom: 20px !important;
+                        }
+
+                        #cards-container .card hr,
+                        #cards-container-soict .card hr,
+                        #cards-container-sob .card hr,
+                        #cards-container-sobs .card hr,
+                        #cards-container-soe .card hr,
+                        #cards-container-soh .card hr,
+                        #cards-container-soljg .card hr,
+                        #cards-container-som .card hr,
+                        #cards-container-sovs .card hr {
+                          margin: 0;
+                          margin-top: 20px;
+                          margin-bottom: 10px;
+                          background: -webkit-linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+                          background: -moz-linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+                          background: -ms-linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+                          background: -o-linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+                          background: linear-gradient(left, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0));
+                          clear: both;
+                        }
+
+                        @media screen and (max-width:500px) {
+
+                          #cards-container .card,
+                          #cards-container-soict .card,
+                          #cards-container-sob .card,
+                          #cards-container-sobs .card,
+                          #cards-container-soe .card,
+                          #cards-container-soh .card,
+                          #cards-container-soljg .card,
+                          #cards-container-som .card,
+                          #cards-container-sovs .card {
+                            width: 80%;
+                          }
+                        }
+                      </style>
+                      <div class="container">
+                        <h3 class=" text-lg-left mt-3 mb-0">Faculty</h3>
+                        <div class=" mb-3 mt-2 float-left" style="height: 5px; width: 10%; background-color:#FB8C00 ">
+                        </div>
                       </div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="container">
-                      <p>The Institute is organized as research groups and education programs, and has not maintained strong department boundaries. However, faculty can be broadly grouped according to their disciplines which are given below. Apart from those listed below, the institute also has a number of Guest, Adjunct and Visiting faculty members in various disciplines</p>
-                    </div>
-                    <div class="select">
-                      <div class="select-item select-item-active" onclick="$.showAllFaculty()" style="display: none">All</div>
-                      <div class="select-item-soict" onclick="$.showSOICTFaculty()">SOICT</div>
-                      <div class="select-item-soe" onclick="$.showSOEFaculty()">SOE</div>
-                      <div class="select-item-sovs" onclick="$.showSOVSFaculty()">SOVSAS</div>
-                      <div class="select-item-sob" onclick="$.showSOBFaculty()">SOBT</div>
-                      <div class="select-item-som" onclick="$.showSOMFaculty()">SOM</div>
-                      <div class="select-item-soh" onclick="$.showSOHFaculty()">SOHSS</div>
-                      <div class="select-item-sobs" onclick="$.showSOBSFaculty()">SOBSC</div>
-                      <div class="select-item-soljg" onclick="$.showSOLJGFaculty()">SOLJG</div>
-                      <form style="justify-content: center;padding:20px" action="/faculty" method="GET" class="form-inline">
-                      	<div  class="form-group">
-                      		<input type="text" name="search" class="form-control" placeholder="Faculty Search" style="margin-right: 10px">
-                      		<input type="submit" class="btn btn-success"  value="Search">
-                      		
-                      	</div>
-                      </form>
-                      <%if(search=="foo"){%>
-                    <div id="cards-container">
-                    	<%if(noMatch !==undefined){%>
-                    	<h3><%=noMatch%></h3>
-                    	<%}%>
+                      <br>
+                      <br>
+                      <div class="container">
+                        <p>The Institute is organized as research groups and education programs, and has not maintained
+                          strong department boundaries. However, faculty can be broadly grouped according to their
+                          disciplines which are given below. Apart from those listed below, the institute also has a
+                          number of Guest, Adjunct and Visiting faculty members in various disciplines</p>
+                      </div>
+                      <div class="select">
+                        <div class="select-item select-item-active" onclick="$.showAllFaculty()" style="display: none">
+                          All</div>
+                        <div class="select-item-soict" onclick="$.showSOICTFaculty()">SOICT</div>
+                        <div class="select-item-soe" onclick="$.showSOEFaculty()">SOE</div>
+                        <div class="select-item-sovs" onclick="$.showSOVSFaculty()">SOVSAS</div>
+                        <div class="select-item-sob" onclick="$.showSOBFaculty()">SOBT</div>
+                        <div class="select-item-som" onclick="$.showSOMFaculty()">SOM</div>
+                        <div class="select-item-soh" onclick="$.showSOHFaculty()">SOHSS</div>
+                        <div class="select-item-sobs" onclick="$.showSOBSFaculty()">SOBSC</div>
+                        <div class="select-item-soljg" onclick="$.showSOLJGFaculty()">SOLJG</div>
+                        <form style="justify-content: center;padding:20px" action="/faculty" method="GET"
+                          class="form-inline">
+                          <div class="form-group">
+                            <input type="text" name="search" class="form-control" placeholder="Faculty Search"
+                              style="margin-right: 10px">
+                            <input type="submit" class="btn btn-success" value="Search">
+
+                          </div>
+                        </form>
+                        <%if(search=="foo"){%>
+                        <div id="cards-container">
+                          <%if(noMatch !==undefined){%>
+                          <h3><%=noMatch%></h3>
+                          <%}%>
                       <%faculties.forEach(function(faculty){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
+                          <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                            <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                                href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                            <p><strong><%=faculty.position
                         %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%})%>
-                    </div>
-                    <%}%>
+                            <p><%=faculty.qualification%></p>
+                            <p><%=faculty.field_of_teaching%></p>
+                          </div>
+                          <%})%>
+                        </div>
+                        <%}%>
                     <div id="cards-container-soict">
                     	<%if(noMatch !==undefined){%>
-                    	<h3><%=noMatch%></h3>
-                    	<%}%>
+                        <h3><%=noMatch%></h3>
+                        <%}%>
                       <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position=="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
+                        <%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position=="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
                         %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                      <%faculties.forEach(function(faculty){%>
-                         <%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position!="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                    </div>
-                    <div id="cards-container-sob">
-                    	<%if(noMatch !==undefined){%>
-                    	<h3><%=noMatch%></h3>
-                    	<%}%>
-                      <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.school=="University School of BioTechnology"&&faculty.position=="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
                       <%})%>
                         <%faculties.forEach(function(faculty){%>
-                         <%if(faculty.school=="University School of BioTechnology"&&faculty.position!="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
+                        <%if(faculty.school=="University School of Information And Communication Technology"&&faculty.position!="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
                         %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
                       <%})%>
+                      </div>
+                      <div id="cards-container-sob">
+                        <%if(noMatch !==undefined){%>
+                        <h3><%=noMatch%></h3>
+                        <%}%>
+                      <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of BioTechnology"&&faculty.position=="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                        <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of BioTechnology"&&faculty.position!="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                      </div>
+                      <div id="cards-container-sobs">
+                        <%if(noMatch !==undefined){%>
+                        <h3><%=noMatch%></h3>
+                        <%}%>
+                      <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Buddhist Studies & Civilization"&&faculty.position=="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                        <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Buddhist Studies & Civilization"&&faculty.position!="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                      </div>
+                      <div id="cards-container-soe">
+                        <%if(noMatch !==undefined){%>
+                        <h3><%=noMatch%></h3>
+                        <%}%>
+                      <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Engineering"&&faculty.position=="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                        <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Engineering"&&faculty.position!="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                      </div>
+                      <div id="cards-container-soh">
+                        <%if(noMatch !==undefined){%>
+                        <h3><%=noMatch%></h3>
+                        <%}%>
+                      <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Humanities & Social Sciences"&&faculty.position=="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                        <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Humanities & Social Sciences"&&faculty.position!="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                      </div>
+                      <div id="cards-container-soljg">
+                        <%if(noMatch !==undefined){%>
+                        <h3><%=noMatch%></h3>
+                        <%}%>
+                      <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Law, Justice & Governance"&&faculty.position=="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                        <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Law, Justice & Governance"&&faculty.position!="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                      </div>
+                      <div id="cards-container-som">
+                        <%if(noMatch !==undefined){%>
+                        <h3><%=noMatch%></h3>
+                        <%}%>
+                      <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Management"&&faculty.position=="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                        <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Management"&&faculty.position!="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                      </div>
+                      <div id="cards-container-sovs">
+                        <%if(noMatch !==undefined){%>
+                        <h3><%=noMatch%></h3>
+                        <%}%>
+                      <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Vocational Studies & Applied Sciences"&&faculty.position=="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                        <%faculties.forEach(function(faculty){%>
+                        <%if(faculty.school=="University School of Vocational Studies & Applied Sciences"&&faculty.position!="Dean"){%>
+                        <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
+                          <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a
+                              href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
+                          <p><strong><%=faculty.position
+                        %></strong></p>
+                          <p><%=faculty.qualification%></p>
+                          <p><%=faculty.field_of_teaching%></p>
+                        </div>
+                        <%}%>
+                      <%})%>
+                      </div>
                     </div>
-                    <div id="cards-container-sobs">
-                    	<%if(noMatch !==undefined){%>
-                    	<h3><%=noMatch%></h3>
-                    	<%}%>
-                      <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.school=="University School of Buddhist Studies & Civilization"&&faculty.position=="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                       <%faculties.forEach(function(faculty){%>
-                         <%if(faculty.school=="University School of Buddhist Studies & Civilization"&&faculty.position!="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                    </div>
-                    <div id="cards-container-soe">
-                    	<%if(noMatch !==undefined){%>
-                    	<h3><%=noMatch%></h3>
-                    	<%}%>
-                      <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.school=="University School of Engineering"&&faculty.position=="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                       <%faculties.forEach(function(faculty){%>
-                         <%if(faculty.school=="University School of Engineering"&&faculty.position!="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                    </div>
-                    <div id="cards-container-soh">
-                    	<%if(noMatch !==undefined){%>
-                    	<h3><%=noMatch%></h3>
-                    	<%}%>
-                      <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.school=="University School of Humanities & Social Sciences"&&faculty.position=="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                      <%faculties.forEach(function(faculty){%>
-                         <%if(faculty.school=="University School of Humanities & Social Sciences"&&faculty.position!="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                    </div>
-                    <div id="cards-container-soljg">
-                    	<%if(noMatch !==undefined){%>
-                    	<h3><%=noMatch%></h3>
-                    	<%}%>
-                      <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.school=="University School of Law, Justice & Governance"&&faculty.position=="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                       <%faculties.forEach(function(faculty){%>
-                         <%if(faculty.school=="University School of Law, Justice & Governance"&&faculty.position!="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                    </div>
-                    <div id="cards-container-som">
-                    	<%if(noMatch !==undefined){%>
-                    	<h3><%=noMatch%></h3>
-                    	<%}%>
-                      <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.school=="University School of Management"&&faculty.position=="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                       <%faculties.forEach(function(faculty){%>
-                         <%if(faculty.school=="University School of Management"&&faculty.position!="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                    </div>
-                    <div id="cards-container-sovs">
-                    	<%if(noMatch !==undefined){%>
-                    	<h3><%=noMatch%></h3>
-                    	<%}%>
-                      <%faculties.forEach(function(faculty){%>
-                      	<%if(faculty.school=="University School of Vocational Studies & Applied Sciences"&&faculty.position=="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                      <%faculties.forEach(function(faculty){%>
-                         <%if(faculty.school=="University School of Vocational Studies & Applied Sciences"&&faculty.position!="Dean"){%>
-                      <div class="card rteleft facultycard" style="width:350px" dept="7" type="regular">
-                        <strong><img alt="" src="../images/<%=faculty.image%>" style="float:left;height:150px;"><a href="/faculty/<%=faculty.name%>"><%=faculty.name%></a></strong>
-                        <p><strong><%=faculty.position
-                        %></strong></p>
-                        <p><%=faculty.qualification%></p>
-                        <p><%=faculty.field_of_teaching%></p>
-                      </div>
-                      <%}%>
-                      <%})%>
-                    </div>
-                  </div>
-                 <%include footer%>
+                    <%include footer%>

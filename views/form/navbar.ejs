@@ -1,0 +1,69 @@
+<nav id="" class="navbar navbar-expand-sm navbar-light top-nav-bg">
+    <a class="navbar-brand" href="/">
+        <img src="/form/img/gbulogo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Gautam Buddha
+        University
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <!-- <ul class="navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+
+                </a>
+                <div class="dropdown-menu" a ria-labelledby="dropdown">
+                    <a class="dropdown-item bg-success text-white" href="admin/index">Admin</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="home">Biography </a>
+                    <a class="dropdown-item" href="teaching">Teaching</a>
+                    <a class="dropdown-item" href="researchs">Researchs</a>
+                    <a class="dropdown-item" href="publications">Publications</a>
+                    <a class="dropdown-item" href="students">Students</a>
+                    <a class="dropdown-item" href="contact">Contact</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item bg-primary text-white" href="view.php">View List</a>
+                    <a onClick="javascript: return confirm('Are you sure want to Logout ?');"
+                        class="dropdown-item bg-danger text-white" href="logout">Logout</a>
+                </div>
+
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdown">
+                    <a class="dropdown-item" href="index">Login</a>
+                </div>
+            </li>
+        </ul> -->
+        <div class="ml-auto mr-4">
+            <div class="nav-item dropdown box-profile d-inline-block">
+                <%if(locals.data){%>
+                <a class="nav-link nav-link-profile" href="/facultyzone/me">
+                    <img id="user-nav-image" src="/images/<%if(locals.data.image){%><%=data.image%><%}else{%>default.jpg<%}%>" alt="user"><%=data.namep%>
+                </a>
+                <%}%>
+            </div>
+            <%if(locals.data){%>
+                <span class=" mx-2" style="font-size: 1.6rem; color : #55a57c">|</span>
+                    <div class="nav-item dropdown box-profile d-inline-block">
+                        <a id='log-out' class="nav-link nav-link-profile" href="javascript:void(0)">
+                            Log out
+                        </a>
+                    </div>
+                    <%}else{%>
+                    <div class="nav-item dropdown box-profile d-inline-block">
+                        <a class="nav-link nav-link-profile" href="/facultyzone/allview">
+                            View others
+                        </a>
+                    </div>
+                    <span class=" mx-2" style="font-size: 1.6rem; color : #55a57c">|</span>
+                    <div class="nav-item dropdown box-profile d-inline-block">
+                        <a class="nav-link nav-link-profile" href="/facultyzone/login">
+                            Log in
+                        </a>
+                    </div>
+                    <%}%>
+        </div>
+    </div>
+    </div>
+</nav>
