@@ -6,7 +6,7 @@ const path=require('path');
 const bodyParser=require('body-parser');
 const multer=require('multer');
 const Grid=require('gridfs-stream');
-const mongoLocalURI="mongodb://localhost/gbu_website";
+const mongoLocalURI="mongodb://localhost:27017/gbu_website";
 const GridFsStorage=require('multer-gridfs-storage');
 mongoose.connect(process.env.DATABASEURL||mongoLocalURI,{useNewUrlParser: true});
 const conn=mongoose.createConnection(process.env.DATABASEURL||mongoLocalURI);

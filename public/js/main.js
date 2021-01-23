@@ -148,9 +148,9 @@ $( document ).ready(function() {
 
 
 });
-$(document).ready(function() {
-$('.mdb-select').materialSelect();
-})
+// $(document).ready(function() {
+// $('.mdb-select').materialSelect();
+// })
 
 //=================== News Button JS-================
 

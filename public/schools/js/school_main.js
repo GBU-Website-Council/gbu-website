@@ -24,7 +24,7 @@ $( document ).ready(function() {
     $('.navbar-collapse').collapse('hide');
     });
 
-    $('a.dropdown-item').click(function{
+    $('a.dropdown-item').click(function(){
         $('#dropdown-h').css({'display' : 'none!important'});
       })
 
