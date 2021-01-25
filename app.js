@@ -30,6 +30,7 @@ const AppError = require("./utils/appError");
 const formViewRout = require("./router/formViewRouter");
 // Configurations
 const dotenv = require("dotenv");
+const { use } = require("./router/formRouter");
 dotenv.config({ path: "./config.env" });
 app = express();
 mongoose
@@ -708,60 +709,102 @@ app.get("/schools/soljg", (req, res) => {
     });
 });
 
-app.get("/faculty/:name", async (req, res) => {
+const getSendFaculty = async(req, res, next, page)=>{
   var name = req.params.name;
-  Faculty.findOne({ name }, function (err, faculty) {
-    if (err) res.redirect("back");
-    else {
-      res.render("profile", { faculty });
-    }
-  });
-});
-app.get("/faculty/:name/research", (req, res) => {
-  var name = req.params.name;
-  Faculty.findOne({ name }, function (err, faculty) {
-    if (err) res.redirect("back");
-    else {
-      res.render("profile_research", { faculty });
-    }
-  });
-});
-app.get("/faculty/:name/publications", (req, res) => {
-  var name = req.params.name;
-  Faculty.findOne({ name }, function (err, faculty) {
-    if (err) res.redirect("back");
-    else {
-      res.render("profile_publications", { faculty });
-    }
-  });
-});
-app.get("/faculty/:name/teaching", (req, res) => {
-  var name = req.params.name;
-  Faculty.findOne({ name }, function (err, faculty) {
-    if (err) res.redirect("back");
-    else {
-      res.render("profile_teaching", { faculty });
-    }
-  });
-});
-app.get("/faculty/:name/students", (req, res) => {
-  var name = req.params.name;
-  Faculty.findOne({ name }, function (err, faculty) {
-    if (err) res.redirect("back");
-    else {
-      res.render("profile_students", { faculty });
-    }
-  });
-});
-app.get("/faculty/:name/contact", (req, res) => {
-  var name = req.params.name;
-  Faculty.findOne({ name }, function (err, faculty) {
-    if (err) res.redirect("back");
-    else {
-      res.render("profile_contact", { faculty });
-    }
-  });
-});
+  const user = await User.findOne({name});
+  if (!user) {
+    return next(new AppError("Data not Found", 404));
+  }
+  if (!(user.active)) {
+    return next(new AppError("Data not Found",404));
+  }
+  const faculty = await Faculty.findOne({userId: user._id});
+  if (!faculty) {
+    return next(new AppError('Data not found',404));
+  }
+  console.log(page);
+  res.render(page, {faculty});
+};
+// app.get("/faculty/:name", async (req, res) => {
+//   var name = req.params.name;
+//   Faculty.findOne({ name }, function (err, faculty) {
+//     if (err) res.redirect("back");
+//     else {
+//       res.render("profile", { faculty });
+//     }
+//   });
+// });
+
+app.get("/faculty/:name", catchAsync(async (req, res, next) => {
+  getSendFaculty(req,res,next, 'profile');
+}));
+
+// app.get("/faculty/:name/research", (req, res) => {
+//   var name = req.params.name;
+//   Faculty.findOne({ name }, function (err, faculty) {
+//     if (err) res.redirect("back");
+//     else {
+//       res.render("profile_research", { faculty });
+//     }
+//   });
+// });
+
+app.get("/faculty/:name/research", catchAsync(async(req, res, next) => {
+  getSendFaculty(req, res, next, 'profile_research');
+}));
+
+// app.get("/faculty/:name/publications", (req, res) => {
+//   var name = req.params.name;
+//   Faculty.findOne({ name }, function (err, faculty) {
+//     if (err) res.redirect("back");
+//     else {
+//       res.render("profile_publications", { faculty });
+//     }
+//   });
+// });
+app.get("/faculty/:name/publications", catchAsync(async(req, res, next) => {
+  getSendFaculty(req, res, next, 'profile_publications');    
+}));
+
+// app.get("/faculty/:name/teaching", (req, res) => {
+//   var name = req.params.name;
+//   Faculty.findOne({ name }, function (err, faculty) {
+//     if (err) res.redirect("back");
+//     else {
+//       res.render("profile_teaching", { faculty });
+//     }
+//   });
+// });
+app.get("/faculty/:name/teaching", catchAsync(async(req, res, next) => {
+  await getSendFaculty(req, res, next, 'profile_teaching');    
+}));
+
+// app.get("/faculty/:name/students", (req, res) => {
+//   var name = req.params.name;
+//   Faculty.findOne({ name }, function (err, faculty) {
+//     if (err) res.redirect("back");
+//     else {
+//       res.render("profile_students", { faculty });
+//     }
+//   });
+// });
+app.get("/faculty/:name/students",  catchAsync(async(req, res, next) => {
+  await getSendFaculty(req, res, next, 'profile_students');    
+}));
+
+// app.get("/faculty/:name/contact", (req, res) => {
+//   var name = req.params.name;
+//   Faculty.findOne({ name }, function (err, faculty) {
+//     if (err) res.redirect("back");
+//     else {
+//       res.render("profile_contact", { faculty });
+//     }
+//   });
+// });
+app.get("/faculty/:name/contact", catchAsync(async(req, res, next) => {
+  await getSendFaculty(req, res, next, 'profile_contact');    
+}));
+
 app.get("/faculty", (req, res) => {
   var noMatch = "";
   var search = "";
