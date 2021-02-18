@@ -1046,7 +1046,7 @@ app.all("*", function (req, res, next) {
 app.use(globleErrorHandler);
 
 // Startiing server
-const port = 3000;
+const port = 8000;
 app.listen(port, "localhost", function () {
   // process.env.NODE_ENV = "production";
   process.env.NODE_ENV = "development";
